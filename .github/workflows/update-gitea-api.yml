@@ -32,11 +32,6 @@ jobs:
       - name: remove unneeded files
         run: rm .gitlab-ci.yml .travis.yml git_push.sh setup.py setup.cfg
 
-      - name: Run black
-        run: |
-          pipx install black
-          black .
-
       - name: create a pull request with the updated files
         uses: peter-evans/create-pull-request@v5
         with:
