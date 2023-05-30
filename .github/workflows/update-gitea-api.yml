@@ -24,7 +24,7 @@ jobs:
           podman run --pull=always --rm -v $(pwd):/local:Z \
             docker.io/openapitools/openapi-generator-cli generate \
               -i https://gitea.opensuse.org/swagger.v1.json \
-              -g python-nextgen --library asyncio -o /local/ \
+              -g python --library asyncio -o /local/ \
               -p packageName=py_gitea_opensuse_org \
               --git-repo-id py-gitea-opensuse-org \
               --git-user-id dcermak
