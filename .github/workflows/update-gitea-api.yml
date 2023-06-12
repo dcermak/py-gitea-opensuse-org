@@ -43,3 +43,4 @@ jobs:
           body: |
             This is an automated update regenerating the gitea API via openapi-generator-cli
           base: main
+          token: ${{ secrets.CHECKOUT_TOKEN }}
