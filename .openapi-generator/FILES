@@ -347,6 +347,7 @@ py_gitea_opensuse_org/models/wiki_commit.py
 py_gitea_opensuse_org/models/wiki_commit_list.py
 py_gitea_opensuse_org/models/wiki_page.py
 py_gitea_opensuse_org/models/wiki_page_meta_data.py
+py_gitea_opensuse_org/py.typed
 py_gitea_opensuse_org/rest.py
 pyproject.toml
 requirements.txt
