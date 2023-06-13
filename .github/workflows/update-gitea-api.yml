@@ -37,7 +37,6 @@ jobs:
         with:
           delete-branch: true
           commit-message: "🤖: Update gitea API via openapi-generator-cli"
-          reviewers: dcermak
           assignees: dcermak
           title: "🤖: Update gitea API"
           body: |
