@@ -14,7 +14,7 @@
 """
 
 
-__version__ = "1.0.0"
+__version__ = "1.19.3"
 
 # import apis into sdk package
 from py_gitea_opensuse_org.api.activitypub_api import ActivitypubApi
