@@ -28,7 +28,7 @@ jobs:
               -p packageName=py_gitea_opensuse_org \
               --git-repo-id py-gitea-opensuse-org \
               --git-user-id dcermak \
-              --additional-properties=packageVersion=(curl https://src.opensuse.org/swagger.v1.json | jq '.info.version'|sed 's/"//g')
+              --additional-properties=packageVersion=$(curl https://src.opensuse.org/swagger.v1.json | jq '.info.version'|sed 's/"//g')
 
       - name: remove unneeded files
         run: rm .gitlab-ci.yml .travis.yml git_push.sh setup.py setup.cfg
