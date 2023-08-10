@@ -141,6 +141,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -264,6 +265,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -380,6 +382,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_add_team_member: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -500,6 +503,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -616,6 +620,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_conceal_member: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -736,6 +741,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_create: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -859,6 +865,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -977,6 +984,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_create_label: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1100,6 +1108,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1216,6 +1225,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1329,6 +1339,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_delete_hook: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1447,6 +1458,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1563,6 +1575,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1676,6 +1689,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_delete_team: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1797,6 +1811,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1916,6 +1931,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_edit_hook: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2040,6 +2056,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2162,6 +2179,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2280,6 +2298,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2396,6 +2415,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_get_all: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2517,6 +2537,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2634,6 +2655,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_get_label: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2754,6 +2776,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2870,6 +2893,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_get_user_permissions: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2990,6 +3014,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3106,6 +3131,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_is_public_member: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3228,6 +3254,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3346,6 +3373,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_list_hooks: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3469,6 +3497,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3588,6 +3617,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_list_members: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3711,6 +3741,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3832,6 +3863,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3950,6 +3982,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_list_team_member: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4073,6 +4106,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4192,6 +4226,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_list_team_repo: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4316,6 +4351,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4435,6 +4471,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_list_teams: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4558,6 +4595,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4675,6 +4713,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4790,6 +4829,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_remove_team_member: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4910,6 +4950,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->org_remove_team_repository: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5034,6 +5075,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling OrganizationApi->team_search: %s\n" % e)
 ```
+
 
 
 ### Parameters

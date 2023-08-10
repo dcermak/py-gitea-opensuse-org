@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py_gitea_opensuse_org"
-version = "1.19.3"
+version = "1.19.4"
 description = "Gitea API."
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
 license = "MIT"

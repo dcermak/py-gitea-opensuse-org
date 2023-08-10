@@ -99,6 +99,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -211,6 +212,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling ActivitypubApi->activitypub_person_inbox: %s\n" % e)
 ```
+
 
 
 ### Parameters

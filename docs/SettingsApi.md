@@ -100,6 +100,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -211,6 +212,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling SettingsApi->get_general_attachment_settings: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -326,6 +328,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -437,6 +440,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling SettingsApi->get_general_ui_settings: %s\n" % e)
 ```
+
 
 
 ### Parameters

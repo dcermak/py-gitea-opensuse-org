@@ -148,6 +148,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -267,6 +268,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -377,6 +379,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->get_verification_token: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -493,6 +496,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->update_user_settings: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -613,6 +617,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -727,6 +732,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_check_following: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -849,6 +855,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -969,6 +976,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1083,6 +1091,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_current_check_following: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1201,6 +1210,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1317,6 +1327,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1429,6 +1440,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_current_delete_gpg_key: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1547,6 +1559,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1662,6 +1675,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_current_delete_star: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1782,6 +1796,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1898,6 +1913,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_current_get_key: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2019,6 +2035,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2138,6 +2155,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2255,6 +2273,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_current_list_gpg_keys: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2377,6 +2396,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2495,6 +2515,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_current_list_repos: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2616,6 +2637,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2735,6 +2757,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2852,6 +2875,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_current_post_gpg_key: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2974,6 +2998,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3089,6 +3114,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3202,6 +3228,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_current_put_star: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3325,6 +3352,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3441,6 +3469,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_delete_access_token: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3561,6 +3590,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3674,6 +3704,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_delete_o_auth2_application: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3794,6 +3825,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3911,6 +3943,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4023,6 +4056,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_get_heatmap_data: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4141,6 +4175,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_get_o_auth2_application: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4262,6 +4297,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4379,6 +4415,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_get_stop_watches: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4501,6 +4538,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4619,6 +4657,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4733,6 +4772,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_list_followers: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4856,6 +4896,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4975,6 +5016,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_list_gpg_keys: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5099,6 +5141,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5219,6 +5262,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_list_repos: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5342,6 +5386,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5461,6 +5506,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_list_subscriptions: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5583,6 +5629,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5702,6 +5749,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_search: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5826,6 +5874,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5942,6 +5991,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling UserApi->user_verify_gpg_key: %s\n" % e)
 ```
+
 
 
 ### Parameters

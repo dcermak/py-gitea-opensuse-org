@@ -110,6 +110,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -241,6 +242,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -366,6 +368,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -484,6 +487,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -599,6 +603,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling NotificationApi->notify_read_list: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -726,6 +731,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -847,6 +853,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling NotificationApi->notify_read_thread: %s\n" % e)
 ```
+
 
 
 ### Parameters
