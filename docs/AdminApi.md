@@ -114,6 +114,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -235,6 +236,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -352,6 +354,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling AdminApi->admin_create_org: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -476,6 +479,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -596,6 +600,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling AdminApi->admin_create_repo: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -722,6 +727,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -843,6 +849,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -957,6 +964,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling AdminApi->admin_cron_run: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1074,6 +1082,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1187,6 +1196,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling AdminApi->admin_delete_unadopted_repository: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1306,6 +1316,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1422,6 +1433,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling AdminApi->admin_delete_user_public_key: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1546,6 +1558,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1664,6 +1677,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling AdminApi->admin_edit_user: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1787,6 +1801,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1905,6 +1920,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling AdminApi->admin_get_all_users: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2026,6 +2042,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2142,6 +2159,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling AdminApi->admin_list_hooks: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2261,6 +2279,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling AdminApi->admin_unadopted_list: %s\n" % e)
 ```
+
 
 
 ### Parameters

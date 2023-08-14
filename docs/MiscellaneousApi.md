@@ -101,6 +101,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -211,6 +212,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling MiscellaneousApi->get_signing_key: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -326,6 +328,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -438,6 +441,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling MiscellaneousApi->render_markdown: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -555,6 +559,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling MiscellaneousApi->render_markdown_raw: %s\n" % e)
 ```
+
 
 
 ### Parameters

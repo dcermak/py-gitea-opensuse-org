@@ -159,6 +159,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -278,6 +279,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_add_subscription: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -407,6 +409,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -531,6 +534,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -648,6 +652,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_clear_labels: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -774,6 +779,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -896,6 +902,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_create_issue: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1022,6 +1029,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_create_issue_attachment: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1151,6 +1159,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1277,6 +1286,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1400,6 +1410,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1516,6 +1527,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_delete: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1638,6 +1650,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1757,6 +1770,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_delete_comment_deprecated: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1882,6 +1896,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2003,6 +2018,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2122,6 +2138,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_delete_issue_comment_attachment: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2246,6 +2263,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2366,6 +2384,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2484,6 +2503,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2600,6 +2620,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_delete_stop_watch: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2724,6 +2745,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2845,6 +2867,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_delete_time: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2971,6 +2994,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_edit_comment: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3101,6 +3125,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3227,6 +3252,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_edit_issue: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3357,6 +3383,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3482,6 +3509,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_edit_issue_comment_attachment: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3610,6 +3638,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3734,6 +3763,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_edit_label: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3861,6 +3891,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3981,6 +4012,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_get_comment: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4107,6 +4139,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4229,6 +4262,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_get_comments: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4358,6 +4392,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4483,6 +4518,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4604,6 +4640,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_get_issue_attachment: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4728,6 +4765,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_get_issue_comment_attachment: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4855,6 +4893,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4979,6 +5018,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5098,6 +5138,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_get_labels: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5222,6 +5263,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5344,6 +5386,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_get_milestones_list: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5473,6 +5516,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5597,6 +5641,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5717,6 +5762,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_list_issue_comment_attachments: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5852,6 +5898,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5985,6 +6032,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6107,6 +6155,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_post_comment_reaction: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -6235,6 +6284,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6355,6 +6405,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_remove_label: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -6483,6 +6534,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6601,6 +6653,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_reset_time: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -6739,6 +6792,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6870,6 +6924,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6989,6 +7044,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_stop_stop_watch: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -7115,6 +7171,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_subscriptions: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -7244,6 +7301,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling IssueApi->issue_tracked_times: %s\n" % e)
 ```
+
 
 
 ### Parameters

@@ -233,6 +233,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -352,6 +353,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->create_current_user_repo: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -475,6 +477,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->create_fork: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -602,6 +605,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -727,6 +731,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -847,6 +852,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->get_blob: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -972,6 +978,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->get_tree: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1100,6 +1107,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1221,6 +1229,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1340,6 +1349,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_add_collaborator: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1466,6 +1476,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1586,6 +1597,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1704,6 +1716,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_add_topic: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -1829,6 +1842,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -1945,6 +1959,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_cancel_scheduled_auto_merge: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2065,6 +2080,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_check_collaborator: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2188,6 +2204,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_check_team: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2314,6 +2331,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2436,6 +2454,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_create_branch_protection: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2564,6 +2583,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2690,6 +2710,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -2810,6 +2831,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_create_key: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -2935,6 +2957,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3058,6 +3081,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_create_pull_review: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3186,6 +3210,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3311,6 +3336,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3434,6 +3460,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_create_release_attachment: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3562,6 +3589,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3684,6 +3712,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_create_tag: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -3811,6 +3840,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -3930,6 +3960,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4046,6 +4077,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_delete_branch: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4168,6 +4200,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4285,6 +4318,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_delete_collaborator: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4411,6 +4445,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4533,6 +4568,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4650,6 +4686,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_delete_hook: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -4771,6 +4808,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -4889,6 +4927,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_delete_pull_review: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5014,6 +5053,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5135,6 +5175,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5253,6 +5294,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_delete_release: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5376,6 +5418,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5493,6 +5536,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_delete_release_by_tag: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5613,6 +5657,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_delete_tag: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -5736,6 +5781,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5856,6 +5902,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5973,6 +6020,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_delete_wiki_page: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -6101,6 +6149,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6226,6 +6275,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6348,6 +6398,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_download_pull_diff_or_patch: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -6475,6 +6526,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6598,6 +6650,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_edit_branch_protection: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -6726,6 +6779,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6851,6 +6905,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6973,6 +7028,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_edit_pull_request: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -7103,6 +7159,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -7227,6 +7284,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_edit_release_attachment: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -7354,6 +7412,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -7475,6 +7534,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -7601,6 +7661,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -7725,6 +7786,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -7846,6 +7908,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -7964,6 +8027,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_branch: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -8088,6 +8152,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8206,6 +8271,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_by_id: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -8327,6 +8393,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_combined_status_by_ref: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -8454,6 +8521,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8577,6 +8645,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8695,6 +8764,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_editor_config: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -8820,6 +8890,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8940,6 +9011,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_hook: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -9063,6 +9135,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9183,6 +9256,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9300,6 +9374,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_languages: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -9422,6 +9497,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9541,6 +9617,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_note: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -9666,6 +9743,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9788,6 +9866,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_pull_request_commits: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -9918,6 +9997,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10045,6 +10125,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10167,6 +10248,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_pull_review_comments: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -10292,6 +10374,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10413,6 +10496,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10532,6 +10616,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_raw_file_or_lfs: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -10657,6 +10742,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10778,6 +10864,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_release_attachment: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -10902,6 +10989,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -11022,6 +11110,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_repo_permissions: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -11146,6 +11235,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -11264,6 +11354,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_single_commit: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -11389,6 +11480,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -11509,6 +11601,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_wiki_page: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -11632,6 +11725,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_get_wiki_page_revisions: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -11758,6 +11852,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -11880,6 +11975,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -11998,6 +12094,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_list_branch_protection: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -12119,6 +12216,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_list_branches: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -12244,6 +12342,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -12365,6 +12464,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -12483,6 +12583,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_list_git_refs: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -12608,6 +12709,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -12731,6 +12833,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_list_keys: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -12862,6 +12965,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -12990,6 +13094,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -13113,6 +13218,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_list_push_mirrors: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -13239,6 +13345,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -13362,6 +13469,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_list_releases: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -13490,6 +13598,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -13614,6 +13723,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_list_statuses: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -13746,6 +13856,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -13873,6 +13984,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -13996,6 +14108,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -14115,6 +14228,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_list_teams: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -14238,6 +14352,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -14357,6 +14472,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_merge_pull_request: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -14482,6 +14598,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -14598,6 +14715,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_mirror_sync: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -14718,6 +14836,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -14834,6 +14953,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_push_mirror_sync: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -14972,6 +15092,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -15106,6 +15227,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -15229,6 +15351,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -15350,6 +15473,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_test_hook: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -15476,6 +15600,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_tracked_times: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -15606,6 +15731,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -15729,6 +15855,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_un_dismiss_pull_review: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -15857,6 +15984,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -15978,6 +16106,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->repo_update_pull_request: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -16104,6 +16233,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -16224,6 +16354,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->topic_search: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -16347,6 +16478,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -16462,6 +16594,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->user_current_delete_subscription: %s\n" % e)
 ```
+
 
 
 ### Parameters
@@ -16583,6 +16716,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 ```
 
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -16701,6 +16835,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     except Exception as e:
         print("Exception when calling RepositoryApi->user_tracked_times: %s\n" % e)
 ```
+
 
 
 ### Parameters
