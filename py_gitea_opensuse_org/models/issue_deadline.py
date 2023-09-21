@@ -23,7 +23,7 @@ from pydantic import BaseModel
 
 class IssueDeadline(BaseModel):
     """
-    IssueDeadline represents an issue deadline
+    IssueDeadline represents an issue deadline  # noqa: E501
     """
     due_date: Optional[datetime] = None
     __properties = ["due_date"]

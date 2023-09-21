@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictStr
 
 class DismissPullReviewOptions(BaseModel):
     """
-    DismissPullReviewOptions are options to dismiss a pull review
+    DismissPullReviewOptions are options to dismiss a pull review  # noqa: E501
     """
     message: Optional[StrictStr] = None
     priors: Optional[StrictBool] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt, StrictStr
 
 class TopicResponse(BaseModel):
     """
-    TopicResponse for returning topics
+    TopicResponse for returning topics  # noqa: E501
     """
     created: Optional[datetime] = None
     id: Optional[StrictInt] = None

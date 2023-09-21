@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr
 
 class MarkdownOption(BaseModel):
     """
-    MarkdownOption markdown options
+    MarkdownOption markdown options  # noqa: E501
     """
     context: Optional[StrictStr] = Field(None, alias="Context", description="Context to render  in: body")
     mode: Optional[StrictStr] = Field(None, alias="Mode", description="Mode to render  in: body")

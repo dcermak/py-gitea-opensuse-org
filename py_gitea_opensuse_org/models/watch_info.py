@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictStr
 
 class WatchInfo(BaseModel):
     """
-    WatchInfo represents an API watch status of one repository
+    WatchInfo represents an API watch status of one repository  # noqa: E501
     """
     created_at: Optional[datetime] = None
     ignored: Optional[StrictBool] = None

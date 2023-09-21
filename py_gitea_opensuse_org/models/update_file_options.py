@@ -25,7 +25,7 @@ from py_gitea_opensuse_org.models.identity import Identity
 
 class UpdateFileOptions(BaseModel):
     """
-    UpdateFileOptions options for updating files Note: `author` and `committer` are optional (if only one is given, it will be used for the other, otherwise the authenticated user will be used)
+    UpdateFileOptions options for updating files Note: `author` and `committer` are optional (if only one is given, it will be used for the other, otherwise the authenticated user will be used)  # noqa: E501
     """
     author: Optional[Identity] = None
     branch: Optional[StrictStr] = Field(None, description="branch (optional) to base this file from. if not given, the default branch is used")

@@ -29,7 +29,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class Issue(BaseModel):
     """
-    Issue represents an issue in a repository
+    Issue represents an issue in a repository  # noqa: E501
     """
     assets: Optional[conlist(Attachment)] = None
     assignee: Optional[User] = None

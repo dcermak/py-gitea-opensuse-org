@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.wiki_commit import WikiCommit
 
 class WikiCommitList(BaseModel):
     """
-    WikiCommitList commit/revision list
+    WikiCommitList commit/revision list  # noqa: E501
     """
     commits: Optional[conlist(WikiCommit)] = None
     count: Optional[StrictInt] = None

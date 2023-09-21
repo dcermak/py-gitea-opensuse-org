@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class CreateBranchRepoOption(BaseModel):
     """
-    CreateBranchRepoOption options when creating a branch in a repository
+    CreateBranchRepoOption options when creating a branch in a repository  # noqa: E501
     """
     new_branch_name: StrictStr = Field(..., description="Name of the branch to create")
     old_branch_name: Optional[StrictStr] = Field(None, description="Name of the old branch to create from")

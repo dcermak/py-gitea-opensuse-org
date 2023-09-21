@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictStr
 
 class Email(BaseModel):
     """
-    Email an email address belonging to a user
+    Email an email address belonging to a user  # noqa: E501
     """
     email: Optional[StrictStr] = None
     primary: Optional[StrictBool] = None

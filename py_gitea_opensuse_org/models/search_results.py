@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.repository import Repository
 
 class SearchResults(BaseModel):
     """
-    SearchResults results of a successful search
+    SearchResults results of a successful search  # noqa: E501
     """
     data: Optional[conlist(Repository)] = None
     ok: Optional[StrictBool] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictStr
 
 class GPGKeyEmail(BaseModel):
     """
-    GPGKeyEmail an email attached to a GPGKey
+    GPGKeyEmail an email attached to a GPGKey  # noqa: E501
     """
     email: Optional[StrictStr] = None
     verified: Optional[StrictBool] = None

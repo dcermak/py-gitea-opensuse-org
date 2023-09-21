@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictStr
 
 class EditLabelOption(BaseModel):
     """
-    EditLabelOption options for editing a label
+    EditLabelOption options for editing a label  # noqa: E501
     """
     color: Optional[StrictStr] = None
     description: Optional[StrictStr] = None

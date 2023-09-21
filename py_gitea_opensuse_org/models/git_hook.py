@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictStr
 
 class GitHook(BaseModel):
     """
-    GitHook represents a Git repository hook
+    GitHook represents a Git repository hook  # noqa: E501
     """
     content: Optional[StrictStr] = None
     is_active: Optional[StrictBool] = None

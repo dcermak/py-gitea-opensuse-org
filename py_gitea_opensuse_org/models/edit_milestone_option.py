@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class EditMilestoneOption(BaseModel):
     """
-    EditMilestoneOption options for editing a milestone
+    EditMilestoneOption options for editing a milestone  # noqa: E501
     """
     description: Optional[StrictStr] = None
     due_on: Optional[datetime] = None

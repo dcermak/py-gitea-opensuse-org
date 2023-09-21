@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool
 
 class PullRequestMeta(BaseModel):
     """
-    PullRequestMeta PR info if an issue is a PR
+    PullRequestMeta PR info if an issue is a PR  # noqa: E501
     """
     merged: Optional[StrictBool] = None
     merged_at: Optional[datetime] = None

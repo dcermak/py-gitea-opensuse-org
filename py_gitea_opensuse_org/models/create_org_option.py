@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr, validator
 
 class CreateOrgOption(BaseModel):
     """
-    CreateOrgOption options for creating an organization
+    CreateOrgOption options for creating an organization  # noqa: E501
     """
     description: Optional[StrictStr] = None
     full_name: Optional[StrictStr] = None

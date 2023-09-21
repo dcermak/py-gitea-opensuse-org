@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class RepoCollaboratorPermission(BaseModel):
     """
-    RepoCollaboratorPermission to get repository permission for a collaborator
+    RepoCollaboratorPermission to get repository permission for a collaborator  # noqa: E501
     """
     permission: Optional[StrictStr] = None
     role_name: Optional[StrictStr] = None

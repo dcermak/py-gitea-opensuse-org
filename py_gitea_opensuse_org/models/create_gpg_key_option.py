@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class CreateGPGKeyOption(BaseModel):
     """
-    CreateGPGKeyOption options create user GPG key
+    CreateGPGKeyOption options create user GPG key  # noqa: E501
     """
     armored_public_key: StrictStr = Field(..., description="An armored GPG key to add")
     armored_signature: Optional[StrictStr] = None

@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.repository import Repository
 
 class PRBranchInfo(BaseModel):
     """
-    PRBranchInfo information about a branch
+    PRBranchInfo information about a branch  # noqa: E501
     """
     label: Optional[StrictStr] = None
     ref: Optional[StrictStr] = None

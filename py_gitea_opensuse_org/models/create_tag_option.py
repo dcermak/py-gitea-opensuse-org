@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class CreateTagOption(BaseModel):
     """
-    CreateTagOption options when creating a tag
+    CreateTagOption options when creating a tag  # noqa: E501
     """
     message: Optional[StrictStr] = None
     tag_name: StrictStr = Field(...)

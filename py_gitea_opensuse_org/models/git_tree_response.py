@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.git_entry import GitEntry
 
 class GitTreeResponse(BaseModel):
     """
-    GitTreeResponse returns a git tree
+    GitTreeResponse returns a git tree  # noqa: E501
     """
     page: Optional[StrictInt] = None
     sha: Optional[StrictStr] = None

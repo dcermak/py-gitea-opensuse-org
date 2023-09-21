@@ -30,7 +30,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class TimelineComment(BaseModel):
     """
-    TimelineComment represents a timeline comment (comment of any type) on a commit or issue
+    TimelineComment represents a timeline comment (comment of any type) on a commit or issue  # noqa: E501
     """
     assignee: Optional[User] = None
     assignee_team: Optional[Team] = None

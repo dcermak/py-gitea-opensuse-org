@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictInt, StrictStr
 
 class CreatePullReviewComment(BaseModel):
     """
-    CreatePullReviewComment represent a review comment for creation api
+    CreatePullReviewComment represent a review comment for creation api  # noqa: E501
     """
     body: Optional[StrictStr] = None
     new_position: Optional[StrictInt] = Field(None, description="if comment to new file line or 0")

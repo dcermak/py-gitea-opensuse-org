@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class SubmitPullReviewOptions(BaseModel):
     """
-    SubmitPullReviewOptions are options to submit a pending pull review
+    SubmitPullReviewOptions are options to submit a pending pull review  # noqa: E501
     """
     body: Optional[StrictStr] = None
     event: Optional[StrictStr] = Field(None, description="ReviewStateType review state type")

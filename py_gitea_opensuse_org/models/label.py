@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictInt, StrictStr
 
 class Label(BaseModel):
     """
-    Label a label to an issue or a pr
+    Label a label to an issue or a pr  # noqa: E501
     """
     color: Optional[StrictStr] = None
     description: Optional[StrictStr] = None

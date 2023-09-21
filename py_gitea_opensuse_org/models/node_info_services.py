@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr, conlist
 
 class NodeInfoServices(BaseModel):
     """
-    NodeInfoServices contains the third party sites this server can connect to via their application API
+    NodeInfoServices contains the third party sites this server can connect to via their application API  # noqa: E501
     """
     inbound: Optional[conlist(StrictStr)] = None
     outbound: Optional[conlist(StrictStr)] = None

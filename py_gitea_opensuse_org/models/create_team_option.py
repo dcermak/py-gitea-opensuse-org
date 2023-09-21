@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr, conlist, validator
 
 class CreateTeamOption(BaseModel):
     """
-    CreateTeamOption options for creating a team
+    CreateTeamOption options for creating a team  # noqa: E501
     """
     can_create_org_repo: Optional[StrictBool] = None
     description: Optional[StrictStr] = None

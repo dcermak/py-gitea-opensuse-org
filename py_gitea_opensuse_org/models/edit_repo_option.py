@@ -26,7 +26,7 @@ from py_gitea_opensuse_org.models.internal_tracker import InternalTracker
 
 class EditRepoOption(BaseModel):
     """
-    EditRepoOption options when editing a repository's properties
+    EditRepoOption options when editing a repository's properties  # noqa: E501
     """
     allow_manual_merge: Optional[StrictBool] = Field(None, description="either `true` to allow mark pr as merged manually, or `false` to prevent it.")
     allow_merge_commits: Optional[StrictBool] = Field(None, description="either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.")

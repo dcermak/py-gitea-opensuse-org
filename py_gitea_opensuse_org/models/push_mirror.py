@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictStr
 
 class PushMirror(BaseModel):
     """
-    PushMirror represents information of a push mirror
+    PushMirror represents information of a push mirror  # noqa: E501
     """
     created: Optional[StrictStr] = None
     interval: Optional[StrictStr] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt, StrictStr
 
 class StopWatch(BaseModel):
     """
-    StopWatch represent a running stopwatch
+    StopWatch represent a running stopwatch  # noqa: E501
     """
     created: Optional[datetime] = None
     duration: Optional[StrictStr] = None

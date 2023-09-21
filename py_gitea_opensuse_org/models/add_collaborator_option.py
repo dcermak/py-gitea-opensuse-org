@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class AddCollaboratorOption(BaseModel):
     """
-    AddCollaboratorOption options when adding a user as a collaborator of a repository
+    AddCollaboratorOption options when adding a user as a collaborator of a repository  # noqa: E501
     """
     permission: Optional[StrictStr] = None
     __properties = ["permission"]

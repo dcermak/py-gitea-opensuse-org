@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.file_links_response import FileLinksResponse
 
 class ContentsResponse(BaseModel):
     """
-    ContentsResponse contains information about a repo's entry's (dir, file, symlink, submodule) metadata and content
+    ContentsResponse contains information about a repo's entry's (dir, file, symlink, submodule) metadata and content  # noqa: E501
     """
     links: Optional[FileLinksResponse] = Field(None, alias="_links")
     content: Optional[StrictStr] = Field(None, description="`content` is populated when `type` is `file`, otherwise null")

@@ -25,7 +25,7 @@ from py_gitea_opensuse_org.models.repository import Repository
 
 class CombinedStatus(BaseModel):
     """
-    CombinedStatus holds the combined state of several statuses for a single commit
+    CombinedStatus holds the combined state of several statuses for a single commit  # noqa: E501
     """
     commit_url: Optional[StrictStr] = None
     repository: Optional[Repository] = None

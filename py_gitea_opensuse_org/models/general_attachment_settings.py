@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictInt, StrictStr
 
 class GeneralAttachmentSettings(BaseModel):
     """
-    GeneralAttachmentSettings contains global Attachment settings exposed by API
+    GeneralAttachmentSettings contains global Attachment settings exposed by API  # noqa: E501
     """
     allowed_types: Optional[StrictStr] = None
     enabled: Optional[StrictBool] = None

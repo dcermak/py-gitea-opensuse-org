@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
 
 class EditUserOption(BaseModel):
     """
-    EditUserOption edit user options
+    EditUserOption edit user options  # noqa: E501
     """
     active: Optional[StrictBool] = None
     admin: Optional[StrictBool] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt, StrictStr
 
 class GitBlobResponse(BaseModel):
     """
-    GitBlobResponse represents a git blob
+    GitBlobResponse represents a git blob  # noqa: E501
     """
     content: Optional[StrictStr] = None
     encoding: Optional[StrictStr] = None

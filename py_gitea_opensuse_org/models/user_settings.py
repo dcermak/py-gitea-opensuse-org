@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr
 
 class UserSettings(BaseModel):
     """
-    UserSettings represents user settings
+    UserSettings represents user settings  # noqa: E501
     """
     description: Optional[StrictStr] = None
     diff_view_style: Optional[StrictStr] = None

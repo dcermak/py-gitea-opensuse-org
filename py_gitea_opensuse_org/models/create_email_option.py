@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr, conlist
 
 class CreateEmailOption(BaseModel):
     """
-    CreateEmailOption options when creating email addresses
+    CreateEmailOption options when creating email addresses  # noqa: E501
     """
     emails: Optional[conlist(StrictStr)] = Field(None, description="email addresses to add")
     __properties = ["emails"]

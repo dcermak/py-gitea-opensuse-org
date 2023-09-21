@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class CreateForkOption(BaseModel):
     """
-    CreateForkOption options for creating a fork
+    CreateForkOption options for creating a fork  # noqa: E501
     """
     name: Optional[StrictStr] = Field(None, description="name of the forked repository")
     organization: Optional[StrictStr] = Field(None, description="organization name, if forking into an organization")

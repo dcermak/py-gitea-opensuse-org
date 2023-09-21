@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.payload_commit import PayloadCommit
 
 class Branch(BaseModel):
     """
-    Branch represents a repository branch
+    Branch represents a repository branch  # noqa: E501
     """
     commit: Optional[PayloadCommit] = None
     effective_branch_protection_name: Optional[StrictStr] = None

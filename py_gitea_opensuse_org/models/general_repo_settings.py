@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool
 
 class GeneralRepoSettings(BaseModel):
     """
-    GeneralRepoSettings contains global repository settings exposed by API
+    GeneralRepoSettings contains global repository settings exposed by API  # noqa: E501
     """
     http_git_disabled: Optional[StrictBool] = None
     lfs_disabled: Optional[StrictBool] = None

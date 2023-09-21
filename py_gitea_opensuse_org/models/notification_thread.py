@@ -25,7 +25,7 @@ from py_gitea_opensuse_org.models.repository import Repository
 
 class NotificationThread(BaseModel):
     """
-    NotificationThread expose Notification on API
+    NotificationThread expose Notification on API  # noqa: E501
     """
     id: Optional[StrictInt] = None
     pinned: Optional[StrictBool] = None

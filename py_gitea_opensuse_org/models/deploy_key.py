@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.repository import Repository
 
 class DeployKey(BaseModel):
     """
-    DeployKey a deploy key
+    DeployKey a deploy key  # noqa: E501
     """
     created_at: Optional[datetime] = None
     fingerprint: Optional[StrictStr] = None

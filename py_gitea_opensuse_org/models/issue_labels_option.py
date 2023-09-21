@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictInt, conlist
 
 class IssueLabelsOption(BaseModel):
     """
-    IssueLabelsOption a collection of labels
+    IssueLabelsOption a collection of labels  # noqa: E501
     """
     labels: Optional[conlist(StrictInt)] = Field(None, description="list of label IDs")
     __properties = ["labels"]

@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.commit_user import CommitUser
 
 class WikiCommit(BaseModel):
     """
-    WikiCommit page commit/revision
+    WikiCommit page commit/revision  # noqa: E501
     """
     author: Optional[CommitUser] = None
     commiter: Optional[CommitUser] = None

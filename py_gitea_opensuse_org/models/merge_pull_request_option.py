@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr, validator
 
 class MergePullRequestOption(BaseModel):
     """
-    MergePullRequestForm form for merging Pull Request
+    MergePullRequestForm form for merging Pull Request  # noqa: E501
     """
     do: StrictStr = Field(..., alias="Do")
     merge_commit_id: Optional[StrictStr] = Field(None, alias="MergeCommitID")

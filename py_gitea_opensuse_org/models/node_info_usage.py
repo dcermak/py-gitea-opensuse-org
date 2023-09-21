@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.node_info_usage_users import NodeInfoUsageUser
 
 class NodeInfoUsage(BaseModel):
     """
-    NodeInfoUsage contains usage statistics for this server
+    NodeInfoUsage contains usage statistics for this server  # noqa: E501
     """
     local_comments: Optional[StrictInt] = Field(None, alias="localComments")
     local_posts: Optional[StrictInt] = Field(None, alias="localPosts")

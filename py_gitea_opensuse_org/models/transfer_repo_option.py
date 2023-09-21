@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictInt, StrictStr, conlist
 
 class TransferRepoOption(BaseModel):
     """
-    TransferRepoOption options when transfer a repository's ownership
+    TransferRepoOption options when transfer a repository's ownership  # noqa: E501
     """
     new_owner: StrictStr = Field(...)
     team_ids: Optional[conlist(StrictInt)] = Field(None, description="ID of the team or teams to add to the repository. Teams can only be added to organization-owned repositories.")

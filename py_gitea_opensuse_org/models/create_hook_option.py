@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr, conlist, validator
 
 class CreateHookOption(BaseModel):
     """
-    CreateHookOption options when create a hook
+    CreateHookOption options when create a hook  # noqa: E501
     """
     active: Optional[StrictBool] = False
     authorization_header: Optional[StrictStr] = None

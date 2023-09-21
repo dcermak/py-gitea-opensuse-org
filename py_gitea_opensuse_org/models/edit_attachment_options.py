@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class EditAttachmentOptions(BaseModel):
     """
-    EditAttachmentOptions options for editing attachments
+    EditAttachmentOptions options for editing attachments  # noqa: E501
     """
     name: Optional[StrictStr] = None
     __properties = ["name"]

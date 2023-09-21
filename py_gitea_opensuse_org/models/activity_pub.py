@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class ActivityPub(BaseModel):
     """
-    ActivityPub type
+    ActivityPub type  # noqa: E501
     """
     context: Optional[StrictStr] = Field(None, alias="@context")
     __properties = ["@context"]

@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictInt, StrictStr
 
 class PackageFile(BaseModel):
     """
-    PackageFile represents a package file
+    PackageFile represents a package file  # noqa: E501
     """
     size: Optional[StrictInt] = Field(None, alias="Size")
     id: Optional[StrictInt] = None

@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.commit import Commit
 
 class Note(BaseModel):
     """
-    Note contains information related to a git note
+    Note contains information related to a git note  # noqa: E501
     """
     commit: Optional[Commit] = None
     message: Optional[StrictStr] = None

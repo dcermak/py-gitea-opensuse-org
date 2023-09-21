@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.issue_form_field import IssueFormField
 
 class IssueTemplate(BaseModel):
     """
-    IssueTemplate represents an issue template for a repository
+    IssueTemplate represents an issue template for a repository  # noqa: E501
     """
     about: Optional[StrictStr] = None
     body: Optional[conlist(IssueFormField)] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictStr, conlist
 
 class EditHookOption(BaseModel):
     """
-    EditHookOption options when modify one hook
+    EditHookOption options when modify one hook  # noqa: E501
     """
     active: Optional[StrictBool] = None
     authorization_header: Optional[StrictStr] = None

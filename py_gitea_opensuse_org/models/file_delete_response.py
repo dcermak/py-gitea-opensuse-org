@@ -25,7 +25,7 @@ from py_gitea_opensuse_org.models.payload_commit_verification import PayloadComm
 
 class FileDeleteResponse(BaseModel):
     """
-    FileDeleteResponse contains information about a repo's file that was deleted
+    FileDeleteResponse contains information about a repo's file that was deleted  # noqa: E501
     """
     commit: Optional[FileCommitResponse] = None
     content: Optional[Dict[str, Any]] = None

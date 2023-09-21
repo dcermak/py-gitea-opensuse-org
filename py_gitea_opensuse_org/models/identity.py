@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class Identity(BaseModel):
     """
-    Identity for a person's identity like an author or committer
+    Identity for a person's identity like an author or committer  # noqa: E501
     """
     email: Optional[StrictStr] = None
     name: Optional[StrictStr] = None

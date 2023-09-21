@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.wiki_commit import WikiCommit
 
 class WikiPage(BaseModel):
     """
-    WikiPage a wiki page
+    WikiPage a wiki page  # noqa: E501
     """
     commit_count: Optional[StrictInt] = None
     content_base64: Optional[StrictStr] = Field(None, description="Page content, base64 encoded")

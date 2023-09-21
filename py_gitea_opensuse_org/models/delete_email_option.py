@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr, conlist
 
 class DeleteEmailOption(BaseModel):
     """
-    DeleteEmailOption options when deleting email addresses
+    DeleteEmailOption options when deleting email addresses  # noqa: E501
     """
     emails: Optional[conlist(StrictStr)] = Field(None, description="email addresses to delete")
     __properties = ["emails"]

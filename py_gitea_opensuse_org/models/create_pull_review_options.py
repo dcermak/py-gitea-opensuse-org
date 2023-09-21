@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.create_pull_review_comment import CreatePullRe
 
 class CreatePullReviewOptions(BaseModel):
     """
-    CreatePullReviewOptions are options to create a pull review
+    CreatePullReviewOptions are options to create a pull review  # noqa: E501
     """
     body: Optional[StrictStr] = None
     comments: Optional[conlist(CreatePullReviewComment)] = None

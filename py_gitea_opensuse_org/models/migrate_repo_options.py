@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr, validat
 
 class MigrateRepoOptions(BaseModel):
     """
-    MigrateRepoOptions options for migrating repository's this is used to interact with api v1
+    MigrateRepoOptions options for migrating repository's this is used to interact with api v1  # noqa: E501
     """
     auth_password: Optional[StrictStr] = None
     auth_token: Optional[StrictStr] = None

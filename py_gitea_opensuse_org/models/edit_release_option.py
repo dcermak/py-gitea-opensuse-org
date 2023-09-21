@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictStr
 
 class EditReleaseOption(BaseModel):
     """
-    EditReleaseOption options when editing a release
+    EditReleaseOption options when editing a release  # noqa: E501
     """
     body: Optional[StrictStr] = None
     draft: Optional[StrictBool] = None

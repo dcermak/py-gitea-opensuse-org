@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool
 
 class InternalTracker(BaseModel):
     """
-    InternalTracker represents settings for internal tracker
+    InternalTracker represents settings for internal tracker  # noqa: E501
     """
     allow_only_contributors_to_track_time: Optional[StrictBool] = Field(None, description="Let only contributors track time (Built-in issue tracker)")
     enable_issue_dependencies: Optional[StrictBool] = Field(None, description="Enable dependencies for issues and pull requests (Built-in issue tracker)")

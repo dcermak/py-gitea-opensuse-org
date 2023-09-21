@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class PublicKey(BaseModel):
     """
-    PublicKey publickey is a user key to push code to repository
+    PublicKey publickey is a user key to push code to repository  # noqa: E501
     """
     created_at: Optional[datetime] = None
     fingerprint: Optional[StrictStr] = None

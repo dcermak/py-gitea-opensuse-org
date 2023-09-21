@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt, StrictStr
 
 class RepositoryMeta(BaseModel):
     """
-    RepositoryMeta basic repository information
+    RepositoryMeta basic repository information  # noqa: E501
     """
     full_name: Optional[StrictStr] = None
     id: Optional[StrictInt] = None

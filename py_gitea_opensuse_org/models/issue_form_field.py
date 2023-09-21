@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class IssueFormField(BaseModel):
     """
-    IssueFormField represents a form field
+    IssueFormField represents a form field  # noqa: E501
     """
     attributes: Optional[Dict[str, Dict[str, Any]]] = None
     id: Optional[StrictStr] = None

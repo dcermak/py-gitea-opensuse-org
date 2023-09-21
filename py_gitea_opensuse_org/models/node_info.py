@@ -26,7 +26,7 @@ from py_gitea_opensuse_org.models.node_info_usage import NodeInfoUsage
 
 class NodeInfo(BaseModel):
     """
-    NodeInfo contains standardized way of exposing metadata about a server running one of the distributed social networks
+    NodeInfo contains standardized way of exposing metadata about a server running one of the distributed social networks  # noqa: E501
     """
     metadata: Optional[Dict[str, Any]] = None
     open_registrations: Optional[StrictBool] = Field(None, alias="openRegistrations")

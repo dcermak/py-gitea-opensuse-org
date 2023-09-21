@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class PullReviewComment(BaseModel):
     """
-    PullReviewComment represents a comment on a pull request review
+    PullReviewComment represents a comment on a pull request review  # noqa: E501
     """
     body: Optional[StrictStr] = None
     commit_id: Optional[StrictStr] = None

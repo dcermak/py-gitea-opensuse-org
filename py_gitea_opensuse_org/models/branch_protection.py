@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr, conlist
 
 class BranchProtection(BaseModel):
     """
-    BranchProtection represents a branch protection for a repository
+    BranchProtection represents a branch protection for a repository  # noqa: E501
     """
     approvals_whitelist_teams: Optional[conlist(StrictStr)] = None
     approvals_whitelist_username: Optional[conlist(StrictStr)] = None

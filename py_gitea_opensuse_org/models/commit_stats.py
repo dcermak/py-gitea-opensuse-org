@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt
 
 class CommitStats(BaseModel):
     """
-    CommitStats is statistics for a RepoCommit
+    CommitStats is statistics for a RepoCommit  # noqa: E501
     """
     additions: Optional[StrictInt] = None
     deletions: Optional[StrictInt] = None

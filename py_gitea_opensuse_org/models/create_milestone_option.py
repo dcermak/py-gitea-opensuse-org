@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr, validator
 
 class CreateMilestoneOption(BaseModel):
     """
-    CreateMilestoneOption options for creating a milestone
+    CreateMilestoneOption options for creating a milestone  # noqa: E501
     """
     description: Optional[StrictStr] = None
     due_on: Optional[datetime] = None

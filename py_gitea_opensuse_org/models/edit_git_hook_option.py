@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class EditGitHookOption(BaseModel):
     """
-    EditGitHookOption options when modifying one Git hook
+    EditGitHookOption options when modifying one Git hook  # noqa: E501
     """
     content: Optional[StrictStr] = None
     __properties = ["content"]

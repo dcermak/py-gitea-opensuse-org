@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.payload_user import PayloadUser
 
 class PayloadCommitVerification(BaseModel):
     """
-    PayloadCommitVerification represents the GPG verification of a commit
+    PayloadCommitVerification represents the GPG verification of a commit  # noqa: E501
     """
     payload: Optional[StrictStr] = None
     reason: Optional[StrictStr] = None
