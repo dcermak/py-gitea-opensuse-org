@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.commit_meta import CommitMeta
 
 class Tag(BaseModel):
     """
-    Tag represents a repository tag
+    Tag represents a repository tag  # noqa: E501
     """
     commit: Optional[CommitMeta] = None
     id: Optional[StrictStr] = None

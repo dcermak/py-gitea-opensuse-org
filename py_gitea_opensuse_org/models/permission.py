@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool
 
 class Permission(BaseModel):
     """
-    Permission represents a set of permissions
+    Permission represents a set of permissions  # noqa: E501
     """
     admin: Optional[StrictBool] = None
     pull: Optional[StrictBool] = None

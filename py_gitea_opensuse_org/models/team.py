@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.organization import Organization
 
 class Team(BaseModel):
     """
-    Team represents a team in an organization
+    Team represents a team in an organization  # noqa: E501
     """
     can_create_org_repo: Optional[StrictBool] = None
     description: Optional[StrictStr] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictInt, StrictStr, conlist
 
 class EditPullRequestOption(BaseModel):
     """
-    EditPullRequestOption options when modify pull request
+    EditPullRequestOption options when modify pull request  # noqa: E501
     """
     allow_maintainer_edit: Optional[StrictBool] = None
     assignee: Optional[StrictStr] = None

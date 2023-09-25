@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class CreateStatusOption(BaseModel):
     """
-    CreateStatusOption holds the information needed to create a new CommitStatus for a Commit
+    CreateStatusOption holds the information needed to create a new CommitStatus for a Commit  # noqa: E501
     """
     context: Optional[StrictStr] = None
     description: Optional[StrictStr] = None

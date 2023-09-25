@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.wiki_commit import WikiCommit
 
 class WikiPageMetaData(BaseModel):
     """
-    WikiPageMetaData wiki page meta information
+    WikiPageMetaData wiki page meta information  # noqa: E501
     """
     html_url: Optional[StrictStr] = None
     last_commit: Optional[WikiCommit] = None

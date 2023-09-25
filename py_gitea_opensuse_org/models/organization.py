@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
 
 class Organization(BaseModel):
     """
-    Organization represents an organization
+    Organization represents an organization  # noqa: E501
     """
     avatar_url: Optional[StrictStr] = None
     description: Optional[StrictStr] = None

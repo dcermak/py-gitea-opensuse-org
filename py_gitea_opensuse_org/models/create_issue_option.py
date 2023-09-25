@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr, conlist
 
 class CreateIssueOption(BaseModel):
     """
-    CreateIssueOption options to create one issue
+    CreateIssueOption options to create one issue  # noqa: E501
     """
     assignee: Optional[StrictStr] = Field(None, description="deprecated")
     assignees: Optional[conlist(StrictStr)] = None

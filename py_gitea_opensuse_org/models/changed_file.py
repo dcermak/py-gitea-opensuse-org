@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt, StrictStr
 
 class ChangedFile(BaseModel):
     """
-    ChangedFile store information about files affected by the pull request
+    ChangedFile store information about files affected by the pull request  # noqa: E501
     """
     additions: Optional[StrictInt] = None
     changes: Optional[StrictInt] = None

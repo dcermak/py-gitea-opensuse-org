@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class CommitStatus(BaseModel):
     """
-    CommitStatus holds a single status of a single Commit
+    CommitStatus holds a single status of a single Commit  # noqa: E501
     """
     context: Optional[StrictStr] = None
     created_at: Optional[datetime] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class NotificationSubject(BaseModel):
     """
-    NotificationSubject contains the notification subject (Issue/Pull/Commit)
+    NotificationSubject contains the notification subject (Issue/Pull/Commit)  # noqa: E501
     """
     html_url: Optional[StrictStr] = None
     latest_comment_html_url: Optional[StrictStr] = None

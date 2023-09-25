@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class ExternalWiki(BaseModel):
     """
-    ExternalWiki represents setting for external wiki
+    ExternalWiki represents setting for external wiki  # noqa: E501
     """
     external_wiki_url: Optional[StrictStr] = Field(None, description="URL of external wiki.")
     __properties = ["external_wiki_url"]

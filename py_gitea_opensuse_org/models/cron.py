@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt, StrictStr
 
 class Cron(BaseModel):
     """
-    Cron represents a Cron task
+    Cron represents a Cron task  # noqa: E501
     """
     exec_times: Optional[StrictInt] = None
     name: Optional[StrictStr] = None

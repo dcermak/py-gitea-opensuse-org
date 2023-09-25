@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class FileLinksResponse(BaseModel):
     """
-    FileLinksResponse contains the links for a repo's file
+    FileLinksResponse contains the links for a repo's file  # noqa: E501
     """
     git: Optional[StrictStr] = None
     html: Optional[StrictStr] = None

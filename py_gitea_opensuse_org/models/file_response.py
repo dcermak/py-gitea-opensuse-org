@@ -26,7 +26,7 @@ from py_gitea_opensuse_org.models.payload_commit_verification import PayloadComm
 
 class FileResponse(BaseModel):
     """
-    FileResponse contains information about a repo's file
+    FileResponse contains information about a repo's file  # noqa: E501
     """
     commit: Optional[FileCommitResponse] = None
     content: Optional[ContentsResponse] = None

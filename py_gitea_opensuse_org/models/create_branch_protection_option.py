@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr, conlist
 
 class CreateBranchProtectionOption(BaseModel):
     """
-    CreateBranchProtectionOption options for creating a branch protection
+    CreateBranchProtectionOption options for creating a branch protection  # noqa: E501
     """
     approvals_whitelist_teams: Optional[conlist(StrictStr)] = None
     approvals_whitelist_username: Optional[conlist(StrictStr)] = None

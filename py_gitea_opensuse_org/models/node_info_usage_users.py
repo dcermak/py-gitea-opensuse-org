@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictInt
 
 class NodeInfoUsageUsers(BaseModel):
     """
-    NodeInfoUsageUsers contains statistics about the users of this server
+    NodeInfoUsageUsers contains statistics about the users of this server  # noqa: E501
     """
     active_halfyear: Optional[StrictInt] = Field(None, alias="activeHalfyear")
     active_month: Optional[StrictInt] = Field(None, alias="activeMonth")

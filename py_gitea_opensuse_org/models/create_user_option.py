@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
 
 class CreateUserOption(BaseModel):
     """
-    CreateUserOption create user options
+    CreateUserOption create user options  # noqa: E501
     """
     created_at: Optional[datetime] = Field(None, description="For explicitly setting the user creation timestamp. Useful when users are migrated from other systems. When omitted, the user's creation timestamp will be set to \"now\".")
     email: StrictStr = Field(...)

@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class NodeInfoSoftware(BaseModel):
     """
-    NodeInfoSoftware contains Metadata about server software in use
+    NodeInfoSoftware contains Metadata about server software in use  # noqa: E501
     """
     homepage: Optional[StrictStr] = None
     name: Optional[StrictStr] = None

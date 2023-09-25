@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class ServerVersion(BaseModel):
     """
-    ServerVersion wraps the version of the server
+    ServerVersion wraps the version of the server  # noqa: E501
     """
     version: Optional[StrictStr] = None
     __properties = ["version"]

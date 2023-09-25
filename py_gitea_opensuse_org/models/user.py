@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
 
 class User(BaseModel):
     """
-    User represents a user
+    User represents a user  # noqa: E501
     """
     active: Optional[StrictBool] = Field(None, description="Is user active")
     avatar_url: Optional[StrictStr] = Field(None, description="URL to the user's avatar")

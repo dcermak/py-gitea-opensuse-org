@@ -23,7 +23,7 @@ from pydantic import BaseModel
 
 class CommitDateOptions(BaseModel):
     """
-    CommitDateOptions store dates for GIT_AUTHOR_DATE and GIT_COMMITTER_DATE
+    CommitDateOptions store dates for GIT_AUTHOR_DATE and GIT_COMMITTER_DATE  # noqa: E501
     """
     author: Optional[datetime] = None
     committer: Optional[datetime] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt, StrictStr
 
 class Attachment(BaseModel):
     """
-    Attachment a generic attachment
+    Attachment a generic attachment  # noqa: E501
     """
     browser_download_url: Optional[StrictStr] = None
     created_at: Optional[datetime] = None

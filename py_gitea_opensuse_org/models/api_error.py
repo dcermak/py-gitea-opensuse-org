@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class APIError(BaseModel):
     """
-    APIError is an api error with a message
+    APIError is an api error with a message  # noqa: E501
     """
     message: Optional[StrictStr] = None
     url: Optional[StrictStr] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictInt, StrictStr
 
 class Milestone(BaseModel):
     """
-    Milestone milestone is a collection of issues on one repository
+    Milestone milestone is a collection of issues on one repository  # noqa: E501
     """
     closed_at: Optional[datetime] = None
     closed_issues: Optional[StrictInt] = None

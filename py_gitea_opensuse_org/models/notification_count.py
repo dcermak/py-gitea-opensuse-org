@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt
 
 class NotificationCount(BaseModel):
     """
-    NotificationCount number of unread notifications
+    NotificationCount number of unread notifications  # noqa: E501
     """
     new: Optional[StrictInt] = None
     __properties = ["new"]

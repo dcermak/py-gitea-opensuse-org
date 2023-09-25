@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class AnnotatedTagObject(BaseModel):
     """
-    AnnotatedTagObject contains meta information of the tag object
+    AnnotatedTagObject contains meta information of the tag object  # noqa: E501
     """
     sha: Optional[StrictStr] = None
     type: Optional[StrictStr] = None

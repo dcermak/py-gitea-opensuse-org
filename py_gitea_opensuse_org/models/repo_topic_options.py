@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr, conlist
 
 class RepoTopicOptions(BaseModel):
     """
-    RepoTopicOptions a collection of repo topic names
+    RepoTopicOptions a collection of repo topic names  # noqa: E501
     """
     topics: Optional[conlist(StrictStr)] = Field(None, description="list of topic names")
     __properties = ["topics"]

@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr
 
 class GenerateRepoOption(BaseModel):
     """
-    GenerateRepoOption options when creating repository using a template
+    GenerateRepoOption options when creating repository using a template  # noqa: E501
     """
     avatar: Optional[StrictBool] = Field(None, description="include avatar of the template repo")
     default_branch: Optional[StrictStr] = Field(None, description="Default branch of the new repository")

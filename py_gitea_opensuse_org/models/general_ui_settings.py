@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr, conlist
 
 class GeneralUISettings(BaseModel):
     """
-    GeneralUISettings contains global ui settings exposed by API
+    GeneralUISettings contains global ui settings exposed by API  # noqa: E501
     """
     allowed_reactions: Optional[conlist(StrictStr)] = None
     custom_emojis: Optional[conlist(StrictStr)] = None

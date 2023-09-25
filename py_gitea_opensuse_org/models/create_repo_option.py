@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr, validator
 
 class CreateRepoOption(BaseModel):
     """
-    CreateRepoOption options when creating repository
+    CreateRepoOption options when creating repository  # noqa: E501
     """
     auto_init: Optional[StrictBool] = Field(None, description="Whether the repository should be auto-initialized?")
     default_branch: Optional[StrictStr] = Field(None, description="DefaultBranch of the repository (used when initializes and in template)")

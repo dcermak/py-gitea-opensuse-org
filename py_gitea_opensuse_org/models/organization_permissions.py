@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool
 
 class OrganizationPermissions(BaseModel):
     """
-    OrganizationPermissions list different users permissions on an organization
+    OrganizationPermissions list different users permissions on an organization  # noqa: E501
     """
     can_create_repository: Optional[StrictBool] = None
     can_read: Optional[StrictBool] = None

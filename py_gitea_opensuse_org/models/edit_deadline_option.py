@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field
 
 class EditDeadlineOption(BaseModel):
     """
-    EditDeadlineOption options for creating a deadline
+    EditDeadlineOption options for creating a deadline  # noqa: E501
     """
     due_date: datetime = Field(...)
     __properties = ["due_date"]

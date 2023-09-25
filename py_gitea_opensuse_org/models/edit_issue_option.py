@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr, conlist
 
 class EditIssueOption(BaseModel):
     """
-    EditIssueOption options for editing an issue
+    EditIssueOption options for editing an issue  # noqa: E501
     """
     assignee: Optional[StrictStr] = Field(None, description="deprecated")
     assignees: Optional[conlist(StrictStr)] = None

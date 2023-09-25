@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class PayloadUser(BaseModel):
     """
-    PayloadUser represents the author or committer of a commit
+    PayloadUser represents the author or committer of a commit  # noqa: E501
     """
     email: Optional[StrictStr] = None
     name: Optional[StrictStr] = Field(None, description="Full name of the commit author")

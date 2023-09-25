@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt, StrictStr
 
 class GitEntry(BaseModel):
     """
-    GitEntry represents a git tree
+    GitEntry represents a git tree  # noqa: E501
     """
     mode: Optional[StrictStr] = None
     path: Optional[StrictStr] = None

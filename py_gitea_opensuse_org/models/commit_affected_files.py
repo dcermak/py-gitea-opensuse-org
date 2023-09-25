@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class CommitAffectedFiles(BaseModel):
     """
-    CommitAffectedFiles store information about files affected by the commit
+    CommitAffectedFiles store information about files affected by the commit  # noqa: E501
     """
     filename: Optional[StrictStr] = None
     __properties = ["filename"]

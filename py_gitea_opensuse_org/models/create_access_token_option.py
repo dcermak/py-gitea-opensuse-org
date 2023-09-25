@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr, conlist
 
 class CreateAccessTokenOption(BaseModel):
     """
-    CreateAccessTokenOption options when create access token
+    CreateAccessTokenOption options when create access token  # noqa: E501
     """
     name: StrictStr = Field(...)
     scopes: Optional[conlist(StrictStr)] = None

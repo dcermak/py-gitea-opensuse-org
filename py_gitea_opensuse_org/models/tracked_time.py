@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.issue import Issue
 
 class TrackedTime(BaseModel):
     """
-    TrackedTime worked time for an issue / pr
+    TrackedTime worked time for an issue / pr  # noqa: E501
     """
     created: Optional[datetime] = None
     id: Optional[StrictInt] = None

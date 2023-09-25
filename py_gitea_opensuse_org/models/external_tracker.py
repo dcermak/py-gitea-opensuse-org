@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class ExternalTracker(BaseModel):
     """
-    ExternalTracker represents settings for external tracker
+    ExternalTracker represents settings for external tracker  # noqa: E501
     """
     external_tracker_format: Optional[StrictStr] = Field(None, description="External Issue Tracker URL Format. Use the placeholders {user}, {repo} and {index} for the username, repository name and issue index.")
     external_tracker_regexp_pattern: Optional[StrictStr] = Field(None, description="External Issue Tracker issue regular expression")

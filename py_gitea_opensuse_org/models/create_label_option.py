@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr
 
 class CreateLabelOption(BaseModel):
     """
-    CreateLabelOption options for creating a label
+    CreateLabelOption options for creating a label  # noqa: E501
     """
     color: StrictStr = Field(...)
     description: Optional[StrictStr] = None

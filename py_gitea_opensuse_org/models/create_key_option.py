@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr
 
 class CreateKeyOption(BaseModel):
     """
-    CreateKeyOption options when creating a key
+    CreateKeyOption options when creating a key  # noqa: E501
     """
     key: StrictStr = Field(..., description="An armored SSH key to add")
     read_only: Optional[StrictBool] = Field(None, description="Describe if the key has only read access or read/write")

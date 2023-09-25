@@ -29,7 +29,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class Repository(BaseModel):
     """
-    Repository represents a repository
+    Repository represents a repository  # noqa: E501
     """
     allow_merge_commits: Optional[StrictBool] = None
     allow_rebase: Optional[StrictBool] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt, StrictStr, conlist
 
 class CreatePullRequestOption(BaseModel):
     """
-    CreatePullRequestOption options when creating a pull request
+    CreatePullRequestOption options when creating a pull request  # noqa: E501
     """
     assignee: Optional[StrictStr] = None
     assignees: Optional[conlist(StrictStr)] = None

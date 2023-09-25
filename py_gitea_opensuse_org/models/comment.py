@@ -25,7 +25,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class Comment(BaseModel):
     """
-    Comment represents a comment on a commit or issue
+    Comment represents a comment on a commit or issue  # noqa: E501
     """
     assets: Optional[conlist(Attachment)] = None
     body: Optional[StrictStr] = None

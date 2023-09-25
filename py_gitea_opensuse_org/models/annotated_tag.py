@@ -26,7 +26,7 @@ from py_gitea_opensuse_org.models.payload_commit_verification import PayloadComm
 
 class AnnotatedTag(BaseModel):
     """
-    AnnotatedTag represents an annotated tag
+    AnnotatedTag represents an annotated tag  # noqa: E501
     """
     message: Optional[StrictStr] = None
     object: Optional[AnnotatedTagObject] = None

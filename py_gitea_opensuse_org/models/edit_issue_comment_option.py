@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class EditIssueCommentOption(BaseModel):
     """
-    EditIssueCommentOption options for editing a comment
+    EditIssueCommentOption options for editing a comment  # noqa: E501
     """
     body: StrictStr = Field(...)
     __properties = ["body"]

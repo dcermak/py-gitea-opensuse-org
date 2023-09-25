@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr
 
 class EditReactionOption(BaseModel):
     """
-    EditReactionOption contain the reaction type
+    EditReactionOption contain the reaction type  # noqa: E501
     """
     content: Optional[StrictStr] = None
     __properties = ["content"]

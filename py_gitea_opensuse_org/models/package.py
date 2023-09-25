@@ -25,7 +25,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class Package(BaseModel):
     """
-    Package represents a package
+    Package represents a package  # noqa: E501
     """
     created_at: Optional[datetime] = None
     creator: Optional[User] = None

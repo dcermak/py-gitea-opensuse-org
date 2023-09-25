@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictInt, StrictStr
 
 class AddTimeOption(BaseModel):
     """
-    AddTimeOption options for adding time to an issue
+    AddTimeOption options for adding time to an issue  # noqa: E501
     """
     created: Optional[datetime] = None
     time: StrictInt = Field(..., description="time in seconds")

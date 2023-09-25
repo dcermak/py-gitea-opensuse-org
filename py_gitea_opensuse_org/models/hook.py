@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictInt, StrictStr, conlist
 
 class Hook(BaseModel):
     """
-    Hook a hook is a web hook when one repository changed
+    Hook a hook is a web hook when one repository changed  # noqa: E501
     """
     active: Optional[StrictBool] = None
     authorization_header: Optional[StrictStr] = None

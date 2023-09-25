@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictInt
 
 class GeneralAPISettings(BaseModel):
     """
-    GeneralAPISettings contains global api settings exposed by it
+    GeneralAPISettings contains global api settings exposed by it  # noqa: E501
     """
     default_git_trees_per_page: Optional[StrictInt] = None
     default_max_blob_size: Optional[StrictInt] = None

@@ -25,7 +25,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class RepoTransfer(BaseModel):
     """
-    RepoTransfer represents a pending repo transfer
+    RepoTransfer represents a pending repo transfer  # noqa: E501
     """
     doer: Optional[User] = None
     recipient: Optional[User] = None

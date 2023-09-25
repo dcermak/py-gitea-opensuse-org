@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictInt
 
 class UserHeatmapData(BaseModel):
     """
-    UserHeatmapData represents the data needed to create a heatmap
+    UserHeatmapData represents the data needed to create a heatmap  # noqa: E501
     """
     contributions: Optional[StrictInt] = None
     timestamp: Optional[StrictInt] = Field(None, description="TimeStamp defines a timestamp")

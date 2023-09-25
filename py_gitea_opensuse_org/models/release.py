@@ -25,7 +25,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class Release(BaseModel):
     """
-    Release represents a repository release
+    Release represents a repository release  # noqa: E501
     """
     assets: Optional[conlist(Attachment)] = None
     author: Optional[User] = None

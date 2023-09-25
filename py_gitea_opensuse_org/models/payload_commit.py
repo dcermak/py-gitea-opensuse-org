@@ -25,7 +25,7 @@ from py_gitea_opensuse_org.models.payload_user import PayloadUser
 
 class PayloadCommit(BaseModel):
     """
-    PayloadCommit represents a commit
+    PayloadCommit represents a commit  # noqa: E501
     """
     added: Optional[conlist(StrictStr)] = None
     author: Optional[PayloadUser] = None

@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictStr, conlist
 
 class PullReviewRequestOptions(BaseModel):
     """
-    PullReviewRequestOptions are options to add or remove pull review requests
+    PullReviewRequestOptions are options to add or remove pull review requests  # noqa: E501
     """
     reviewers: Optional[conlist(StrictStr)] = None
     team_reviewers: Optional[conlist(StrictStr)] = None

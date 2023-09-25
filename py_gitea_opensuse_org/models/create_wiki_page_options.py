@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictStr
 
 class CreateWikiPageOptions(BaseModel):
     """
-    CreateWikiPageOptions form for creating wiki
+    CreateWikiPageOptions form for creating wiki  # noqa: E501
     """
     content_base64: Optional[StrictStr] = Field(None, description="content must be base64 encoded")
     message: Optional[StrictStr] = Field(None, description="optional commit message summarizing the change")

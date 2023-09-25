@@ -27,7 +27,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class PullRequest(BaseModel):
     """
-    PullRequest represents a pull request
+    PullRequest represents a pull request  # noqa: E501
     """
     allow_maintainer_edit: Optional[StrictBool] = None
     assignee: Optional[User] = None

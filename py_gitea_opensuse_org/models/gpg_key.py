@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.gpg_key_email import GPGKeyEmail
 
 class GPGKey(BaseModel):
     """
-    GPGKey a user GPG key to sign commit and tag in repository
+    GPGKey a user GPG key to sign commit and tag in repository  # noqa: E501
     """
     can_certify: Optional[StrictBool] = None
     can_encrypt_comms: Optional[StrictBool] = None

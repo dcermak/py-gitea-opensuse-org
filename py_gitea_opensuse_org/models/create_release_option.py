@@ -23,7 +23,7 @@ from pydantic import BaseModel, Field, StrictBool, StrictStr
 
 class CreateReleaseOption(BaseModel):
     """
-    CreateReleaseOption options when creating a release
+    CreateReleaseOption options when creating a release  # noqa: E501
     """
     body: Optional[StrictStr] = None
     draft: Optional[StrictBool] = None

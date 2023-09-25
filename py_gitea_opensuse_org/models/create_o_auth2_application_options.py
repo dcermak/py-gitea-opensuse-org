@@ -23,7 +23,7 @@ from pydantic import BaseModel, StrictBool, StrictStr, conlist
 
 class CreateOAuth2ApplicationOptions(BaseModel):
     """
-    CreateOAuth2ApplicationOptions holds options to create an oauth2 application
+    CreateOAuth2ApplicationOptions holds options to create an oauth2 application  # noqa: E501
     """
     confidential_client: Optional[StrictBool] = None
     name: Optional[StrictStr] = None

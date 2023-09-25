@@ -24,7 +24,7 @@ from py_gitea_opensuse_org.models.user import User
 
 class Reaction(BaseModel):
     """
-    Reaction contain one reaction
+    Reaction contain one reaction  # noqa: E501
     """
     content: Optional[StrictStr] = None
     created_at: Optional[datetime] = None
