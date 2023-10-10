@@ -30,6 +30,9 @@ jobs:
               --git-user-id dcermak \
               --additional-properties=packageVersion=$(curl https://src.opensuse.org/swagger.v1.json | jq '.info.version'|sed 's/"//g')
 
+      - name: update poetry lockfile
+        run: poetry lock --no-update
+
       - name: remove unneeded files
         run: rm .gitlab-ci.yml .travis.yml git_push.sh setup.py setup.cfg
 
