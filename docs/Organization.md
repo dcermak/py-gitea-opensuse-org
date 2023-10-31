@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **avatar_url** | **str** |  | [optional] 
 **description** | **str** |  | [optional] 
+**email** | **str** |  | [optional] 
 **full_name** | **str** |  | [optional] 
 **id** | **int** |  | [optional] 
 **location** | **str** |  | [optional] 

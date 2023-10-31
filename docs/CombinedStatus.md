@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **commit_url** | **str** |  | [optional] 
 **repository** | [**Repository**](Repository.md) |  | [optional] 
 **sha** | **str** |  | [optional] 
-**state** | **str** | CommitStatusState holds the state of a CommitStatus It can be \&quot;pending\&quot;, \&quot;success\&quot;, \&quot;error\&quot;, \&quot;failure\&quot;, and \&quot;warning\&quot; | [optional] 
+**state** | **str** | CommitStatusState holds the state of a CommitStatus It can be \&quot;pending\&quot;, \&quot;success\&quot;, \&quot;error\&quot; and \&quot;failure\&quot; | [optional] 
 **statuses** | [**List[CommitStatus]**](CommitStatus.md) |  | [optional] 
 **total_count** | **int** |  | [optional] 
 **url** | **str** |  | [optional] 

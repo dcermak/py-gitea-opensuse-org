@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **description** | **str** |  | [optional] 
 **exclusive** | **bool** |  | [optional] 
 **id** | **int** |  | [optional] 
+**is_archived** | **bool** |  | [optional] 
 **name** | **str** |  | [optional] 
 **url** | **str** |  | [optional] 
 

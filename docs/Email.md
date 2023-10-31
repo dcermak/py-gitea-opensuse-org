@@ -7,6 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **email** | **str** |  | [optional] 
 **primary** | **bool** |  | [optional] 
+**user_id** | **int** |  | [optional] 
+**username** | **str** |  | [optional] 
 **verified** | **bool** |  | [optional] 
 
 ## Example

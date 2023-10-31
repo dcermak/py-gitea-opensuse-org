@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **active** | **bool** |  | [optional] 
 **authorization_header** | **str** |  | [optional] 
+**branch_filter** | **str** |  | [optional] 
 **config** | **Dict[str, str]** |  | [optional] 
 **created_at** | **datetime** |  | [optional] 
 **events** | **List[str]** |  | [optional] 

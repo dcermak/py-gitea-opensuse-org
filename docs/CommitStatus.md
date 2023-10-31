@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **creator** | [**User**](User.md) |  | [optional] 
 **description** | **str** |  | [optional] 
 **id** | **int** |  | [optional] 
-**status** | **str** | CommitStatusState holds the state of a CommitStatus It can be \&quot;pending\&quot;, \&quot;success\&quot;, \&quot;error\&quot;, \&quot;failure\&quot;, and \&quot;warning\&quot; | [optional] 
+**status** | **str** | CommitStatusState holds the state of a CommitStatus It can be \&quot;pending\&quot;, \&quot;success\&quot;, \&quot;error\&quot; and \&quot;failure\&quot; | [optional] 
 **target_url** | **str** |  | [optional] 
 **updated_at** | **datetime** |  | [optional] 
 **url** | **str** |  | [optional] 

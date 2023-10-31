@@ -6,6 +6,7 @@ EditOrgOption options for editing an organization
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **str** |  | [optional] 
+**email** | **str** |  | [optional] 
 **full_name** | **str** |  | [optional] 
 **location** | **str** |  | [optional] 
 **repo_admin_change_team_access** | **bool** |  | [optional] 

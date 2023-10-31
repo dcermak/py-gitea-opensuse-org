@@ -29,6 +29,8 @@ Name | Type | Description | Notes
 **milestone** | [**Milestone**](Milestone.md) |  | [optional] 
 **number** | **int** |  | [optional] 
 **patch_url** | **str** |  | [optional] 
+**pin_order** | **int** |  | [optional] 
+**requested_reviewers** | [**List[User]**](User.md) |  | [optional] 
 **state** | **str** | StateType issue state type | [optional] 
 **title** | **str** |  | [optional] 
 **updated_at** | **datetime** |  | [optional] 
