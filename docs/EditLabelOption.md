@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **color** | **str** |  | [optional] 
 **description** | **str** |  | [optional] 
 **exclusive** | **bool** |  | [optional] 
+**is_archived** | **bool** |  | [optional] 
 **name** | **str** |  | [optional] 
 
 ## Example
