@@ -225,9 +225,6 @@ class Repository(BaseModel):
         })
         return _obj
 
-from typing import TYPE_CHECKING
-if TYPE_CHECKING:
-    # TODO: pydantic v2
-    # Repository.model_rebuild()
-    pass
+# TODO: Rewrite to not use raise_errors
+Repository.model_rebuild(raise_errors=False)
 

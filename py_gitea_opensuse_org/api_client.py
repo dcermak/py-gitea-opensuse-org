@@ -299,23 +299,22 @@ class ApiClient:
             # if not found, look for '1XX', '2XX', etc.
             response_type = response_types_map.get(str(response_data.status)[0] + "XX", None)
 
-        if response_type is None:
-            if not 200 <= response_data.status <= 299:
-                if response_data.status == 400:
-                    raise BadRequestException(http_resp=response_data)
+        if not 200 <= response_data.status <= 299:
+            if response_data.status == 400:
+                raise BadRequestException(http_resp=response_data)
 
-                if response_data.status == 401:
-                    raise UnauthorizedException(http_resp=response_data)
+            if response_data.status == 401:
+                raise UnauthorizedException(http_resp=response_data)
 
-                if response_data.status == 403:
-                    raise ForbiddenException(http_resp=response_data)
+            if response_data.status == 403:
+                raise ForbiddenException(http_resp=response_data)
 
-                if response_data.status == 404:
-                    raise NotFoundException(http_resp=response_data)
+            if response_data.status == 404:
+                raise NotFoundException(http_resp=response_data)
 
-                if 500 <= response_data.status <= 599:
-                    raise ServiceException(http_resp=response_data)
-                raise ApiException(http_resp=response_data)
+            if 500 <= response_data.status <= 599:
+                raise ServiceException(http_resp=response_data)
+            raise ApiException(http_resp=response_data)
 
         # deserialize response data
 
@@ -483,10 +482,10 @@ class ApiClient:
         if collection_formats is None:
             collection_formats = {}
         for k, v in params.items() if isinstance(params, dict) else params:
-            if isinstance(v, (int, float)):
-                v = str(v)
             if isinstance(v, bool):
                 v = str(v).lower()
+            if isinstance(v, (int, float)):
+                v = str(v)
             if isinstance(v, dict):
                 v = json.dumps(v)
 

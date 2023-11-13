@@ -123,9 +123,6 @@ class GPGKey(BaseModel):
         })
         return _obj
 
-from typing import TYPE_CHECKING
-if TYPE_CHECKING:
-    # TODO: pydantic v2
-    # GPGKey.model_rebuild()
-    pass
+# TODO: Rewrite to not use raise_errors
+GPGKey.model_rebuild(raise_errors=False)
 
