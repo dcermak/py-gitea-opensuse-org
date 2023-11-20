@@ -3,6 +3,7 @@
 ChangeFileOperation for creating, updating or deleting a file
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **content** | **str** | new or updated file content, must be base64 encoded | [optional] 

@@ -3,6 +3,7 @@
 ExternalWiki represents setting for external wiki
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **external_wiki_url** | **str** | URL of external wiki. | [optional] 

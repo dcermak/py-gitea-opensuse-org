@@ -3,6 +3,7 @@
 PayloadCommitVerification represents the GPG verification of a commit
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **payload** | **str** |  | [optional] 

@@ -3,6 +3,7 @@
 Tag represents a repository tag
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commit** | [**CommitMeta**](CommitMeta.md) |  | [optional] 

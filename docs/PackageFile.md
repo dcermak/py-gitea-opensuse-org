@@ -3,6 +3,7 @@
 PackageFile represents a package file
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **size** | **int** |  | [optional] 

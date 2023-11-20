@@ -3,6 +3,7 @@
 LabelTemplate info of a Label template
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **color** | **str** |  | [optional] 

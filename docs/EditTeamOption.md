@@ -3,6 +3,7 @@
 EditTeamOption options for editing a team
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **can_create_org_repo** | **bool** |  | [optional] 

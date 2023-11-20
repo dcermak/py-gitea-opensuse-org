@@ -3,6 +3,7 @@
 GeneralAPISettings contains global api settings exposed by it
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **default_git_trees_per_page** | **int** |  | [optional] 

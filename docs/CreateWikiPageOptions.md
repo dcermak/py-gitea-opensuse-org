@@ -3,6 +3,7 @@
 CreateWikiPageOptions form for creating wiki
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **content_base64** | **str** | content must be base64 encoded | [optional] 

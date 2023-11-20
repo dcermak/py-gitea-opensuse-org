@@ -3,6 +3,7 @@
 Permission represents a set of permissions
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **admin** | **bool** |  | [optional] 

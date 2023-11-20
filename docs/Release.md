@@ -3,6 +3,7 @@
 Release represents a repository release
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **assets** | [**List[Attachment]**](Attachment.md) |  | [optional] 

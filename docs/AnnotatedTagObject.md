@@ -3,6 +3,7 @@
 AnnotatedTagObject contains meta information of the tag object
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **sha** | **str** |  | [optional] 

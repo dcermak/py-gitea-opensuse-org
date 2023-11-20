@@ -3,6 +3,7 @@
 GitHook represents a Git repository hook
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **content** | **str** |  | [optional] 

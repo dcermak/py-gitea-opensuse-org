@@ -3,6 +3,7 @@
 GPGKey a user GPG key to sign commit and tag in repository
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **can_certify** | **bool** |  | [optional] 

@@ -3,6 +3,7 @@
 CombinedStatus holds the combined state of several statuses for a single commit
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commit_url** | **str** |  | [optional] 

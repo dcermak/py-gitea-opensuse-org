@@ -3,6 +3,7 @@
 PayloadUser represents the author or committer of a commit
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **email** | **str** |  | [optional] 

@@ -3,6 +3,7 @@
 EditPullRequestOption options when modify pull request
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **allow_maintainer_edit** | **bool** |  | [optional] 

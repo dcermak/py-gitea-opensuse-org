@@ -3,6 +3,7 @@
 CreateReleaseOption options when creating a release
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **body** | **str** |  | [optional] 

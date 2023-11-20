@@ -3,6 +3,7 @@
 PullReview represents a pull request review
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **body** | **str** |  | [optional] 

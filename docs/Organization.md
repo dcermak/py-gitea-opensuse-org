@@ -3,6 +3,7 @@
 Organization represents an organization
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **avatar_url** | **str** |  | [optional] 

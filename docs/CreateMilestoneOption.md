@@ -3,6 +3,7 @@
 CreateMilestoneOption options for creating a milestone
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **str** |  | [optional] 

@@ -3,6 +3,7 @@
 RepoTopicOptions a collection of repo topic names
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **topics** | **List[str]** | list of topic names | [optional] 

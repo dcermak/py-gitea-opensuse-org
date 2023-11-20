@@ -3,6 +3,7 @@
 NotificationThread expose Notification on API
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional] 

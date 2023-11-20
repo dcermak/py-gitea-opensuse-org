@@ -3,6 +3,7 @@
 EditAttachmentOptions options for editing attachments
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** |  | [optional] 

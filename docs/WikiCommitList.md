@@ -3,6 +3,7 @@
 WikiCommitList commit/revision list
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commits** | [**List[WikiCommit]**](WikiCommit.md) |  | [optional] 

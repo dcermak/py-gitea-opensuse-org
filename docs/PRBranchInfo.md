@@ -3,6 +3,7 @@
 PRBranchInfo information about a branch
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **label** | **str** |  | [optional] 

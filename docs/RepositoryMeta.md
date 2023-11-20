@@ -3,6 +3,7 @@
 RepositoryMeta basic repository information
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **full_name** | **str** |  | [optional] 

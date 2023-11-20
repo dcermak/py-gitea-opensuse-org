@@ -3,6 +3,7 @@
 UserSettingsOptions represents options to change user settings
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **str** |  | [optional] 

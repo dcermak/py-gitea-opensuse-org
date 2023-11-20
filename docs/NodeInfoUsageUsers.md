@@ -3,6 +3,7 @@
 NodeInfoUsageUsers contains statistics about the users of this server
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **active_halfyear** | **int** |  | [optional] 

@@ -3,6 +3,7 @@
 EditReleaseOption options when editing a release
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **body** | **str** |  | [optional] 

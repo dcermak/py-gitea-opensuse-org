@@ -3,6 +3,7 @@
 WikiPage a wiki page
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commit_count** | **int** |  | [optional] 

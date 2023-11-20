@@ -3,6 +3,7 @@
 NotificationCount number of unread notifications
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **new** | **int** |  | [optional] 

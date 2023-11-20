@@ -3,6 +3,7 @@
 WikiPageMetaData wiki page meta information
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **html_url** | **str** |  | [optional] 

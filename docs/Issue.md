@@ -3,6 +3,7 @@
 Issue represents an issue in a repository
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **assets** | [**List[Attachment]**](Attachment.md) |  | [optional] 

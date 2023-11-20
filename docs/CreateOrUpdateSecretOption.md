@@ -3,6 +3,7 @@
 CreateOrUpdateSecretOption options when creating or updating secret
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **data** | **str** | Data of the secret to update | 

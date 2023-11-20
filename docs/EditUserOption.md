@@ -3,6 +3,7 @@
 EditUserOption edit user options
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **active** | **bool** |  | [optional] 

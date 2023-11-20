@@ -3,6 +3,7 @@
 UserHeatmapData represents the data needed to create a heatmap
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **contributions** | **int** |  | [optional] 

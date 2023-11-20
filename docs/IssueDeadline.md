@@ -3,6 +3,7 @@
 IssueDeadline represents an issue deadline
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **due_date** | **datetime** |  | [optional] 

@@ -3,6 +3,7 @@
 CreateRepoOption options when creating repository
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **auto_init** | **bool** | Whether the repository should be auto-initialized? | [optional] 

@@ -3,6 +3,7 @@
 Branch represents a repository branch
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commit** | [**PayloadCommit**](PayloadCommit.md) |  | [optional] 

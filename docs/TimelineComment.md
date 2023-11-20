@@ -3,6 +3,7 @@
 TimelineComment represents a timeline comment (comment of any type) on a commit or issue
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **assignee** | [**User**](User.md) |  | [optional] 

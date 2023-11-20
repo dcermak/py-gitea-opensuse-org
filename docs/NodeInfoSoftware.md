@@ -3,6 +3,7 @@
 NodeInfoSoftware contains Metadata about server software in use
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **homepage** | **str** |  | [optional] 

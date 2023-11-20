@@ -3,6 +3,7 @@
 NotificationSubject contains the notification subject (Issue/Pull/Commit)
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **html_url** | **str** |  | [optional] 

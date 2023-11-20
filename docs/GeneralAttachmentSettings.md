@@ -3,6 +3,7 @@
 GeneralAttachmentSettings contains global Attachment settings exposed by API
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **allowed_types** | **str** |  | [optional] 

@@ -3,6 +3,7 @@
 GenerateRepoOption options when creating repository using a template
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **avatar** | **bool** | include avatar of the template repo | [optional] 

@@ -3,6 +3,7 @@
 CreateOrgOption options for creating an organization
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **str** |  | [optional] 
