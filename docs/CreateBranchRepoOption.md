@@ -3,6 +3,7 @@
 CreateBranchRepoOption options when creating a branch in a repository
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **new_branch_name** | **str** | Name of the branch to create | 

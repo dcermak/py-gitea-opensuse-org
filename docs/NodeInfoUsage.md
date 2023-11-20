@@ -3,6 +3,7 @@
 NodeInfoUsage contains usage statistics for this server
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **local_comments** | **int** |  | [optional] 

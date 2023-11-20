@@ -3,6 +3,7 @@
 IssueMeta basic issue information
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **index** | **int** |  | [optional] 

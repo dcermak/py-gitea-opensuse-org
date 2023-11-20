@@ -3,6 +3,7 @@
 MergePullRequestForm form for merging Pull Request
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **do** | **str** |  | 

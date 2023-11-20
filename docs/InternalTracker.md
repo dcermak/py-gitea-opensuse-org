@@ -3,6 +3,7 @@
 InternalTracker represents settings for internal tracker
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **allow_only_contributors_to_track_time** | **bool** | Let only contributors track time (Built-in issue tracker) | [optional] 

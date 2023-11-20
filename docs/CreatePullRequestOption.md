@@ -3,6 +3,7 @@
 CreatePullRequestOption options when creating a pull request
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **assignee** | **str** |  | [optional] 

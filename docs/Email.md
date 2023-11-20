@@ -3,6 +3,7 @@
 Email an email address belonging to a user
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **email** | **str** |  | [optional] 

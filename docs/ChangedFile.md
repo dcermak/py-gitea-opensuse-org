@@ -3,6 +3,7 @@
 ChangedFile store information about files affected by the pull request
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **additions** | **int** |  | [optional] 

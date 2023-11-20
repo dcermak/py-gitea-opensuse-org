@@ -3,6 +3,7 @@
 CommitStatus holds a single status of a single Commit
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **context** | **str** |  | [optional] 

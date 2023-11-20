@@ -3,6 +3,7 @@
 Label a label to an issue or a pr
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **color** | **str** |  | [optional] 

@@ -3,6 +3,7 @@
 Repository represents a repository
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **allow_merge_commits** | **bool** |  | [optional] 

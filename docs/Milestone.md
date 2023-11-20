@@ -3,6 +3,7 @@
 Milestone milestone is a collection of issues on one repository
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **closed_at** | **datetime** |  | [optional] 

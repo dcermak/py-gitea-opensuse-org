@@ -3,6 +3,7 @@
 CreatePullReviewComment represent a review comment for creation api
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **body** | **str** |  | [optional] 

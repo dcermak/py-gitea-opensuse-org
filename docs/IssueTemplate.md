@@ -3,6 +3,7 @@
 IssueTemplate represents an issue template for a repository
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **about** | **str** |  | [optional] 

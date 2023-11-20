@@ -3,6 +3,7 @@
 AddTimeOption options for adding time to an issue
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **datetime** |  | [optional] 

@@ -3,6 +3,7 @@
 ContentsResponse contains information about a repo's entry's (dir, file, symlink, submodule) metadata and content
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **links** | [**FileLinksResponse**](FileLinksResponse.md) |  | [optional] 

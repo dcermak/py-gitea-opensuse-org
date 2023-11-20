@@ -3,6 +3,7 @@
 LicensesInfo contains information about a License
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **body** | **str** |  | [optional] 

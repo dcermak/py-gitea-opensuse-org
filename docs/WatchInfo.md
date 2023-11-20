@@ -3,6 +3,7 @@
 WatchInfo represents an API watch status of one repository
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created_at** | **datetime** |  | [optional] 

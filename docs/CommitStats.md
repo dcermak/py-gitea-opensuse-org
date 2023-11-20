@@ -3,6 +3,7 @@
 CommitStats is statistics for a RepoCommit
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **additions** | **int** |  | [optional] 

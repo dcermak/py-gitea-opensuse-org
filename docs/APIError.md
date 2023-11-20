@@ -3,6 +3,7 @@
 APIError is an api error with a message
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **message** | **str** |  | [optional] 

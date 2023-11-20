@@ -3,6 +3,7 @@
 CreateEmailOption options when creating email addresses
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **emails** | **List[str]** | email addresses to add | [optional] 

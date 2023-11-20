@@ -3,6 +3,7 @@
 LicensesListEntry is used for the API
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **key** | **str** |  | [optional] 

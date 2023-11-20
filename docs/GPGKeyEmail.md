@@ -3,6 +3,7 @@
 GPGKeyEmail an email attached to a GPGKey
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **email** | **str** |  | [optional] 

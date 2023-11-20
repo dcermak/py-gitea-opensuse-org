@@ -3,6 +3,7 @@
 TransferRepoOption options when transfer a repository's ownership
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **new_owner** | **str** |  | 

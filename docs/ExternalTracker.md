@@ -3,6 +3,7 @@
 ExternalTracker represents settings for external tracker
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **external_tracker_format** | **str** | External Issue Tracker URL Format. Use the placeholders {user}, {repo} and {index} for the username, repository name and issue index. | [optional] 

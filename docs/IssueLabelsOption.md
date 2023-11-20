@@ -3,6 +3,7 @@
 IssueLabelsOption a collection of labels
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **labels** | **List[int]** | list of label IDs | [optional] 

@@ -3,6 +3,7 @@
 CreateStatusOption holds the information needed to create a new CommitStatus for a Commit
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **context** | **str** |  | [optional] 

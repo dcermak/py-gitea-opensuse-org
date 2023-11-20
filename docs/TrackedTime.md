@@ -3,6 +3,7 @@
 TrackedTime worked time for an issue / pr
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **datetime** |  | [optional] 

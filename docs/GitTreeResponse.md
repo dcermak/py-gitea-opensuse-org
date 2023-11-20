@@ -3,6 +3,7 @@
 GitTreeResponse returns a git tree
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **page** | **int** |  | [optional] 

@@ -3,6 +3,7 @@
 EditLabelOption options for editing a label
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **color** | **str** |  | [optional] 

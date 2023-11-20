@@ -3,6 +3,7 @@
 GitEntry represents a git tree
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **mode** | **str** |  | [optional] 

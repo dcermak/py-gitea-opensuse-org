@@ -3,6 +3,7 @@
 Comment represents a comment on a commit or issue
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **assets** | [**List[Attachment]**](Attachment.md) |  | [optional] 

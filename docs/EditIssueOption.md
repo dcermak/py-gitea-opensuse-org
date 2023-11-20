@@ -3,6 +3,7 @@
 EditIssueOption options for editing an issue
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **assignee** | **str** | deprecated | [optional] 

@@ -3,6 +3,7 @@
 OrganizationPermissions list different users permissions on an organization
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **can_create_repository** | **bool** |  | [optional] 

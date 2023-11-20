@@ -3,6 +3,7 @@
 GeneralRepoSettings contains global repository settings exposed by API
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **http_git_disabled** | **bool** |  | [optional] 

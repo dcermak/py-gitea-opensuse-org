@@ -3,6 +3,7 @@
 CreateGPGKeyOption options create user GPG key
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **armored_public_key** | **str** | An armored GPG key to add | 

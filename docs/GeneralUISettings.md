@@ -3,6 +3,7 @@
 GeneralUISettings contains global ui settings exposed by API
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **allowed_reactions** | **List[str]** |  | [optional] 

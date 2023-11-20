@@ -3,6 +3,7 @@
 RepoCollaboratorPermission to get repository permission for a collaborator
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **permission** | **str** |  | [optional] 

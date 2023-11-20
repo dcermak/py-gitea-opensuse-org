@@ -3,6 +3,7 @@
 NodeInfoServices contains the third party sites this server can connect to via their application API
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **inbound** | **List[str]** |  | [optional] 

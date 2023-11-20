@@ -3,6 +3,7 @@
 UpdateRepoAvatarUserOption options when updating the repo avatar
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **image** | **str** | image must be base64 encoded | [optional] 

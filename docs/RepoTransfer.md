@@ -3,6 +3,7 @@
 RepoTransfer represents a pending repo transfer
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **doer** | [**User**](User.md) |  | [optional] 

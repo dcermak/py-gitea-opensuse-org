@@ -3,6 +3,7 @@
 EditReactionOption contain the reaction type
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **content** | **str** |  | [optional] 

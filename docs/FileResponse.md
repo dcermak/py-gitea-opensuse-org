@@ -3,6 +3,7 @@
 FileResponse contains information about a repo's file
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commit** | [**FileCommitResponse**](FileCommitResponse.md) |  | [optional] 

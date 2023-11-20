@@ -3,6 +3,7 @@
 EditBranchProtectionOption options for editing a branch protection
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **approvals_whitelist_teams** | **List[str]** |  | [optional] 

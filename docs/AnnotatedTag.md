@@ -3,6 +3,7 @@
 AnnotatedTag represents an annotated tag
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **message** | **str** |  | [optional] 

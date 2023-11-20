@@ -3,6 +3,7 @@
 PushMirror represents information of a push mirror
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **str** |  | [optional] 

@@ -3,6 +3,7 @@
 CreateBranchProtectionOption options for creating a branch protection
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **approvals_whitelist_teams** | **List[str]** |  | [optional] 

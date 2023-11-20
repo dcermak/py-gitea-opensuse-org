@@ -3,6 +3,7 @@
 User represents a user
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **active** | **bool** | Is user active | [optional] 

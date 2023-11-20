@@ -3,6 +3,7 @@
 Attachment a generic attachment
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **browser_download_url** | **str** |  | [optional] 

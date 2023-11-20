@@ -3,6 +3,7 @@
 NodeInfo contains standardized way of exposing metadata about a server running one of the distributed social networks
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **metadata** | **object** |  | [optional] 

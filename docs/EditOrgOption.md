@@ -3,6 +3,7 @@
 EditOrgOption options for editing an organization
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **str** |  | [optional] 

@@ -3,6 +3,7 @@
 CreateForkOption options for creating a fork
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | name of the forked repository | [optional] 

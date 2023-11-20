@@ -3,6 +3,7 @@
 CreateOAuth2ApplicationOptions holds options to create an oauth2 application
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **confidential_client** | **bool** |  | [optional] 

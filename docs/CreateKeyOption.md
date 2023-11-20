@@ -3,6 +3,7 @@
 CreateKeyOption options when creating a key
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **key** | **str** | An armored SSH key to add | 

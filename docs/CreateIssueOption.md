@@ -3,6 +3,7 @@
 CreateIssueOption options to create one issue
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **assignee** | **str** | deprecated | [optional] 

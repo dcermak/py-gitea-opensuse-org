@@ -3,6 +3,7 @@
 BranchProtection represents a branch protection for a repository
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **approvals_whitelist_teams** | **List[str]** |  | [optional] 

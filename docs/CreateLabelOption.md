@@ -3,6 +3,7 @@
 CreateLabelOption options for creating a label
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **color** | **str** |  | 

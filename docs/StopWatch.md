@@ -3,6 +3,7 @@
 StopWatch represent a running stopwatch
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **datetime** |  | [optional] 
