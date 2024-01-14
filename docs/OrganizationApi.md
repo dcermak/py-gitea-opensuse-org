@@ -71,8 +71,6 @@ Create a repository in an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_repo_option import CreateRepoOption
 from py_gitea_opensuse_org.models.repository import Repository
@@ -198,8 +196,6 @@ Create a repository in an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_repo_option import CreateRepoOption
 from py_gitea_opensuse_org.models.repository import Repository
@@ -325,8 +321,6 @@ Delete a secret in an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -447,8 +441,6 @@ Add a team member
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -568,8 +560,6 @@ Add a repository to a team
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -692,8 +682,6 @@ Conceal a user's membership
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -814,8 +802,6 @@ Create an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_org_option import CreateOrgOption
 from py_gitea_opensuse_org.models.organization import Organization
@@ -938,8 +924,6 @@ Create a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_hook_option import CreateHookOption
 from py_gitea_opensuse_org.models.hook import Hook
@@ -1063,8 +1047,6 @@ Create a label for an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_label_option import CreateLabelOption
 from py_gitea_opensuse_org.models.label import Label
@@ -1189,8 +1171,6 @@ Create a team
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_team_option import CreateTeamOption
 from py_gitea_opensuse_org.models.team import Team
@@ -1315,8 +1295,6 @@ Delete an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1434,8 +1412,6 @@ Delete Avatar
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1553,8 +1529,6 @@ Delete a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1674,8 +1648,6 @@ Delete a label
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1795,8 +1767,6 @@ Remove a member from an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1916,8 +1886,6 @@ Delete a team
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2035,8 +2003,6 @@ Edit an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_org_option import EditOrgOption
 from py_gitea_opensuse_org.models.organization import Organization
@@ -2160,8 +2126,6 @@ Update a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_hook_option import EditHookOption
 from py_gitea_opensuse_org.models.hook import Hook
@@ -2287,8 +2251,6 @@ Update a label
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_label_option import EditLabelOption
 from py_gitea_opensuse_org.models.label import Label
@@ -2415,8 +2377,6 @@ Edit a team
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_team_option import EditTeamOption
 from py_gitea_opensuse_org.models.team import Team
@@ -2540,8 +2500,6 @@ Get an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.organization import Organization
 from py_gitea_opensuse_org.rest import ApiException
@@ -2662,8 +2620,6 @@ Get list of organizations
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.organization import Organization
 from py_gitea_opensuse_org.rest import ApiException
@@ -2785,8 +2741,6 @@ Get a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.hook import Hook
 from py_gitea_opensuse_org.rest import ApiException
@@ -2909,8 +2863,6 @@ Get a single label
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.label import Label
 from py_gitea_opensuse_org.rest import ApiException
@@ -3033,8 +2985,6 @@ Get a team
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.team import Team
 from py_gitea_opensuse_org.rest import ApiException
@@ -3155,8 +3105,6 @@ Get user permissions in organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.organization_permissions import OrganizationPermissions
 from py_gitea_opensuse_org.rest import ApiException
@@ -3280,8 +3228,6 @@ Check if a user is a member of an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -3402,8 +3348,6 @@ Check if a user is a public member of an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -3523,8 +3467,6 @@ List an organization's actions secrets
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.secret import Secret
 from py_gitea_opensuse_org.rest import ApiException
@@ -3649,8 +3591,6 @@ List an organization's activity feeds
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.activity import Activity
 from py_gitea_opensuse_org.rest import ApiException
@@ -3777,8 +3717,6 @@ List the current user's organizations
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.organization import Organization
 from py_gitea_opensuse_org.rest import ApiException
@@ -3901,8 +3839,6 @@ List an organization's webhooks
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.hook import Hook
 from py_gitea_opensuse_org.rest import ApiException
@@ -4027,8 +3963,6 @@ List an organization's labels
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.label import Label
 from py_gitea_opensuse_org.rest import ApiException
@@ -4153,8 +4087,6 @@ List an organization's members
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -4279,8 +4211,6 @@ List an organization's public members
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -4405,8 +4335,6 @@ List an organization's repos
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -4531,8 +4459,6 @@ List a team's activity feeds
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.activity import Activity
 from py_gitea_opensuse_org.rest import ApiException
@@ -4659,8 +4585,6 @@ List a particular member of team
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -4783,8 +4707,6 @@ List a team's members
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -4909,8 +4831,6 @@ List a particular repo of team
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -5035,8 +4955,6 @@ List a team's repos
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -5161,8 +5079,6 @@ List an organization's teams
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.team import Team
 from py_gitea_opensuse_org.rest import ApiException
@@ -5287,8 +5203,6 @@ List a user's organizations
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.organization import Organization
 from py_gitea_opensuse_org.rest import ApiException
@@ -5413,8 +5327,6 @@ Publicize a user's membership
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -5535,8 +5447,6 @@ Remove a team member
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -5658,8 +5568,6 @@ This does not delete the repository, it only removes the repository from the tea
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -5782,8 +5690,6 @@ Update Avatar
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.update_user_avatar_option import UpdateUserAvatarOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -5904,8 +5810,6 @@ Search for teams within an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.team_search200_response import TeamSearch200Response
 from py_gitea_opensuse_org.rest import ApiException
@@ -6034,8 +5938,6 @@ Create or Update a secret value in an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_or_update_secret_option import CreateOrUpdateSecretOption
 from py_gitea_opensuse_org.rest import ApiException
