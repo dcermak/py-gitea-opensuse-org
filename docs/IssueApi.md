@@ -89,8 +89,6 @@ Add a label to an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue_labels_option import IssueLabelsOption
 from py_gitea_opensuse_org.models.label import Label
@@ -219,8 +217,6 @@ Subscribe user to issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -346,8 +342,6 @@ Add tracked time to a issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.add_time_option import AddTimeOption
 from py_gitea_opensuse_org.models.tracked_time import TrackedTime
@@ -477,8 +471,6 @@ Check if user is subscribed to an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.watch_info import WatchInfo
 from py_gitea_opensuse_org.rest import ApiException
@@ -603,8 +595,6 @@ Remove all labels from an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -727,8 +717,6 @@ Add a comment to an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.comment import Comment
 from py_gitea_opensuse_org.models.create_issue_comment_option import CreateIssueCommentOption
@@ -857,8 +845,6 @@ Create an issue. If using deadline only the date will be taken into account, and
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_issue_option import CreateIssueOption
 from py_gitea_opensuse_org.models.issue import Issue
@@ -987,8 +973,6 @@ Create an issue attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.rest import ApiException
@@ -1118,8 +1102,6 @@ Block the issue given in the body by the issue in path
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue import Issue
 from py_gitea_opensuse_org.models.issue_meta import IssueMeta
@@ -1247,8 +1229,6 @@ Create a comment attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.rest import ApiException
@@ -1378,8 +1358,6 @@ Make the issue in the url depend on the issue in the form.
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue import Issue
 from py_gitea_opensuse_org.models.issue_meta import IssueMeta
@@ -1507,8 +1485,6 @@ Create a label
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_label_option import CreateLabelOption
 from py_gitea_opensuse_org.models.label import Label
@@ -1635,8 +1611,6 @@ Create a milestone
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_milestone_option import CreateMilestoneOption
 from py_gitea_opensuse_org.models.milestone import Milestone
@@ -1762,8 +1736,6 @@ Delete an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1886,8 +1858,6 @@ Delete a comment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2010,8 +1980,6 @@ Delete a comment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2136,8 +2104,6 @@ Remove a reaction from a comment of an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_reaction_option import EditReactionOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -2263,8 +2229,6 @@ Delete an issue attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2388,8 +2352,6 @@ Delete a comment attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2513,8 +2475,6 @@ Remove a reaction from an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_reaction_option import EditReactionOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -2640,8 +2600,6 @@ Delete a label
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2763,8 +2721,6 @@ Delete a milestone
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2886,8 +2842,6 @@ Delete an issue's existing stopwatch.
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -3011,8 +2965,6 @@ Unsubscribe user from issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -3138,8 +3090,6 @@ Delete specific tracked time
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -3265,8 +3215,6 @@ Edit a comment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.comment import Comment
 from py_gitea_opensuse_org.models.edit_issue_comment_option import EditIssueCommentOption
@@ -3396,8 +3344,6 @@ Edit a comment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.comment import Comment
 from py_gitea_opensuse_org.models.edit_issue_comment_option import EditIssueCommentOption
@@ -3529,8 +3475,6 @@ Edit an issue. If using deadline only the date will be taken into account, and t
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_issue_option import EditIssueOption
 from py_gitea_opensuse_org.models.issue import Issue
@@ -3660,8 +3604,6 @@ Edit an issue attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.models.edit_attachment_options import EditAttachmentOptions
@@ -3791,8 +3733,6 @@ Edit a comment attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.models.edit_attachment_options import EditAttachmentOptions
@@ -3922,8 +3862,6 @@ Set an issue deadline. If set to null, the deadline is deleted. If using deadlin
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_deadline_option import EditDeadlineOption
 from py_gitea_opensuse_org.models.issue_deadline import IssueDeadline
@@ -4052,8 +3990,6 @@ Update a label
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_label_option import EditLabelOption
 from py_gitea_opensuse_org.models.label import Label
@@ -4182,8 +4118,6 @@ Update a milestone
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_milestone_option import EditMilestoneOption
 from py_gitea_opensuse_org.models.milestone import Milestone
@@ -4311,8 +4245,6 @@ Get a comment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.comment import Comment
 from py_gitea_opensuse_org.rest import ApiException
@@ -4439,8 +4371,6 @@ Get a list of reactions from a comment of an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.reaction import Reaction
 from py_gitea_opensuse_org.rest import ApiException
@@ -4566,8 +4496,6 @@ List all comments on an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.comment import Comment
 from py_gitea_opensuse_org.rest import ApiException
@@ -4696,8 +4624,6 @@ List all comments and events on an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.timeline_comment import TimelineComment
 from py_gitea_opensuse_org.rest import ApiException
@@ -4830,8 +4756,6 @@ Get an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue import Issue
 from py_gitea_opensuse_org.rest import ApiException
@@ -4956,8 +4880,6 @@ Get an issue attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.rest import ApiException
@@ -5084,8 +5006,6 @@ Get a comment attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.rest import ApiException
@@ -5212,8 +5132,6 @@ Get a list reactions of an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.reaction import Reaction
 from py_gitea_opensuse_org.rest import ApiException
@@ -5343,8 +5261,6 @@ Get a single label
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.label import Label
 from py_gitea_opensuse_org.rest import ApiException
@@ -5469,8 +5385,6 @@ Get an issue's labels
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.label import Label
 from py_gitea_opensuse_org.rest import ApiException
@@ -5595,8 +5509,6 @@ Get a milestone
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.milestone import Milestone
 from py_gitea_opensuse_org.rest import ApiException
@@ -5721,8 +5633,6 @@ Get all of a repository's opened milestones
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.milestone import Milestone
 from py_gitea_opensuse_org.rest import ApiException
@@ -5853,8 +5763,6 @@ List all comments in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.comment import Comment
 from py_gitea_opensuse_org.rest import ApiException
@@ -5985,8 +5893,6 @@ List issues that are blocked by this issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue import Issue
 from py_gitea_opensuse_org.rest import ApiException
@@ -6115,8 +6021,6 @@ List issue's attachments
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.rest import ApiException
@@ -6241,8 +6145,6 @@ List comment's attachments
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.rest import ApiException
@@ -6367,8 +6269,6 @@ List an issue's dependencies, i.e all issues that block this issue.
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue import Issue
 from py_gitea_opensuse_org.rest import ApiException
@@ -6497,8 +6397,6 @@ List a repository's issues
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue import Issue
 from py_gitea_opensuse_org.rest import ApiException
@@ -6645,8 +6543,6 @@ Get all of a repository's labels
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.label import Label
 from py_gitea_opensuse_org.rest import ApiException
@@ -6773,8 +6669,6 @@ Add a reaction to a comment of an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_reaction_option import EditReactionOption
 from py_gitea_opensuse_org.models.reaction import Reaction
@@ -6904,8 +6798,6 @@ Add a reaction to an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_reaction_option import EditReactionOption
 from py_gitea_opensuse_org.models.reaction import Reaction
@@ -7035,8 +6927,6 @@ Unblock the issue given in the body by the issue in path
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue import Issue
 from py_gitea_opensuse_org.models.issue_meta import IssueMeta
@@ -7164,8 +7054,6 @@ Remove an issue dependency
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue import Issue
 from py_gitea_opensuse_org.models.issue_meta import IssueMeta
@@ -7293,8 +7181,6 @@ Remove a label from an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -7420,8 +7306,6 @@ Replace an issue's labels
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue_labels_option import IssueLabelsOption
 from py_gitea_opensuse_org.models.label import Label
@@ -7550,8 +7434,6 @@ Reset a tracked time of an issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -7675,8 +7557,6 @@ Search for issues across the repositories that the user has access to
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue import Issue
 from py_gitea_opensuse_org.rest import ApiException
@@ -7828,8 +7708,6 @@ Start stopwatch on an issue.
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -7953,8 +7831,6 @@ Stop an issue's existing stopwatch.
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -8078,8 +7954,6 @@ Get users who subscribed on an issue.
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -8208,8 +8082,6 @@ List an issue's tracked times
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.tracked_time import TrackedTime
 from py_gitea_opensuse_org.rest import ApiException
@@ -8344,8 +8216,6 @@ Moves the Pin to the given Position
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -8470,8 +8340,6 @@ Pin an Issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -8594,8 +8462,6 @@ Unpin an Issue
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint

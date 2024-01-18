@@ -26,8 +26,6 @@ Delete a package
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -151,8 +149,6 @@ Gets a package
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.package import Package
 from py_gitea_opensuse_org.rest import ApiException
@@ -279,8 +275,6 @@ Gets all files of a package
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.package_file import PackageFile
 from py_gitea_opensuse_org.rest import ApiException
@@ -407,8 +401,6 @@ Gets all packages of an owner
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.package import Package
 from py_gitea_opensuse_org.rest import ApiException

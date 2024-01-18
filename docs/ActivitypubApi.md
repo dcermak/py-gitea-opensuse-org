@@ -24,8 +24,6 @@ Returns the Person actor for a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.activity_pub import ActivityPub
 from py_gitea_opensuse_org.rest import ApiException
@@ -145,8 +143,6 @@ Send to the inbox
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint

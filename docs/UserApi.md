@@ -82,8 +82,6 @@ Create a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_repo_option import CreateRepoOption
 from py_gitea_opensuse_org.models.repository import Repository
@@ -207,8 +205,6 @@ Delete a secret in a user scope
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -327,8 +323,6 @@ Get user settings
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user_settings import UserSettings
 from py_gitea_opensuse_org.rest import ApiException
@@ -444,8 +438,6 @@ Get a Token to verify
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -561,8 +553,6 @@ Create or Update a secret value in a user scope
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_or_update_secret_option import CreateOrUpdateSecretOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -685,8 +675,6 @@ Update user settings
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user_settings import UserSettings
 from py_gitea_opensuse_org.models.user_settings_options import UserSettingsOptions
@@ -807,8 +795,6 @@ Add email addresses
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_email_option import CreateEmailOption
 from py_gitea_opensuse_org.models.email import Email
@@ -930,8 +916,6 @@ Check if one user is following another user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1051,8 +1035,6 @@ Create a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_hook_option import CreateHookOption
 from py_gitea_opensuse_org.models.hook import Hook
@@ -1173,8 +1155,6 @@ creates a new OAuth2 application
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_o_auth2_application_options import CreateOAuth2ApplicationOptions
 from py_gitea_opensuse_org.models.o_auth2_application import OAuth2Application
@@ -1296,8 +1276,6 @@ Create an access token
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.access_token import AccessToken
 from py_gitea_opensuse_org.models.create_access_token_option import CreateAccessTokenOption
@@ -1422,8 +1400,6 @@ Check whether a user is followed by the authenticated user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1541,8 +1517,6 @@ Whether the authenticated is starring the repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1662,8 +1636,6 @@ Unfollow a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1781,8 +1753,6 @@ Remove a GPG key
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1901,8 +1871,6 @@ Delete a public key
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2021,8 +1989,6 @@ Unstar the given repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2142,8 +2108,6 @@ Get a GPG key
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.gpg_key import GPGKey
 from py_gitea_opensuse_org.rest import ApiException
@@ -2264,8 +2228,6 @@ Get a public key
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.public_key import PublicKey
 from py_gitea_opensuse_org.rest import ApiException
@@ -2386,8 +2348,6 @@ List the authenticated user's followers
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -2509,8 +2469,6 @@ List the users that the authenticated user is following
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -2632,8 +2590,6 @@ List the authenticated user's GPG keys
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.gpg_key import GPGKey
 from py_gitea_opensuse_org.rest import ApiException
@@ -2755,8 +2711,6 @@ List the authenticated user's public keys
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.public_key import PublicKey
 from py_gitea_opensuse_org.rest import ApiException
@@ -2880,8 +2834,6 @@ List the repos that the authenticated user owns
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -3003,8 +2955,6 @@ The repos that the authenticated user has starred
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -3126,8 +3076,6 @@ List repositories watched by the authenticated user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -3249,8 +3197,6 @@ Create a GPG key
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_gpg_key_option import CreateGPGKeyOption
 from py_gitea_opensuse_org.models.gpg_key import GPGKey
@@ -3373,8 +3319,6 @@ Create a public key
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_key_option import CreateKeyOption
 from py_gitea_opensuse_org.models.public_key import PublicKey
@@ -3496,8 +3440,6 @@ Follow a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -3615,8 +3557,6 @@ Star the given repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -3736,8 +3676,6 @@ List the current user's tracked times
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.tracked_time import TrackedTime
 from py_gitea_opensuse_org.rest import ApiException
@@ -3863,8 +3801,6 @@ delete an access token
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -3986,8 +3922,6 @@ Delete Avatar
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -4100,8 +4034,6 @@ Delete email addresses
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.delete_email_option import DeleteEmailOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -4220,8 +4152,6 @@ Delete a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -4338,8 +4268,6 @@ delete an OAuth2 Application
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -4457,8 +4385,6 @@ Update a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_hook_option import EditHookOption
 from py_gitea_opensuse_org.models.hook import Hook
@@ -4581,8 +4507,6 @@ Get a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -4703,8 +4627,6 @@ Get the authenticated user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -4820,8 +4742,6 @@ Get a user's heatmap
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user_heatmap_data import UserHeatmapData
 from py_gitea_opensuse_org.rest import ApiException
@@ -4942,8 +4862,6 @@ Get a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.hook import Hook
 from py_gitea_opensuse_org.rest import ApiException
@@ -5063,8 +4981,6 @@ get an OAuth2 Application
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.o_auth2_application import OAuth2Application
 from py_gitea_opensuse_org.rest import ApiException
@@ -5185,8 +5101,6 @@ List the authenticated user's oauth2 applications
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.o_auth2_application import OAuth2Application
 from py_gitea_opensuse_org.rest import ApiException
@@ -5308,8 +5222,6 @@ Get list of all existing stopwatches
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.stop_watch import StopWatch
 from py_gitea_opensuse_org.rest import ApiException
@@ -5431,8 +5343,6 @@ List the authenticated user's access tokens
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.access_token import AccessToken
 from py_gitea_opensuse_org.rest import ApiException
@@ -5557,8 +5467,6 @@ List a user's activity feeds
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.activity import Activity
 from py_gitea_opensuse_org.rest import ApiException
@@ -5687,8 +5595,6 @@ List the authenticated user's email addresses
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.email import Email
 from py_gitea_opensuse_org.rest import ApiException
@@ -5804,8 +5710,6 @@ List the given user's followers
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -5930,8 +5834,6 @@ List the users that the given user is following
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -6056,8 +5958,6 @@ List the given user's GPG keys
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.gpg_key import GPGKey
 from py_gitea_opensuse_org.rest import ApiException
@@ -6182,8 +6082,6 @@ List the authenticated user's webhooks
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.hook import Hook
 from py_gitea_opensuse_org.rest import ApiException
@@ -6305,8 +6203,6 @@ List the given user's public keys
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.public_key import PublicKey
 from py_gitea_opensuse_org.rest import ApiException
@@ -6433,8 +6329,6 @@ List the repos owned by the given user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -6559,8 +6453,6 @@ The repos that the given user has starred
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -6685,8 +6577,6 @@ List the repositories watched by a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -6811,8 +6701,6 @@ List all the teams a user belongs to
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.team import Team
 from py_gitea_opensuse_org.rest import ApiException
@@ -6934,8 +6822,6 @@ Search for users
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user_search200_response import UserSearch200Response
 from py_gitea_opensuse_org.rest import ApiException
@@ -7061,8 +6947,6 @@ Update Avatar
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.update_user_avatar_option import UpdateUserAvatarOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -7180,8 +7064,6 @@ update an OAuth2 Application, this includes regenerating the client secret
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_o_auth2_application_options import CreateOAuth2ApplicationOptions
 from py_gitea_opensuse_org.models.o_auth2_application import OAuth2Application
@@ -7305,8 +7187,6 @@ Verify a GPG key
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.gpg_key import GPGKey
 from py_gitea_opensuse_org.rest import ApiException

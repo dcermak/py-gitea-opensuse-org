@@ -26,8 +26,6 @@ Get instance's global settings for api
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.general_api_settings import GeneralAPISettings
 from py_gitea_opensuse_org.rest import ApiException
@@ -143,8 +141,6 @@ Get instance's global settings for Attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.general_attachment_settings import GeneralAttachmentSettings
 from py_gitea_opensuse_org.rest import ApiException
@@ -260,8 +256,6 @@ Get instance's global settings for repositories
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.general_repo_settings import GeneralRepoSettings
 from py_gitea_opensuse_org.rest import ApiException
@@ -377,8 +371,6 @@ Get instance's global settings for ui
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.general_ui_settings import GeneralUISettings
 from py_gitea_opensuse_org.rest import ApiException

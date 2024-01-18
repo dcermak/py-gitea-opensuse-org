@@ -44,8 +44,6 @@ Adopt unadopted files as a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -166,8 +164,6 @@ Create a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_hook_option import CreateHookOption
 from py_gitea_opensuse_org.models.hook import Hook
@@ -288,8 +284,6 @@ Create an organization
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_org_option import CreateOrgOption
 from py_gitea_opensuse_org.models.organization import Organization
@@ -414,8 +408,6 @@ Add a public key on behalf of a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_key_option import CreateKeyOption
 from py_gitea_opensuse_org.models.public_key import PublicKey
@@ -540,8 +532,6 @@ Create a repository on behalf of a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_repo_option import CreateRepoOption
 from py_gitea_opensuse_org.models.repository import Repository
@@ -669,8 +659,6 @@ Create a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_user_option import CreateUserOption
 from py_gitea_opensuse_org.models.user import User
@@ -794,8 +782,6 @@ List cron tasks
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.cron import Cron
 from py_gitea_opensuse_org.rest import ApiException
@@ -918,8 +904,6 @@ Run cron task
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1037,8 +1021,6 @@ Delete a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1155,8 +1137,6 @@ Delete unadopted files
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1276,8 +1256,6 @@ Delete a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1399,8 +1377,6 @@ Delete a user's public key
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1521,8 +1497,6 @@ Update a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_hook_option import EditHookOption
 from py_gitea_opensuse_org.models.hook import Hook
@@ -1645,8 +1619,6 @@ Edit an existing user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_user_option import EditUserOption
 from py_gitea_opensuse_org.models.user import User
@@ -1771,8 +1743,6 @@ List all emails
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.email import Email
 from py_gitea_opensuse_org.rest import ApiException
@@ -1895,8 +1865,6 @@ List all organizations
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.organization import Organization
 from py_gitea_opensuse_org.rest import ApiException
@@ -2019,8 +1987,6 @@ Get a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.hook import Hook
 from py_gitea_opensuse_org.rest import ApiException
@@ -2140,8 +2106,6 @@ List system's webhooks
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.hook import Hook
 from py_gitea_opensuse_org.rest import ApiException
@@ -2263,8 +2227,6 @@ Rename a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.rename_user_option import RenameUserOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -2386,8 +2348,6 @@ Search all emails
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.email import Email
 from py_gitea_opensuse_org.rest import ApiException
@@ -2512,8 +2472,6 @@ Search users according filter conditions
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -2640,8 +2598,6 @@ List unadopted repositories
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint

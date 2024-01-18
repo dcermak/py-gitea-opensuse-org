@@ -34,8 +34,6 @@ Returns information about a gitignore template
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.gitignore_template_info import GitignoreTemplateInfo
 from py_gitea_opensuse_org.rest import ApiException
@@ -156,8 +154,6 @@ Returns all labels in a template
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.label_template import LabelTemplate
 from py_gitea_opensuse_org.rest import ApiException
@@ -278,8 +274,6 @@ Returns information about a license template
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.license_template_info import LicenseTemplateInfo
 from py_gitea_opensuse_org.rest import ApiException
@@ -400,8 +394,6 @@ Returns the nodeinfo of the Gitea application
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.node_info import NodeInfo
 from py_gitea_opensuse_org.rest import ApiException
@@ -517,8 +509,6 @@ Get default signing-key.gpg
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -633,8 +623,6 @@ Returns the version of the Gitea application
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.server_version import ServerVersion
 from py_gitea_opensuse_org.rest import ApiException
@@ -750,8 +738,6 @@ Returns a list of all gitignore templates
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -866,8 +852,6 @@ Returns a list of all label templates
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -982,8 +966,6 @@ Returns a list of all license templates
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.licenses_template_list_entry import LicensesTemplateListEntry
 from py_gitea_opensuse_org.rest import ApiException
@@ -1099,8 +1081,6 @@ Render a markdown document as HTML
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.markdown_option import MarkdownOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -1221,8 +1201,6 @@ Render raw markdown as HTML
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1342,8 +1320,6 @@ Render a markup document as HTML
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.markup_option import MarkupOption
 from py_gitea_opensuse_org.rest import ApiException

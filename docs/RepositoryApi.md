@@ -168,8 +168,6 @@ Accept a repo transfer
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -293,8 +291,6 @@ Create a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_repo_option import CreateRepoOption
 from py_gitea_opensuse_org.models.repository import Repository
@@ -418,8 +414,6 @@ Fork a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_fork_option import CreateForkOption
 from py_gitea_opensuse_org.models.repository import Repository
@@ -548,8 +542,6 @@ Delete a secret in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -672,8 +664,6 @@ Create a repository using a template
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.generate_repo_option import GenerateRepoOption
 from py_gitea_opensuse_org.models.repository import Repository
@@ -802,8 +792,6 @@ Gets the tag object of an annotated tag (not lightweight tags)
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.annotated_tag import AnnotatedTag
 from py_gitea_opensuse_org.rest import ApiException
@@ -929,8 +917,6 @@ Gets the blob of a repository.
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.git_blob_response import GitBlobResponse
 from py_gitea_opensuse_org.rest import ApiException
@@ -1056,8 +1042,6 @@ Gets the tree of a repository.
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.git_tree_response import GitTreeResponse
 from py_gitea_opensuse_org.rest import ApiException
@@ -1189,8 +1173,6 @@ List a repository's forks
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -1317,8 +1299,6 @@ Reject a repo transfer
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -1442,8 +1422,6 @@ Add a collaborator to a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.add_collaborator_option import AddCollaboratorOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -1569,8 +1547,6 @@ add a push mirror to the repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_push_mirror_option import CreatePushMirrorOption
 from py_gitea_opensuse_org.models.push_mirror import PushMirror
@@ -1698,8 +1674,6 @@ Add a team to a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1823,8 +1797,6 @@ Add a topic to a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -1947,8 +1919,6 @@ Apply diff patch to repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.file_response import FileResponse
 from py_gitea_opensuse_org.models.update_file_options import UpdateFileOptions
@@ -2074,8 +2044,6 @@ Cancel the scheduled auto merge for the given pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2198,8 +2166,6 @@ Modify multiple files in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.change_files_options import ChangeFilesOptions
 from py_gitea_opensuse_org.models.files_response import FilesResponse
@@ -2327,8 +2293,6 @@ Check if a user is a collaborator of a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -2451,8 +2415,6 @@ Check if a team is assigned to a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.team import Team
 from py_gitea_opensuse_org.rest import ApiException
@@ -2578,8 +2540,6 @@ Create a branch
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.branch import Branch
 from py_gitea_opensuse_org.models.create_branch_repo_option import CreateBranchRepoOption
@@ -2707,8 +2667,6 @@ Create a branch protections for a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.branch_protection import BranchProtection
 from py_gitea_opensuse_org.models.create_branch_protection_option import CreateBranchProtectionOption
@@ -2836,8 +2794,6 @@ Create a file in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_file_options import CreateFileOptions
 from py_gitea_opensuse_org.models.file_response import FileResponse
@@ -2967,8 +2923,6 @@ Create a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_hook_option import CreateHookOption
 from py_gitea_opensuse_org.models.hook import Hook
@@ -3094,8 +3048,6 @@ Add a key to a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_key_option import CreateKeyOption
 from py_gitea_opensuse_org.models.deploy_key import DeployKey
@@ -3222,8 +3174,6 @@ Create a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_pull_request_option import CreatePullRequestOption
 from py_gitea_opensuse_org.models.pull_request import PullRequest
@@ -3351,8 +3301,6 @@ Create a review to an pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_pull_review_options import CreatePullReviewOptions
 from py_gitea_opensuse_org.models.pull_review import PullReview
@@ -3481,8 +3429,6 @@ create review requests for a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pull_review import PullReview
 from py_gitea_opensuse_org.models.pull_review_request_options import PullReviewRequestOptions
@@ -3611,8 +3557,6 @@ Create a release
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_release_option import CreateReleaseOption
 from py_gitea_opensuse_org.models.release import Release
@@ -3739,8 +3683,6 @@ Create a release attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.rest import ApiException
@@ -3870,8 +3812,6 @@ Create a commit status
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.commit_status import CommitStatus
 from py_gitea_opensuse_org.models.create_status_option import CreateStatusOption
@@ -4000,8 +3940,6 @@ Create a new git tag in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_tag_option import CreateTagOption
 from py_gitea_opensuse_org.models.tag import Tag
@@ -4129,8 +4067,6 @@ Create a wiki page
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_wiki_page_options import CreateWikiPageOptions
 from py_gitea_opensuse_org.models.wiki_page import WikiPage
@@ -4258,8 +4194,6 @@ Delete a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -4380,8 +4314,6 @@ Delete avatar
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -4501,8 +4433,6 @@ Delete a specific branch from a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -4625,8 +4555,6 @@ Delete a specific branch protection for the repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -4748,8 +4676,6 @@ Delete a collaborator from a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -4872,8 +4798,6 @@ Delete a file in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.delete_file_options import DeleteFileOptions
 from py_gitea_opensuse_org.models.file_delete_response import FileDeleteResponse
@@ -5003,8 +4927,6 @@ Delete a Git hook in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -5126,8 +5048,6 @@ Delete a hook in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -5249,8 +5169,6 @@ Delete a key from a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -5373,8 +5291,6 @@ Delete a specific review from a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -5499,8 +5415,6 @@ cancel review requests for a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pull_review_request_options import PullReviewRequestOptions
 from py_gitea_opensuse_org.rest import ApiException
@@ -5626,8 +5540,6 @@ deletes a push mirror from a repository by remoteName
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -5750,8 +5662,6 @@ Delete a release
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -5874,8 +5784,6 @@ Delete a release attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -5999,8 +5907,6 @@ Delete a release by tag name
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -6123,8 +6029,6 @@ Delete a repository's tag by name
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -6248,8 +6152,6 @@ Delete a team from a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -6373,8 +6275,6 @@ Delete a topic from a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -6497,8 +6397,6 @@ Delete a wiki page
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -6621,8 +6519,6 @@ Dismiss a review for a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.dismiss_pull_review_options import DismissPullReviewOptions
 from py_gitea_opensuse_org.models.pull_review import PullReview
@@ -6754,8 +6650,6 @@ Get a commit's diff or patch
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -6881,8 +6775,6 @@ Get a pull request diff or patch
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -7010,8 +6902,6 @@ Edit a repository's properties. Only fields that are set will be changed.
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_repo_option import EditRepoOption
 from py_gitea_opensuse_org.models.repository import Repository
@@ -7139,8 +7029,6 @@ Edit a branch protections for a repository. Only fields that are set will be cha
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.branch_protection import BranchProtection
 from py_gitea_opensuse_org.models.edit_branch_protection_option import EditBranchProtectionOption
@@ -7269,8 +7157,6 @@ Edit a Git hook in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_git_hook_option import EditGitHookOption
 from py_gitea_opensuse_org.models.git_hook import GitHook
@@ -7398,8 +7284,6 @@ Edit a hook in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_hook_option import EditHookOption
 from py_gitea_opensuse_org.models.hook import Hook
@@ -7527,8 +7411,6 @@ Update a pull request. If using deadline only the date will be taken into accoun
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_pull_request_option import EditPullRequestOption
 from py_gitea_opensuse_org.models.pull_request import PullRequest
@@ -7660,8 +7542,6 @@ Update a release
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.edit_release_option import EditReleaseOption
 from py_gitea_opensuse_org.models.release import Release
@@ -7789,8 +7669,6 @@ Edit a release attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.models.edit_attachment_options import EditAttachmentOptions
@@ -7920,8 +7798,6 @@ Edit a wiki page
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_wiki_page_options import CreateWikiPageOptions
 from py_gitea_opensuse_org.models.wiki_page import WikiPage
@@ -8051,8 +7927,6 @@ Get a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -8175,8 +8049,6 @@ Get a list of all commits from a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.commit import Commit
 from py_gitea_opensuse_org.rest import ApiException
@@ -8316,8 +8188,6 @@ Get an archive of a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -8439,8 +8309,6 @@ Return all users that have write access and can be assigned to issues
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -8563,8 +8431,6 @@ Retrieve a specific branch from a repository, including its effective branch pro
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.branch import Branch
 from py_gitea_opensuse_org.rest import ApiException
@@ -8689,8 +8555,6 @@ Get a specific branch protection for the repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.branch_protection import BranchProtection
 from py_gitea_opensuse_org.rest import ApiException
@@ -8815,8 +8679,6 @@ Get a repository by id
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.rest import ApiException
@@ -8937,8 +8799,6 @@ Get a commit's combined status, by branch/tag/commit reference
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.combined_status import CombinedStatus
 from py_gitea_opensuse_org.rest import ApiException
@@ -9068,8 +8928,6 @@ Gets the metadata and contents (if a file) of an entry in a repository, or a lis
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.contents_response import ContentsResponse
 from py_gitea_opensuse_org.rest import ApiException
@@ -9196,8 +9054,6 @@ Gets the metadata of all the entries of the root dir
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.contents_response import ContentsResponse
 from py_gitea_opensuse_org.rest import ApiException
@@ -9322,8 +9178,6 @@ Get the EditorConfig definitions of a file in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -9447,8 +9301,6 @@ Get a Git hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.git_hook import GitHook
 from py_gitea_opensuse_org.rest import ApiException
@@ -9573,8 +9425,6 @@ Get a hook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.hook import Hook
 from py_gitea_opensuse_org.rest import ApiException
@@ -9699,8 +9549,6 @@ Returns the issue config for a repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue_config import IssueConfig
 from py_gitea_opensuse_org.rest import ApiException
@@ -9823,8 +9671,6 @@ Get available issue templates for a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue_template import IssueTemplate
 from py_gitea_opensuse_org.rest import ApiException
@@ -9947,8 +9793,6 @@ Get a repository's key by id
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.deploy_key import DeployKey
 from py_gitea_opensuse_org.rest import ApiException
@@ -10073,8 +9917,6 @@ Get languages and number of bytes of code written
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -10196,8 +10038,6 @@ Gets the most recent non-prerelease, non-draft release of a repository, sorted b
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.release import Release
 from py_gitea_opensuse_org.rest import ApiException
@@ -10320,8 +10160,6 @@ Get a note corresponding to a single commit from a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.note import Note
 from py_gitea_opensuse_org.rest import ApiException
@@ -10451,8 +10289,6 @@ Get a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pull_request import PullRequest
 from py_gitea_opensuse_org.rest import ApiException
@@ -10577,8 +10413,6 @@ Get commits for a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.commit import Commit
 from py_gitea_opensuse_org.rest import ApiException
@@ -10711,8 +10545,6 @@ Get changed files for a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.changed_file import ChangedFile
 from py_gitea_opensuse_org.rest import ApiException
@@ -10845,8 +10677,6 @@ Get a specific review for a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pull_review import PullReview
 from py_gitea_opensuse_org.rest import ApiException
@@ -10973,8 +10803,6 @@ Get a specific review for a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pull_review_comment import PullReviewComment
 from py_gitea_opensuse_org.rest import ApiException
@@ -11101,8 +10929,6 @@ Get push mirror of the repository by remoteName
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.push_mirror import PushMirror
 from py_gitea_opensuse_org.rest import ApiException
@@ -11229,8 +11055,6 @@ Get a file from a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -11354,8 +11178,6 @@ Get a file or it's LFS object from a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -11479,8 +11301,6 @@ Get a release
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.release import Release
 from py_gitea_opensuse_org.rest import ApiException
@@ -11605,8 +11425,6 @@ Get a release attachment
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.rest import ApiException
@@ -11733,8 +11551,6 @@ Get a release by tag name
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.release import Release
 from py_gitea_opensuse_org.rest import ApiException
@@ -11859,8 +11675,6 @@ Get repository permissions for a user
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repo_collaborator_permission import RepoCollaboratorPermission
 from py_gitea_opensuse_org.rest import ApiException
@@ -11986,8 +11800,6 @@ Return all users that can be requested to review in this repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -12110,8 +11922,6 @@ Get a single commit from a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.commit import Commit
 from py_gitea_opensuse_org.rest import ApiException
@@ -12243,8 +12053,6 @@ Get the tag of a repository by tag name
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.tag import Tag
 from py_gitea_opensuse_org.rest import ApiException
@@ -12369,8 +12177,6 @@ Get a wiki page
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.wiki_page import WikiPage
 from py_gitea_opensuse_org.rest import ApiException
@@ -12495,8 +12301,6 @@ Get revisions of a wiki page
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.wiki_commit_list import WikiCommitList
 from py_gitea_opensuse_org.rest import ApiException
@@ -12623,8 +12427,6 @@ Get all wiki pages
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.wiki_page_meta_data import WikiPageMetaData
 from py_gitea_opensuse_org.rest import ApiException
@@ -12751,8 +12553,6 @@ List a repository's activity feeds
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.activity import Activity
 from py_gitea_opensuse_org.rest import ApiException
@@ -12881,8 +12681,6 @@ Get specified ref or filtered repository's refs
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.reference import Reference
 from py_gitea_opensuse_org.rest import ApiException
@@ -13005,8 +12803,6 @@ List branch protections for a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.branch_protection import BranchProtection
 from py_gitea_opensuse_org.rest import ApiException
@@ -13128,8 +12924,6 @@ List a repository's branches
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.branch import Branch
 from py_gitea_opensuse_org.rest import ApiException
@@ -13255,8 +13049,6 @@ List a repository's collaborators
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -13383,8 +13175,6 @@ List the Git hooks in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.git_hook import GitHook
 from py_gitea_opensuse_org.rest import ApiException
@@ -13507,8 +13297,6 @@ Get specified ref or filtered repository's refs
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.reference import Reference
 from py_gitea_opensuse_org.rest import ApiException
@@ -13633,8 +13421,6 @@ List the hooks in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.hook import Hook
 from py_gitea_opensuse_org.rest import ApiException
@@ -13761,8 +13547,6 @@ List a repository's keys
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.deploy_key import DeployKey
 from py_gitea_opensuse_org.rest import ApiException
@@ -13893,8 +13677,6 @@ List a repo's pinned issues
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue import Issue
 from py_gitea_opensuse_org.rest import ApiException
@@ -14017,8 +13799,6 @@ List a repo's pinned pull requests
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pull_request import PullRequest
 from py_gitea_opensuse_org.rest import ApiException
@@ -14141,8 +13921,6 @@ List a repo's pull requests
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pull_request import PullRequest
 from py_gitea_opensuse_org.rest import ApiException
@@ -14277,8 +14055,6 @@ List all reviews for a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pull_review import PullReview
 from py_gitea_opensuse_org.rest import ApiException
@@ -14407,8 +14183,6 @@ Get all push mirrors of the repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.push_mirror import PushMirror
 from py_gitea_opensuse_org.rest import ApiException
@@ -14537,8 +14311,6 @@ List release's attachments
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.rest import ApiException
@@ -14663,8 +14435,6 @@ List a repo's releases
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.release import Release
 from py_gitea_opensuse_org.rest import ApiException
@@ -14797,8 +14567,6 @@ List a repo's stargazers
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -14925,8 +14693,6 @@ Get a commit's statuses
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.commit_status import CommitStatus
 from py_gitea_opensuse_org.rest import ApiException
@@ -15060,8 +14826,6 @@ Get a commit's statuses, by branch/tag/commit reference
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.commit_status import CommitStatus
 from py_gitea_opensuse_org.rest import ApiException
@@ -15195,8 +14959,6 @@ List a repo's watchers
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.user import User
 from py_gitea_opensuse_org.rest import ApiException
@@ -15323,8 +15085,6 @@ List a repository's tags
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.tag import Tag
 from py_gitea_opensuse_org.rest import ApiException
@@ -15451,8 +15211,6 @@ List a repository's teams
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.team import Team
 from py_gitea_opensuse_org.rest import ApiException
@@ -15575,8 +15333,6 @@ Get list of topics that a repository has
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.topic_name import TopicName
 from py_gitea_opensuse_org.rest import ApiException
@@ -15703,8 +15459,6 @@ Merge a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.merge_pull_request_option import MergePullRequestOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -15831,8 +15585,6 @@ Migrate a remote git repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.migrate_repo_options import MigrateRepoOptions
 from py_gitea_opensuse_org.models.repository import Repository
@@ -15956,8 +15708,6 @@ Sync a mirrored repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -16078,8 +15828,6 @@ Returns if new Issue Pins are allowed
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.new_issue_pins_allowed import NewIssuePinsAllowed
 from py_gitea_opensuse_org.rest import ApiException
@@ -16202,8 +15950,6 @@ Check if a pull request has been merged
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -16325,8 +16071,6 @@ Sync all push mirrored repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -16448,8 +16192,6 @@ Search for repositories
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.search_results import SearchResults
 from py_gitea_opensuse_org.rest import ApiException
@@ -16602,8 +16344,6 @@ Get signing-key.gpg for given repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -16724,8 +16464,6 @@ Submit a pending review to an pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pull_review import PullReview
 from py_gitea_opensuse_org.models.submit_pull_review_options import SubmitPullReviewOptions
@@ -16856,8 +16594,6 @@ Test a push webhook
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -16981,8 +16717,6 @@ List a repo's tracked times
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.tracked_time import TrackedTime
 from py_gitea_opensuse_org.rest import ApiException
@@ -17117,8 +16851,6 @@ Transfer a repo ownership
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.models.transfer_repo_option import TransferRepoOption
@@ -17246,8 +16978,6 @@ Cancel to dismiss a review for a pull request
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pull_review import PullReview
 from py_gitea_opensuse_org.rest import ApiException
@@ -17376,8 +17106,6 @@ Update avatar
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.update_repo_avatar_option import UpdateRepoAvatarOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -17500,8 +17228,6 @@ Update a file in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.file_response import FileResponse
 from py_gitea_opensuse_org.models.update_file_options import UpdateFileOptions
@@ -17631,8 +17357,6 @@ Merge PR's baseBranch into headBranch
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -17759,8 +17483,6 @@ Replace list of topics for a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repo_topic_options import RepoTopicOptions
 from py_gitea_opensuse_org.rest import ApiException
@@ -17884,8 +17606,6 @@ Returns the validation information for a issue config
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue_config_validation import IssueConfigValidation
 from py_gitea_opensuse_org.rest import ApiException
@@ -18008,8 +17728,6 @@ search topics via keyword
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.topic_response import TopicResponse
 from py_gitea_opensuse_org.rest import ApiException
@@ -18135,8 +17853,6 @@ Create or Update a secret value in a repository
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.create_or_update_secret_option import CreateOrUpdateSecretOption
 from py_gitea_opensuse_org.rest import ApiException
@@ -18263,8 +17979,6 @@ Check if the current user is watching a repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.watch_info import WatchInfo
 from py_gitea_opensuse_org.rest import ApiException
@@ -18387,8 +18101,6 @@ Unwatch a repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
@@ -18508,8 +18220,6 @@ Watch a repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.watch_info import WatchInfo
 from py_gitea_opensuse_org.rest import ApiException
@@ -18632,8 +18342,6 @@ List a user's tracked times in a repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.tracked_time import TrackedTime
 from py_gitea_opensuse_org.rest import ApiException

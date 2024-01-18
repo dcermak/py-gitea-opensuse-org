@@ -29,8 +29,6 @@ List users's notification threads
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.notification_thread import NotificationThread
 from py_gitea_opensuse_org.rest import ApiException
@@ -162,8 +160,6 @@ List users's notification threads on a specific repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.notification_thread import NotificationThread
 from py_gitea_opensuse_org.rest import ApiException
@@ -299,8 +295,6 @@ Get notification thread by ID
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.notification_thread import NotificationThread
 from py_gitea_opensuse_org.rest import ApiException
@@ -422,8 +416,6 @@ Check if unread notifications exist
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.notification_count import NotificationCount
 from py_gitea_opensuse_org.rest import ApiException
@@ -539,8 +531,6 @@ Mark notification threads as read, pinned or unread
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.notification_thread import NotificationThread
 from py_gitea_opensuse_org.rest import ApiException
@@ -666,8 +656,6 @@ Mark notification threads as read, pinned or unread on a specific repo
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.notification_thread import NotificationThread
 from py_gitea_opensuse_org.rest import ApiException
@@ -797,8 +785,6 @@ Mark notification thread as read by ID
 * Api Key Authentication (Token):
 
 ```python
-import time
-import os
 import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.notification_thread import NotificationThread
 from py_gitea_opensuse_org.rest import ApiException
