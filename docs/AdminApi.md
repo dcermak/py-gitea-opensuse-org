@@ -1722,6 +1722,7 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | User |  -  |
+**400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **403** | APIForbiddenError is a forbidden error response |  * message -  <br>  * url -  <br>  |
 **422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
 
