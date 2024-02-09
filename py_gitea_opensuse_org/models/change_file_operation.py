@@ -36,7 +36,7 @@ class ChangeFileOperation(BaseModel):
     @field_validator('operation')
     def operation_validate_enum(cls, value):
         """Validates the enum"""
-        if value not in ('create', 'update', 'delete'):
+        if value not in set(['create', 'update', 'delete']):
             raise ValueError("must be one of enum values ('create', 'update', 'delete')")
         return value
 

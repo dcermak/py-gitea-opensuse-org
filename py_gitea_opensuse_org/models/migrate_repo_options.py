@@ -54,7 +54,7 @@ class MigrateRepoOptions(BaseModel):
         if value is None:
             return value
 
-        if value not in ('git', 'github', 'gitea', 'gitlab', 'gogs', 'onedev', 'gitbucket', 'codebase'):
+        if value not in set(['git', 'github', 'gitea', 'gitlab', 'gogs', 'onedev', 'gitbucket', 'codebase']):
             raise ValueError("must be one of enum values ('git', 'github', 'gitea', 'gitlab', 'gogs', 'onedev', 'gitbucket', 'codebase')")
         return value
 

@@ -37,7 +37,7 @@ class CreateHookOption(BaseModel):
     @field_validator('type')
     def type_validate_enum(cls, value):
         """Validates the enum"""
-        if value not in ('dingtalk', 'discord', 'gitea', 'gogs', 'msteams', 'slack', 'telegram', 'feishu', 'wechatwork', 'packagist'):
+        if value not in set(['dingtalk', 'discord', 'gitea', 'gogs', 'msteams', 'slack', 'telegram', 'feishu', 'wechatwork', 'packagist']):
             raise ValueError("must be one of enum values ('dingtalk', 'discord', 'gitea', 'gogs', 'msteams', 'slack', 'telegram', 'feishu', 'wechatwork', 'packagist')")
         return value
 

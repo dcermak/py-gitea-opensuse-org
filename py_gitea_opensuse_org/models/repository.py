@@ -99,7 +99,7 @@ class Repository(BaseModel):
         if value is None:
             return value
 
-        if value not in ('sha1', 'sha256'):
+        if value not in set(['sha1', 'sha256']):
             raise ValueError("must be one of enum values ('sha1', 'sha256')")
         return value
 

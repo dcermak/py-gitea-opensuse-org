@@ -41,7 +41,7 @@ class CreateTeamOption(BaseModel):
         if value is None:
             return value
 
-        if value not in ('read', 'write', 'admin'):
+        if value not in set(['read', 'write', 'admin']):
             raise ValueError("must be one of enum values ('read', 'write', 'admin')")
         return value
 
