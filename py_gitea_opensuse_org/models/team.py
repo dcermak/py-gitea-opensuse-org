@@ -44,7 +44,7 @@ class Team(BaseModel):
         if value is None:
             return value
 
-        if value not in ('none', 'read', 'write', 'admin', 'owner'):
+        if value not in set(['none', 'read', 'write', 'admin', 'owner']):
             raise ValueError("must be one of enum values ('none', 'read', 'write', 'admin', 'owner')")
         return value
 

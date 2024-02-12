@@ -42,7 +42,7 @@ class CreateOrgOption(BaseModel):
         if value is None:
             return value
 
-        if value not in ('public', 'limited', 'private'):
+        if value not in set(['public', 'limited', 'private']):
             raise ValueError("must be one of enum values ('public', 'limited', 'private')")
         return value
 

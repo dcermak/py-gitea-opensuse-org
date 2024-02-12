@@ -39,7 +39,7 @@ class CreateMilestoneOption(BaseModel):
         if value is None:
             return value
 
-        if value not in ('open', 'closed'):
+        if value not in set(['open', 'closed']):
             raise ValueError("must be one of enum values ('open', 'closed')")
         return value
 

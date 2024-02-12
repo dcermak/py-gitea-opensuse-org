@@ -46,7 +46,7 @@ class CreateRepoOption(BaseModel):
         if value is None:
             return value
 
-        if value not in ('sha1', 'sha256'):
+        if value not in set(['sha1', 'sha256']):
             raise ValueError("must be one of enum values ('sha1', 'sha256')")
         return value
 
@@ -56,7 +56,7 @@ class CreateRepoOption(BaseModel):
         if value is None:
             return value
 
-        if value not in ('default', 'collaborator', 'committer', 'collaboratorcommitter'):
+        if value not in set(['default', 'collaborator', 'committer', 'collaboratorcommitter']):
             raise ValueError("must be one of enum values ('default', 'collaborator', 'committer', 'collaboratorcommitter')")
         return value
 

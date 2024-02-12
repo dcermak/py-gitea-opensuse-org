@@ -39,7 +39,7 @@ class MergePullRequestOption(BaseModel):
     @field_validator('do')
     def do_validate_enum(cls, value):
         """Validates the enum"""
-        if value not in ('merge', 'rebase', 'rebase-merge', 'squash', 'manually-merged'):
+        if value not in set(['merge', 'rebase', 'rebase-merge', 'squash', 'manually-merged']):
             raise ValueError("must be one of enum values ('merge', 'rebase', 'rebase-merge', 'squash', 'manually-merged')")
         return value
 
