@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from typing import Optional, Set
 from typing_extensions import Self
@@ -40,11 +40,11 @@ class EditPullRequestOption(BaseModel):
     unset_due_date: Optional[StrictBool] = None
     __properties: ClassVar[List[str]] = ["allow_maintainer_edit", "assignee", "assignees", "base", "body", "due_date", "labels", "milestone", "state", "title", "unset_due_date"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, Field, StrictBool, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.external_tracker import ExternalTracker
 from py_gitea_opensuse_org.models.external_wiki import ExternalWiki
@@ -61,11 +61,11 @@ class EditRepoOption(BaseModel):
     website: Optional[StrictStr] = Field(default=None, description="a URL with more information about the repository.")
     __properties: ClassVar[List[str]] = ["allow_manual_merge", "allow_merge_commits", "allow_rebase", "allow_rebase_explicit", "allow_rebase_update", "allow_squash_merge", "archived", "autodetect_manual_merge", "default_allow_maintainer_edit", "default_branch", "default_delete_branch_after_merge", "default_merge_style", "description", "enable_prune", "external_tracker", "external_wiki", "has_actions", "has_issues", "has_packages", "has_projects", "has_pull_requests", "has_releases", "has_wiki", "ignore_whitespace_conflicts", "internal_tracker", "mirror_interval", "name", "private", "template", "website"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

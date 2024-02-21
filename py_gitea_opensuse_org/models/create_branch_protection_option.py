@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from typing import Optional, Set
 from typing_extensions import Self
@@ -51,11 +51,11 @@ class CreateBranchProtectionOption(BaseModel):
     unprotected_file_patterns: Optional[StrictStr] = None
     __properties: ClassVar[List[str]] = ["approvals_whitelist_teams", "approvals_whitelist_username", "block_on_official_review_requests", "block_on_outdated_branch", "block_on_rejected_reviews", "branch_name", "dismiss_stale_approvals", "enable_approvals_whitelist", "enable_merge_whitelist", "enable_push", "enable_push_whitelist", "enable_status_check", "merge_whitelist_teams", "merge_whitelist_usernames", "protected_file_patterns", "push_whitelist_deploy_keys", "push_whitelist_teams", "push_whitelist_usernames", "require_signed_commits", "required_approvals", "rule_name", "status_check_contexts", "unprotected_file_patterns"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.repository import Repository
 from typing import Optional, Set
@@ -39,11 +39,11 @@ class DeployKey(BaseModel):
     url: Optional[StrictStr] = None
     __properties: ClassVar[List[str]] = ["created_at", "fingerprint", "id", "key", "key_id", "read_only", "repository", "title", "url"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

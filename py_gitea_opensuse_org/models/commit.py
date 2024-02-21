@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, StrictStr
+from pydantic import BaseModel, ConfigDict, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.commit_affected_files import CommitAffectedFiles
 from py_gitea_opensuse_org.models.commit_meta import CommitMeta
@@ -44,11 +44,11 @@ class Commit(BaseModel):
     url: Optional[StrictStr] = None
     __properties: ClassVar[List[str]] = ["author", "commit", "committer", "created", "files", "html_url", "parents", "sha", "stats", "url"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

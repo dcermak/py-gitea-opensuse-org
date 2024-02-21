@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.team import Team
 from py_gitea_opensuse_org.models.user import User
@@ -45,11 +45,11 @@ class PullReview(BaseModel):
     user: Optional[User] = None
     __properties: ClassVar[List[str]] = ["body", "comments_count", "commit_id", "dismissed", "html_url", "id", "official", "pull_request_url", "stale", "state", "submitted_at", "team", "updated_at", "user"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

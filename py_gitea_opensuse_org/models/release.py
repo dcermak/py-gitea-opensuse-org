@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.models.user import User
@@ -47,11 +47,11 @@ class Release(BaseModel):
     zipball_url: Optional[StrictStr] = None
     __properties: ClassVar[List[str]] = ["assets", "author", "body", "created_at", "draft", "html_url", "id", "name", "prerelease", "published_at", "tag_name", "tarball_url", "target_commitish", "upload_url", "url", "zipball_url"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

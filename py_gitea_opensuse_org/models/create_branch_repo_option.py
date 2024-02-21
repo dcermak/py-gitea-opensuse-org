@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, Field, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from typing import Optional, Set
 from typing_extensions import Self
@@ -31,11 +31,11 @@ class CreateBranchRepoOption(BaseModel):
     old_ref_name: Optional[StrictStr] = Field(default=None, description="Name of the old branch/tag/commit to create from")
     __properties: ClassVar[List[str]] = ["new_branch_name", "old_branch_name", "old_ref_name"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

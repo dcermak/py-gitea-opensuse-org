@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.payload_commit import PayloadCommit
 from typing import Optional, Set
@@ -38,11 +38,11 @@ class Branch(BaseModel):
     user_can_push: Optional[StrictBool] = None
     __properties: ClassVar[List[str]] = ["commit", "effective_branch_protection_name", "enable_status_check", "name", "protected", "required_approvals", "status_check_contexts", "user_can_merge", "user_can_push"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

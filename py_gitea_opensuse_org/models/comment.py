@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.models.user import User
@@ -42,11 +42,11 @@ class Comment(BaseModel):
     user: Optional[User] = None
     __properties: ClassVar[List[str]] = ["assets", "body", "created_at", "html_url", "id", "issue_url", "original_author", "original_author_id", "pull_request_url", "updated_at", "user"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

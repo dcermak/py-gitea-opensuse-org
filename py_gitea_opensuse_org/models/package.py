@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.repository import Repository
 from py_gitea_opensuse_org.models.user import User
@@ -40,11 +40,11 @@ class Package(BaseModel):
     version: Optional[StrictStr] = None
     __properties: ClassVar[List[str]] = ["created_at", "creator", "html_url", "id", "name", "owner", "repository", "type", "version"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:
