@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.attachment import Attachment
 from py_gitea_opensuse_org.models.label import Label
@@ -60,11 +60,11 @@ class Issue(BaseModel):
     user: Optional[User] = None
     __properties: ClassVar[List[str]] = ["assets", "assignee", "assignees", "body", "closed_at", "comments", "created_at", "due_date", "html_url", "id", "is_locked", "labels", "milestone", "number", "original_author", "original_author_id", "pin_order", "pull_request", "ref", "repository", "state", "title", "updated_at", "url", "user"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

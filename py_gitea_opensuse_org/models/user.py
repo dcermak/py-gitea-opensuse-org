@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from typing import Optional, Set
 from typing_extensions import Self
@@ -49,11 +49,11 @@ class User(BaseModel):
     website: Optional[StrictStr] = Field(default=None, description="the user's website")
     __properties: ClassVar[List[str]] = ["active", "avatar_url", "created", "description", "email", "followers_count", "following_count", "full_name", "id", "is_admin", "language", "last_login", "location", "login", "login_name", "prohibit_login", "restricted", "starred_repos_count", "visibility", "website"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

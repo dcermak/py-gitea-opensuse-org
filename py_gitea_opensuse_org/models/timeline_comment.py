@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.comment import Comment
 from py_gitea_opensuse_org.models.issue import Issue
@@ -65,11 +65,11 @@ class TimelineComment(BaseModel):
     user: Optional[User] = None
     __properties: ClassVar[List[str]] = ["assignee", "assignee_team", "body", "created_at", "dependent_issue", "html_url", "id", "issue_url", "label", "milestone", "new_ref", "new_title", "old_milestone", "old_project_id", "old_ref", "old_title", "project_id", "pull_request_url", "ref_action", "ref_comment", "ref_commit_sha", "ref_issue", "removed_assignee", "resolve_doer", "review_id", "tracked_time", "type", "updated_at", "user"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

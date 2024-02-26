@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from pydantic import BaseModel, StrictBool, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.gpg_key_email import GPGKeyEmail
 from typing import Optional, Set
@@ -43,11 +43,11 @@ class GPGKey(BaseModel):
     verified: Optional[StrictBool] = None
     __properties: ClassVar[List[str]] = ["can_certify", "can_encrypt_comms", "can_encrypt_storage", "can_sign", "created_at", "emails", "expires_at", "id", "key_id", "primary_key_id", "public_key", "subkeys", "verified"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

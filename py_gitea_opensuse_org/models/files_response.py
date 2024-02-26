@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.contents_response import ContentsResponse
 from py_gitea_opensuse_org.models.file_commit_response import FileCommitResponse
@@ -34,11 +34,11 @@ class FilesResponse(BaseModel):
     verification: Optional[PayloadCommitVerification] = None
     __properties: ClassVar[List[str]] = ["commit", "files", "verification"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:

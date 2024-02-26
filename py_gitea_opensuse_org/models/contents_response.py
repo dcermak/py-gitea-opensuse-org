@@ -17,7 +17,7 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, Field, StrictInt, StrictStr
+from pydantic import BaseModel, ConfigDict, Field, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
 from py_gitea_opensuse_org.models.file_links_response import FileLinksResponse
 from typing import Optional, Set
@@ -44,11 +44,11 @@ class ContentsResponse(BaseModel):
     url: Optional[StrictStr] = None
     __properties: ClassVar[List[str]] = ["_links", "content", "download_url", "encoding", "git_url", "html_url", "last_commit_sha", "name", "path", "sha", "size", "submodule_git_url", "target", "type", "url"]
 
-    model_config = {
-        "populate_by_name": True,
-        "validate_assignment": True,
-        "protected_namespaces": (),
-    }
+    model_config = ConfigDict(
+        populate_by_name=True,
+        validate_assignment=True,
+        protected_namespaces=(),
+    )
 
 
     def to_str(self) -> str:
