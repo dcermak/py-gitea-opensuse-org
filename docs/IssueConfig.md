@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of IssueConfig from a JSON string
 issue_config_instance = IssueConfig.from_json(json)
 # print the JSON string representation of the object
-print IssueConfig.to_json()
+print(IssueConfig.to_json())
 
 # convert the object into a dict
 issue_config_dict = issue_config_instance.to_dict()

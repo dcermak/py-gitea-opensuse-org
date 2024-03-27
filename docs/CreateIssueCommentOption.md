@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of CreateIssueCommentOption from a JSON string
 create_issue_comment_option_instance = CreateIssueCommentOption.from_json(json)
 # print the JSON string representation of the object
-print CreateIssueCommentOption.to_json()
+print(CreateIssueCommentOption.to_json())
 
 # convert the object into a dict
 create_issue_comment_option_dict = create_issue_comment_option_instance.to_dict()

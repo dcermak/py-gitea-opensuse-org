@@ -30,7 +30,7 @@ json = "{}"
 # create an instance of GPGKey from a JSON string
 gpg_key_instance = GPGKey.from_json(json)
 # print the JSON string representation of the object
-print GPGKey.to_json()
+print(GPGKey.to_json())
 
 # convert the object into a dict
 gpg_key_dict = gpg_key_instance.to_dict()

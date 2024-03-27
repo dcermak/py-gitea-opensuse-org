@@ -42,7 +42,7 @@ json = "{}"
 # create an instance of BranchProtection from a JSON string
 branch_protection_instance = BranchProtection.from_json(json)
 # print the JSON string representation of the object
-print BranchProtection.to_json()
+print(BranchProtection.to_json())
 
 # convert the object into a dict
 branch_protection_dict = branch_protection_instance.to_dict()

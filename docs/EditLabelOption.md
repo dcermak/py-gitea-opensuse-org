@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of EditLabelOption from a JSON string
 edit_label_option_instance = EditLabelOption.from_json(json)
 # print the JSON string representation of the object
-print EditLabelOption.to_json()
+print(EditLabelOption.to_json())
 
 # convert the object into a dict
 edit_label_option_dict = edit_label_option_instance.to_dict()

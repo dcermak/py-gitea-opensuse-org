@@ -32,7 +32,7 @@ json = "{}"
 # create an instance of PullReviewComment from a JSON string
 pull_review_comment_instance = PullReviewComment.from_json(json)
 # print the JSON string representation of the object
-print PullReviewComment.to_json()
+print(PullReviewComment.to_json())
 
 # convert the object into a dict
 pull_review_comment_dict = pull_review_comment_instance.to_dict()

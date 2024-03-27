@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of Permission from a JSON string
 permission_instance = Permission.from_json(json)
 # print the JSON string representation of the object
-print Permission.to_json()
+print(Permission.to_json())
 
 # convert the object into a dict
 permission_dict = permission_instance.to_dict()

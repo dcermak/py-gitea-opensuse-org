@@ -25,7 +25,7 @@ json = "{}"
 # create an instance of CreateFileOptions from a JSON string
 create_file_options_instance = CreateFileOptions.from_json(json)
 # print the JSON string representation of the object
-print CreateFileOptions.to_json()
+print(CreateFileOptions.to_json())
 
 # convert the object into a dict
 create_file_options_dict = create_file_options_instance.to_dict()

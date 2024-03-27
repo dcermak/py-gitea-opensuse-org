@@ -32,7 +32,7 @@ json = "{}"
 # create an instance of ContentsResponse from a JSON string
 contents_response_instance = ContentsResponse.from_json(json)
 # print the JSON string representation of the object
-print ContentsResponse.to_json()
+print(ContentsResponse.to_json())
 
 # convert the object into a dict
 contents_response_dict = contents_response_instance.to_dict()

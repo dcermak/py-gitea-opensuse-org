@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of DismissPullReviewOptions from a JSON string
 dismiss_pull_review_options_instance = DismissPullReviewOptions.from_json(json)
 # print the JSON string representation of the object
-print DismissPullReviewOptions.to_json()
+print(DismissPullReviewOptions.to_json())
 
 # convert the object into a dict
 dismiss_pull_review_options_dict = dismiss_pull_review_options_instance.to_dict()

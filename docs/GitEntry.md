@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of GitEntry from a JSON string
 git_entry_instance = GitEntry.from_json(json)
 # print the JSON string representation of the object
-print GitEntry.to_json()
+print(GitEntry.to_json())
 
 # convert the object into a dict
 git_entry_dict = git_entry_instance.to_dict()

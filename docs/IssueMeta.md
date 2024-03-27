@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of IssueMeta from a JSON string
 issue_meta_instance = IssueMeta.from_json(json)
 # print the JSON string representation of the object
-print IssueMeta.to_json()
+print(IssueMeta.to_json())
 
 # convert the object into a dict
 issue_meta_dict = issue_meta_instance.to_dict()

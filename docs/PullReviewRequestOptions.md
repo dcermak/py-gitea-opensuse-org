@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of PullReviewRequestOptions from a JSON string
 pull_review_request_options_instance = PullReviewRequestOptions.from_json(json)
 # print the JSON string representation of the object
-print PullReviewRequestOptions.to_json()
+print(PullReviewRequestOptions.to_json())
 
 # convert the object into a dict
 pull_review_request_options_dict = pull_review_request_options_instance.to_dict()

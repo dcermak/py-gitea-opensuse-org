@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of WikiPageMetaData from a JSON string
 wiki_page_meta_data_instance = WikiPageMetaData.from_json(json)
 # print the JSON string representation of the object
-print WikiPageMetaData.to_json()
+print(WikiPageMetaData.to_json())
 
 # convert the object into a dict
 wiki_page_meta_data_dict = wiki_page_meta_data_instance.to_dict()

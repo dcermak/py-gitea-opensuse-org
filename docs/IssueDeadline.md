@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of IssueDeadline from a JSON string
 issue_deadline_instance = IssueDeadline.from_json(json)
 # print the JSON string representation of the object
-print IssueDeadline.to_json()
+print(IssueDeadline.to_json())
 
 # convert the object into a dict
 issue_deadline_dict = issue_deadline_instance.to_dict()

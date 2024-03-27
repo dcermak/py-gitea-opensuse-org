@@ -25,7 +25,7 @@ json = "{}"
 # create an instance of CreateOrgOption from a JSON string
 create_org_option_instance = CreateOrgOption.from_json(json)
 # print the JSON string representation of the object
-print CreateOrgOption.to_json()
+print(CreateOrgOption.to_json())
 
 # convert the object into a dict
 create_org_option_dict = create_org_option_instance.to_dict()

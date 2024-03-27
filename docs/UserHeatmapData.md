@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of UserHeatmapData from a JSON string
 user_heatmap_data_instance = UserHeatmapData.from_json(json)
 # print the JSON string representation of the object
-print UserHeatmapData.to_json()
+print(UserHeatmapData.to_json())
 
 # convert the object into a dict
 user_heatmap_data_dict = user_heatmap_data_instance.to_dict()

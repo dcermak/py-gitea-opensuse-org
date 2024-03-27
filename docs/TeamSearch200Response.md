@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of TeamSearch200Response from a JSON string
 team_search200_response_instance = TeamSearch200Response.from_json(json)
 # print the JSON string representation of the object
-print TeamSearch200Response.to_json()
+print(TeamSearch200Response.to_json())
 
 # convert the object into a dict
 team_search200_response_dict = team_search200_response_instance.to_dict()

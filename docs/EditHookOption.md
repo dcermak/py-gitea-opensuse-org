@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of EditHookOption from a JSON string
 edit_hook_option_instance = EditHookOption.from_json(json)
 # print the JSON string representation of the object
-print EditHookOption.to_json()
+print(EditHookOption.to_json())
 
 # convert the object into a dict
 edit_hook_option_dict = edit_hook_option_instance.to_dict()

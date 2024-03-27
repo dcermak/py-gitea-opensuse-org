@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of MarkupOption from a JSON string
 markup_option_instance = MarkupOption.from_json(json)
 # print the JSON string representation of the object
-print MarkupOption.to_json()
+print(MarkupOption.to_json())
 
 # convert the object into a dict
 markup_option_dict = markup_option_instance.to_dict()

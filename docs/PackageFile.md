@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of PackageFile from a JSON string
 package_file_instance = PackageFile.from_json(json)
 # print the JSON string representation of the object
-print PackageFile.to_json()
+print(PackageFile.to_json())
 
 # convert the object into a dict
 package_file_dict = package_file_instance.to_dict()

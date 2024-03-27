@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of RepositoryMeta from a JSON string
 repository_meta_instance = RepositoryMeta.from_json(json)
 # print the JSON string representation of the object
-print RepositoryMeta.to_json()
+print(RepositoryMeta.to_json())
 
 # convert the object into a dict
 repository_meta_dict = repository_meta_instance.to_dict()

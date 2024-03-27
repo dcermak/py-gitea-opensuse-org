@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of CreateOrUpdateSecretOption from a JSON string
 create_or_update_secret_option_instance = CreateOrUpdateSecretOption.from_json(json)
 # print the JSON string representation of the object
-print CreateOrUpdateSecretOption.to_json()
+print(CreateOrUpdateSecretOption.to_json())
 
 # convert the object into a dict
 create_or_update_secret_option_dict = create_or_update_secret_option_instance.to_dict()

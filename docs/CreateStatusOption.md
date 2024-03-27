@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of CreateStatusOption from a JSON string
 create_status_option_instance = CreateStatusOption.from_json(json)
 # print the JSON string representation of the object
-print CreateStatusOption.to_json()
+print(CreateStatusOption.to_json())
 
 # convert the object into a dict
 create_status_option_dict = create_status_option_instance.to_dict()

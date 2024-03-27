@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of InternalTracker from a JSON string
 internal_tracker_instance = InternalTracker.from_json(json)
 # print the JSON string representation of the object
-print InternalTracker.to_json()
+print(InternalTracker.to_json())
 
 # convert the object into a dict
 internal_tracker_dict = internal_tracker_instance.to_dict()

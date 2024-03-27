@@ -28,7 +28,7 @@ json = "{}"
 # create an instance of Comment from a JSON string
 comment_instance = Comment.from_json(json)
 # print the JSON string representation of the object
-print Comment.to_json()
+print(Comment.to_json())
 
 # convert the object into a dict
 comment_dict = comment_instance.to_dict()

@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of CreateOAuth2ApplicationOptions from a JSON string
 create_o_auth2_application_options_instance = CreateOAuth2ApplicationOptions.from_json(json)
 # print the JSON string representation of the object
-print CreateOAuth2ApplicationOptions.to_json()
+print(CreateOAuth2ApplicationOptions.to_json())
 
 # convert the object into a dict
 create_o_auth2_application_options_dict = create_o_auth2_application_options_instance.to_dict()

@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of CreatePushMirrorOption from a JSON string
 create_push_mirror_option_instance = CreatePushMirrorOption.from_json(json)
 # print the JSON string representation of the object
-print CreatePushMirrorOption.to_json()
+print(CreatePushMirrorOption.to_json())
 
 # convert the object into a dict
 create_push_mirror_option_dict = create_push_mirror_option_instance.to_dict()

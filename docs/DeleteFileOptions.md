@@ -25,7 +25,7 @@ json = "{}"
 # create an instance of DeleteFileOptions from a JSON string
 delete_file_options_instance = DeleteFileOptions.from_json(json)
 # print the JSON string representation of the object
-print DeleteFileOptions.to_json()
+print(DeleteFileOptions.to_json())
 
 # convert the object into a dict
 delete_file_options_dict = delete_file_options_instance.to_dict()

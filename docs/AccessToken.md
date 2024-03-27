@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of AccessToken from a JSON string
 access_token_instance = AccessToken.from_json(json)
 # print the JSON string representation of the object
-print AccessToken.to_json()
+print(AccessToken.to_json())
 
 # convert the object into a dict
 access_token_dict = access_token_instance.to_dict()

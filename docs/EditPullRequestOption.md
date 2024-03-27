@@ -28,7 +28,7 @@ json = "{}"
 # create an instance of EditPullRequestOption from a JSON string
 edit_pull_request_option_instance = EditPullRequestOption.from_json(json)
 # print the JSON string representation of the object
-print EditPullRequestOption.to_json()
+print(EditPullRequestOption.to_json())
 
 # convert the object into a dict
 edit_pull_request_option_dict = edit_pull_request_option_instance.to_dict()

@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of UpdateUserAvatarOption from a JSON string
 update_user_avatar_option_instance = UpdateUserAvatarOption.from_json(json)
 # print the JSON string representation of the object
-print UpdateUserAvatarOption.to_json()
+print(UpdateUserAvatarOption.to_json())
 
 # convert the object into a dict
 update_user_avatar_option_dict = update_user_avatar_option_instance.to_dict()

@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of FileResponse from a JSON string
 file_response_instance = FileResponse.from_json(json)
 # print the JSON string representation of the object
-print FileResponse.to_json()
+print(FileResponse.to_json())
 
 # convert the object into a dict
 file_response_dict = file_response_instance.to_dict()

@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of IssueConfigContactLink from a JSON string
 issue_config_contact_link_instance = IssueConfigContactLink.from_json(json)
 # print the JSON string representation of the object
-print IssueConfigContactLink.to_json()
+print(IssueConfigContactLink.to_json())
 
 # convert the object into a dict
 issue_config_contact_link_dict = issue_config_contact_link_instance.to_dict()

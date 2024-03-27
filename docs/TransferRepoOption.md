@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of TransferRepoOption from a JSON string
 transfer_repo_option_instance = TransferRepoOption.from_json(json)
 # print the JSON string representation of the object
-print TransferRepoOption.to_json()
+print(TransferRepoOption.to_json())
 
 # convert the object into a dict
 transfer_repo_option_dict = transfer_repo_option_instance.to_dict()

@@ -26,7 +26,7 @@ json = "{}"
 # create an instance of Package from a JSON string
 package_instance = Package.from_json(json)
 # print the JSON string representation of the object
-print Package.to_json()
+print(Package.to_json())
 
 # convert the object into a dict
 package_dict = package_instance.to_dict()

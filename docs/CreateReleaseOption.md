@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of CreateReleaseOption from a JSON string
 create_release_option_instance = CreateReleaseOption.from_json(json)
 # print the JSON string representation of the object
-print CreateReleaseOption.to_json()
+print(CreateReleaseOption.to_json())
 
 # convert the object into a dict
 create_release_option_dict = create_release_option_instance.to_dict()

@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of GitTreeResponse from a JSON string
 git_tree_response_instance = GitTreeResponse.from_json(json)
 # print the JSON string representation of the object
-print GitTreeResponse.to_json()
+print(GitTreeResponse.to_json())
 
 # convert the object into a dict
 git_tree_response_dict = git_tree_response_instance.to_dict()

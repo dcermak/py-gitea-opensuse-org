@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of ExternalWiki from a JSON string
 external_wiki_instance = ExternalWiki.from_json(json)
 # print the JSON string representation of the object
-print ExternalWiki.to_json()
+print(ExternalWiki.to_json())
 
 # convert the object into a dict
 external_wiki_dict = external_wiki_instance.to_dict()

@@ -42,7 +42,7 @@ json = "{}"
 # create an instance of Issue from a JSON string
 issue_instance = Issue.from_json(json)
 # print the JSON string representation of the object
-print Issue.to_json()
+print(Issue.to_json())
 
 # convert the object into a dict
 issue_dict = issue_instance.to_dict()

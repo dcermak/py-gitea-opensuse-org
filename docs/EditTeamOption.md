@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of EditTeamOption from a JSON string
 edit_team_option_instance = EditTeamOption.from_json(json)
 # print the JSON string representation of the object
-print EditTeamOption.to_json()
+print(EditTeamOption.to_json())
 
 # convert the object into a dict
 edit_team_option_dict = edit_team_option_instance.to_dict()

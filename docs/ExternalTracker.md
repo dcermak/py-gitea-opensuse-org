@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of ExternalTracker from a JSON string
 external_tracker_instance = ExternalTracker.from_json(json)
 # print the JSON string representation of the object
-print ExternalTracker.to_json()
+print(ExternalTracker.to_json())
 
 # convert the object into a dict
 external_tracker_dict = external_tracker_instance.to_dict()

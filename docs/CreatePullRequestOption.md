@@ -26,7 +26,7 @@ json = "{}"
 # create an instance of CreatePullRequestOption from a JSON string
 create_pull_request_option_instance = CreatePullRequestOption.from_json(json)
 # print the JSON string representation of the object
-print CreatePullRequestOption.to_json()
+print(CreatePullRequestOption.to_json())
 
 # convert the object into a dict
 create_pull_request_option_dict = create_pull_request_option_instance.to_dict()

@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of Attachment from a JSON string
 attachment_instance = Attachment.from_json(json)
 # print the JSON string representation of the object
-print Attachment.to_json()
+print(Attachment.to_json())
 
 # convert the object into a dict
 attachment_dict = attachment_instance.to_dict()

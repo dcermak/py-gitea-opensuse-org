@@ -38,7 +38,7 @@ json = "{}"
 # create an instance of EditBranchProtectionOption from a JSON string
 edit_branch_protection_option_instance = EditBranchProtectionOption.from_json(json)
 # print the JSON string representation of the object
-print EditBranchProtectionOption.to_json()
+print(EditBranchProtectionOption.to_json())
 
 # convert the object into a dict
 edit_branch_protection_option_dict = edit_branch_protection_option_instance.to_dict()

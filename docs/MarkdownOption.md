@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of MarkdownOption from a JSON string
 markdown_option_instance = MarkdownOption.from_json(json)
 # print the JSON string representation of the object
-print MarkdownOption.to_json()
+print(MarkdownOption.to_json())
 
 # convert the object into a dict
 markdown_option_dict = markdown_option_instance.to_dict()

@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of FileDeleteResponse from a JSON string
 file_delete_response_instance = FileDeleteResponse.from_json(json)
 # print the JSON string representation of the object
-print FileDeleteResponse.to_json()
+print(FileDeleteResponse.to_json())
 
 # convert the object into a dict
 file_delete_response_dict = file_delete_response_instance.to_dict()

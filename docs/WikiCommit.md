@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of WikiCommit from a JSON string
 wiki_commit_instance = WikiCommit.from_json(json)
 # print the JSON string representation of the object
-print WikiCommit.to_json()
+print(WikiCommit.to_json())
 
 # convert the object into a dict
 wiki_commit_dict = wiki_commit_instance.to_dict()

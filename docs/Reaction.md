@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of Reaction from a JSON string
 reaction_instance = Reaction.from_json(json)
 # print the JSON string representation of the object
-print Reaction.to_json()
+print(Reaction.to_json())
 
 # convert the object into a dict
 reaction_dict = reaction_instance.to_dict()

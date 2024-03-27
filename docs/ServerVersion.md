@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of ServerVersion from a JSON string
 server_version_instance = ServerVersion.from_json(json)
 # print the JSON string representation of the object
-print ServerVersion.to_json()
+print(ServerVersion.to_json())
 
 # convert the object into a dict
 server_version_dict = server_version_instance.to_dict()

@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of OAuth2Application from a JSON string
 o_auth2_application_instance = OAuth2Application.from_json(json)
 # print the JSON string representation of the object
-print OAuth2Application.to_json()
+print(OAuth2Application.to_json())
 
 # convert the object into a dict
 o_auth2_application_dict = o_auth2_application_instance.to_dict()

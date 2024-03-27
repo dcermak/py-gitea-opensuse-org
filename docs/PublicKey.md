@@ -26,7 +26,7 @@ json = "{}"
 # create an instance of PublicKey from a JSON string
 public_key_instance = PublicKey.from_json(json)
 # print the JSON string representation of the object
-print PublicKey.to_json()
+print(PublicKey.to_json())
 
 # convert the object into a dict
 public_key_dict = public_key_instance.to_dict()

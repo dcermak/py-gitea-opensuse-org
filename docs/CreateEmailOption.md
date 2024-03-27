@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of CreateEmailOption from a JSON string
 create_email_option_instance = CreateEmailOption.from_json(json)
 # print the JSON string representation of the object
-print CreateEmailOption.to_json()
+print(CreateEmailOption.to_json())
 
 # convert the object into a dict
 create_email_option_dict = create_email_option_instance.to_dict()

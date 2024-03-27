@@ -37,7 +37,7 @@ json = "{}"
 # create an instance of MigrateRepoOptions from a JSON string
 migrate_repo_options_instance = MigrateRepoOptions.from_json(json)
 # print the JSON string representation of the object
-print MigrateRepoOptions.to_json()
+print(MigrateRepoOptions.to_json())
 
 # convert the object into a dict
 migrate_repo_options_dict = migrate_repo_options_instance.to_dict()

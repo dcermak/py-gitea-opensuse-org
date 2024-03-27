@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of CreateWikiPageOptions from a JSON string
 create_wiki_page_options_instance = CreateWikiPageOptions.from_json(json)
 # print the JSON string representation of the object
-print CreateWikiPageOptions.to_json()
+print(CreateWikiPageOptions.to_json())
 
 # convert the object into a dict
 create_wiki_page_options_dict = create_wiki_page_options_instance.to_dict()

@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of NodeInfoUsage from a JSON string
 node_info_usage_instance = NodeInfoUsage.from_json(json)
 # print the JSON string representation of the object
-print NodeInfoUsage.to_json()
+print(NodeInfoUsage.to_json())
 
 # convert the object into a dict
 node_info_usage_dict = node_info_usage_instance.to_dict()

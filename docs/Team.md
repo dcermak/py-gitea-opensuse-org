@@ -26,7 +26,7 @@ json = "{}"
 # create an instance of Team from a JSON string
 team_instance = Team.from_json(json)
 # print the JSON string representation of the object
-print Team.to_json()
+print(Team.to_json())
 
 # convert the object into a dict
 team_dict = team_instance.to_dict()

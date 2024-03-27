@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of CommitAffectedFiles from a JSON string
 commit_affected_files_instance = CommitAffectedFiles.from_json(json)
 # print the JSON string representation of the object
-print CommitAffectedFiles.to_json()
+print(CommitAffectedFiles.to_json())
 
 # convert the object into a dict
 commit_affected_files_dict = commit_affected_files_instance.to_dict()

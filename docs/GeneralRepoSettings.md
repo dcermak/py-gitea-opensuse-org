@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of GeneralRepoSettings from a JSON string
 general_repo_settings_instance = GeneralRepoSettings.from_json(json)
 # print the JSON string representation of the object
-print GeneralRepoSettings.to_json()
+print(GeneralRepoSettings.to_json())
 
 # convert the object into a dict
 general_repo_settings_dict = general_repo_settings_instance.to_dict()

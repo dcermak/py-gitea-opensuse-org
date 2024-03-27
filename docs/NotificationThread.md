@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of NotificationThread from a JSON string
 notification_thread_instance = NotificationThread.from_json(json)
 # print the JSON string representation of the object
-print NotificationThread.to_json()
+print(NotificationThread.to_json())
 
 # convert the object into a dict
 notification_thread_dict = notification_thread_instance.to_dict()

@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of EditDeadlineOption from a JSON string
 edit_deadline_option_instance = EditDeadlineOption.from_json(json)
 # print the JSON string representation of the object
-print EditDeadlineOption.to_json()
+print(EditDeadlineOption.to_json())
 
 # convert the object into a dict
 edit_deadline_option_dict = edit_deadline_option_instance.to_dict()

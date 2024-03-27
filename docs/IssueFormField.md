@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of IssueFormField from a JSON string
 issue_form_field_instance = IssueFormField.from_json(json)
 # print the JSON string representation of the object
-print IssueFormField.to_json()
+print(IssueFormField.to_json())
 
 # convert the object into a dict
 issue_form_field_dict = issue_form_field_instance.to_dict()

@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of EditReleaseOption from a JSON string
 edit_release_option_instance = EditReleaseOption.from_json(json)
 # print the JSON string representation of the object
-print EditReleaseOption.to_json()
+print(EditReleaseOption.to_json())
 
 # convert the object into a dict
 edit_release_option_dict = edit_release_option_instance.to_dict()

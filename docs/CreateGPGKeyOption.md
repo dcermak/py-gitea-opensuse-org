@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of CreateGPGKeyOption from a JSON string
 create_gpg_key_option_instance = CreateGPGKeyOption.from_json(json)
 # print the JSON string representation of the object
-print CreateGPGKeyOption.to_json()
+print(CreateGPGKeyOption.to_json())
 
 # convert the object into a dict
 create_gpg_key_option_dict = create_gpg_key_option_instance.to_dict()

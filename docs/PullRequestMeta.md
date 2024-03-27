@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of PullRequestMeta from a JSON string
 pull_request_meta_instance = PullRequestMeta.from_json(json)
 # print the JSON string representation of the object
-print PullRequestMeta.to_json()
+print(PullRequestMeta.to_json())
 
 # convert the object into a dict
 pull_request_meta_dict = pull_request_meta_instance.to_dict()

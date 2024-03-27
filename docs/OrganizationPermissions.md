@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of OrganizationPermissions from a JSON string
 organization_permissions_instance = OrganizationPermissions.from_json(json)
 # print the JSON string representation of the object
-print OrganizationPermissions.to_json()
+print(OrganizationPermissions.to_json())
 
 # convert the object into a dict
 organization_permissions_dict = organization_permissions_instance.to_dict()

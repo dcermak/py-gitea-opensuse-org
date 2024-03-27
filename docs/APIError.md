@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of APIError from a JSON string
 api_error_instance = APIError.from_json(json)
 # print the JSON string representation of the object
-print APIError.to_json()
+print(APIError.to_json())
 
 # convert the object into a dict
 api_error_dict = api_error_instance.to_dict()

@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of SearchResults from a JSON string
 search_results_instance = SearchResults.from_json(json)
 # print the JSON string representation of the object
-print SearchResults.to_json()
+print(SearchResults.to_json())
 
 # convert the object into a dict
 search_results_dict = search_results_instance.to_dict()
