@@ -26,7 +26,7 @@ json = "{}"
 # create an instance of CommitStatus from a JSON string
 commit_status_instance = CommitStatus.from_json(json)
 # print the JSON string representation of the object
-print CommitStatus.to_json()
+print(CommitStatus.to_json())
 
 # convert the object into a dict
 commit_status_dict = commit_status_instance.to_dict()

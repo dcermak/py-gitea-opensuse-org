@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of EditGitHookOption from a JSON string
 edit_git_hook_option_instance = EditGitHookOption.from_json(json)
 # print the JSON string representation of the object
-print EditGitHookOption.to_json()
+print(EditGitHookOption.to_json())
 
 # convert the object into a dict
 edit_git_hook_option_dict = edit_git_hook_option_instance.to_dict()

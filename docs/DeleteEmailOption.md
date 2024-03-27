@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of DeleteEmailOption from a JSON string
 delete_email_option_instance = DeleteEmailOption.from_json(json)
 # print the JSON string representation of the object
-print DeleteEmailOption.to_json()
+print(DeleteEmailOption.to_json())
 
 # convert the object into a dict
 delete_email_option_dict = delete_email_option_instance.to_dict()

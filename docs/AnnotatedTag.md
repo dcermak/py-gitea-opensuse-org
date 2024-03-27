@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of AnnotatedTag from a JSON string
 annotated_tag_instance = AnnotatedTag.from_json(json)
 # print the JSON string representation of the object
-print AnnotatedTag.to_json()
+print(AnnotatedTag.to_json())
 
 # convert the object into a dict
 annotated_tag_dict = annotated_tag_instance.to_dict()

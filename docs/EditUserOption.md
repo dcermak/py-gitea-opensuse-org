@@ -35,7 +35,7 @@ json = "{}"
 # create an instance of EditUserOption from a JSON string
 edit_user_option_instance = EditUserOption.from_json(json)
 # print the JSON string representation of the object
-print EditUserOption.to_json()
+print(EditUserOption.to_json())
 
 # convert the object into a dict
 edit_user_option_dict = edit_user_option_instance.to_dict()

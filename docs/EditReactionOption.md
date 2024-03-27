@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of EditReactionOption from a JSON string
 edit_reaction_option_instance = EditReactionOption.from_json(json)
 # print the JSON string representation of the object
-print EditReactionOption.to_json()
+print(EditReactionOption.to_json())
 
 # convert the object into a dict
 edit_reaction_option_dict = edit_reaction_option_instance.to_dict()

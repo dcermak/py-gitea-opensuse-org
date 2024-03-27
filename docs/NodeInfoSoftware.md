@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of NodeInfoSoftware from a JSON string
 node_info_software_instance = NodeInfoSoftware.from_json(json)
 # print the JSON string representation of the object
-print NodeInfoSoftware.to_json()
+print(NodeInfoSoftware.to_json())
 
 # convert the object into a dict
 node_info_software_dict = node_info_software_instance.to_dict()

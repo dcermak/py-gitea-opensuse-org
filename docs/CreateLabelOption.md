@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of CreateLabelOption from a JSON string
 create_label_option_instance = CreateLabelOption.from_json(json)
 # print the JSON string representation of the object
-print CreateLabelOption.to_json()
+print(CreateLabelOption.to_json())
 
 # convert the object into a dict
 create_label_option_dict = create_label_option_instance.to_dict()

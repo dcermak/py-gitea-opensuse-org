@@ -33,7 +33,7 @@ json = "{}"
 # create an instance of Release from a JSON string
 release_instance = Release.from_json(json)
 # print the JSON string representation of the object
-print Release.to_json()
+print(Release.to_json())
 
 # convert the object into a dict
 release_dict = release_instance.to_dict()

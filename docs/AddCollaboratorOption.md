@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of AddCollaboratorOption from a JSON string
 add_collaborator_option_instance = AddCollaboratorOption.from_json(json)
 # print the JSON string representation of the object
-print AddCollaboratorOption.to_json()
+print(AddCollaboratorOption.to_json())
 
 # convert the object into a dict
 add_collaborator_option_dict = add_collaborator_option_instance.to_dict()

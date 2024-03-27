@@ -25,7 +25,7 @@ json = "{}"
 # create an instance of FileCommitResponse from a JSON string
 file_commit_response_instance = FileCommitResponse.from_json(json)
 # print the JSON string representation of the object
-print FileCommitResponse.to_json()
+print(FileCommitResponse.to_json())
 
 # convert the object into a dict
 file_commit_response_dict = file_commit_response_instance.to_dict()

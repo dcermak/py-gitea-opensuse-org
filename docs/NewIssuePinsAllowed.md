@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of NewIssuePinsAllowed from a JSON string
 new_issue_pins_allowed_instance = NewIssuePinsAllowed.from_json(json)
 # print the JSON string representation of the object
-print NewIssuePinsAllowed.to_json()
+print(NewIssuePinsAllowed.to_json())
 
 # convert the object into a dict
 new_issue_pins_allowed_dict = new_issue_pins_allowed_instance.to_dict()

@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of PayloadUser from a JSON string
 payload_user_instance = PayloadUser.from_json(json)
 # print the JSON string representation of the object
-print PayloadUser.to_json()
+print(PayloadUser.to_json())
 
 # convert the object into a dict
 payload_user_dict = payload_user_instance.to_dict()

@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of Label from a JSON string
 label_instance = Label.from_json(json)
 # print the JSON string representation of the object
-print Label.to_json()
+print(Label.to_json())
 
 # convert the object into a dict
 label_dict = label_instance.to_dict()

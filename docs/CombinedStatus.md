@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of CombinedStatus from a JSON string
 combined_status_instance = CombinedStatus.from_json(json)
 # print the JSON string representation of the object
-print CombinedStatus.to_json()
+print(CombinedStatus.to_json())
 
 # convert the object into a dict
 combined_status_dict = combined_status_instance.to_dict()

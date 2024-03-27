@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of RepoCommit from a JSON string
 repo_commit_instance = RepoCommit.from_json(json)
 # print the JSON string representation of the object
-print RepoCommit.to_json()
+print(RepoCommit.to_json())
 
 # convert the object into a dict
 repo_commit_dict = repo_commit_instance.to_dict()

@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of GeneralAttachmentSettings from a JSON string
 general_attachment_settings_instance = GeneralAttachmentSettings.from_json(json)
 # print the JSON string representation of the object
-print GeneralAttachmentSettings.to_json()
+print(GeneralAttachmentSettings.to_json())
 
 # convert the object into a dict
 general_attachment_settings_dict = general_attachment_settings_instance.to_dict()

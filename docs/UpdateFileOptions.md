@@ -27,7 +27,7 @@ json = "{}"
 # create an instance of UpdateFileOptions from a JSON string
 update_file_options_instance = UpdateFileOptions.from_json(json)
 # print the JSON string representation of the object
-print UpdateFileOptions.to_json()
+print(UpdateFileOptions.to_json())
 
 # convert the object into a dict
 update_file_options_dict = update_file_options_instance.to_dict()

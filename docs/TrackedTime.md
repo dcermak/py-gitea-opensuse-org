@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of TrackedTime from a JSON string
 tracked_time_instance = TrackedTime.from_json(json)
 # print the JSON string representation of the object
-print TrackedTime.to_json()
+print(TrackedTime.to_json())
 
 # convert the object into a dict
 tracked_time_dict = tracked_time_instance.to_dict()

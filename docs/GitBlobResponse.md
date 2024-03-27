@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of GitBlobResponse from a JSON string
 git_blob_response_instance = GitBlobResponse.from_json(json)
 # print the JSON string representation of the object
-print GitBlobResponse.to_json()
+print(GitBlobResponse.to_json())
 
 # convert the object into a dict
 git_blob_response_dict = git_blob_response_instance.to_dict()

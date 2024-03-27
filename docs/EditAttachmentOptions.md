@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of EditAttachmentOptions from a JSON string
 edit_attachment_options_instance = EditAttachmentOptions.from_json(json)
 # print the JSON string representation of the object
-print EditAttachmentOptions.to_json()
+print(EditAttachmentOptions.to_json())
 
 # convert the object into a dict
 edit_attachment_options_dict = edit_attachment_options_instance.to_dict()

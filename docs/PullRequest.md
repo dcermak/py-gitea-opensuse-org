@@ -48,7 +48,7 @@ json = "{}"
 # create an instance of PullRequest from a JSON string
 pull_request_instance = PullRequest.from_json(json)
 # print the JSON string representation of the object
-print PullRequest.to_json()
+print(PullRequest.to_json())
 
 # convert the object into a dict
 pull_request_dict = pull_request_instance.to_dict()

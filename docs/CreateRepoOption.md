@@ -29,7 +29,7 @@ json = "{}"
 # create an instance of CreateRepoOption from a JSON string
 create_repo_option_instance = CreateRepoOption.from_json(json)
 # print the JSON string representation of the object
-print CreateRepoOption.to_json()
+print(CreateRepoOption.to_json())
 
 # convert the object into a dict
 create_repo_option_dict = create_repo_option_instance.to_dict()

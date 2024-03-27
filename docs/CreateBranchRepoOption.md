@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of CreateBranchRepoOption from a JSON string
 create_branch_repo_option_instance = CreateBranchRepoOption.from_json(json)
 # print the JSON string representation of the object
-print CreateBranchRepoOption.to_json()
+print(CreateBranchRepoOption.to_json())
 
 # convert the object into a dict
 create_branch_repo_option_dict = create_branch_repo_option_instance.to_dict()

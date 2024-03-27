@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of GitignoreTemplateInfo from a JSON string
 gitignore_template_info_instance = GitignoreTemplateInfo.from_json(json)
 # print the JSON string representation of the object
-print GitignoreTemplateInfo.to_json()
+print(GitignoreTemplateInfo.to_json())
 
 # convert the object into a dict
 gitignore_template_info_dict = gitignore_template_info_instance.to_dict()

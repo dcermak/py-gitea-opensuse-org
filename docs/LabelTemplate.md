@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of LabelTemplate from a JSON string
 label_template_instance = LabelTemplate.from_json(json)
 # print the JSON string representation of the object
-print LabelTemplate.to_json()
+print(LabelTemplate.to_json())
 
 # convert the object into a dict
 label_template_dict = label_template_instance.to_dict()

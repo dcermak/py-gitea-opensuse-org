@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of GitHook from a JSON string
 git_hook_instance = GitHook.from_json(json)
 # print the JSON string representation of the object
-print GitHook.to_json()
+print(GitHook.to_json())
 
 # convert the object into a dict
 git_hook_dict = git_hook_instance.to_dict()

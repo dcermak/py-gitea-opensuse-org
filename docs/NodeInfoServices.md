@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of NodeInfoServices from a JSON string
 node_info_services_instance = NodeInfoServices.from_json(json)
 # print the JSON string representation of the object
-print NodeInfoServices.to_json()
+print(NodeInfoServices.to_json())
 
 # convert the object into a dict
 node_info_services_dict = node_info_services_instance.to_dict()

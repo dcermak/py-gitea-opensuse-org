@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of PayloadCommitVerification from a JSON string
 payload_commit_verification_instance = PayloadCommitVerification.from_json(json)
 # print the JSON string representation of the object
-print PayloadCommitVerification.to_json()
+print(PayloadCommitVerification.to_json())
 
 # convert the object into a dict
 payload_commit_verification_dict = payload_commit_verification_instance.to_dict()

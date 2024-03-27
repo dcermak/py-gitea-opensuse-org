@@ -75,7 +75,7 @@ json = "{}"
 # create an instance of Repository from a JSON string
 repository_instance = Repository.from_json(json)
 # print the JSON string representation of the object
-print Repository.to_json()
+print(Repository.to_json())
 
 # convert the object into a dict
 repository_dict = repository_instance.to_dict()

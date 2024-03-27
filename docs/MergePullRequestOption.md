@@ -25,7 +25,7 @@ json = "{}"
 # create an instance of MergePullRequestOption from a JSON string
 merge_pull_request_option_instance = MergePullRequestOption.from_json(json)
 # print the JSON string representation of the object
-print MergePullRequestOption.to_json()
+print(MergePullRequestOption.to_json())
 
 # convert the object into a dict
 merge_pull_request_option_dict = merge_pull_request_option_instance.to_dict()

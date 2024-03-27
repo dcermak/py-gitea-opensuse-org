@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of EditOrgOption from a JSON string
 edit_org_option_instance = EditOrgOption.from_json(json)
 # print the JSON string representation of the object
-print EditOrgOption.to_json()
+print(EditOrgOption.to_json())
 
 # convert the object into a dict
 edit_org_option_dict = edit_org_option_instance.to_dict()

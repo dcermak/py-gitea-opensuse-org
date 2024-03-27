@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of IssueLabelsOption from a JSON string
 issue_labels_option_instance = IssueLabelsOption.from_json(json)
 # print the JSON string representation of the object
-print IssueLabelsOption.to_json()
+print(IssueLabelsOption.to_json())
 
 # convert the object into a dict
 issue_labels_option_dict = issue_labels_option_instance.to_dict()

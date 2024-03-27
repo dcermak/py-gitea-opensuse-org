@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of CreatePullReviewComment from a JSON string
 create_pull_review_comment_instance = CreatePullReviewComment.from_json(json)
 # print the JSON string representation of the object
-print CreatePullReviewComment.to_json()
+print(CreatePullReviewComment.to_json())
 
 # convert the object into a dict
 create_pull_review_comment_dict = create_pull_review_comment_instance.to_dict()

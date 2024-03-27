@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of GPGKeyEmail from a JSON string
 gpg_key_email_instance = GPGKeyEmail.from_json(json)
 # print the JSON string representation of the object
-print GPGKeyEmail.to_json()
+print(GPGKeyEmail.to_json())
 
 # convert the object into a dict
 gpg_key_email_dict = gpg_key_email_instance.to_dict()

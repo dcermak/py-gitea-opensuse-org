@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of EditMilestoneOption from a JSON string
 edit_milestone_option_instance = EditMilestoneOption.from_json(json)
 # print the JSON string representation of the object
-print EditMilestoneOption.to_json()
+print(EditMilestoneOption.to_json())
 
 # convert the object into a dict
 edit_milestone_option_dict = edit_milestone_option_instance.to_dict()

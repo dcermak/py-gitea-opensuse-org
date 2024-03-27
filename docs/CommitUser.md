@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of CommitUser from a JSON string
 commit_user_instance = CommitUser.from_json(json)
 # print the JSON string representation of the object
-print CommitUser.to_json()
+print(CommitUser.to_json())
 
 # convert the object into a dict
 commit_user_dict = commit_user_instance.to_dict()

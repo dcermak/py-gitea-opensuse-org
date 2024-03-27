@@ -28,7 +28,7 @@ json = "{}"
 # create an instance of CreateUserOption from a JSON string
 create_user_option_instance = CreateUserOption.from_json(json)
 # print the JSON string representation of the object
-print CreateUserOption.to_json()
+print(CreateUserOption.to_json())
 
 # convert the object into a dict
 create_user_option_dict = create_user_option_instance.to_dict()

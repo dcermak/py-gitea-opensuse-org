@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of NotificationSubject from a JSON string
 notification_subject_instance = NotificationSubject.from_json(json)
 # print the JSON string representation of the object
-print NotificationSubject.to_json()
+print(NotificationSubject.to_json())
 
 # convert the object into a dict
 notification_subject_dict = notification_subject_instance.to_dict()

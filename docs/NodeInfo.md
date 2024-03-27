@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of NodeInfo from a JSON string
 node_info_instance = NodeInfo.from_json(json)
 # print the JSON string representation of the object
-print NodeInfo.to_json()
+print(NodeInfo.to_json())
 
 # convert the object into a dict
 node_info_dict = node_info_instance.to_dict()

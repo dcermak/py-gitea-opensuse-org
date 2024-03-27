@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of ChangeFileOperation from a JSON string
 change_file_operation_instance = ChangeFileOperation.from_json(json)
 # print the JSON string representation of the object
-print ChangeFileOperation.to_json()
+print(ChangeFileOperation.to_json())
 
 # convert the object into a dict
 change_file_operation_dict = change_file_operation_instance.to_dict()

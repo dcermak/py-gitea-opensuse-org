@@ -25,7 +25,7 @@ json = "{}"
 # create an instance of PushMirror from a JSON string
 push_mirror_instance = PushMirror.from_json(json)
 # print the JSON string representation of the object
-print PushMirror.to_json()
+print(PushMirror.to_json())
 
 # convert the object into a dict
 push_mirror_dict = push_mirror_instance.to_dict()

@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of CommitStats from a JSON string
 commit_stats_instance = CommitStats.from_json(json)
 # print the JSON string representation of the object
-print CommitStats.to_json()
+print(CommitStats.to_json())
 
 # convert the object into a dict
 commit_stats_dict = commit_stats_instance.to_dict()

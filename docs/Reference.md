@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of Reference from a JSON string
 reference_instance = Reference.from_json(json)
 # print the JSON string representation of the object
-print Reference.to_json()
+print(Reference.to_json())
 
 # convert the object into a dict
 reference_dict = reference_instance.to_dict()

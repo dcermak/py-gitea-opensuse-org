@@ -46,7 +46,7 @@ json = "{}"
 # create an instance of TimelineComment from a JSON string
 timeline_comment_instance = TimelineComment.from_json(json)
 # print the JSON string representation of the object
-print TimelineComment.to_json()
+print(TimelineComment.to_json())
 
 # convert the object into a dict
 timeline_comment_dict = timeline_comment_instance.to_dict()

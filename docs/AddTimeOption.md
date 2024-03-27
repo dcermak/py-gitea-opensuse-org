@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of AddTimeOption from a JSON string
 add_time_option_instance = AddTimeOption.from_json(json)
 # print the JSON string representation of the object
-print AddTimeOption.to_json()
+print(AddTimeOption.to_json())
 
 # convert the object into a dict
 add_time_option_dict = add_time_option_instance.to_dict()

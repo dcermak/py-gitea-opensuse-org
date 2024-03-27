@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of GeneralAPISettings from a JSON string
 general_api_settings_instance = GeneralAPISettings.from_json(json)
 # print the JSON string representation of the object
-print GeneralAPISettings.to_json()
+print(GeneralAPISettings.to_json())
 
 # convert the object into a dict
 general_api_settings_dict = general_api_settings_instance.to_dict()

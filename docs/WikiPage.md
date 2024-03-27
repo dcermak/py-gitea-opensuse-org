@@ -25,7 +25,7 @@ json = "{}"
 # create an instance of WikiPage from a JSON string
 wiki_page_instance = WikiPage.from_json(json)
 # print the JSON string representation of the object
-print WikiPage.to_json()
+print(WikiPage.to_json())
 
 # convert the object into a dict
 wiki_page_dict = wiki_page_instance.to_dict()

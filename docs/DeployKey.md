@@ -26,7 +26,7 @@ json = "{}"
 # create an instance of DeployKey from a JSON string
 deploy_key_instance = DeployKey.from_json(json)
 # print the JSON string representation of the object
-print DeployKey.to_json()
+print(DeployKey.to_json())
 
 # convert the object into a dict
 deploy_key_dict = deploy_key_instance.to_dict()

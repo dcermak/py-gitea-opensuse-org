@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of UpdateRepoAvatarOption from a JSON string
 update_repo_avatar_option_instance = UpdateRepoAvatarOption.from_json(json)
 # print the JSON string representation of the object
-print UpdateRepoAvatarOption.to_json()
+print(UpdateRepoAvatarOption.to_json())
 
 # convert the object into a dict
 update_repo_avatar_option_dict = update_repo_avatar_option_instance.to_dict()

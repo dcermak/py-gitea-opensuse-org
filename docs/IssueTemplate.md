@@ -25,7 +25,7 @@ json = "{}"
 # create an instance of IssueTemplate from a JSON string
 issue_template_instance = IssueTemplate.from_json(json)
 # print the JSON string representation of the object
-print IssueTemplate.to_json()
+print(IssueTemplate.to_json())
 
 # convert the object into a dict
 issue_template_dict = issue_template_instance.to_dict()

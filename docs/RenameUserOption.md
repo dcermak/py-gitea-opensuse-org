@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of RenameUserOption from a JSON string
 rename_user_option_instance = RenameUserOption.from_json(json)
 # print the JSON string representation of the object
-print RenameUserOption.to_json()
+print(RenameUserOption.to_json())
 
 # convert the object into a dict
 rename_user_option_dict = rename_user_option_instance.to_dict()

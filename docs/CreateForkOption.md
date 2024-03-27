@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of CreateForkOption from a JSON string
 create_fork_option_instance = CreateForkOption.from_json(json)
 # print the JSON string representation of the object
-print CreateForkOption.to_json()
+print(CreateForkOption.to_json())
 
 # convert the object into a dict
 create_fork_option_dict = create_fork_option_instance.to_dict()

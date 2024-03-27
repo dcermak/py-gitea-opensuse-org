@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of StopWatch from a JSON string
 stop_watch_instance = StopWatch.from_json(json)
 # print the JSON string representation of the object
-print StopWatch.to_json()
+print(StopWatch.to_json())
 
 # convert the object into a dict
 stop_watch_dict = stop_watch_instance.to_dict()

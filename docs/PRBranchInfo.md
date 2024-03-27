@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of PRBranchInfo from a JSON string
 pr_branch_info_instance = PRBranchInfo.from_json(json)
 # print the JSON string representation of the object
-print PRBranchInfo.to_json()
+print(PRBranchInfo.to_json())
 
 # convert the object into a dict
 pr_branch_info_dict = pr_branch_info_instance.to_dict()

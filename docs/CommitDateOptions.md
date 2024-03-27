@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of CommitDateOptions from a JSON string
 commit_date_options_instance = CommitDateOptions.from_json(json)
 # print the JSON string representation of the object
-print CommitDateOptions.to_json()
+print(CommitDateOptions.to_json())
 
 # convert the object into a dict
 commit_date_options_dict = commit_date_options_instance.to_dict()

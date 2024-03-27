@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of TopicName from a JSON string
 topic_name_instance = TopicName.from_json(json)
 # print the JSON string representation of the object
-print TopicName.to_json()
+print(TopicName.to_json())
 
 # convert the object into a dict
 topic_name_dict = topic_name_instance.to_dict()

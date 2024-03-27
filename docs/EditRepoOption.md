@@ -47,7 +47,7 @@ json = "{}"
 # create an instance of EditRepoOption from a JSON string
 edit_repo_option_instance = EditRepoOption.from_json(json)
 # print the JSON string representation of the object
-print EditRepoOption.to_json()
+print(EditRepoOption.to_json())
 
 # convert the object into a dict
 edit_repo_option_dict = edit_repo_option_instance.to_dict()

@@ -25,7 +25,7 @@ json = "{}"
 # create an instance of ChangeFilesOptions from a JSON string
 change_files_options_instance = ChangeFilesOptions.from_json(json)
 # print the JSON string representation of the object
-print ChangeFilesOptions.to_json()
+print(ChangeFilesOptions.to_json())
 
 # convert the object into a dict
 change_files_options_dict = change_files_options_instance.to_dict()

@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of GeneralUISettings from a JSON string
 general_ui_settings_instance = GeneralUISettings.from_json(json)
 # print the JSON string representation of the object
-print GeneralUISettings.to_json()
+print(GeneralUISettings.to_json())
 
 # convert the object into a dict
 general_ui_settings_dict = general_ui_settings_instance.to_dict()

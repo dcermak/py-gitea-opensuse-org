@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of WatchInfo from a JSON string
 watch_info_instance = WatchInfo.from_json(json)
 # print the JSON string representation of the object
-print WatchInfo.to_json()
+print(WatchInfo.to_json())
 
 # convert the object into a dict
 watch_info_dict = watch_info_instance.to_dict()

@@ -27,7 +27,7 @@ json = "{}"
 # create an instance of PayloadCommit from a JSON string
 payload_commit_instance = PayloadCommit.from_json(json)
 # print the JSON string representation of the object
-print PayloadCommit.to_json()
+print(PayloadCommit.to_json())
 
 # convert the object into a dict
 payload_commit_dict = payload_commit_instance.to_dict()

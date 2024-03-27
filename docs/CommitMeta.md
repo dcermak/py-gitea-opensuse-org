@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of CommitMeta from a JSON string
 commit_meta_instance = CommitMeta.from_json(json)
 # print the JSON string representation of the object
-print CommitMeta.to_json()
+print(CommitMeta.to_json())
 
 # convert the object into a dict
 commit_meta_dict = commit_meta_instance.to_dict()

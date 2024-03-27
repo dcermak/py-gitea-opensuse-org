@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of GitObject from a JSON string
 git_object_instance = GitObject.from_json(json)
 # print the JSON string representation of the object
-print GitObject.to_json()
+print(GitObject.to_json())
 
 # convert the object into a dict
 git_object_dict = git_object_instance.to_dict()
