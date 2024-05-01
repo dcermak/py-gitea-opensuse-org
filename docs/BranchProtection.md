@@ -42,12 +42,12 @@ json = "{}"
 # create an instance of BranchProtection from a JSON string
 branch_protection_instance = BranchProtection.from_json(json)
 # print the JSON string representation of the object
-print BranchProtection.to_json()
+print(BranchProtection.to_json())
 
 # convert the object into a dict
 branch_protection_dict = branch_protection_instance.to_dict()
 # create an instance of BranchProtection from a dict
-branch_protection_form_dict = branch_protection.from_dict(branch_protection_dict)
+branch_protection_from_dict = BranchProtection.from_dict(branch_protection_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -26,12 +26,12 @@ json = "{}"
 # create an instance of ChangedFile from a JSON string
 changed_file_instance = ChangedFile.from_json(json)
 # print the JSON string representation of the object
-print ChangedFile.to_json()
+print(ChangedFile.to_json())
 
 # convert the object into a dict
 changed_file_dict = changed_file_instance.to_dict()
 # create an instance of ChangedFile from a dict
-changed_file_form_dict = changed_file.from_dict(changed_file_dict)
+changed_file_from_dict = ChangedFile.from_dict(changed_file_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

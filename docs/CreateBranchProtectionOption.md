@@ -40,12 +40,12 @@ json = "{}"
 # create an instance of CreateBranchProtectionOption from a JSON string
 create_branch_protection_option_instance = CreateBranchProtectionOption.from_json(json)
 # print the JSON string representation of the object
-print CreateBranchProtectionOption.to_json()
+print(CreateBranchProtectionOption.to_json())
 
 # convert the object into a dict
 create_branch_protection_option_dict = create_branch_protection_option_instance.to_dict()
 # create an instance of CreateBranchProtectionOption from a dict
-create_branch_protection_option_form_dict = create_branch_protection_option.from_dict(create_branch_protection_option_dict)
+create_branch_protection_option_from_dict = CreateBranchProtectionOption.from_dict(create_branch_protection_option_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
