@@ -38,12 +38,12 @@ json = "{}"
 # create an instance of EditBranchProtectionOption from a JSON string
 edit_branch_protection_option_instance = EditBranchProtectionOption.from_json(json)
 # print the JSON string representation of the object
-print EditBranchProtectionOption.to_json()
+print(EditBranchProtectionOption.to_json())
 
 # convert the object into a dict
 edit_branch_protection_option_dict = edit_branch_protection_option_instance.to_dict()
 # create an instance of EditBranchProtectionOption from a dict
-edit_branch_protection_option_form_dict = edit_branch_protection_option.from_dict(edit_branch_protection_option_dict)
+edit_branch_protection_option_from_dict = EditBranchProtectionOption.from_dict(edit_branch_protection_option_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

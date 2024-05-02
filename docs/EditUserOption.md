@@ -35,12 +35,12 @@ json = "{}"
 # create an instance of EditUserOption from a JSON string
 edit_user_option_instance = EditUserOption.from_json(json)
 # print the JSON string representation of the object
-print EditUserOption.to_json()
+print(EditUserOption.to_json())
 
 # convert the object into a dict
 edit_user_option_dict = edit_user_option_instance.to_dict()
 # create an instance of EditUserOption from a dict
-edit_user_option_form_dict = edit_user_option.from_dict(edit_user_option_dict)
+edit_user_option_from_dict = EditUserOption.from_dict(edit_user_option_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

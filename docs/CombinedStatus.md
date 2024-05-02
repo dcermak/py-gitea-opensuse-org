@@ -24,12 +24,12 @@ json = "{}"
 # create an instance of CombinedStatus from a JSON string
 combined_status_instance = CombinedStatus.from_json(json)
 # print the JSON string representation of the object
-print CombinedStatus.to_json()
+print(CombinedStatus.to_json())
 
 # convert the object into a dict
 combined_status_dict = combined_status_instance.to_dict()
 # create an instance of CombinedStatus from a dict
-combined_status_form_dict = combined_status.from_dict(combined_status_dict)
+combined_status_from_dict = CombinedStatus.from_dict(combined_status_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

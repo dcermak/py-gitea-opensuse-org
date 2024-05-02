@@ -37,12 +37,12 @@ json = "{}"
 # create an instance of MigrateRepoOptions from a JSON string
 migrate_repo_options_instance = MigrateRepoOptions.from_json(json)
 # print the JSON string representation of the object
-print MigrateRepoOptions.to_json()
+print(MigrateRepoOptions.to_json())
 
 # convert the object into a dict
 migrate_repo_options_dict = migrate_repo_options_instance.to_dict()
 # create an instance of MigrateRepoOptions from a dict
-migrate_repo_options_form_dict = migrate_repo_options.from_dict(migrate_repo_options_dict)
+migrate_repo_options_from_dict = MigrateRepoOptions.from_dict(migrate_repo_options_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
