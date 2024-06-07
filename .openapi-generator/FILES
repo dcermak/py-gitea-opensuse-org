@@ -5,6 +5,7 @@
 README.md
 docs/APIError.md
 docs/AccessToken.md
+docs/ActionVariable.md
 docs/Activity.md
 docs/ActivityPub.md
 docs/ActivitypubApi.md
@@ -14,6 +15,7 @@ docs/AdminApi.md
 docs/AnnotatedTag.md
 docs/AnnotatedTagObject.md
 docs/Attachment.md
+docs/Badge.md
 docs/Branch.md
 docs/BranchProtection.md
 docs/ChangeFileOperation.md
@@ -28,6 +30,7 @@ docs/CommitMeta.md
 docs/CommitStats.md
 docs/CommitStatus.md
 docs/CommitUser.md
+docs/Compare.md
 docs/ContentsResponse.md
 docs/CreateAccessTokenOption.md
 docs/CreateBranchProtectionOption.md
@@ -55,6 +58,7 @@ docs/CreateStatusOption.md
 docs/CreateTagOption.md
 docs/CreateTeamOption.md
 docs/CreateUserOption.md
+docs/CreateVariableOption.md
 docs/CreateWikiPageOptions.md
 docs/Cron.md
 docs/DeleteEmailOption.md
@@ -157,6 +161,7 @@ docs/Release.md
 docs/RenameUserOption.md
 docs/RepoCollaboratorPermission.md
 docs/RepoCommit.md
+docs/RepoCreateReleaseAttachmentRequest.md
 docs/RepoTopicOptions.md
 docs/RepoTransfer.md
 docs/Repository.md
@@ -179,8 +184,10 @@ docs/TransferRepoOption.md
 docs/UpdateFileOptions.md
 docs/UpdateRepoAvatarOption.md
 docs/UpdateUserAvatarOption.md
+docs/UpdateVariableOption.md
 docs/User.md
 docs/UserApi.md
+docs/UserBadgeOption.md
 docs/UserHeatmapData.md
 docs/UserSearch200Response.md
 docs/UserSettings.md
@@ -209,6 +216,7 @@ py_gitea_opensuse_org/configuration.py
 py_gitea_opensuse_org/exceptions.py
 py_gitea_opensuse_org/models/__init__.py
 py_gitea_opensuse_org/models/access_token.py
+py_gitea_opensuse_org/models/action_variable.py
 py_gitea_opensuse_org/models/activity.py
 py_gitea_opensuse_org/models/activity_pub.py
 py_gitea_opensuse_org/models/add_collaborator_option.py
@@ -217,6 +225,7 @@ py_gitea_opensuse_org/models/annotated_tag.py
 py_gitea_opensuse_org/models/annotated_tag_object.py
 py_gitea_opensuse_org/models/api_error.py
 py_gitea_opensuse_org/models/attachment.py
+py_gitea_opensuse_org/models/badge.py
 py_gitea_opensuse_org/models/branch.py
 py_gitea_opensuse_org/models/branch_protection.py
 py_gitea_opensuse_org/models/change_file_operation.py
@@ -231,6 +240,7 @@ py_gitea_opensuse_org/models/commit_meta.py
 py_gitea_opensuse_org/models/commit_stats.py
 py_gitea_opensuse_org/models/commit_status.py
 py_gitea_opensuse_org/models/commit_user.py
+py_gitea_opensuse_org/models/compare.py
 py_gitea_opensuse_org/models/contents_response.py
 py_gitea_opensuse_org/models/create_access_token_option.py
 py_gitea_opensuse_org/models/create_branch_protection_option.py
@@ -258,6 +268,7 @@ py_gitea_opensuse_org/models/create_status_option.py
 py_gitea_opensuse_org/models/create_tag_option.py
 py_gitea_opensuse_org/models/create_team_option.py
 py_gitea_opensuse_org/models/create_user_option.py
+py_gitea_opensuse_org/models/create_variable_option.py
 py_gitea_opensuse_org/models/create_wiki_page_options.py
 py_gitea_opensuse_org/models/cron.py
 py_gitea_opensuse_org/models/delete_email_option.py
@@ -355,6 +366,7 @@ py_gitea_opensuse_org/models/release.py
 py_gitea_opensuse_org/models/rename_user_option.py
 py_gitea_opensuse_org/models/repo_collaborator_permission.py
 py_gitea_opensuse_org/models/repo_commit.py
+py_gitea_opensuse_org/models/repo_create_release_attachment_request.py
 py_gitea_opensuse_org/models/repo_topic_options.py
 py_gitea_opensuse_org/models/repo_transfer.py
 py_gitea_opensuse_org/models/repository.py
@@ -375,7 +387,9 @@ py_gitea_opensuse_org/models/transfer_repo_option.py
 py_gitea_opensuse_org/models/update_file_options.py
 py_gitea_opensuse_org/models/update_repo_avatar_option.py
 py_gitea_opensuse_org/models/update_user_avatar_option.py
+py_gitea_opensuse_org/models/update_variable_option.py
 py_gitea_opensuse_org/models/user.py
+py_gitea_opensuse_org/models/user_badge_option.py
 py_gitea_opensuse_org/models/user_heatmap_data.py
 py_gitea_opensuse_org/models/user_search200_response.py
 py_gitea_opensuse_org/models/user_settings.py
@@ -393,4 +407,11 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_action_variable.py
+test/test_badge.py
+test/test_compare.py
+test/test_create_variable_option.py
+test/test_repo_create_release_attachment_request.py
+test/test_update_variable_option.py
+test/test_user_badge_option.py
 tox.ini

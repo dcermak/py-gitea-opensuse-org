@@ -826,6 +826,7 @@ Name | Type | Description  | Notes
 **201** | Comment |  -  |
 **403** | APIForbiddenError is a forbidden error response |  * message -  <br>  * url -  <br>  |
 **404** | APINotFound is a not found empty response |  -  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -954,6 +955,7 @@ Name | Type | Description  | Notes
 **404** | APINotFound is a not found empty response |  -  |
 **412** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -1083,6 +1085,8 @@ Name | Type | Description  | Notes
 **201** | Attachment |  -  |
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -1338,7 +1342,10 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **201** | Attachment |  -  |
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**403** | APIForbiddenError is a forbidden error response |  * message -  <br>  * url -  <br>  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -1466,6 +1473,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **201** | Issue |  -  |
 **404** | the issue does not exist |  -  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -2333,6 +2341,7 @@ void (empty response body)
 |-------------|-------------|------------------|
 **204** | APIEmpty is an empty response |  -  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -2456,6 +2465,7 @@ void (empty response body)
 |-------------|-------------|------------------|
 **204** | APIEmpty is an empty response |  -  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -3325,6 +3335,7 @@ Name | Type | Description  | Notes
 **204** | APIEmpty is an empty response |  -  |
 **403** | APIForbiddenError is a forbidden error response |  * message -  <br>  * url -  <br>  |
 **404** | APINotFound is a not found empty response |  -  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -3714,6 +3725,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **201** | Attachment |  -  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -3843,6 +3855,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **201** | Attachment |  -  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -6468,7 +6481,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     milestones = 'milestones_example' # str | comma separated list of milestone names or ids. It uses names and fall back to ids. Fetch only issues that have any of this milestones. Non existent milestones are discarded (optional)
     since = '2013-10-20T19:20:30+01:00' # datetime | Only show items updated after the given time. This is a timestamp in RFC 3339 format (optional)
     before = '2013-10-20T19:20:30+01:00' # datetime | Only show items updated before the given time. This is a timestamp in RFC 3339 format (optional)
-    created_by = 'created_by_example' # str | Only show items which were created by the the given user (optional)
+    created_by = 'created_by_example' # str | Only show items which were created by the given user (optional)
     assigned_by = 'assigned_by_example' # str | Only show items for which the given user is assigned (optional)
     mentioned_by = 'mentioned_by_example' # str | Only show items in which the given user was mentioned (optional)
     page = 56 # int | page number of results to return (1-based) (optional)
@@ -6499,7 +6512,7 @@ Name | Type | Description  | Notes
  **milestones** | **str**| comma separated list of milestone names or ids. It uses names and fall back to ids. Fetch only issues that have any of this milestones. Non existent milestones are discarded | [optional] 
  **since** | **datetime**| Only show items updated after the given time. This is a timestamp in RFC 3339 format | [optional] 
  **before** | **datetime**| Only show items updated before the given time. This is a timestamp in RFC 3339 format | [optional] 
- **created_by** | **str**| Only show items which were created by the the given user | [optional] 
+ **created_by** | **str**| Only show items which were created by the given user | [optional] 
  **assigned_by** | **str**| Only show items for which the given user is assigned | [optional] 
  **mentioned_by** | **str**| Only show items in which the given user was mentioned | [optional] 
  **page** | **int**| page number of results to return (1-based) | [optional] 
@@ -7162,6 +7175,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **200** | Issue |  -  |
 **404** | APINotFound is a not found empty response |  -  |
+**423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

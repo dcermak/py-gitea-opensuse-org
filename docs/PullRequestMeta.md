@@ -6,6 +6,8 @@ PullRequestMeta PR info if an issue is a PR
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**draft** | **bool** |  | [optional] 
+**html_url** | **str** |  | [optional] 
 **merged** | **bool** |  | [optional] 
 **merged_at** | **datetime** |  | [optional] 
 

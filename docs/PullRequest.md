@@ -6,15 +6,19 @@ PullRequest represents a pull request
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**additions** | **int** |  | [optional] 
 **allow_maintainer_edit** | **bool** |  | [optional] 
 **assignee** | [**User**](User.md) |  | [optional] 
 **assignees** | [**List[User]**](User.md) |  | [optional] 
 **base** | [**PRBranchInfo**](PRBranchInfo.md) |  | [optional] 
 **body** | **str** |  | [optional] 
+**changed_files** | **int** |  | [optional] 
 **closed_at** | **datetime** |  | [optional] 
 **comments** | **int** |  | [optional] 
 **created_at** | **datetime** |  | [optional] 
+**deletions** | **int** |  | [optional] 
 **diff_url** | **str** |  | [optional] 
+**draft** | **bool** |  | [optional] 
 **due_date** | **datetime** |  | [optional] 
 **head** | [**PRBranchInfo**](PRBranchInfo.md) |  | [optional] 
 **html_url** | **str** |  | [optional] 
@@ -32,6 +36,7 @@ Name | Type | Description | Notes
 **patch_url** | **str** |  | [optional] 
 **pin_order** | **int** |  | [optional] 
 **requested_reviewers** | [**List[User]**](User.md) |  | [optional] 
+**review_comments** | **int** | number of review comments made on the diff of a PR review (not including comments on commits or issues in a PR) | [optional] 
 **state** | **str** | StateType issue state type | [optional] 
 **title** | **str** |  | [optional] 
 **updated_at** | **datetime** |  | [optional] 
