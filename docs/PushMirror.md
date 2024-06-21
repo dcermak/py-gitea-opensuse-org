@@ -6,10 +6,10 @@ PushMirror represents information of a push mirror
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**created** | **str** |  | [optional] 
+**created** | **datetime** |  | [optional] 
 **interval** | **str** |  | [optional] 
 **last_error** | **str** |  | [optional] 
-**last_update** | **str** |  | [optional] 
+**last_update** | **datetime** |  | [optional] 
 **remote_address** | **str** |  | [optional] 
 **remote_name** | **str** |  | [optional] 
 **repo_name** | **str** |  | [optional] 

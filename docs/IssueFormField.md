@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **id** | **str** |  | [optional] 
 **type** | **str** |  | [optional] 
 **validations** | **Dict[str, object]** |  | [optional] 
+**visible** | **List[str]** |  | [optional] 
 
 ## Example
 

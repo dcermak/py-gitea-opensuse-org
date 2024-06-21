@@ -6,7 +6,7 @@ IssueLabelsOption a collection of labels
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**labels** | **List[int]** | list of label IDs | [optional] 
+**labels** | **List[object]** | Labels can be a list of integers representing label IDs or a list of strings representing label names | [optional] 
 
 ## Example
 
