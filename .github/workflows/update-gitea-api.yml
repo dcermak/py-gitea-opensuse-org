@@ -37,7 +37,7 @@ jobs:
         run: rm .gitlab-ci.yml .travis.yml git_push.sh setup.py setup.cfg
 
       - name: create a pull request with the updated files
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           delete-branch: true
           commit-message: "🤖: Update gitea API via openapi-generator-cli"
