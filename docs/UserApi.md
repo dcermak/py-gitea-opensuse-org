@@ -4,7 +4,7 @@ All URIs are relative to */api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_current_user_repo**](UserApi.md#create_current_user_repo) | **POST** /user/repos | Create a repository
+[**create_current_user_repo_0**](UserApi.md#create_current_user_repo_0) | **POST** /user/repos | Create a repository
 [**create_user_variable**](UserApi.md#create_user_variable) | **POST** /user/actions/variables/{variablename} | Create a user-level variable
 [**delete_user_secret**](UserApi.md#delete_user_secret) | **DELETE** /user/actions/secrets/{secretname} | Delete a secret in a user scope
 [**delete_user_variable**](UserApi.md#delete_user_variable) | **DELETE** /user/actions/variables/{variablename} | Delete a user-level variable which is created by current doer
@@ -76,8 +76,8 @@ Method | HTTP request | Description
 [**user_verify_gpg_key**](UserApi.md#user_verify_gpg_key) | **POST** /user/gpg_key_verify | Verify a GPG key
 
 
-# **create_current_user_repo**
-> Repository create_current_user_repo(body=body)
+# **create_current_user_repo_0**
+> Repository create_current_user_repo_0(body=body)
 
 Create a repository
 
@@ -159,11 +159,11 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
     try:
         # Create a repository
-        api_response = await api_instance.create_current_user_repo(body=body)
-        print("The response of UserApi->create_current_user_repo:\n")
+        api_response = await api_instance.create_current_user_repo_0(body=body)
+        print("The response of UserApi->create_current_user_repo_0:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling UserApi->create_current_user_repo: %s\n" % e)
+        print("Exception when calling UserApi->create_current_user_repo_0: %s\n" % e)
 ```
 
 

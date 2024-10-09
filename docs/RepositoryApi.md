@@ -105,7 +105,7 @@ Method | HTTP request | Description
 [**repo_get_release_by_tag**](RepositoryApi.md#repo_get_release_by_tag) | **GET** /repos/{owner}/{repo}/releases/tags/{tag} | Get a release by tag name
 [**repo_get_repo_permissions**](RepositoryApi.md#repo_get_repo_permissions) | **GET** /repos/{owner}/{repo}/collaborators/{collaborator}/permission | Get repository permissions for a user
 [**repo_get_reviewers**](RepositoryApi.md#repo_get_reviewers) | **GET** /repos/{owner}/{repo}/reviewers | Return all users that can be requested to review in this repo
-[**repo_get_runner_registration_token**](RepositoryApi.md#repo_get_runner_registration_token) | **GET** /repos/{owner}/{repo}/runners/registration-token | Get a repository&#39;s actions runner registration token
+[**repo_get_runner_registration_token**](RepositoryApi.md#repo_get_runner_registration_token) | **GET** /repos/{owner}/{repo}/actions/runners/registration-token | Get a repository&#39;s actions runner registration token
 [**repo_get_single_commit**](RepositoryApi.md#repo_get_single_commit) | **GET** /repos/{owner}/{repo}/git/commits/{sha} | Get a single commit from a repository
 [**repo_get_tag**](RepositoryApi.md#repo_get_tag) | **GET** /repos/{owner}/{repo}/tags/{tag} | Get the tag of a repository by tag name
 [**repo_get_wiki_page**](RepositoryApi.md#repo_get_wiki_page) | **GET** /repos/{owner}/{repo}/wiki/page/{pageName} | Get a wiki page
