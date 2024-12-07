@@ -19,6 +19,7 @@ import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.git_object import GitObject  # noqa: E501
 from py_gitea_opensuse_org.rest import ApiException
 
+
 class TestGitObject(unittest.TestCase):
     """GitObject unit test stubs"""
 
@@ -30,9 +31,9 @@ class TestGitObject(unittest.TestCase):
 
     def make_instance(self, include_optional):
         """Test GitObject
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `GitObject`
         """
         model = py_gitea_opensuse_org.models.git_object.GitObject()  # noqa: E501
@@ -52,5 +53,6 @@ class TestGitObject(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

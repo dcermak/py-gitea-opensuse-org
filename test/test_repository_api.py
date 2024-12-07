@@ -23,7 +23,9 @@ class TestRepositoryApi(unittest.TestCase):
     """RepositoryApi unit test stubs"""
 
     def setUp(self):
-        self.api = py_gitea_opensuse_org.api.repository_api.RepositoryApi()  # noqa: E501
+        self.api = (
+            py_gitea_opensuse_org.api.repository_api.RepositoryApi()
+        )  # noqa: E501
 
     def tearDown(self):
         pass
@@ -974,5 +976,5 @@ class TestRepositoryApi(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

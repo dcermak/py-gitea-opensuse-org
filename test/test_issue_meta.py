@@ -17,6 +17,7 @@ import datetime
 
 from py_gitea_opensuse_org.models.issue_meta import IssueMeta
 
+
 class TestIssueMeta(unittest.TestCase):
     """IssueMeta unit test stubs"""
 
@@ -28,9 +29,9 @@ class TestIssueMeta(unittest.TestCase):
 
     def make_instance(self, include_optional) -> IssueMeta:
         """Test IssueMeta
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `IssueMeta`
         """
         model = IssueMeta()
@@ -50,5 +51,6 @@ class TestIssueMeta(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

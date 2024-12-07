@@ -19,6 +19,7 @@ import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.repository_meta import RepositoryMeta  # noqa: E501
 from py_gitea_opensuse_org.rest import ApiException
 
+
 class TestRepositoryMeta(unittest.TestCase):
     """RepositoryMeta unit test stubs"""
 
@@ -30,9 +31,9 @@ class TestRepositoryMeta(unittest.TestCase):
 
     def make_instance(self, include_optional):
         """Test RepositoryMeta
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `RepositoryMeta`
         """
         model = py_gitea_opensuse_org.models.repository_meta.RepositoryMeta()  # noqa: E501
@@ -53,5 +54,6 @@ class TestRepositoryMeta(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -19,6 +19,7 @@ import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.pr_branch_info import PRBranchInfo  # noqa: E501
 from py_gitea_opensuse_org.rest import ApiException
 
+
 class TestPRBranchInfo(unittest.TestCase):
     """PRBranchInfo unit test stubs"""
 
@@ -30,9 +31,9 @@ class TestPRBranchInfo(unittest.TestCase):
 
     def make_instance(self, include_optional):
         """Test PRBranchInfo
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `PRBranchInfo`
         """
         model = py_gitea_opensuse_org.models.pr_branch_info.PRBranchInfo()  # noqa: E501
@@ -233,5 +234,6 @@ class TestPRBranchInfo(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -19,6 +19,7 @@ import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.issue_form_field import IssueFormField  # noqa: E501
 from py_gitea_opensuse_org.rest import ApiException
 
+
 class TestIssueFormField(unittest.TestCase):
     """IssueFormField unit test stubs"""
 
@@ -30,9 +31,9 @@ class TestIssueFormField(unittest.TestCase):
 
     def make_instance(self, include_optional):
         """Test IssueFormField
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `IssueFormField`
         """
         model = py_gitea_opensuse_org.models.issue_form_field.IssueFormField()  # noqa: E501
@@ -57,5 +58,6 @@ class TestIssueFormField(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -19,6 +19,7 @@ import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.annotated_tag import AnnotatedTag  # noqa: E501
 from py_gitea_opensuse_org.rest import ApiException
 
+
 class TestAnnotatedTag(unittest.TestCase):
     """AnnotatedTag unit test stubs"""
 
@@ -30,9 +31,9 @@ class TestAnnotatedTag(unittest.TestCase):
 
     def make_instance(self, include_optional):
         """Test AnnotatedTag
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `AnnotatedTag`
         """
         model = py_gitea_opensuse_org.models.annotated_tag.AnnotatedTag()  # noqa: E501
@@ -70,5 +71,6 @@ class TestAnnotatedTag(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

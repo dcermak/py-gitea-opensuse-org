@@ -407,11 +407,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_action_variable.py
-test/test_badge.py
-test/test_compare.py
-test/test_create_variable_option.py
-test/test_repo_create_release_attachment_request.py
-test/test_update_variable_option.py
-test/test_user_badge_option.py
 tox.ini

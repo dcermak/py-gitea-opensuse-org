@@ -19,6 +19,7 @@ import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.wiki_page import WikiPage  # noqa: E501
 from py_gitea_opensuse_org.rest import ApiException
 
+
 class TestWikiPage(unittest.TestCase):
     """WikiPage unit test stubs"""
 
@@ -30,9 +31,9 @@ class TestWikiPage(unittest.TestCase):
 
     def make_instance(self, include_optional):
         """Test WikiPage
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `WikiPage`
         """
         model = py_gitea_opensuse_org.models.wiki_page.WikiPage()  # noqa: E501
@@ -67,5 +68,6 @@ class TestWikiPage(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

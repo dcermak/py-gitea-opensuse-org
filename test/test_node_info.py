@@ -19,6 +19,7 @@ import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.node_info import NodeInfo  # noqa: E501
 from py_gitea_opensuse_org.rest import ApiException
 
+
 class TestNodeInfo(unittest.TestCase):
     """NodeInfo unit test stubs"""
 
@@ -30,9 +31,9 @@ class TestNodeInfo(unittest.TestCase):
 
     def make_instance(self, include_optional):
         """Test NodeInfo
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `NodeInfo`
         """
         model = py_gitea_opensuse_org.models.node_info.NodeInfo()  # noqa: E501
@@ -74,5 +75,6 @@ class TestNodeInfo(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
