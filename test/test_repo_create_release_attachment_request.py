@@ -14,7 +14,10 @@
 
 import unittest
 
-from py_gitea_opensuse_org.models.repo_create_release_attachment_request import RepoCreateReleaseAttachmentRequest
+from py_gitea_opensuse_org.models.repo_create_release_attachment_request import (
+    RepoCreateReleaseAttachmentRequest,
+)
+
 
 class TestRepoCreateReleaseAttachmentRequest(unittest.TestCase):
     """RepoCreateReleaseAttachmentRequest unit test stubs"""
@@ -27,9 +30,9 @@ class TestRepoCreateReleaseAttachmentRequest(unittest.TestCase):
 
     def make_instance(self, include_optional) -> RepoCreateReleaseAttachmentRequest:
         """Test RepoCreateReleaseAttachmentRequest
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `RepoCreateReleaseAttachmentRequest`
         """
         model = RepoCreateReleaseAttachmentRequest()
@@ -47,5 +50,6 @@ class TestRepoCreateReleaseAttachmentRequest(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

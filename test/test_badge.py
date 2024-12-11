@@ -16,6 +16,7 @@ import unittest
 
 from py_gitea_opensuse_org.models.badge import Badge
 
+
 class TestBadge(unittest.TestCase):
     """Badge unit test stubs"""
 
@@ -27,9 +28,9 @@ class TestBadge(unittest.TestCase):
 
     def make_instance(self, include_optional) -> Badge:
         """Test Badge
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `Badge`
         """
         model = Badge()
@@ -50,5 +51,6 @@ class TestBadge(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

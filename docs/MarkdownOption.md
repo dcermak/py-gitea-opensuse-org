@@ -6,7 +6,7 @@ MarkdownOption markdown options
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | **str** | Context to render  in: body | [optional] 
+**context** | **str** | URL path for rendering issue, media and file links Expected format: /subpath/{user}/{repo}/src/{branch, commit, tag}/{identifier/path}/{file/dir}  in: body | [optional] 
 **mode** | **str** | Mode to render (comment, gfm, markdown)  in: body | [optional] 
 **text** | **str** | Text markdown to render  in: body | [optional] 
 **wiki** | **bool** | Is it a wiki page ?  in: body | [optional] 

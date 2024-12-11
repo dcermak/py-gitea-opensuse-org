@@ -16,8 +16,11 @@ import unittest
 import datetime
 
 import py_gitea_opensuse_org
-from py_gitea_opensuse_org.models.create_pull_review_options import CreatePullReviewOptions  # noqa: E501
+from py_gitea_opensuse_org.models.create_pull_review_options import (
+    CreatePullReviewOptions,
+)  # noqa: E501
 from py_gitea_opensuse_org.rest import ApiException
+
 
 class TestCreatePullReviewOptions(unittest.TestCase):
     """CreatePullReviewOptions unit test stubs"""
@@ -30,9 +33,9 @@ class TestCreatePullReviewOptions(unittest.TestCase):
 
     def make_instance(self, include_optional):
         """Test CreatePullReviewOptions
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `CreatePullReviewOptions`
         """
         model = py_gitea_opensuse_org.models.create_pull_review_options.CreatePullReviewOptions()  # noqa: E501
@@ -59,5 +62,6 @@ class TestCreatePullReviewOptions(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

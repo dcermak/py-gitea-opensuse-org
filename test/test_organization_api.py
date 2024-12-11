@@ -23,7 +23,9 @@ class TestOrganizationApi(unittest.TestCase):
     """OrganizationApi unit test stubs"""
 
     def setUp(self):
-        self.api = py_gitea_opensuse_org.api.organization_api.OrganizationApi()  # noqa: E501
+        self.api = (
+            py_gitea_opensuse_org.api.organization_api.OrganizationApi()
+        )  # noqa: E501
 
     def tearDown(self):
         pass
@@ -323,5 +325,5 @@ class TestOrganizationApi(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

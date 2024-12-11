@@ -17,6 +17,7 @@ import datetime
 
 from py_gitea_opensuse_org.models.activity import Activity
 
+
 class TestActivity(unittest.TestCase):
     """Activity unit test stubs"""
 
@@ -28,9 +29,9 @@ class TestActivity(unittest.TestCase):
 
     def make_instance(self, include_optional) -> Activity:
         """Test Activity
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `Activity`
         """
         model = Activity()
@@ -310,5 +311,6 @@ class TestActivity(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

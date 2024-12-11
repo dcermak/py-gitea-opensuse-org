@@ -19,6 +19,7 @@ import py_gitea_opensuse_org
 from py_gitea_opensuse_org.models.git_tree_response import GitTreeResponse  # noqa: E501
 from py_gitea_opensuse_org.rest import ApiException
 
+
 class TestGitTreeResponse(unittest.TestCase):
     """GitTreeResponse unit test stubs"""
 
@@ -30,9 +31,9 @@ class TestGitTreeResponse(unittest.TestCase):
 
     def make_instance(self, include_optional):
         """Test GitTreeResponse
-            include_option is a boolean, when False only required
-            params are included, when True both required and
-            optional params are included """
+        include_option is a boolean, when False only required
+        params are included, when True both required and
+        optional params are included"""
         # uncomment below to create an instance of `GitTreeResponse`
         """
         model = py_gitea_opensuse_org.models.git_tree_response.GitTreeResponse()  # noqa: E501
@@ -63,5 +64,6 @@ class TestGitTreeResponse(unittest.TestCase):
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

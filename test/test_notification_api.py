@@ -23,7 +23,9 @@ class TestNotificationApi(unittest.TestCase):
     """NotificationApi unit test stubs"""
 
     def setUp(self):
-        self.api = py_gitea_opensuse_org.api.notification_api.NotificationApi()  # noqa: E501
+        self.api = (
+            py_gitea_opensuse_org.api.notification_api.NotificationApi()
+        )  # noqa: E501
 
     def tearDown(self):
         pass
@@ -78,5 +80,5 @@ class TestNotificationApi(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
