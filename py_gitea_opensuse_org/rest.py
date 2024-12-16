@@ -16,7 +16,7 @@ import io
 import json
 import re
 import ssl
-from typing import Union
+from typing import Optional, Union
 
 import aiohttp
 import aiohttp_retry
@@ -72,6 +72,15 @@ class RESTClientObject:
         self.proxy_headers = configuration.proxy_headers
 
         self.retries = configuration.retries
+
+        self.pool_manager: Optional[aiohttp.ClientSession] = None
+        self.retry_client: Optional[aiohttp_retry.RetryClient] = None
+
+    async def close(self) -> None:
+        if self.pool_manager:
+            await self.pool_manager.close()
+        if self.retry_client is not None:
+            await self.retry_client.close()
 
     async def request(
         self,
@@ -178,23 +187,26 @@ class RESTClientObject:
         pool_manager: Union[aiohttp.ClientSession, aiohttp_retry.RetryClient]
 
         # https pool manager
-        pool_manager = aiohttp.ClientSession(
-            connector=aiohttp.TCPConnector(limit=self.maxsize, ssl=self.ssl_context),
-            trust_env=True,
-        )
+        if self.pool_manager is None:
+            self.pool_manager = aiohttp.ClientSession(
+                connector=aiohttp.TCPConnector(limit=self.maxsize, ssl=self.ssl_context),
+                trust_env=True,
+            )
+        pool_manager = self.pool_manager
 
         if self.retries is not None and method in ALLOW_RETRY_METHODS:
-            pool_manager = aiohttp_retry.RetryClient(
-                client_session=pool_manager,
-                retry_options=aiohttp_retry.ExponentialRetry(
-                    attempts=self.retries,
-                    factor=2.0,
-                    start_timeout=0.1,
-                    max_timeout=120.0
+            if self.retry_client is None:
+                self.retry_client = aiohttp_retry.RetryClient(
+                    client_session=self.pool_manager,
+                    retry_options=aiohttp_retry.ExponentialRetry(
+                        attempts=self.retries,
+                        factor=2.0,
+                        start_timeout=0.1,
+                        max_timeout=120.0
+                    )
                 )
-            )
+            pool_manager = self.retry_client
 
-        async with pool_manager:
-            r = await pool_manager.request(**args)
+        r = await pool_manager.request(**args)
 
-            return RESTResponse(r)
+        return RESTResponse(r)
