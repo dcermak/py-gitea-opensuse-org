@@ -3725,6 +3725,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **201** | Attachment |  -  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
 **423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3855,6 +3856,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **201** | Attachment |  -  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
 **423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
