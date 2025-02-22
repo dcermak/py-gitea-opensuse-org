@@ -7,6 +7,7 @@ IssueTemplate represents an issue template for a repository
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **about** | **str** |  | [optional] 
+**assignees** | **List[str]** |  | [optional] 
 **body** | [**List[IssueFormField]**](IssueFormField.md) |  | [optional] 
 **content** | **str** |  | [optional] 
 **file_name** | **str** |  | [optional] 
