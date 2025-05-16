@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py_gitea_opensuse_org"
-version = "1.22.4.post1"
+version = "1.23.8"
 description = "Gitea API"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
 license = "MIT"
@@ -10,9 +10,9 @@ keywords = ["OpenAPI", "OpenAPI-Generator", "Gitea API"]
 include = ["py_gitea_opensuse_org/py.typed"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 
-urllib3 = ">= 1.25.3 < 3.0.0"
+urllib3 = ">= 2.1.0, < 3.0.0"
 python-dateutil = ">= 2.8.2"
 aiohttp = ">= 3.8.4"
 aiohttp-retry = ">= 2.8.3"

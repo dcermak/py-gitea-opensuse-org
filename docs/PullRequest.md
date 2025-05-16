@@ -36,6 +36,7 @@ Name | Type | Description | Notes
 **patch_url** | **str** |  | [optional] 
 **pin_order** | **int** |  | [optional] 
 **requested_reviewers** | [**List[User]**](User.md) |  | [optional] 
+**requested_reviewers_teams** | [**List[Team]**](Team.md) |  | [optional] 
 **review_comments** | **int** | number of review comments made on the diff of a PR review (not including comments on commits or issues in a PR) | [optional] 
 **state** | **str** | StateType issue state type | [optional] 
 **title** | **str** |  | [optional] 

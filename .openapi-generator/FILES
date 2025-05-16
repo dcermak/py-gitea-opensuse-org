@@ -5,6 +5,8 @@
 README.md
 docs/APIError.md
 docs/AccessToken.md
+docs/ActionTask.md
+docs/ActionTaskResponse.md
 docs/ActionVariable.md
 docs/Activity.md
 docs/ActivityPub.md
@@ -56,6 +58,7 @@ docs/CreateReleaseOption.md
 docs/CreateRepoOption.md
 docs/CreateStatusOption.md
 docs/CreateTagOption.md
+docs/CreateTagProtectionOption.md
 docs/CreateTeamOption.md
 docs/CreateUserOption.md
 docs/CreateVariableOption.md
@@ -79,6 +82,7 @@ docs/EditPullRequestOption.md
 docs/EditReactionOption.md
 docs/EditReleaseOption.md
 docs/EditRepoOption.md
+docs/EditTagProtectionOption.md
 docs/EditTeamOption.md
 docs/EditUserOption.md
 docs/Email.md
@@ -122,6 +126,8 @@ docs/LicensesTemplateListEntry.md
 docs/MarkdownOption.md
 docs/MarkupOption.md
 docs/MergePullRequestOption.md
+docs/MergeUpstreamRequest.md
+docs/MergeUpstreamResponse.md
 docs/MigrateRepoOptions.md
 docs/Milestone.md
 docs/MiscellaneousApi.md
@@ -174,6 +180,7 @@ docs/SettingsApi.md
 docs/StopWatch.md
 docs/SubmitPullReviewOptions.md
 docs/Tag.md
+docs/TagProtection.md
 docs/Team.md
 docs/TeamSearch200Response.md
 docs/TimelineComment.md
@@ -181,6 +188,8 @@ docs/TopicName.md
 docs/TopicResponse.md
 docs/TrackedTime.md
 docs/TransferRepoOption.md
+docs/UpdateBranchProtectionPriories.md
+docs/UpdateBranchRepoOption.md
 docs/UpdateFileOptions.md
 docs/UpdateRepoAvatarOption.md
 docs/UpdateUserAvatarOption.md
@@ -216,6 +225,8 @@ py_gitea_opensuse_org/configuration.py
 py_gitea_opensuse_org/exceptions.py
 py_gitea_opensuse_org/models/__init__.py
 py_gitea_opensuse_org/models/access_token.py
+py_gitea_opensuse_org/models/action_task.py
+py_gitea_opensuse_org/models/action_task_response.py
 py_gitea_opensuse_org/models/action_variable.py
 py_gitea_opensuse_org/models/activity.py
 py_gitea_opensuse_org/models/activity_pub.py
@@ -266,6 +277,7 @@ py_gitea_opensuse_org/models/create_release_option.py
 py_gitea_opensuse_org/models/create_repo_option.py
 py_gitea_opensuse_org/models/create_status_option.py
 py_gitea_opensuse_org/models/create_tag_option.py
+py_gitea_opensuse_org/models/create_tag_protection_option.py
 py_gitea_opensuse_org/models/create_team_option.py
 py_gitea_opensuse_org/models/create_user_option.py
 py_gitea_opensuse_org/models/create_variable_option.py
@@ -289,6 +301,7 @@ py_gitea_opensuse_org/models/edit_pull_request_option.py
 py_gitea_opensuse_org/models/edit_reaction_option.py
 py_gitea_opensuse_org/models/edit_release_option.py
 py_gitea_opensuse_org/models/edit_repo_option.py
+py_gitea_opensuse_org/models/edit_tag_protection_option.py
 py_gitea_opensuse_org/models/edit_team_option.py
 py_gitea_opensuse_org/models/edit_user_option.py
 py_gitea_opensuse_org/models/email.py
@@ -331,6 +344,8 @@ py_gitea_opensuse_org/models/licenses_template_list_entry.py
 py_gitea_opensuse_org/models/markdown_option.py
 py_gitea_opensuse_org/models/markup_option.py
 py_gitea_opensuse_org/models/merge_pull_request_option.py
+py_gitea_opensuse_org/models/merge_upstream_request.py
+py_gitea_opensuse_org/models/merge_upstream_response.py
 py_gitea_opensuse_org/models/migrate_repo_options.py
 py_gitea_opensuse_org/models/milestone.py
 py_gitea_opensuse_org/models/new_issue_pins_allowed.py
@@ -377,6 +392,7 @@ py_gitea_opensuse_org/models/server_version.py
 py_gitea_opensuse_org/models/stop_watch.py
 py_gitea_opensuse_org/models/submit_pull_review_options.py
 py_gitea_opensuse_org/models/tag.py
+py_gitea_opensuse_org/models/tag_protection.py
 py_gitea_opensuse_org/models/team.py
 py_gitea_opensuse_org/models/team_search200_response.py
 py_gitea_opensuse_org/models/timeline_comment.py
@@ -384,6 +400,8 @@ py_gitea_opensuse_org/models/topic_name.py
 py_gitea_opensuse_org/models/topic_response.py
 py_gitea_opensuse_org/models/tracked_time.py
 py_gitea_opensuse_org/models/transfer_repo_option.py
+py_gitea_opensuse_org/models/update_branch_protection_priories.py
+py_gitea_opensuse_org/models/update_branch_repo_option.py
 py_gitea_opensuse_org/models/update_file_options.py
 py_gitea_opensuse_org/models/update_repo_avatar_option.py
 py_gitea_opensuse_org/models/update_user_avatar_option.py
@@ -407,4 +425,13 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_action_task.py
+test/test_action_task_response.py
+test/test_create_tag_protection_option.py
+test/test_edit_tag_protection_option.py
+test/test_merge_upstream_request.py
+test/test_merge_upstream_response.py
+test/test_tag_protection.py
+test/test_update_branch_protection_priories.py
+test/test_update_branch_repo_option.py
 tox.ini

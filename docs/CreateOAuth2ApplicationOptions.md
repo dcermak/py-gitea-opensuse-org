@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **confidential_client** | **bool** |  | [optional] 
 **name** | **str** |  | [optional] 
 **redirect_uris** | **List[str]** |  | [optional] 
+**skip_secondary_authorization** | **bool** |  | [optional] 
 
 ## Example
 
