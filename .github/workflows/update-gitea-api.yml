@@ -7,6 +7,9 @@ on:
 jobs:
   update-files:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: checkout source code
         uses: actions/checkout@v4
@@ -46,4 +49,4 @@ jobs:
           body: |
             This is an automated update regenerating the gitea API via openapi-generator-cli
           base: main
-          token: ${{ secrets.CHECKOUT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
