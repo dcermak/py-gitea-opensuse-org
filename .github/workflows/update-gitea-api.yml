@@ -10,10 +10,11 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-      actions: write
     steps:
       - name: checkout source code
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
@@ -50,4 +51,4 @@ jobs:
           body: |
             This is an automated update regenerating the gitea API via openapi-generator-cli
           base: main
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
