@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **created** | **datetime** |  | [optional] 
 **id** | **int** |  | [optional] 
 **is_private** | **bool** |  | [optional] 
-**op_type** | **str** |  | [optional] 
+**op_type** | **str** | the type of action | [optional] 
 **ref_name** | **str** |  | [optional] 
 **repo** | [**Repository**](Repository.md) |  | [optional] 
 **repo_id** | **int** |  | [optional] 
