@@ -7,6 +7,7 @@ Repository represents a repository
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **allow_fast_forward_only_merge** | **bool** |  | [optional] 
+**allow_manual_merge** | **bool** |  | [optional] 
 **allow_merge_commits** | **bool** |  | [optional] 
 **allow_rebase** | **bool** |  | [optional] 
 **allow_rebase_explicit** | **bool** |  | [optional] 
@@ -14,6 +15,7 @@ Name | Type | Description | Notes
 **allow_squash_merge** | **bool** |  | [optional] 
 **archived** | **bool** |  | [optional] 
 **archived_at** | **datetime** |  | [optional] 
+**autodetect_manual_merge** | **bool** |  | [optional] 
 **avatar_url** | **str** |  | [optional] 
 **clone_url** | **str** |  | [optional] 
 **created_at** | **datetime** |  | [optional] 
@@ -42,6 +44,7 @@ Name | Type | Description | Notes
 **internal_tracker** | [**InternalTracker**](InternalTracker.md) |  | [optional] 
 **language** | **str** |  | [optional] 
 **languages_url** | **str** |  | [optional] 
+**licenses** | **List[str]** |  | [optional] 
 **link** | **str** |  | [optional] 
 **mirror** | **bool** |  | [optional] 
 **mirror_interval** | **str** |  | [optional] 
@@ -62,6 +65,7 @@ Name | Type | Description | Notes
 **ssh_url** | **str** |  | [optional] 
 **stars_count** | **int** |  | [optional] 
 **template** | **bool** |  | [optional] 
+**topics** | **List[str]** |  | [optional] 
 **updated_at** | **datetime** |  | [optional] 
 **url** | **str** |  | [optional] 
 **watchers_count** | **int** |  | [optional] 
