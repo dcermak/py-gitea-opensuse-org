@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **id** | **int** |  | [optional] 
 **name** | **str** |  | [optional] 
 **redirect_uris** | **List[str]** |  | [optional] 
+**skip_secondary_authorization** | **bool** |  | [optional] 
 
 ## Example
 
