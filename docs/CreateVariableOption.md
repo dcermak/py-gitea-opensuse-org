@@ -6,6 +6,7 @@ CreateVariableOption the option when creating variable
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**description** | **str** | Description of the variable to create | [optional] 
 **value** | **str** | Value of the variable to create | 
 
 ## Example

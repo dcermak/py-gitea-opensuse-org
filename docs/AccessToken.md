@@ -5,7 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**created_at** | **datetime** |  | [optional] 
 **id** | **int** |  | [optional] 
+**last_used_at** | **datetime** |  | [optional] 
 **name** | **str** |  | [optional] 
 **scopes** | **List[str]** |  | [optional] 
 **sha1** | **str** |  | [optional] 

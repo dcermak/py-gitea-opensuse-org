@@ -7,6 +7,7 @@ CreateOrUpdateSecretOption options when creating or updating secret
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **data** | **str** | Data of the secret to update | 
+**description** | **str** | Description of the secret to update | [optional] 
 
 ## Example
 

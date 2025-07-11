@@ -9,6 +9,8 @@ Name | Type | Description | Notes
 **auth_password** | **str** |  | [optional] 
 **auth_token** | **str** |  | [optional] 
 **auth_username** | **str** |  | [optional] 
+**aws_access_key_id** | **str** |  | [optional] 
+**aws_secret_access_key** | **str** |  | [optional] 
 **clone_addr** | **str** |  | 
 **description** | **str** |  | [optional] 
 **issues** | **bool** |  | [optional] 
