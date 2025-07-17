@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **id** | **int** |  | [optional] 
 **key** | **str** |  | [optional] 
 **key_type** | **str** |  | [optional] 
+**last_used_at** | **datetime** |  | [optional] 
 **read_only** | **bool** |  | [optional] 
 **title** | **str** |  | [optional] 
 **url** | **str** |  | [optional] 

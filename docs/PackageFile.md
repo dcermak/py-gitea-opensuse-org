@@ -6,13 +6,13 @@ PackageFile represents a package file
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**size** | **int** |  | [optional] 
 **id** | **int** |  | [optional] 
 **md5** | **str** |  | [optional] 
 **name** | **str** |  | [optional] 
 **sha1** | **str** |  | [optional] 
 **sha256** | **str** |  | [optional] 
 **sha512** | **str** |  | [optional] 
+**size** | **int** |  | [optional] 
 
 ## Example
 

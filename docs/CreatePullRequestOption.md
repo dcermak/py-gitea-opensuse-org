@@ -14,6 +14,8 @@ Name | Type | Description | Notes
 **head** | **str** |  | [optional] 
 **labels** | **List[int]** |  | [optional] 
 **milestone** | **int** |  | [optional] 
+**reviewers** | **List[str]** |  | [optional] 
+**team_reviewers** | **List[str]** |  | [optional] 
 **title** | **str** |  | [optional] 
 
 ## Example
