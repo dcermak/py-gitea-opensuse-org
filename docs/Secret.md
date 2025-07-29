@@ -7,6 +7,7 @@ Secret represents a secret
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created_at** | **datetime** |  | [optional] 
+**description** | **str** | the secret&#39;s description | [optional] 
 **name** | **str** | the secret&#39;s name | [optional] 
 
 ## Example
