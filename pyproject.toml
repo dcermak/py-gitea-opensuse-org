@@ -1,6 +1,6 @@
 [project]
 name = "py_gitea_opensuse_org"
-version = "1.24.4"
+version = "1.24.5"
 description = "Gitea API"
 authors = [
   {name = "OpenAPI Generator Community",email = "team@openapitools.org"},
@@ -16,7 +16,8 @@ dependencies = [
   "aiohttp (>=3.8.4)",
   "aiohttp-retry (>=2.8.3)",
   "pydantic (>=2)",
-  "typing-extensions (>=4.7.1)"
+  "typing-extensions (>=4.7.1)",
+  "lazy-imports (>=1,<2)"
 ]
 
 [project.urls]
