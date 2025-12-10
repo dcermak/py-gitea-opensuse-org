@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | name of the forked repository | [optional] 
 **organization** | **str** | organization name, if forking into an organization | [optional] 
+**reparent** | **bool** | set the target fork as the parent of the source repository | [optional] 
 
 ## Example
 
