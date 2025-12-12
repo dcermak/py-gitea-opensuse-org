@@ -6,17 +6,17 @@ EditPullRequestOption options when modify pull request
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**allow_maintainer_edit** | **bool** |  | [optional] 
-**assignee** | **str** |  | [optional] 
-**assignees** | **List[str]** |  | [optional] 
-**base** | **str** |  | [optional] 
-**body** | **str** |  | [optional] 
+**allow_maintainer_edit** | **bool** | Whether to allow maintainer edits | [optional] 
+**assignee** | **str** | The new primary assignee username | [optional] 
+**assignees** | **List[str]** | The new list of assignee usernames | [optional] 
+**base** | **str** | The new base branch for the pull request | [optional] 
+**body** | **str** | The new description body for the pull request | [optional] 
 **due_date** | **datetime** |  | [optional] 
-**labels** | **List[int]** |  | [optional] 
-**milestone** | **int** |  | [optional] 
-**state** | **str** |  | [optional] 
-**title** | **str** |  | [optional] 
-**unset_due_date** | **bool** |  | [optional] 
+**labels** | **List[int]** | The new list of label IDs for the pull request | [optional] 
+**milestone** | **int** | The new milestone ID for the pull request | [optional] 
+**state** | **str** | The new state for the pull request | [optional] 
+**title** | **str** | The new title for the pull request | [optional] 
+**unset_due_date** | **bool** | Whether to remove the current deadline | [optional] 
 
 ## Example
 

@@ -6,8 +6,8 @@ ActionTaskResponse returns a ActionTask
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_count** | **int** |  | [optional] 
-**workflow_runs** | [**List[ActionTask]**](ActionTask.md) |  | [optional] 
+**total_count** | **int** | TotalCount is the total number of workflow runs | [optional] 
+**workflow_runs** | [**List[ActionTask]**](ActionTask.md) | Entries contains the list of workflow runs | [optional] 
 
 ## Example
 

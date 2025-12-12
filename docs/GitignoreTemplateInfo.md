@@ -6,8 +6,8 @@ GitignoreTemplateInfo name and text of a gitignore template
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** |  | [optional] 
-**source** | **str** |  | [optional] 
+**name** | **str** | Name is the name of the gitignore template | [optional] 
+**source** | **str** | Source contains the content of the gitignore template | [optional] 
 
 ## Example
 

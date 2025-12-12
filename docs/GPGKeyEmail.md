@@ -6,8 +6,8 @@ GPGKeyEmail an email attached to a GPGKey
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**email** | **str** |  | [optional] 
-**verified** | **bool** |  | [optional] 
+**email** | **str** | The email address associated with the GPG key | [optional] 
+**verified** | **bool** | Whether the email address has been verified | [optional] 
 
 ## Example
 

@@ -1,6 +1,6 @@
 # GenerateRepoOption
 
-GenerateRepoOption options when creating repository using a template
+GenerateRepoOption options when creating a repository using a template
 
 ## Properties
 
@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **git_content** | **bool** | include git content of default branch in template repo | [optional] 
 **git_hooks** | **bool** | include git hooks in template repo | [optional] 
 **labels** | **bool** | include labels in template repo | [optional] 
-**name** | **str** | Name of the repository to create | 
-**owner** | **str** | The organization or person who will own the new repository | 
+**name** | **str** |  | 
+**owner** | **str** | the organization&#39;s name or individual user&#39;s name who will own the new repository | 
 **private** | **bool** | Whether the repository is private | [optional] 
 **protected_branch** | **bool** | include protected branches in template repo | [optional] 
 **topics** | **bool** | include topics in template repo | [optional] 

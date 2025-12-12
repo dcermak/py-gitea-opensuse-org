@@ -7,9 +7,9 @@ LabelTemplate info of a Label template
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **color** | **str** |  | [optional] 
-**description** | **str** |  | [optional] 
+**description** | **str** | Description provides additional context about the label template&#39;s purpose | [optional] 
 **exclusive** | **bool** |  | [optional] 
-**name** | **str** |  | [optional] 
+**name** | **str** | Name is the display name of the label template | [optional] 
 
 ## Example
 

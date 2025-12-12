@@ -6,9 +6,9 @@ CommitStats is statistics for a RepoCommit
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**additions** | **int** |  | [optional] 
-**deletions** | **int** |  | [optional] 
-**total** | **int** |  | [optional] 
+**additions** | **int** | Additions is the number of lines added | [optional] 
+**deletions** | **int** | Deletions is the number of lines deleted | [optional] 
+**total** | **int** | Total is the total number of lines changed | [optional] 
 
 ## Example
 

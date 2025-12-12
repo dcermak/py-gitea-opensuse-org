@@ -6,7 +6,7 @@ EditGitHookOption options when modifying one Git hook
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**content** | **str** |  | [optional] 
+**content** | **str** | Content is the new script content for the hook | [optional] 
 
 ## Example
 

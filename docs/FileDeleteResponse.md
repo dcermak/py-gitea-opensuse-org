@@ -7,7 +7,7 @@ FileDeleteResponse contains information about a repo's file that was deleted
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commit** | [**FileCommitResponse**](FileCommitResponse.md) |  | [optional] 
-**content** | **object** |  | [optional] 
+**content** | **object** | Content is always null for delete operations | [optional] 
 **verification** | [**PayloadCommitVerification**](PayloadCommitVerification.md) |  | [optional] 
 
 ## Example

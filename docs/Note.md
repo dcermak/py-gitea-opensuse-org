@@ -7,7 +7,7 @@ Note contains information related to a git note
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commit** | [**Commit**](Commit.md) |  | [optional] 
-**message** | **str** |  | [optional] 
+**message** | **str** | The content message of the git note | [optional] 
 
 ## Example
 

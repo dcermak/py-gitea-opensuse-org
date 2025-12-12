@@ -6,10 +6,10 @@ CreateOAuth2ApplicationOptions holds options to create an oauth2 application
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**confidential_client** | **bool** |  | [optional] 
-**name** | **str** |  | [optional] 
-**redirect_uris** | **List[str]** |  | [optional] 
-**skip_secondary_authorization** | **bool** |  | [optional] 
+**confidential_client** | **bool** | Whether the client is confidential | [optional] 
+**name** | **str** | The name of the OAuth2 application | [optional] 
+**redirect_uris** | **List[str]** | The list of allowed redirect URIs | [optional] 
+**skip_secondary_authorization** | **bool** | Whether to skip secondary authorization | [optional] 
 
 ## Example
 

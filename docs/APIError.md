@@ -6,8 +6,8 @@ APIError is an api error with a message
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**message** | **str** |  | [optional] 
-**url** | **str** |  | [optional] 
+**message** | **str** | Message contains the error description | [optional] 
+**url** | **str** | URL contains the documentation URL for this error | [optional] 
 
 ## Example
 

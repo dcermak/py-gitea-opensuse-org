@@ -6,11 +6,11 @@ OrganizationPermissions list different users permissions on an organization
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**can_create_repository** | **bool** |  | [optional] 
-**can_read** | **bool** |  | [optional] 
-**can_write** | **bool** |  | [optional] 
-**is_admin** | **bool** |  | [optional] 
-**is_owner** | **bool** |  | [optional] 
+**can_create_repository** | **bool** | Whether the user can create repositories in the organization | [optional] 
+**can_read** | **bool** | Whether the user can read the organization | [optional] 
+**can_write** | **bool** | Whether the user can write to the organization | [optional] 
+**is_admin** | **bool** | Whether the user is an admin of the organization | [optional] 
+**is_owner** | **bool** | Whether the user is an owner of the organization | [optional] 
 
 ## Example
 

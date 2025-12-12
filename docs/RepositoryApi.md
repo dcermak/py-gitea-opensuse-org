@@ -13,6 +13,7 @@ Method | HTTP request | Description
 [**create_current_user_repo**](RepositoryApi.md#create_current_user_repo) | **POST** /user/repos | Create a repository
 [**create_fork**](RepositoryApi.md#create_fork) | **POST** /repos/{owner}/{repo}/forks | Fork a repository
 [**create_repo_variable**](RepositoryApi.md#create_repo_variable) | **POST** /repos/{owner}/{repo}/actions/variables/{variablename} | Create a repo-level variable
+[**delete_action_run**](RepositoryApi.md#delete_action_run) | **DELETE** /repos/{owner}/{repo}/actions/runs/{run} | Delete a workflow run
 [**delete_artifact**](RepositoryApi.md#delete_artifact) | **DELETE** /repos/{owner}/{repo}/actions/artifacts/{artifact_id} | Deletes a specific artifact for a workflow run
 [**delete_repo_runner**](RepositoryApi.md#delete_repo_runner) | **DELETE** /repos/{owner}/{repo}/actions/runners/{runner_id} | Delete an repo-level runner
 [**delete_repo_secret**](RepositoryApi.md#delete_repo_secret) | **DELETE** /repos/{owner}/{repo}/actions/secrets/{secretname} | Delete a secret in a repository
@@ -30,8 +31,13 @@ Method | HTTP request | Description
 [**get_repo_variable**](RepositoryApi.md#get_repo_variable) | **GET** /repos/{owner}/{repo}/actions/variables/{variablename} | Get a repo-level variable
 [**get_repo_variables_list**](RepositoryApi.md#get_repo_variables_list) | **GET** /repos/{owner}/{repo}/actions/variables | Get repo-level variables list
 [**get_tree**](RepositoryApi.md#get_tree) | **GET** /repos/{owner}/{repo}/git/trees/{sha} | Gets the tree of a repository.
+[**get_workflow_job**](RepositoryApi.md#get_workflow_job) | **GET** /repos/{owner}/{repo}/actions/jobs/{job_id} | Gets a specific workflow job for a workflow run
+[**get_workflow_run**](RepositoryApi.md#get_workflow_run) | **GET** /repos/{owner}/{repo}/actions/runs/{run} | Gets a specific workflow run
+[**get_workflow_runs**](RepositoryApi.md#get_workflow_runs) | **GET** /repos/{owner}/{repo}/actions/runs | Lists all runs for a repository run
 [**list_action_tasks**](RepositoryApi.md#list_action_tasks) | **GET** /repos/{owner}/{repo}/actions/tasks | List a repository&#39;s action tasks
 [**list_forks**](RepositoryApi.md#list_forks) | **GET** /repos/{owner}/{repo}/forks | List a repository&#39;s forks
+[**list_workflow_jobs**](RepositoryApi.md#list_workflow_jobs) | **GET** /repos/{owner}/{repo}/actions/jobs | Lists all jobs for a repository
+[**list_workflow_run_jobs**](RepositoryApi.md#list_workflow_run_jobs) | **GET** /repos/{owner}/{repo}/actions/runs/{run}/jobs | Lists all jobs for a workflow run
 [**reject_repo_transfer**](RepositoryApi.md#reject_repo_transfer) | **POST** /repos/{owner}/{repo}/transfer/reject | Reject a repo transfer
 [**repo_add_collaborator**](RepositoryApi.md#repo_add_collaborator) | **PUT** /repos/{owner}/{repo}/collaborators/{collaborator} | Add or Update a collaborator to a repository
 [**repo_add_push_mirror**](RepositoryApi.md#repo_add_push_mirror) | **POST** /repos/{owner}/{repo}/push_mirrors | add a push mirror to the repository
@@ -99,8 +105,9 @@ Method | HTTP request | Description
 [**repo_get_by_id**](RepositoryApi.md#repo_get_by_id) | **GET** /repositories/{id} | Get a repository by id
 [**repo_get_combined_status_by_ref**](RepositoryApi.md#repo_get_combined_status_by_ref) | **GET** /repos/{owner}/{repo}/commits/{ref}/status | Get a commit&#39;s combined status, by branch/tag/commit reference
 [**repo_get_commit_pull_request**](RepositoryApi.md#repo_get_commit_pull_request) | **GET** /repos/{owner}/{repo}/commits/{sha}/pull | Get the merged pull request of the commit
-[**repo_get_contents**](RepositoryApi.md#repo_get_contents) | **GET** /repos/{owner}/{repo}/contents/{filepath} | Gets the metadata and contents (if a file) of an entry in a repository, or a list of entries if a dir
-[**repo_get_contents_list**](RepositoryApi.md#repo_get_contents_list) | **GET** /repos/{owner}/{repo}/contents | Gets the metadata of all the entries of the root dir
+[**repo_get_contents**](RepositoryApi.md#repo_get_contents) | **GET** /repos/{owner}/{repo}/contents/{filepath} | Gets the metadata and contents (if a file) of an entry in a repository, or a list of entries if a dir.
+[**repo_get_contents_ext**](RepositoryApi.md#repo_get_contents_ext) | **GET** /repos/{owner}/{repo}/contents-ext/{filepath} | The extended \&quot;contents\&quot; API, to get file metadata and/or content, or list a directory.
+[**repo_get_contents_list**](RepositoryApi.md#repo_get_contents_list) | **GET** /repos/{owner}/{repo}/contents | Gets the metadata of all the entries of the root dir.
 [**repo_get_editor_config**](RepositoryApi.md#repo_get_editor_config) | **GET** /repos/{owner}/{repo}/editorconfig/{filepath} | Get the EditorConfig definitions of a file in a repository
 [**repo_get_file_contents**](RepositoryApi.md#repo_get_file_contents) | **GET** /repos/{owner}/{repo}/file-contents | Get the metadata and contents of requested files
 [**repo_get_file_contents_post**](RepositoryApi.md#repo_get_file_contents_post) | **POST** /repos/{owner}/{repo}/file-contents | Get the metadata and contents of requested files
@@ -166,15 +173,16 @@ Method | HTTP request | Description
 [**repo_new_pin_allowed**](RepositoryApi.md#repo_new_pin_allowed) | **GET** /repos/{owner}/{repo}/new_pin_allowed | Returns if new Issue Pins are allowed
 [**repo_pull_request_is_merged**](RepositoryApi.md#repo_pull_request_is_merged) | **GET** /repos/{owner}/{repo}/pulls/{index}/merge | Check if a pull request has been merged
 [**repo_push_mirror_sync**](RepositoryApi.md#repo_push_mirror_sync) | **POST** /repos/{owner}/{repo}/push_mirrors-sync | Sync all push mirrored repository
+[**repo_rename_branch**](RepositoryApi.md#repo_rename_branch) | **PATCH** /repos/{owner}/{repo}/branches/{branch} | Rename a branch
 [**repo_search**](RepositoryApi.md#repo_search) | **GET** /repos/search | Search for repositories
 [**repo_signing_key**](RepositoryApi.md#repo_signing_key) | **GET** /repos/{owner}/{repo}/signing-key.gpg | Get signing-key.gpg for given repository
+[**repo_signing_key_ssh**](RepositoryApi.md#repo_signing_key_ssh) | **GET** /repos/{owner}/{repo}/signing-key.pub | Get signing-key.pub for given repository
 [**repo_submit_pull_review**](RepositoryApi.md#repo_submit_pull_review) | **POST** /repos/{owner}/{repo}/pulls/{index}/reviews/{id} | Submit a pending review to an pull request
 [**repo_test_hook**](RepositoryApi.md#repo_test_hook) | **POST** /repos/{owner}/{repo}/hooks/{id}/tests | Test a push webhook
 [**repo_tracked_times**](RepositoryApi.md#repo_tracked_times) | **GET** /repos/{owner}/{repo}/times | List a repo&#39;s tracked times
 [**repo_transfer**](RepositoryApi.md#repo_transfer) | **POST** /repos/{owner}/{repo}/transfer | Transfer a repo ownership
 [**repo_un_dismiss_pull_review**](RepositoryApi.md#repo_un_dismiss_pull_review) | **POST** /repos/{owner}/{repo}/pulls/{index}/reviews/{id}/undismissals | Cancel to dismiss a review for a pull request
 [**repo_update_avatar**](RepositoryApi.md#repo_update_avatar) | **POST** /repos/{owner}/{repo}/avatar | Update avatar
-[**repo_update_branch**](RepositoryApi.md#repo_update_branch) | **PATCH** /repos/{owner}/{repo}/branches/{branch} | Update a branch
 [**repo_update_branch_protection_priories**](RepositoryApi.md#repo_update_branch_protection_priories) | **POST** /repos/{owner}/{repo}/branch_protections/priority | Update the priorities of branch protections for a repository.
 [**repo_update_file**](RepositoryApi.md#repo_update_file) | **PUT** /repos/{owner}/{repo}/contents/{filepath} | Update a file in a repository
 [**repo_update_pull_request**](RepositoryApi.md#repo_update_pull_request) | **POST** /repos/{owner}/{repo}/pulls/{index}/update | Merge PR&#39;s baseBranch into headBranch
@@ -1271,7 +1279,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     variablename = 'variablename_example' # str | name of the variable
     body = py_gitea_opensuse_org.CreateVariableOption() # CreateVariableOption |  (optional)
@@ -1290,7 +1298,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **variablename** | **str**| name of the variable | 
  **body** | [**CreateVariableOption**](CreateVariableOption.md)|  | [optional] 
@@ -1313,7 +1321,129 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** | response when creating a repo-level variable |  -  |
-**204** | response when creating a repo-level variable |  -  |
+**400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**409** | variable name already exists. |  -  |
+**500** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **delete_action_run**
+> delete_action_run(owner, repo, run)
+
+Delete a workflow run
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
+    owner = 'owner_example' # str | owner of the repo
+    repo = 'repo_example' # str | name of the repository
+    run = 56 # int | runid of the workflow run
+
+    try:
+        # Delete a workflow run
+        await api_instance.delete_action_run(owner, repo, run)
+    except Exception as e:
+        print("Exception when calling RepositoryApi->delete_action_run: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **str**| owner of the repo | 
+ **repo** | **str**| name of the repository | 
+ **run** | **int**| runid of the workflow run | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | No Content |  -  |
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **404** | APINotFound is a not found empty response |  -  |
 
@@ -1396,7 +1526,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     artifact_id = 'artifact_id_example' # str | id of the artifact
 
@@ -1414,7 +1544,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **artifact_id** | **str**| id of the artifact | 
 
@@ -1763,7 +1893,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     variablename = 'variablename_example' # str | name of the variable
 
@@ -1783,7 +1913,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **variablename** | **str**| name of the variable | 
 
@@ -1889,7 +2019,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     job_id = 56 # int | id of the job
 
@@ -1907,7 +2037,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **job_id** | **int**| id of the job | 
 
@@ -2011,7 +2141,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     artifact_id = 'artifact_id_example' # str | id of the artifact
 
@@ -2029,7 +2159,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **artifact_id** | **str**| id of the artifact | 
 
@@ -2135,7 +2265,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    template_owner = 'template_owner_example' # str | name of the template repository owner
+    template_owner = 'template_owner_example' # str | owner of the template repository
     template_repo = 'template_repo_example' # str | name of the template repository
     body = py_gitea_opensuse_org.GenerateRepoOption() # GenerateRepoOption |  (optional)
 
@@ -2155,7 +2285,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **template_owner** | **str**| name of the template repository owner | 
+ **template_owner** | **str**| owner of the template repository | 
  **template_repo** | **str**| name of the template repository | 
  **body** | [**GenerateRepoOption**](GenerateRepoOption.md)|  | [optional] 
 
@@ -2387,7 +2517,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     artifact_id = 'artifact_id_example' # str | id of the artifact
 
@@ -2407,7 +2537,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **artifact_id** | **str**| id of the artifact | 
 
@@ -2512,7 +2642,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     name = 'name_example' # str | name of the artifact (optional)
 
@@ -2532,7 +2662,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **name** | **str**| name of the artifact | [optional] 
 
@@ -2637,7 +2767,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     run = 56 # int | runid of the workflow run
     name = 'name_example' # str | name of the artifact (optional)
@@ -2658,7 +2788,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **run** | **int**| runid of the workflow run | 
  **name** | **str**| name of the artifact | [optional] 
@@ -3131,7 +3261,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     variablename = 'variablename_example' # str | name of the variable
 
@@ -3151,7 +3281,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **variablename** | **str**| name of the variable | 
 
@@ -3256,7 +3386,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
@@ -3277,7 +3407,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
@@ -3431,6 +3561,393 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | GitTreeResponse |  -  |
+**400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**404** | APINotFound is a not found empty response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_workflow_job**
+> ActionWorkflowJob get_workflow_job(owner, repo, job_id)
+
+Gets a specific workflow job for a workflow run
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.action_workflow_job import ActionWorkflowJob
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
+    owner = 'owner_example' # str | owner of the repo
+    repo = 'repo_example' # str | name of the repository
+    job_id = 'job_id_example' # str | id of the job
+
+    try:
+        # Gets a specific workflow job for a workflow run
+        api_response = await api_instance.get_workflow_job(owner, repo, job_id)
+        print("The response of RepositoryApi->get_workflow_job:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling RepositoryApi->get_workflow_job: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **str**| owner of the repo | 
+ **repo** | **str**| name of the repository | 
+ **job_id** | **str**| id of the job | 
+
+### Return type
+
+[**ActionWorkflowJob**](ActionWorkflowJob.md)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | WorkflowJob |  -  |
+**400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**404** | APINotFound is a not found empty response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_workflow_run**
+> ActionWorkflowRun get_workflow_run(owner, repo, run)
+
+Gets a specific workflow run
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.action_workflow_run import ActionWorkflowRun
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
+    owner = 'owner_example' # str | owner of the repo
+    repo = 'repo_example' # str | name of the repository
+    run = 'run_example' # str | id of the run
+
+    try:
+        # Gets a specific workflow run
+        api_response = await api_instance.get_workflow_run(owner, repo, run)
+        print("The response of RepositoryApi->get_workflow_run:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling RepositoryApi->get_workflow_run: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **str**| owner of the repo | 
+ **repo** | **str**| name of the repository | 
+ **run** | **str**| id of the run | 
+
+### Return type
+
+[**ActionWorkflowRun**](ActionWorkflowRun.md)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | WorkflowRun |  -  |
+**400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**404** | APINotFound is a not found empty response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_workflow_runs**
+> ActionWorkflowRunsResponse get_workflow_runs(owner, repo, event=event, branch=branch, status=status, actor=actor, head_sha=head_sha, page=page, limit=limit)
+
+Lists all runs for a repository run
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.action_workflow_runs_response import ActionWorkflowRunsResponse
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
+    owner = 'owner_example' # str | owner of the repo
+    repo = 'repo_example' # str | name of the repository
+    event = 'event_example' # str | workflow event name (optional)
+    branch = 'branch_example' # str | workflow branch (optional)
+    status = 'status_example' # str | workflow status (pending, queued, in_progress, failure, success, skipped) (optional)
+    actor = 'actor_example' # str | triggered by user (optional)
+    head_sha = 'head_sha_example' # str | triggering sha of the workflow run (optional)
+    page = 56 # int | page number of results to return (1-based) (optional)
+    limit = 56 # int | page size of results (optional)
+
+    try:
+        # Lists all runs for a repository run
+        api_response = await api_instance.get_workflow_runs(owner, repo, event=event, branch=branch, status=status, actor=actor, head_sha=head_sha, page=page, limit=limit)
+        print("The response of RepositoryApi->get_workflow_runs:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling RepositoryApi->get_workflow_runs: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **str**| owner of the repo | 
+ **repo** | **str**| name of the repository | 
+ **event** | **str**| workflow event name | [optional] 
+ **branch** | **str**| workflow branch | [optional] 
+ **status** | **str**| workflow status (pending, queued, in_progress, failure, success, skipped) | [optional] 
+ **actor** | **str**| triggered by user | [optional] 
+ **head_sha** | **str**| triggering sha of the workflow run | [optional] 
+ **page** | **int**| page number of results to return (1-based) | [optional] 
+ **limit** | **int**| page size of results | [optional] 
+
+### Return type
+
+[**ActionWorkflowRunsResponse**](ActionWorkflowRunsResponse.md)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | WorkflowRunsList |  -  |
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **404** | APINotFound is a not found empty response |  -  |
 
@@ -3692,6 +4209,266 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **list_workflow_jobs**
+> ActionWorkflowJobsResponse list_workflow_jobs(owner, repo, status=status, page=page, limit=limit)
+
+Lists all jobs for a repository
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.action_workflow_jobs_response import ActionWorkflowJobsResponse
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
+    owner = 'owner_example' # str | owner of the repo
+    repo = 'repo_example' # str | name of the repository
+    status = 'status_example' # str | workflow status (pending, queued, in_progress, failure, success, skipped) (optional)
+    page = 56 # int | page number of results to return (1-based) (optional)
+    limit = 56 # int | page size of results (optional)
+
+    try:
+        # Lists all jobs for a repository
+        api_response = await api_instance.list_workflow_jobs(owner, repo, status=status, page=page, limit=limit)
+        print("The response of RepositoryApi->list_workflow_jobs:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling RepositoryApi->list_workflow_jobs: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **str**| owner of the repo | 
+ **repo** | **str**| name of the repository | 
+ **status** | **str**| workflow status (pending, queued, in_progress, failure, success, skipped) | [optional] 
+ **page** | **int**| page number of results to return (1-based) | [optional] 
+ **limit** | **int**| page size of results | [optional] 
+
+### Return type
+
+[**ActionWorkflowJobsResponse**](ActionWorkflowJobsResponse.md)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | WorkflowJobsList |  -  |
+**400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**404** | APINotFound is a not found empty response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_workflow_run_jobs**
+> ActionWorkflowJobsResponse list_workflow_run_jobs(owner, repo, run, status=status, page=page, limit=limit)
+
+Lists all jobs for a workflow run
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.action_workflow_jobs_response import ActionWorkflowJobsResponse
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
+    owner = 'owner_example' # str | owner of the repo
+    repo = 'repo_example' # str | name of the repository
+    run = 56 # int | runid of the workflow run
+    status = 'status_example' # str | workflow status (pending, queued, in_progress, failure, success, skipped) (optional)
+    page = 56 # int | page number of results to return (1-based) (optional)
+    limit = 56 # int | page size of results (optional)
+
+    try:
+        # Lists all jobs for a workflow run
+        api_response = await api_instance.list_workflow_run_jobs(owner, repo, run, status=status, page=page, limit=limit)
+        print("The response of RepositoryApi->list_workflow_run_jobs:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling RepositoryApi->list_workflow_run_jobs: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **str**| owner of the repo | 
+ **repo** | **str**| name of the repository | 
+ **run** | **int**| runid of the workflow run | 
+ **status** | **str**| workflow status (pending, queued, in_progress, failure, success, skipped) | [optional] 
+ **page** | **int**| page number of results to return (1-based) | [optional] 
+ **limit** | **int**| page size of results | [optional] 
+
+### Return type
+
+[**ActionWorkflowJobsResponse**](ActionWorkflowJobsResponse.md)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | WorkflowJobsList |  -  |
+**400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**404** | APINotFound is a not found empty response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **reject_repo_transfer**
 > Repository reject_repo_transfer(owner, repo)
 
@@ -3895,7 +4672,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
-    collaborator = 'collaborator_example' # str | username of the collaborator to add
+    collaborator = 'collaborator_example' # str | username of the user to add or update as a collaborator
     body = py_gitea_opensuse_org.AddCollaboratorOption() # AddCollaboratorOption |  (optional)
 
     try:
@@ -3914,7 +4691,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
- **collaborator** | **str**| username of the collaborator to add | 
+ **collaborator** | **str**| username of the user to add or update as a collaborator | 
  **body** | [**AddCollaboratorOption**](AddCollaboratorOption.md)|  | [optional] 
 
 ### Return type
@@ -4330,8 +5107,8 @@ Apply diff patch to repository
 
 ```python
 import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.apply_diff_patch_file_options import ApplyDiffPatchFileOptions
 from py_gitea_opensuse_org.models.file_response import FileResponse
-from py_gitea_opensuse_org.models.update_file_options import UpdateFileOptions
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
 
@@ -4394,7 +5171,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
-    body = py_gitea_opensuse_org.UpdateFileOptions() # UpdateFileOptions | 
+    body = py_gitea_opensuse_org.ApplyDiffPatchFileOptions() # ApplyDiffPatchFileOptions | 
 
     try:
         # Apply diff patch to repository
@@ -4414,7 +5191,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
- **body** | [**UpdateFileOptions**](UpdateFileOptions.md)|  | 
+ **body** | [**ApplyDiffPatchFileOptions**](ApplyDiffPatchFileOptions.md)|  | 
 
 ### Return type
 
@@ -4769,7 +5546,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
-    collaborator = 'collaborator_example' # str | username of the collaborator
+    collaborator = 'collaborator_example' # str | username of the user to check for being a collaborator
 
     try:
         # Check if a user is a collaborator of a repository
@@ -4787,7 +5564,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
- **collaborator** | **str**| username of the collaborator | 
+ **collaborator** | **str**| username of the user to check for being a collaborator | 
 
 ### Return type
 
@@ -6336,6 +7113,7 @@ Name | Type | Description  | Notes
 **201** | Attachment |  -  |
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **404** | APINotFound is a not found empty response |  -  |
+**413** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -7701,6 +8479,7 @@ Name | Type | Description  | Notes
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **403** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**422** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -11085,7 +11864,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **repo_get_all_commits**
-> List[Commit] repo_get_all_commits(owner, repo, sha=sha, path=path, stat=stat, verification=verification, files=files, page=page, limit=limit, var_not=var_not)
+> List[Commit] repo_get_all_commits(owner, repo, sha=sha, path=path, since=since, until=until, stat=stat, verification=verification, files=files, page=page, limit=limit, var_not=var_not)
 
 Get a list of all commits from a repository
 
@@ -11166,6 +11945,8 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     repo = 'repo_example' # str | name of the repo
     sha = 'sha_example' # str | SHA or branch to start listing commits from (usually 'master') (optional)
     path = 'path_example' # str | filepath of a file/dir (optional)
+    since = '2013-10-20T19:20:30+01:00' # datetime | Only commits after this date will be returned (ISO 8601 format) (optional)
+    until = '2013-10-20T19:20:30+01:00' # datetime | Only commits before this date will be returned (ISO 8601 format) (optional)
     stat = True # bool | include diff stats for every commit (disable for speedup, default 'true') (optional)
     verification = True # bool | include verification for every commit (disable for speedup, default 'true') (optional)
     files = True # bool | include a list of affected files for every commit (disable for speedup, default 'true') (optional)
@@ -11175,7 +11956,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
     try:
         # Get a list of all commits from a repository
-        api_response = await api_instance.repo_get_all_commits(owner, repo, sha=sha, path=path, stat=stat, verification=verification, files=files, page=page, limit=limit, var_not=var_not)
+        api_response = await api_instance.repo_get_all_commits(owner, repo, sha=sha, path=path, since=since, until=until, stat=stat, verification=verification, files=files, page=page, limit=limit, var_not=var_not)
         print("The response of RepositoryApi->repo_get_all_commits:\n")
         pprint(api_response)
     except Exception as e:
@@ -11193,6 +11974,8 @@ Name | Type | Description  | Notes
  **repo** | **str**| name of the repo | 
  **sha** | **str**| SHA or branch to start listing commits from (usually &#39;master&#39;) | [optional] 
  **path** | **str**| filepath of a file/dir | [optional] 
+ **since** | **datetime**| Only commits after this date will be returned (ISO 8601 format) | [optional] 
+ **until** | **datetime**| Only commits before this date will be returned (ISO 8601 format) | [optional] 
  **stat** | **bool**| include diff stats for every commit (disable for speedup, default &#39;true&#39;) | [optional] 
  **verification** | **bool**| include verification for every commit (disable for speedup, default &#39;true&#39;) | [optional] 
  **files** | **bool**| include a list of affected files for every commit (disable for speedup, default &#39;true&#39;) | [optional] 
@@ -12090,7 +12873,9 @@ Name | Type | Description  | Notes
 # **repo_get_contents**
 > ContentsResponse repo_get_contents(owner, repo, filepath, ref=ref)
 
-Gets the metadata and contents (if a file) of an entry in a repository, or a list of entries if a dir
+Gets the metadata and contents (if a file) of an entry in a repository, or a list of entries if a dir.
+
+This API follows GitHub's design, and it is not easy to use. Recommend users to use the "contents-ext" API instead.
 
 ### Example
 
@@ -12171,7 +12956,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     ref = 'ref_example' # str | The name of the commit/branch/tag. Default to the repository’s default branch. (optional)
 
     try:
-        # Gets the metadata and contents (if a file) of an entry in a repository, or a list of entries if a dir
+        # Gets the metadata and contents (if a file) of an entry in a repository, or a list of entries if a dir.
         api_response = await api_instance.repo_get_contents(owner, repo, filepath, ref=ref)
         print("The response of RepositoryApi->repo_get_contents:\n")
         pprint(api_response)
@@ -12213,10 +12998,142 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **repo_get_contents_ext**
+> ContentsExtResponse repo_get_contents_ext(owner, repo, filepath, ref=ref, includes=includes)
+
+The extended \"contents\" API, to get file metadata and/or content, or list a directory.
+
+It guarantees that only one of the response fields is set if the request succeeds. Users can pass "includes=file_content" or "includes=lfs_metadata" to retrieve more fields. "includes=file_content" only works for single file, if you need to retrieve file contents in batch, use "file-contents" API after listing the directory.
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.contents_ext_response import ContentsExtResponse
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
+    owner = 'owner_example' # str | owner of the repo
+    repo = 'repo_example' # str | name of the repo
+    filepath = 'filepath_example' # str | path of the dir, file, symlink or submodule in the repo. Swagger requires path parameter to be \"required\", you can leave it empty or pass a single dot (\".\") to get the root directory.
+    ref = 'ref_example' # str | the name of the commit/branch/tag, default to the repository’s default branch. (optional)
+    includes = 'includes_example' # str | By default this API's response only contains file's metadata. Use comma-separated \"includes\" options to retrieve more fields. Option \"file_content\" will try to retrieve the file content, \"lfs_metadata\" will try to retrieve LFS metadata, \"commit_metadata\" will try to retrieve commit metadata, and \"commit_message\" will try to retrieve commit message. (optional)
+
+    try:
+        # The extended \"contents\" API, to get file metadata and/or content, or list a directory.
+        api_response = await api_instance.repo_get_contents_ext(owner, repo, filepath, ref=ref, includes=includes)
+        print("The response of RepositoryApi->repo_get_contents_ext:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling RepositoryApi->repo_get_contents_ext: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **str**| owner of the repo | 
+ **repo** | **str**| name of the repo | 
+ **filepath** | **str**| path of the dir, file, symlink or submodule in the repo. Swagger requires path parameter to be \&quot;required\&quot;, you can leave it empty or pass a single dot (\&quot;.\&quot;) to get the root directory. | 
+ **ref** | **str**| the name of the commit/branch/tag, default to the repository’s default branch. | [optional] 
+ **includes** | **str**| By default this API&#39;s response only contains file&#39;s metadata. Use comma-separated \&quot;includes\&quot; options to retrieve more fields. Option \&quot;file_content\&quot; will try to retrieve the file content, \&quot;lfs_metadata\&quot; will try to retrieve LFS metadata, \&quot;commit_metadata\&quot; will try to retrieve commit metadata, and \&quot;commit_message\&quot; will try to retrieve commit message. | [optional] 
+
+### Return type
+
+[**ContentsExtResponse**](ContentsExtResponse.md)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+**404** | APINotFound is a not found empty response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **repo_get_contents_list**
 > List[ContentsResponse] repo_get_contents_list(owner, repo, ref=ref)
 
-Gets the metadata of all the entries of the root dir
+Gets the metadata of all the entries of the root dir.
+
+This API follows GitHub's design, and it is not easy to use. Recommend users to use our "contents-ext" API instead.
 
 ### Example
 
@@ -12296,7 +13213,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     ref = 'ref_example' # str | The name of the commit/branch/tag. Default to the repository’s default branch. (optional)
 
     try:
-        # Gets the metadata of all the entries of the root dir
+        # Gets the metadata of all the entries of the root dir.
         api_response = await api_instance.repo_get_contents_list(owner, repo, ref=ref)
         print("The response of RepositoryApi->repo_get_contents_list:\n")
         pprint(api_response)
@@ -12465,7 +13382,7 @@ void (empty response body)
 
 Get the metadata and contents of requested files
 
-See the POST method. This GET method supports to use JSON encoded request body in query parameter.
+See the POST method. This GET method supports using JSON encoded request body in query parameter.
 
 ### Example
 
@@ -14798,7 +15715,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
     filepath = 'filepath_example' # str | path of the file to get, it should be \"{ref}/{filepath}\". If there is no ref could be inferred, it will be treated as the default branch
-    ref = 'ref_example' # str | The name of the commit/branch/tag. Default the repository’s default branch (optional)
+    ref = 'ref_example' # str | The name of the commit/branch/tag. Default to the repository’s default branch (optional)
 
     try:
         # Get a file from a repository
@@ -14819,7 +15736,7 @@ Name | Type | Description  | Notes
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
  **filepath** | **str**| path of the file to get, it should be \&quot;{ref}/{filepath}\&quot;. If there is no ref could be inferred, it will be treated as the default branch | 
- **ref** | **str**| The name of the commit/branch/tag. Default the repository’s default branch | [optional] 
+ **ref** | **str**| The name of the commit/branch/tag. Default to the repository’s default branch | [optional] 
 
 ### Return type
 
@@ -14923,7 +15840,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
     filepath = 'filepath_example' # str | path of the file to get, it should be \"{ref}/{filepath}\". If there is no ref could be inferred, it will be treated as the default branch
-    ref = 'ref_example' # str | The name of the commit/branch/tag. Default the repository’s default branch (optional)
+    ref = 'ref_example' # str | The name of the commit/branch/tag. Default to the repository’s default branch (optional)
 
     try:
         # Get a file or it's LFS object from a repository
@@ -14944,7 +15861,7 @@ Name | Type | Description  | Notes
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
  **filepath** | **str**| path of the file to get, it should be \&quot;{ref}/{filepath}\&quot;. If there is no ref could be inferred, it will be treated as the default branch | 
- **ref** | **str**| The name of the commit/branch/tag. Default the repository’s default branch | [optional] 
+ **ref** | **str**| The name of the commit/branch/tag. Default to the repository’s default branch | [optional] 
 
 ### Return type
 
@@ -15422,7 +16339,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
-    collaborator = 'collaborator_example' # str | username of the collaborator
+    collaborator = 'collaborator_example' # str | username of the collaborator whose permissions are to be obtained
 
     try:
         # Get repository permissions for a user
@@ -15442,7 +16359,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
- **collaborator** | **str**| username of the collaborator | 
+ **collaborator** | **str**| username of the collaborator whose permissions are to be obtained | 
 
 ### Return type
 
@@ -16540,7 +17457,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | owner of the repository
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
@@ -16561,7 +17478,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| owner of the repository | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
@@ -18034,7 +18951,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | Owner of the repo
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | Name of the repo
     base_branch = 'base_branch_example' # str | Filter by target base branch of the pull request (optional)
     state = open # str | State of pull request (optional) (default to open)
@@ -18061,7 +18978,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| Owner of the repo | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| Name of the repo | 
  **base_branch** | **str**| Filter by target base branch of the pull request | [optional] 
  **state** | **str**| State of pull request | [optional] [default to open]
@@ -20479,6 +21396,132 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **repo_rename_branch**
+> repo_rename_branch(owner, repo, branch, body=body)
+
+Rename a branch
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.rename_branch_repo_option import RenameBranchRepoOption
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
+    owner = 'owner_example' # str | owner of the repo
+    repo = 'repo_example' # str | name of the repo
+    branch = 'branch_example' # str | name of the branch
+    body = py_gitea_opensuse_org.RenameBranchRepoOption() # RenameBranchRepoOption |  (optional)
+
+    try:
+        # Rename a branch
+        await api_instance.repo_rename_branch(owner, repo, branch, body=body)
+    except Exception as e:
+        print("Exception when calling RepositoryApi->repo_rename_branch: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **str**| owner of the repo | 
+ **repo** | **str**| name of the repo | 
+ **branch** | **str**| name of the branch | 
+ **body** | [**RenameBranchRepoOption**](RenameBranchRepoOption.md)|  | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | APIEmpty is an empty response |  -  |
+**403** | APIForbiddenError is a forbidden error response |  * message -  <br>  * url -  <br>  |
+**404** | APINotFound is a not found empty response |  -  |
+**422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **repo_search**
 > SearchResults repo_search(q=q, topic=topic, include_desc=include_desc, uid=uid, priority_owner_id=priority_owner_id, team_id=team_id, starred_by=starred_by, private=private, is_private=is_private, template=template, archived=archived, mode=mode, exclusive=exclusive, sort=sort, order=order, page=page, limit=limit)
 
@@ -20748,6 +21791,126 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | GPG armored public key |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **repo_signing_key_ssh**
+> str repo_signing_key_ssh(owner, repo)
+
+Get signing-key.pub for given repository
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
+    owner = 'owner_example' # str | owner of the repo
+    repo = 'repo_example' # str | name of the repo
+
+    try:
+        # Get signing-key.pub for given repository
+        api_response = await api_instance.repo_signing_key_ssh(owner, repo)
+        print("The response of RepositoryApi->repo_signing_key_ssh:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling RepositoryApi->repo_signing_key_ssh: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **str**| owner of the repo | 
+ **repo** | **str**| name of the repo | 
+
+### Return type
+
+**str**
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | ssh public key |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -21512,132 +22675,6 @@ void (empty response body)
 |-------------|-------------|------------------|
 **204** | APIEmpty is an empty response |  -  |
 **404** | APINotFound is a not found empty response |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **repo_update_branch**
-> repo_update_branch(owner, repo, branch, body=body)
-
-Update a branch
-
-### Example
-
-* Api Key Authentication (TOTPHeader):
-* Api Key Authentication (AuthorizationHeaderToken):
-* Api Key Authentication (SudoHeader):
-* Basic Authentication (BasicAuth):
-* Api Key Authentication (AccessToken):
-* Api Key Authentication (SudoParam):
-* Api Key Authentication (Token):
-
-```python
-import py_gitea_opensuse_org
-from py_gitea_opensuse_org.models.update_branch_repo_option import UpdateBranchRepoOption
-from py_gitea_opensuse_org.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to /api/v1
-# See configuration.py for a list of all supported configuration parameters.
-configuration = py_gitea_opensuse_org.Configuration(
-    host = "/api/v1"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-# Configure API key authorization: TOTPHeader
-configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
-
-# Configure API key authorization: AuthorizationHeaderToken
-configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
-
-# Configure API key authorization: SudoHeader
-configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
-
-# Configure HTTP basic authorization: BasicAuth
-configuration = py_gitea_opensuse_org.Configuration(
-    username = os.environ["USERNAME"],
-    password = os.environ["PASSWORD"]
-)
-
-# Configure API key authorization: AccessToken
-configuration.api_key['AccessToken'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['AccessToken'] = 'Bearer'
-
-# Configure API key authorization: SudoParam
-configuration.api_key['SudoParam'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['SudoParam'] = 'Bearer'
-
-# Configure API key authorization: Token
-configuration.api_key['Token'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Token'] = 'Bearer'
-
-# Enter a context with an instance of the API client
-async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | owner of the repo
-    repo = 'repo_example' # str | name of the repo
-    branch = 'branch_example' # str | name of the branch
-    body = py_gitea_opensuse_org.UpdateBranchRepoOption() # UpdateBranchRepoOption |  (optional)
-
-    try:
-        # Update a branch
-        await api_instance.repo_update_branch(owner, repo, branch, body=body)
-    except Exception as e:
-        print("Exception when calling RepositoryApi->repo_update_branch: %s\n" % e)
-```
-
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **owner** | **str**| owner of the repo | 
- **repo** | **str**| name of the repo | 
- **branch** | **str**| name of the branch | 
- **body** | [**UpdateBranchRepoOption**](UpdateBranchRepoOption.md)|  | [optional] 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: Not defined
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**204** | APIEmpty is an empty response |  -  |
-**403** | APIForbiddenError is a forbidden error response |  * message -  <br>  * url -  <br>  |
-**404** | APINotFound is a not found empty response |  -  |
-**422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -22595,7 +23632,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
-    owner = 'owner_example' # str | name of the owner
+    owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repository
     variablename = 'variablename_example' # str | name of the variable
     body = py_gitea_opensuse_org.UpdateVariableOption() # UpdateVariableOption |  (optional)
@@ -22614,7 +23651,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **owner** | **str**| name of the owner | 
+ **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repository | 
  **variablename** | **str**| name of the variable | 
  **body** | [**UpdateVariableOption**](UpdateVariableOption.md)|  | [optional] 
@@ -23087,7 +24124,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     api_instance = py_gitea_opensuse_org.RepositoryApi(api_client)
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
-    user = 'user_example' # str | username of user
+    user = 'user_example' # str | username of the user whose tracked times are to be listed
 
     try:
         # List a user's tracked times in a repo
@@ -23107,7 +24144,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
- **user** | **str**| username of user | 
+ **user** | **str**| username of the user whose tracked times are to be listed | 
 
 ### Return type
 

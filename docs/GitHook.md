@@ -6,9 +6,9 @@ GitHook represents a Git repository hook
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**content** | **str** |  | [optional] 
-**is_active** | **bool** |  | [optional] 
-**name** | **str** |  | [optional] 
+**content** | **str** | Content contains the script content of the hook | [optional] 
+**is_active** | **bool** | IsActive indicates if the hook is active | [optional] 
+**name** | **str** | Name is the name of the Git hook | [optional] 
 
 ## Example
 

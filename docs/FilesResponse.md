@@ -7,7 +7,7 @@ FilesResponse contains information about multiple files from a repo
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commit** | [**FileCommitResponse**](FileCommitResponse.md) |  | [optional] 
-**files** | [**List[ContentsResponse]**](ContentsResponse.md) |  | [optional] 
+**files** | [**List[ContentsResponse]**](ContentsResponse.md) | Files contains the list of file contents and metadata | [optional] 
 **verification** | [**PayloadCommitVerification**](PayloadCommitVerification.md) |  | [optional] 
 
 ## Example

@@ -6,13 +6,13 @@ EditOrgOption options for editing an organization
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**description** | **str** |  | [optional] 
-**email** | **str** |  | [optional] 
-**full_name** | **str** |  | [optional] 
-**location** | **str** |  | [optional] 
-**repo_admin_change_team_access** | **bool** |  | [optional] 
+**description** | **str** | The description of the organization | [optional] 
+**email** | **str** | The email address of the organization | [optional] 
+**full_name** | **str** | The full display name of the organization | [optional] 
+**location** | **str** | The location of the organization | [optional] 
+**repo_admin_change_team_access** | **bool** | Whether repository administrators can change team access | [optional] 
 **visibility** | **str** | possible values are &#x60;public&#x60;, &#x60;limited&#x60; or &#x60;private&#x60; | [optional] 
-**website** | **str** |  | [optional] 
+**website** | **str** | The website URL of the organization | [optional] 
 
 ## Example
 

@@ -6,13 +6,13 @@ NodeInfo contains standardized way of exposing metadata about a server running o
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**metadata** | **object** |  | [optional] 
-**open_registrations** | **bool** |  | [optional] 
-**protocols** | **List[str]** |  | [optional] 
+**metadata** | **object** | Metadata contains free form key value pairs for software specific values | [optional] 
+**open_registrations** | **bool** | OpenRegistrations indicates if new user registrations are accepted | [optional] 
+**protocols** | **List[str]** | Protocols lists the protocols supported by this server | [optional] 
 **services** | [**NodeInfoServices**](NodeInfoServices.md) |  | [optional] 
 **software** | [**NodeInfoSoftware**](NodeInfoSoftware.md) |  | [optional] 
 **usage** | [**NodeInfoUsage**](NodeInfoUsage.md) |  | [optional] 
-**version** | **str** |  | [optional] 
+**version** | **str** | Version specifies the schema version | [optional] 
 
 ## Example
 
