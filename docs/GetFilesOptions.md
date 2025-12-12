@@ -6,7 +6,7 @@ GetFilesOptions options for retrieving metadate and content of multiple files
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**files** | **List[str]** |  | [optional] 
+**files** | **List[str]** | Files is the list of file paths to retrieve | [optional] 
 
 ## Example
 

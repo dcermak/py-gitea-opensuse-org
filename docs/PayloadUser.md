@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **email** | **str** |  | [optional] 
 **name** | **str** | Full name of the commit author | [optional] 
-**username** | **str** |  | [optional] 
+**username** | **str** | username of the user | [optional] 
 
 ## Example
 

@@ -6,15 +6,15 @@ CommitStatus holds a single status of a single Commit
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | **str** |  | [optional] 
+**context** | **str** | Context is the unique context identifier for the status | [optional] 
 **created_at** | **datetime** |  | [optional] 
 **creator** | [**User**](User.md) |  | [optional] 
-**description** | **str** |  | [optional] 
-**id** | **int** |  | [optional] 
-**status** | **str** | CommitStatusState holds the state of a CommitStatus It can be \&quot;pending\&quot;, \&quot;success\&quot;, \&quot;error\&quot; and \&quot;failure\&quot; | [optional] 
-**target_url** | **str** |  | [optional] 
+**description** | **str** | Description provides a brief description of the status | [optional] 
+**id** | **int** | ID is the unique identifier for the commit status | [optional] 
+**status** | **str** | State represents the status state (pending, success, error, failure) pending CommitStatusPending  CommitStatusPending is for when the CommitStatus is Pending success CommitStatusSuccess  CommitStatusSuccess is for when the CommitStatus is Success error CommitStatusError  CommitStatusError is for when the CommitStatus is Error failure CommitStatusFailure  CommitStatusFailure is for when the CommitStatus is Failure warning CommitStatusWarning  CommitStatusWarning is for when the CommitStatus is Warning skipped CommitStatusSkipped  CommitStatusSkipped is for when CommitStatus is Skipped | [optional] 
+**target_url** | **str** | TargetURL is the URL to link to for more details | [optional] 
 **updated_at** | **datetime** |  | [optional] 
-**url** | **str** |  | [optional] 
+**url** | **str** | URL is the API URL for this status | [optional] 
 
 ## Example
 

@@ -6,9 +6,9 @@ NodeInfoUsageUsers contains statistics about the users of this server
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**active_halfyear** | **int** |  | [optional] 
-**active_month** | **int** |  | [optional] 
-**total** | **int** |  | [optional] 
+**active_halfyear** | **int** | ActiveHalfyear is the amount of users that signed in at least once in the last 180 days | [optional] 
+**active_month** | **int** | ActiveMonth is the amount of users that signed in at least once in the last 30 days | [optional] 
+**total** | **int** | Total is the total amount of users on this server | [optional] 
 
 ## Example
 

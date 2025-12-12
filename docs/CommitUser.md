@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**var_date** | **str** |  | [optional] 
+**var_date** | **str** | Date is the commit date in string format | [optional] 
 **email** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
+**name** | **str** | Name is the person&#39;s name | [optional] 
 
 ## Example
 

@@ -6,6 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **branch** | **str** |  | [optional] 
+**ff_only** | **bool** |  | [optional] 
 
 ## Example
 

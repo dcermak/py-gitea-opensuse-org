@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **datetime** |  | [optional] 
 **time** | **int** | time in seconds | 
-**user_name** | **str** | User who spent the time (optional) | [optional] 
+**user_name** | **str** | username of the user who spent the time working on the issue (optional) | [optional] 
 
 ## Example
 

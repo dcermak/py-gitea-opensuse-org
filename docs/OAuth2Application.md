@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**client_id** | **str** |  | [optional] 
-**client_secret** | **str** |  | [optional] 
-**confidential_client** | **bool** |  | [optional] 
-**created** | **datetime** |  | [optional] 
-**id** | **int** |  | [optional] 
-**name** | **str** |  | [optional] 
-**redirect_uris** | **List[str]** |  | [optional] 
-**skip_secondary_authorization** | **bool** |  | [optional] 
+**client_id** | **str** | The client ID of the OAuth2 application | [optional] 
+**client_secret** | **str** | The client secret of the OAuth2 application | [optional] 
+**confidential_client** | **bool** | Whether the client is confidential | [optional] 
+**created** | **datetime** | The timestamp when the application was created | [optional] 
+**id** | **int** | The unique identifier of the OAuth2 application | [optional] 
+**name** | **str** | The name of the OAuth2 application | [optional] 
+**redirect_uris** | **List[str]** | The list of allowed redirect URIs | [optional] 
+**skip_secondary_authorization** | **bool** | Whether to skip secondary authorization | [optional] 
 
 ## Example
 

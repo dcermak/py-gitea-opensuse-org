@@ -7,14 +7,14 @@ Milestone milestone is a collection of issues on one repository
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **closed_at** | **datetime** |  | [optional] 
-**closed_issues** | **int** |  | [optional] 
+**closed_issues** | **int** | ClosedIssues is the number of closed issues in this milestone | [optional] 
 **created_at** | **datetime** |  | [optional] 
-**description** | **str** |  | [optional] 
+**description** | **str** | Description provides details about the milestone | [optional] 
 **due_on** | **datetime** |  | [optional] 
-**id** | **int** |  | [optional] 
-**open_issues** | **int** |  | [optional] 
+**id** | **int** | ID is the unique identifier for the milestone | [optional] 
+**open_issues** | **int** | OpenIssues is the number of open issues in this milestone | [optional] 
 **state** | **str** | StateType issue state type | [optional] 
-**title** | **str** |  | [optional] 
+**title** | **str** | Title is the title of the milestone | [optional] 
 **updated_at** | **datetime** |  | [optional] 
 
 ## Example

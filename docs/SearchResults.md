@@ -6,8 +6,8 @@ SearchResults results of a successful search
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**List[Repository]**](Repository.md) |  | [optional] 
-**ok** | **bool** |  | [optional] 
+**data** | [**List[Repository]**](Repository.md) | Data contains the repository search results | [optional] 
+**ok** | **bool** | OK indicates if the search was successful | [optional] 
 
 ## Example
 

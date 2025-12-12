@@ -14,6 +14,8 @@ Method | HTTP request | Description
 [**get_user_settings**](UserApi.md#get_user_settings) | **GET** /user/settings | Get user settings
 [**get_user_variable**](UserApi.md#get_user_variable) | **GET** /user/actions/variables/{variablename} | Get a user-level variable which is created by current doer
 [**get_user_variables_list**](UserApi.md#get_user_variables_list) | **GET** /user/actions/variables | Get the user-level list of variables which is created by current doer
+[**get_user_workflow_jobs**](UserApi.md#get_user_workflow_jobs) | **GET** /user/actions/jobs | Get workflow jobs
+[**get_user_workflow_runs**](UserApi.md#get_user_workflow_runs) | **GET** /user/actions/runs | Get workflow runs
 [**get_verification_token**](UserApi.md#get_verification_token) | **GET** /user/gpg_key_token | Get a Token to verify
 [**update_user_secret**](UserApi.md#update_user_secret) | **PUT** /user/actions/secrets/{secretname} | Create or Update a secret value in a user scope
 [**update_user_settings**](UserApi.md#update_user_settings) | **PATCH** /user/settings | Update user settings
@@ -318,10 +320,9 @@ void (empty response body)
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**201** | response when creating a variable |  -  |
-**204** | response when creating a variable |  -  |
+**201** | successfully created the user-level variable |  -  |
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
-**404** | APINotFound is a not found empty response |  -  |
+**409** | variable name already exists. |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -1271,6 +1272,264 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **get_user_workflow_jobs**
+> ActionWorkflowJobsResponse get_user_workflow_jobs(status=status, page=page, limit=limit)
+
+Get workflow jobs
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.action_workflow_jobs_response import ActionWorkflowJobsResponse
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.UserApi(api_client)
+    status = 'status_example' # str | workflow status (pending, queued, in_progress, failure, success, skipped) (optional)
+    page = 56 # int | page number of results to return (1-based) (optional)
+    limit = 56 # int | page size of results (optional)
+
+    try:
+        # Get workflow jobs
+        api_response = await api_instance.get_user_workflow_jobs(status=status, page=page, limit=limit)
+        print("The response of UserApi->get_user_workflow_jobs:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling UserApi->get_user_workflow_jobs: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **status** | **str**| workflow status (pending, queued, in_progress, failure, success, skipped) | [optional] 
+ **page** | **int**| page number of results to return (1-based) | [optional] 
+ **limit** | **int**| page size of results | [optional] 
+
+### Return type
+
+[**ActionWorkflowJobsResponse**](ActionWorkflowJobsResponse.md)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | WorkflowJobsList |  -  |
+**400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**404** | APINotFound is a not found empty response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_user_workflow_runs**
+> ActionWorkflowRunsResponse get_user_workflow_runs(event=event, branch=branch, status=status, actor=actor, head_sha=head_sha, page=page, limit=limit)
+
+Get workflow runs
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.action_workflow_runs_response import ActionWorkflowRunsResponse
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.UserApi(api_client)
+    event = 'event_example' # str | workflow event name (optional)
+    branch = 'branch_example' # str | workflow branch (optional)
+    status = 'status_example' # str | workflow status (pending, queued, in_progress, failure, success, skipped) (optional)
+    actor = 'actor_example' # str | triggered by user (optional)
+    head_sha = 'head_sha_example' # str | triggering sha of the workflow run (optional)
+    page = 56 # int | page number of results to return (1-based) (optional)
+    limit = 56 # int | page size of results (optional)
+
+    try:
+        # Get workflow runs
+        api_response = await api_instance.get_user_workflow_runs(event=event, branch=branch, status=status, actor=actor, head_sha=head_sha, page=page, limit=limit)
+        print("The response of UserApi->get_user_workflow_runs:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling UserApi->get_user_workflow_runs: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **event** | **str**| workflow event name | [optional] 
+ **branch** | **str**| workflow branch | [optional] 
+ **status** | **str**| workflow status (pending, queued, in_progress, failure, success, skipped) | [optional] 
+ **actor** | **str**| triggered by user | [optional] 
+ **head_sha** | **str**| triggering sha of the workflow run | [optional] 
+ **page** | **int**| page number of results to return (1-based) | [optional] 
+ **limit** | **int**| page size of results | [optional] 
+
+### Return type
+
+[**ActionWorkflowRunsResponse**](ActionWorkflowRunsResponse.md)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | WorkflowRunsList |  -  |
+**400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**404** | APINotFound is a not found empty response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **get_verification_token**
 > str get_verification_token()
 
@@ -1948,7 +2207,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | user to block
+    username = 'username_example' # str | username of the user to block
     note = 'note_example' # str | optional note for the block (optional)
 
     try:
@@ -1965,7 +2224,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| user to block | 
+ **username** | **str**| username of the user to block | 
  **note** | **str**| optional note for the block | [optional] 
 
 ### Return type
@@ -2068,8 +2327,8 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of following user
-    target = 'target_example' # str | username of followed user
+    username = 'username_example' # str | username of the following user
+    target = 'target_example' # str | username of the followed user
 
     try:
         # Check if one user is following another user
@@ -2085,8 +2344,8 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of following user | 
- **target** | **str**| username of followed user | 
+ **username** | **str**| username of the following user | 
+ **target** | **str**| username of the followed user | 
 
 ### Return type
 
@@ -2187,7 +2446,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | user to check
+    username = 'username_example' # str | username of the user to check
 
     try:
         # Check if a user is blocked by the authenticated user
@@ -2203,7 +2462,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| user to check | 
+ **username** | **str**| username of the user to check | 
 
 ### Return type
 
@@ -2659,7 +2918,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user
+    username = 'username_example' # str | username of the user whose token is to be created
     body = py_gitea_opensuse_org.CreateAccessTokenOption() # CreateAccessTokenOption |  (optional)
 
     try:
@@ -2678,7 +2937,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user | 
+ **username** | **str**| username of the user whose token is to be created | 
  **body** | [**CreateAccessTokenOption**](CreateAccessTokenOption.md)|  | [optional] 
 
 ### Return type
@@ -2781,7 +3040,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of followed user
+    username = 'username_example' # str | username of the user to check for authenticated followers
 
     try:
         # Check whether a user is followed by the authenticated user
@@ -2797,7 +3056,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of followed user | 
+ **username** | **str**| username of the user to check for authenticated followers | 
 
 ### Return type
 
@@ -3018,7 +3277,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user to unfollow
+    username = 'username_example' # str | username of the user to unfollow
 
     try:
         # Unfollow a user
@@ -3034,7 +3293,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user to unfollow | 
+ **username** | **str**| username of the user to unfollow | 
 
 ### Return type
 
@@ -4824,7 +5083,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user to follow
+    username = 'username_example' # str | username of the user to follow
 
     try:
         # Follow a user
@@ -4840,7 +5099,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user to follow | 
+ **username** | **str**| username of the user to follow | 
 
 ### Return type
 
@@ -5187,7 +5446,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user
+    username = 'username_example' # str | username of the user whose token is to be deleted
     token = 'token_example' # str | token to be deleted, identified by ID and if not available by name
 
     try:
@@ -5204,7 +5463,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user | 
+ **username** | **str**| username of the user whose token is to be deleted | 
  **token** | **str**| token to be deleted, identified by ID and if not available by name | 
 
 ### Return type
@@ -5894,7 +6153,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user to get
+    username = 'username_example' # str | username of the user whose data is to be listed
 
     try:
         # Get a user
@@ -5912,7 +6171,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user to get | 
+ **username** | **str**| username of the user whose data is to be listed | 
 
 ### Return type
 
@@ -6129,7 +6388,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user to get
+    username = 'username_example' # str | username of the user whose heatmap is to be obtained
 
     try:
         # Get a user's heatmap
@@ -6147,7 +6406,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user to get | 
+ **username** | **str**| username of the user whose heatmap is to be obtained | 
 
 ### Return type
 
@@ -6842,7 +7101,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user
+    username = 'username_example' # str | username of to user whose access tokens are to be listed
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
 
@@ -6862,7 +7121,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user | 
+ **username** | **str**| username of to user whose access tokens are to be listed | 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
 
@@ -6966,7 +7225,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user
+    username = 'username_example' # str | username of the user whose activity feeds are to be listed
     only_performed_by = True # bool | if true, only show actions performed by the requested user (optional)
     var_date = '2013-10-20' # date | the date of the activities to be found (optional)
     page = 56 # int | page number of results to return (1-based) (optional)
@@ -6988,7 +7247,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user | 
+ **username** | **str**| username of the user whose activity feeds are to be listed | 
  **only_performed_by** | **bool**| if true, only show actions performed by the requested user | [optional] 
  **var_date** | **date**| the date of the activities to be found | [optional] 
  **page** | **int**| page number of results to return (1-based) | [optional] 
@@ -7330,7 +7589,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user
+    username = 'username_example' # str | username of the user whose followers are to be listed
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
 
@@ -7350,7 +7609,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user | 
+ **username** | **str**| username of the user whose followers are to be listed | 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
 
@@ -7454,7 +7713,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user
+    username = 'username_example' # str | username of the user whose followed users are to be listed
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
 
@@ -7474,7 +7733,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user | 
+ **username** | **str**| username of the user whose followed users are to be listed | 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
 
@@ -7578,7 +7837,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user
+    username = 'username_example' # str | username of the user whose GPG key list is to be obtained
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
 
@@ -7598,7 +7857,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user | 
+ **username** | **str**| username of the user whose GPG key list is to be obtained | 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
 
@@ -7823,7 +8082,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user
+    username = 'username_example' # str | username of the user whose public keys are to be listed
     fingerprint = 'fingerprint_example' # str | fingerprint of the key (optional)
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
@@ -7844,7 +8103,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user | 
+ **username** | **str**| username of the user whose public keys are to be listed | 
  **fingerprint** | **str**| fingerprint of the key | [optional] 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
@@ -7949,7 +8208,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user
+    username = 'username_example' # str | username of the user whose owned repos are to be listed
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
 
@@ -7969,7 +8228,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user | 
+ **username** | **str**| username of the user whose owned repos are to be listed | 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
 
@@ -8073,7 +8332,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of user
+    username = 'username_example' # str | username of the user whose starred repos are to be listed
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
 
@@ -8093,7 +8352,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of user | 
+ **username** | **str**| username of the user whose starred repos are to be listed | 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
 
@@ -8198,7 +8457,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | username of the user
+    username = 'username_example' # str | username of the user whose watched repos are to be listed
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
 
@@ -8218,7 +8477,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| username of the user | 
+ **username** | **str**| username of the user whose watched repos are to be listed | 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
 
@@ -8567,7 +8826,7 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.UserApi(api_client)
-    username = 'username_example' # str | user to unblock
+    username = 'username_example' # str | username of the user to unblock
 
     try:
         # Unblock a user
@@ -8583,7 +8842,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **username** | **str**| user to unblock | 
+ **username** | **str**| username of the user to unblock | 
 
 ### Return type
 

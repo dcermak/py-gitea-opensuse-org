@@ -6,7 +6,7 @@ EditAttachmentOptions options for editing attachments
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** |  | [optional] 
+**name** | **str** | Name is the new filename for the attachment | [optional] 
 
 ## Example
 

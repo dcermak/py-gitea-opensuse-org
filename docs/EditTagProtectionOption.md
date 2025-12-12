@@ -6,9 +6,9 @@ EditTagProtectionOption options for editing a tag protection
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name_pattern** | **str** |  | [optional] 
-**whitelist_teams** | **List[str]** |  | [optional] 
-**whitelist_usernames** | **List[str]** |  | [optional] 
+**name_pattern** | **str** | The pattern to match tag names for protection | [optional] 
+**whitelist_teams** | **List[str]** | List of team names allowed to create/delete protected tags | [optional] 
+**whitelist_usernames** | **List[str]** | List of usernames allowed to create/delete protected tags | [optional] 
 
 ## Example
 

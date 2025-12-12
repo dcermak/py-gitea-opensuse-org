@@ -6,12 +6,12 @@ AnnotatedTag represents an annotated tag
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**message** | **str** |  | [optional] 
+**message** | **str** | The message associated with the annotated tag | [optional] 
 **object** | [**AnnotatedTagObject**](AnnotatedTagObject.md) |  | [optional] 
-**sha** | **str** |  | [optional] 
-**tag** | **str** |  | [optional] 
+**sha** | **str** | The SHA hash of the annotated tag | [optional] 
+**tag** | **str** | The name of the annotated tag | [optional] 
 **tagger** | [**CommitUser**](CommitUser.md) |  | [optional] 
-**url** | **str** |  | [optional] 
+**url** | **str** | The URL to access the annotated tag | [optional] 
 **verification** | [**PayloadCommitVerification**](PayloadCommitVerification.md) |  | [optional] 
 
 ## Example

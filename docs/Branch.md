@@ -7,14 +7,14 @@ Branch represents a repository branch
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commit** | [**PayloadCommit**](PayloadCommit.md) |  | [optional] 
-**effective_branch_protection_name** | **str** |  | [optional] 
-**enable_status_check** | **bool** |  | [optional] 
-**name** | **str** |  | [optional] 
-**protected** | **bool** |  | [optional] 
-**required_approvals** | **int** |  | [optional] 
-**status_check_contexts** | **List[str]** |  | [optional] 
-**user_can_merge** | **bool** |  | [optional] 
-**user_can_push** | **bool** |  | [optional] 
+**effective_branch_protection_name** | **str** | EffectiveBranchProtectionName is the name of the effective branch protection rule | [optional] 
+**enable_status_check** | **bool** | EnableStatusCheck indicates if status checks are enabled | [optional] 
+**name** | **str** | Name is the branch name | [optional] 
+**protected** | **bool** | Protected indicates if the branch is protected | [optional] 
+**required_approvals** | **int** | RequiredApprovals is the number of required approvals for pull requests | [optional] 
+**status_check_contexts** | **List[str]** | StatusCheckContexts contains the list of required status check contexts | [optional] 
+**user_can_merge** | **bool** | UserCanMerge indicates if the current user can merge to this branch | [optional] 
+**user_can_push** | **bool** | UserCanPush indicates if the current user can push to this branch | [optional] 
 
 ## Example
 

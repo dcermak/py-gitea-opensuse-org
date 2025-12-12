@@ -27,6 +27,7 @@ Name | Type | Description | Notes
 **ref** | **str** |  | [optional] 
 **repository** | [**RepositoryMeta**](RepositoryMeta.md) |  | [optional] 
 **state** | **str** | StateType issue state type | [optional] 
+**time_estimate** | **int** |  | [optional] 
 **title** | **str** |  | [optional] 
 **updated_at** | **datetime** |  | [optional] 
 **url** | **str** |  | [optional] 

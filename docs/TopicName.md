@@ -6,7 +6,7 @@ TopicName a list of repo topic names
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**topics** | **List[str]** |  | [optional] 
+**topics** | **List[str]** | List of topic names | [optional] 
 
 ## Example
 

@@ -6,11 +6,11 @@ PRBranchInfo information about a branch
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**label** | **str** |  | [optional] 
-**ref** | **str** |  | [optional] 
+**label** | **str** | The display name of the branch | [optional] 
+**ref** | **str** | The git reference of the branch | [optional] 
 **repo** | [**Repository**](Repository.md) |  | [optional] 
-**repo_id** | **int** |  | [optional] 
-**sha** | **str** |  | [optional] 
+**repo_id** | **int** | The unique identifier of the repository | [optional] 
+**sha** | **str** | The commit SHA of the branch head | [optional] 
 
 ## Example
 

@@ -6,7 +6,7 @@ Reaction contain one reaction
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**content** | **str** |  | [optional] 
+**content** | **str** | The reaction content (e.g., emoji or reaction type) | [optional] 
 **created_at** | **datetime** |  | [optional] 
 **user** | [**User**](User.md) |  | [optional] 
 

@@ -6,13 +6,13 @@ NotificationThread expose Notification on API
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** |  | [optional] 
-**pinned** | **bool** |  | [optional] 
+**id** | **int** | ID is the unique identifier for the notification thread | [optional] 
+**pinned** | **bool** | Pinned indicates if the notification is pinned | [optional] 
 **repository** | [**Repository**](Repository.md) |  | [optional] 
 **subject** | [**NotificationSubject**](NotificationSubject.md) |  | [optional] 
-**unread** | **bool** |  | [optional] 
-**updated_at** | **datetime** |  | [optional] 
-**url** | **str** |  | [optional] 
+**unread** | **bool** | Unread indicates if the notification has been read | [optional] 
+**updated_at** | **datetime** | UpdatedAt is the time when the notification was last updated | [optional] 
+**url** | **str** | URL is the API URL for this notification thread | [optional] 
 
 ## Example
 

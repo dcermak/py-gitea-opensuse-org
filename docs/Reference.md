@@ -6,8 +6,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **object** | [**GitObject**](GitObject.md) |  | [optional] 
-**ref** | **str** |  | [optional] 
-**url** | **str** |  | [optional] 
+**ref** | **str** | The name of the Git reference (e.g., refs/heads/main) | [optional] 
+**url** | **str** | The URL to access this Git reference | [optional] 
 
 ## Example
 

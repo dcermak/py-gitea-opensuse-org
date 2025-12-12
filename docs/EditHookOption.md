@@ -6,11 +6,11 @@ EditHookOption options when modify one hook
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**active** | **bool** |  | [optional] 
-**authorization_header** | **str** |  | [optional] 
-**branch_filter** | **str** |  | [optional] 
-**config** | **Dict[str, str]** |  | [optional] 
-**events** | **List[str]** |  | [optional] 
+**active** | **bool** | Whether the webhook is active and will be triggered | [optional] 
+**authorization_header** | **str** | Authorization header to include in webhook requests | [optional] 
+**branch_filter** | **str** | Branch filter pattern to determine which branches trigger the webhook | [optional] 
+**config** | **Dict[str, str]** | Configuration settings for the webhook | [optional] 
+**events** | **List[str]** | List of events that trigger this webhook | [optional] 
 
 ## Example
 

@@ -6,17 +6,17 @@ CreatePullRequestOption options when creating a pull request
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**assignee** | **str** |  | [optional] 
-**assignees** | **List[str]** |  | [optional] 
-**base** | **str** |  | [optional] 
-**body** | **str** |  | [optional] 
+**assignee** | **str** | The primary assignee username | [optional] 
+**assignees** | **List[str]** | The list of assignee usernames | [optional] 
+**base** | **str** | The base branch for the pull request | [optional] 
+**body** | **str** | The description body of the pull request | [optional] 
 **due_date** | **datetime** |  | [optional] 
-**head** | **str** |  | [optional] 
-**labels** | **List[int]** |  | [optional] 
-**milestone** | **int** |  | [optional] 
-**reviewers** | **List[str]** |  | [optional] 
-**team_reviewers** | **List[str]** |  | [optional] 
-**title** | **str** |  | [optional] 
+**head** | **str** | The head branch for the pull request, it could be a branch name on the base repository or a form like &#x60;&lt;username&gt;:&lt;branch&gt;&#x60; which refers to the user&#39;s fork repository&#39;s branch. | [optional] 
+**labels** | **List[int]** | The list of label IDs to assign to the pull request | [optional] 
+**milestone** | **int** | The milestone ID to assign to the pull request | [optional] 
+**reviewers** | **List[str]** | The list of reviewer usernames | [optional] 
+**team_reviewers** | **List[str]** | The list of team reviewer names | [optional] 
+**title** | **str** | The title of the pull request | [optional] 
 
 ## Example
 

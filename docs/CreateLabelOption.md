@@ -7,7 +7,7 @@ CreateLabelOption options for creating a label
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **color** | **str** |  | 
-**description** | **str** |  | [optional] 
+**description** | **str** | Description provides additional context about the label&#39;s purpose | [optional] 
 **exclusive** | **bool** |  | [optional] 
 **is_archived** | **bool** |  | [optional] 
 **name** | **str** |  | 

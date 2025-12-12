@@ -6,8 +6,8 @@ CommitAffectedFiles store information about files affected by the commit
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**filename** | **str** |  | [optional] 
-**status** | **str** |  | [optional] 
+**filename** | **str** | Filename is the path of the affected file | [optional] 
+**status** | **str** | Status indicates how the file was affected (added, modified, deleted) | [optional] 
 
 ## Example
 

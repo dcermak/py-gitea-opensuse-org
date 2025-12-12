@@ -6,10 +6,10 @@ GeneralAttachmentSettings contains global Attachment settings exposed by API
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**allowed_types** | **str** |  | [optional] 
-**enabled** | **bool** |  | [optional] 
-**max_files** | **int** |  | [optional] 
-**max_size** | **int** |  | [optional] 
+**allowed_types** | **str** | AllowedTypes contains the allowed file types for attachments | [optional] 
+**enabled** | **bool** | Enabled indicates if file attachments are enabled | [optional] 
+**max_files** | **int** | MaxFiles is the maximum number of files per attachment | [optional] 
+**max_size** | **int** | MaxSize is the maximum size for individual attachments | [optional] 
 
 ## Example
 

@@ -6,7 +6,7 @@ NotificationCount number of unread notifications
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**new** | **int** |  | [optional] 
+**new** | **int** | New is the number of unread notifications | [optional] 
 
 ## Example
 

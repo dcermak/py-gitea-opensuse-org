@@ -283,7 +283,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
     index = 56 # int | index of the issue
-    user = 'user_example' # str | user to subscribe
+    user = 'user_example' # str | username of the user to subscribe the issue to
 
     try:
         # Subscribe user to issue
@@ -302,7 +302,7 @@ Name | Type | Description  | Notes
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
  **index** | **int**| index of the issue | 
- **user** | **str**| user to subscribe | 
+ **user** | **str**| username of the user to subscribe the issue to | 
 
 ### Return type
 
@@ -1087,6 +1087,7 @@ Name | Type | Description  | Notes
 **201** | Attachment |  -  |
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**413** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
 **423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
@@ -1346,6 +1347,7 @@ Name | Type | Description  | Notes
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **403** | APIForbiddenError is a forbidden error response |  * message -  <br>  * url -  <br>  |
 **404** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**413** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
 **423** | APIRepoArchivedError is an error that is raised when an archived repo should be modified |  * message -  <br>  * url -  <br>  |
 
@@ -2957,7 +2959,7 @@ void (empty response body)
 **204** | APIEmpty is an empty response |  -  |
 **403** | Not repo writer, user does not have rights to toggle stopwatch |  -  |
 **404** | APINotFound is a not found empty response |  -  |
-**409** | Cannot cancel a non existent stopwatch |  -  |
+**409** | Cannot cancel a non-existent stopwatch |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -3041,7 +3043,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
     index = 56 # int | index of the issue
-    user = 'user_example' # str | user witch unsubscribe
+    user = 'user_example' # str | username of the user to unsubscribe from an issue
 
     try:
         # Unsubscribe user from issue
@@ -3060,7 +3062,7 @@ Name | Type | Description  | Notes
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
  **index** | **int**| index of the issue | 
- **user** | **str**| user witch unsubscribe | 
+ **user** | **str**| username of the user to unsubscribe from an issue | 
 
 ### Return type
 
@@ -8079,7 +8081,7 @@ void (empty response body)
 **201** | APIEmpty is an empty response |  -  |
 **403** | Not repo writer, user does not have rights to toggle stopwatch |  -  |
 **404** | APINotFound is a not found empty response |  -  |
-**409** | Cannot stop a non existent stopwatch |  -  |
+**409** | Cannot stop a non-existent stopwatch |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

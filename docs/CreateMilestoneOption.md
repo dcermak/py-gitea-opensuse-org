@@ -6,10 +6,10 @@ CreateMilestoneOption options for creating a milestone
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**description** | **str** |  | [optional] 
+**description** | **str** | Description provides details about the milestone | [optional] 
 **due_on** | **datetime** |  | [optional] 
 **state** | **str** |  | [optional] 
-**title** | **str** |  | [optional] 
+**title** | **str** | Title is the title of the new milestone | [optional] 
 
 ## Example
 

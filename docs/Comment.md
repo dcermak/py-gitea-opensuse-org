@@ -6,15 +6,15 @@ Comment represents a comment on a commit or issue
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**assets** | [**List[Attachment]**](Attachment.md) |  | [optional] 
-**body** | **str** |  | [optional] 
+**assets** | [**List[Attachment]**](Attachment.md) | Attachments contains files attached to the comment | [optional] 
+**body** | **str** | Body contains the comment text content | [optional] 
 **created_at** | **datetime** |  | [optional] 
-**html_url** | **str** |  | [optional] 
-**id** | **int** |  | [optional] 
-**issue_url** | **str** |  | [optional] 
-**original_author** | **str** |  | [optional] 
-**original_author_id** | **int** |  | [optional] 
-**pull_request_url** | **str** |  | [optional] 
+**html_url** | **str** | HTMLURL is the web URL for viewing the comment | [optional] 
+**id** | **int** | ID is the unique identifier for the comment | [optional] 
+**issue_url** | **str** | IssueURL is the API URL for the issue | [optional] 
+**original_author** | **str** | OriginalAuthor is the original author name (for imported comments) | [optional] 
+**original_author_id** | **int** | OriginalAuthorID is the original author ID (for imported comments) | [optional] 
+**pull_request_url** | **str** | PRURL is the API URL for the pull request (if applicable) | [optional] 
 **updated_at** | **datetime** |  | [optional] 
 **user** | [**User**](User.md) |  | [optional] 
 

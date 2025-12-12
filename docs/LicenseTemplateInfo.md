@@ -6,11 +6,11 @@ LicensesInfo contains information about a License
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**body** | **str** |  | [optional] 
-**implementation** | **str** |  | [optional] 
-**key** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**url** | **str** |  | [optional] 
+**body** | **str** | Body contains the full text of the license | [optional] 
+**implementation** | **str** | Implementation contains license implementation details | [optional] 
+**key** | **str** | Key is the unique identifier for the license template | [optional] 
+**name** | **str** | Name is the display name of the license | [optional] 
+**url** | **str** | URL is the reference URL for the license | [optional] 
 
 ## Example
 

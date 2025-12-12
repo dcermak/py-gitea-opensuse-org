@@ -6,8 +6,8 @@ RepoCollaboratorPermission to get repository permission for a collaborator
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**permission** | **str** |  | [optional] 
-**role_name** | **str** |  | [optional] 
+**permission** | **str** | Permission level of the collaborator | [optional] 
+**role_name** | **str** | RoleName is the name of the permission role | [optional] 
 **user** | [**User**](User.md) |  | [optional] 
 
 ## Example

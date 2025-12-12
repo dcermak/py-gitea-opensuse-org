@@ -6,10 +6,10 @@ EditMilestoneOption options for editing a milestone
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**description** | **str** |  | [optional] 
-**due_on** | **datetime** |  | [optional] 
-**state** | **str** |  | [optional] 
-**title** | **str** |  | [optional] 
+**description** | **str** | Description provides updated details about the milestone | [optional] 
+**due_on** | **datetime** | Deadline is the updated due date for the milestone | [optional] 
+**state** | **str** | State indicates the updated state of the milestone | [optional] 
+**title** | **str** | Title is the updated title of the milestone | [optional] 
 
 ## Example
 

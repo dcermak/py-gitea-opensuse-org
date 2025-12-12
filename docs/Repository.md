@@ -31,6 +31,7 @@ Name | Type | Description | Notes
 **forks_count** | **int** |  | [optional] 
 **full_name** | **str** |  | [optional] 
 **has_actions** | **bool** |  | [optional] 
+**has_code** | **bool** |  | [optional] 
 **has_issues** | **bool** |  | [optional] 
 **has_packages** | **bool** |  | [optional] 
 **has_projects** | **bool** |  | [optional] 

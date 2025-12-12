@@ -6,13 +6,13 @@ NotificationSubject contains the notification subject (Issue/Pull/Commit)
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**html_url** | **str** |  | [optional] 
-**latest_comment_html_url** | **str** |  | [optional] 
-**latest_comment_url** | **str** |  | [optional] 
+**html_url** | **str** | HTMLURL is the web URL for the notification subject | [optional] 
+**latest_comment_html_url** | **str** | LatestCommentHTMLURL is the web URL for the latest comment | [optional] 
+**latest_comment_url** | **str** | LatestCommentURL is the API URL for the latest comment | [optional] 
 **state** | **str** | StateType issue state type | [optional] 
-**title** | **str** |  | [optional] 
+**title** | **str** | Title is the title of the notification subject | [optional] 
 **type** | **str** | NotifySubjectType represent type of notification subject | [optional] 
-**url** | **str** |  | [optional] 
+**url** | **str** | URL is the API URL for the notification subject | [optional] 
 
 ## Example
 

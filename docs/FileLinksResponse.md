@@ -6,9 +6,9 @@ FileLinksResponse contains the links for a repo's file
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**git** | **str** |  | [optional] 
-**html** | **str** |  | [optional] 
-**var_self** | **str** |  | [optional] 
+**git** | **str** | GitURL is the Git API URL for this file | [optional] 
+**html** | **str** | HTMLURL is the web URL for this file | [optional] 
+**var_self** | **str** | Self is the API URL for this file | [optional] 
 
 ## Example
 

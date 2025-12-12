@@ -6,10 +6,10 @@ NodeInfoSoftware contains Metadata about server software in use
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**homepage** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**repository** | **str** |  | [optional] 
-**version** | **str** |  | [optional] 
+**homepage** | **str** | Homepage is the URL to the homepage of this server software | [optional] 
+**name** | **str** | Name is the canonical name of this server software | [optional] 
+**repository** | **str** | Repository is the URL to the source code repository | [optional] 
+**version** | **str** | Version is the version of this server software | [optional] 
 
 ## Example
 

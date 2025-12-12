@@ -7,7 +7,7 @@ Identity for a person's identity like an author or committer
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **email** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
+**name** | **str** | Name is the person&#39;s name | [optional] 
 
 ## Example
 

@@ -6,8 +6,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **datetime** |  | [optional] 
-**sha** | **str** |  | [optional] 
-**url** | **str** |  | [optional] 
+**sha** | **str** | SHA is the commit SHA hash | [optional] 
+**url** | **str** | URL is the API URL for the commit | [optional] 
 
 ## Example
 

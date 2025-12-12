@@ -6,14 +6,14 @@ Hook a hook is a web hook when one repository changed
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**active** | **bool** |  | [optional] 
-**authorization_header** | **str** |  | [optional] 
-**branch_filter** | **str** |  | [optional] 
-**config** | **Dict[str, str]** |  | [optional] 
+**active** | **bool** | Whether the webhook is active and will be triggered | [optional] 
+**authorization_header** | **str** | Authorization header to include in webhook requests | [optional] 
+**branch_filter** | **str** | Branch filter pattern to determine which branches trigger the webhook | [optional] 
+**config** | **Dict[str, str]** | Configuration settings for the webhook | [optional] 
 **created_at** | **datetime** |  | [optional] 
-**events** | **List[str]** |  | [optional] 
-**id** | **int** |  | [optional] 
-**type** | **str** |  | [optional] 
+**events** | **List[str]** | List of events that trigger this webhook | [optional] 
+**id** | **int** | The unique identifier of the webhook | [optional] 
+**type** | **str** | The type of the webhook (e.g., gitea, slack, discord) | [optional] 
 **updated_at** | **datetime** |  | [optional] 
 
 ## Example

@@ -6,19 +6,19 @@ GPGKey a user GPG key to sign commit and tag in repository
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**can_certify** | **bool** |  | [optional] 
-**can_encrypt_comms** | **bool** |  | [optional] 
-**can_encrypt_storage** | **bool** |  | [optional] 
-**can_sign** | **bool** |  | [optional] 
+**can_certify** | **bool** | Whether the key can be used for certification | [optional] 
+**can_encrypt_comms** | **bool** | Whether the key can be used for encrypting communications | [optional] 
+**can_encrypt_storage** | **bool** | Whether the key can be used for encrypting storage | [optional] 
+**can_sign** | **bool** | Whether the key can be used for signing | [optional] 
 **created_at** | **datetime** |  | [optional] 
-**emails** | [**List[GPGKeyEmail]**](GPGKeyEmail.md) |  | [optional] 
+**emails** | [**List[GPGKeyEmail]**](GPGKeyEmail.md) | List of email addresses associated with this GPG key | [optional] 
 **expires_at** | **datetime** |  | [optional] 
-**id** | **int** |  | [optional] 
-**key_id** | **str** |  | [optional] 
-**primary_key_id** | **str** |  | [optional] 
-**public_key** | **str** |  | [optional] 
-**subkeys** | [**List[GPGKey]**](GPGKey.md) |  | [optional] 
-**verified** | **bool** |  | [optional] 
+**id** | **int** | The unique identifier of the GPG key | [optional] 
+**key_id** | **str** | The key ID of the GPG key | [optional] 
+**primary_key_id** | **str** | The primary key ID of the GPG key | [optional] 
+**public_key** | **str** | The public key content in armored format | [optional] 
+**subkeys** | [**List[GPGKey]**](GPGKey.md) | List of subkeys of this GPG key | [optional] 
+**verified** | **bool** | Whether the GPG key has been verified | [optional] 
 
 ## Example
 

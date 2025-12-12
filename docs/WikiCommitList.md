@@ -6,8 +6,8 @@ WikiCommitList commit/revision list
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**commits** | [**List[WikiCommit]**](WikiCommit.md) |  | [optional] 
-**count** | **int** |  | [optional] 
+**commits** | [**List[WikiCommit]**](WikiCommit.md) | The list of wiki commits | [optional] 
+**count** | **int** | The total count of commits | [optional] 
 
 ## Example
 
