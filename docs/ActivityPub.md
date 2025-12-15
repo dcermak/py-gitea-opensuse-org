@@ -6,7 +6,7 @@ ActivityPub type
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | **str** |  | [optional] 
+**context** | **str** | Context defines the JSON-LD context for ActivityPub | [optional] 
 
 ## Example
 

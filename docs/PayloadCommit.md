@@ -6,15 +6,15 @@ PayloadCommit represents a commit
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**added** | **List[str]** |  | [optional] 
+**added** | **List[str]** | List of files added in this commit | [optional] 
 **author** | [**PayloadUser**](PayloadUser.md) |  | [optional] 
 **committer** | [**PayloadUser**](PayloadUser.md) |  | [optional] 
 **id** | **str** | sha1 hash of the commit | [optional] 
-**message** | **str** |  | [optional] 
-**modified** | **List[str]** |  | [optional] 
-**removed** | **List[str]** |  | [optional] 
+**message** | **str** | The commit message | [optional] 
+**modified** | **List[str]** | List of files modified in this commit | [optional] 
+**removed** | **List[str]** | List of files removed in this commit | [optional] 
 **timestamp** | **datetime** |  | [optional] 
-**url** | **str** |  | [optional] 
+**url** | **str** | The URL to view this commit | [optional] 
 **verification** | [**PayloadCommitVerification**](PayloadCommitVerification.md) |  | [optional] 
 
 ## Example

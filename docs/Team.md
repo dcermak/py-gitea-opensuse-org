@@ -6,11 +6,11 @@ Team represents a team in an organization
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**can_create_org_repo** | **bool** |  | [optional] 
-**description** | **str** |  | [optional] 
-**id** | **int** |  | [optional] 
-**includes_all_repositories** | **bool** |  | [optional] 
-**name** | **str** |  | [optional] 
+**can_create_org_repo** | **bool** | Whether the team can create repositories in the organization | [optional] 
+**description** | **str** | The description of the team | [optional] 
+**id** | **int** | The unique identifier of the team | [optional] 
+**includes_all_repositories** | **bool** | Whether the team has access to all repositories in the organization | [optional] 
+**name** | **str** | The name of the team | [optional] 
 **organization** | [**Organization**](Organization.md) |  | [optional] 
 **permission** | **str** |  | [optional] 
 **units** | **List[str]** |  | [optional] 

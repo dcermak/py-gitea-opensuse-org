@@ -6,24 +6,24 @@ EditUserOption edit user options
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**active** | **bool** |  | [optional] 
-**admin** | **bool** |  | [optional] 
-**allow_create_organization** | **bool** |  | [optional] 
-**allow_git_hook** | **bool** |  | [optional] 
-**allow_import_local** | **bool** |  | [optional] 
-**description** | **str** |  | [optional] 
+**active** | **bool** | Whether the user account is active | [optional] 
+**admin** | **bool** | Whether the user has administrator privileges | [optional] 
+**allow_create_organization** | **bool** | Whether the user can create organizations | [optional] 
+**allow_git_hook** | **bool** | Whether the user can use Git hooks | [optional] 
+**allow_import_local** | **bool** | Whether the user can import local repositories | [optional] 
+**description** | **str** | The user&#39;s personal description or bio | [optional] 
 **email** | **str** |  | [optional] 
-**full_name** | **str** |  | [optional] 
-**location** | **str** |  | [optional] 
-**login_name** | **str** |  | 
-**max_repo_creation** | **int** |  | [optional] 
-**must_change_password** | **bool** |  | [optional] 
-**password** | **str** |  | [optional] 
-**prohibit_login** | **bool** |  | [optional] 
-**restricted** | **bool** |  | [optional] 
+**full_name** | **str** | The full display name of the user | [optional] 
+**location** | **str** | The user&#39;s location or address | [optional] 
+**login_name** | **str** | identifier of the user, provided by the external authenticator (if configured) | [default to 'empty']
+**max_repo_creation** | **int** | Maximum number of repositories the user can create | [optional] 
+**must_change_password** | **bool** | Whether the user must change password on next login | [optional] 
+**password** | **str** | The plain text password for the user | [optional] 
+**prohibit_login** | **bool** | Whether the user is prohibited from logging in | [optional] 
+**restricted** | **bool** | Whether the user has restricted access privileges | [optional] 
 **source_id** | **int** |  | 
-**visibility** | **str** |  | [optional] 
-**website** | **str** |  | [optional] 
+**visibility** | **str** | User visibility level: public, limited, or private | [optional] 
+**website** | **str** | The user&#39;s personal website URL | [optional] 
 
 ## Example
 

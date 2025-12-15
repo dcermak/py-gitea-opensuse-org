@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **external_tracker** | [**ExternalTracker**](ExternalTracker.md) |  | [optional] 
 **external_wiki** | [**ExternalWiki**](ExternalWiki.md) |  | [optional] 
 **has_actions** | **bool** | either &#x60;true&#x60; to enable actions unit, or &#x60;false&#x60; to disable them. | [optional] 
+**has_code** | **bool** | either &#x60;true&#x60; to enable code for this repository or &#x60;false&#x60; to disable it. | [optional] 
 **has_issues** | **bool** | either &#x60;true&#x60; to enable issues for this repository or &#x60;false&#x60; to disable them. | [optional] 
 **has_packages** | **bool** | either &#x60;true&#x60; to enable packages unit, or &#x60;false&#x60; to disable them. | [optional] 
 **has_projects** | **bool** | either &#x60;true&#x60; to enable project unit, or &#x60;false&#x60; to disable them. | [optional] 

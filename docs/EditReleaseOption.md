@@ -6,12 +6,12 @@ EditReleaseOption options when editing a release
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**body** | **str** |  | [optional] 
-**draft** | **bool** |  | [optional] 
-**name** | **str** |  | [optional] 
-**prerelease** | **bool** |  | [optional] 
-**tag_name** | **str** |  | [optional] 
-**target_commitish** | **str** |  | [optional] 
+**body** | **str** | The new release notes or description | [optional] 
+**draft** | **bool** | Whether to change the draft status | [optional] 
+**name** | **str** | The new display title of the release | [optional] 
+**prerelease** | **bool** | Whether to change the prerelease status | [optional] 
+**tag_name** | **str** | The new name of the git tag | [optional] 
+**target_commitish** | **str** | The new target commitish for the release | [optional] 
 
 ## Example
 

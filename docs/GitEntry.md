@@ -6,12 +6,12 @@ GitEntry represents a git tree
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**mode** | **str** |  | [optional] 
-**path** | **str** |  | [optional] 
-**sha** | **str** |  | [optional] 
-**size** | **int** |  | [optional] 
-**type** | **str** |  | [optional] 
-**url** | **str** |  | [optional] 
+**mode** | **str** | Mode is the file mode (permissions) | [optional] 
+**path** | **str** | Path is the file or directory path | [optional] 
+**sha** | **str** | SHA is the Git object SHA | [optional] 
+**size** | **int** | Size is the file size in bytes | [optional] 
+**type** | **str** | Type indicates if this is a file, directory, or symlink | [optional] 
+**url** | **str** | URL is the API URL for this tree entry | [optional] 
 
 ## Example
 

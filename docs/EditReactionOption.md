@@ -6,7 +6,7 @@ EditReactionOption contain the reaction type
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**content** | **str** |  | [optional] 
+**content** | **str** | The reaction content (e.g., emoji or reaction type) | [optional] 
 
 ## Example
 

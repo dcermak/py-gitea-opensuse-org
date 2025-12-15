@@ -7,7 +7,7 @@ IssueMeta basic issue information
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **index** | **int** |  | [optional] 
-**owner** | **str** |  | [optional] 
+**owner** | **str** | owner of the issue&#39;s repo | [optional] 
 **repo** | **str** |  | [optional] 
 
 ## Example

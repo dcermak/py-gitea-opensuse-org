@@ -6,8 +6,8 @@ NodeInfoServices contains the third party sites this server can connect to via t
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inbound** | **List[str]** |  | [optional] 
-**outbound** | **List[str]** |  | [optional] 
+**inbound** | **List[str]** | Inbound lists services that can deliver content to this server | [optional] 
+**outbound** | **List[str]** | Outbound lists services this server can deliver content to | [optional] 
 
 ## Example
 

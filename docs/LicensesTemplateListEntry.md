@@ -6,9 +6,9 @@ LicensesListEntry is used for the API
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**key** | **str** |  | [optional] 
-**name** | **str** |  | [optional] 
-**url** | **str** |  | [optional] 
+**key** | **str** | Key is the unique identifier for the license template | [optional] 
+**name** | **str** | Name is the display name of the license | [optional] 
+**url** | **str** | URL is the reference URL for the license | [optional] 
 
 ## Example
 

@@ -24,9 +24,9 @@ Name | Type | Description | Notes
 **pull_requests** | **bool** |  | [optional] 
 **releases** | **bool** |  | [optional] 
 **repo_name** | **str** |  | 
-**repo_owner** | **str** | Name of User or Organisation who will own Repo after migration | [optional] 
+**repo_owner** | **str** | the organization&#39;s name or individual user&#39;s name who will own the migrated repository | [optional] 
 **service** | **str** |  | [optional] 
-**uid** | **int** | deprecated (only for backwards compatibility) | [optional] 
+**uid** | **int** | deprecated (only for backwards compatibility, use repo_owner instead) | [optional] 
 **wiki** | **bool** |  | [optional] 
 
 ## Example

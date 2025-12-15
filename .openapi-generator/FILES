@@ -14,8 +14,12 @@ docs/ActionTask.md
 docs/ActionTaskResponse.md
 docs/ActionVariable.md
 docs/ActionWorkflow.md
+docs/ActionWorkflowJob.md
+docs/ActionWorkflowJobsResponse.md
 docs/ActionWorkflowResponse.md
 docs/ActionWorkflowRun.md
+docs/ActionWorkflowRunsResponse.md
+docs/ActionWorkflowStep.md
 docs/Activity.md
 docs/ActivityPub.md
 docs/ActivitypubApi.md
@@ -24,6 +28,7 @@ docs/AddTimeOption.md
 docs/AdminApi.md
 docs/AnnotatedTag.md
 docs/AnnotatedTagObject.md
+docs/ApplyDiffPatchFileOptions.md
 docs/Attachment.md
 docs/Badge.md
 docs/Branch.md
@@ -41,6 +46,7 @@ docs/CommitStats.md
 docs/CommitStatus.md
 docs/CommitUser.md
 docs/Compare.md
+docs/ContentsExtResponse.md
 docs/ContentsResponse.md
 docs/CreateAccessTokenOption.md
 docs/CreateActionWorkflowDispatch.md
@@ -175,6 +181,7 @@ docs/PushMirror.md
 docs/Reaction.md
 docs/Reference.md
 docs/Release.md
+docs/RenameBranchRepoOption.md
 docs/RenameOrgOption.md
 docs/RenameUserOption.md
 docs/RepoCollaboratorPermission.md
@@ -201,7 +208,6 @@ docs/TopicResponse.md
 docs/TrackedTime.md
 docs/TransferRepoOption.md
 docs/UpdateBranchProtectionPriories.md
-docs/UpdateBranchRepoOption.md
 docs/UpdateFileOptions.md
 docs/UpdateRepoAvatarOption.md
 docs/UpdateUserAvatarOption.md
@@ -246,8 +252,12 @@ py_gitea_opensuse_org/models/action_task.py
 py_gitea_opensuse_org/models/action_task_response.py
 py_gitea_opensuse_org/models/action_variable.py
 py_gitea_opensuse_org/models/action_workflow.py
+py_gitea_opensuse_org/models/action_workflow_job.py
+py_gitea_opensuse_org/models/action_workflow_jobs_response.py
 py_gitea_opensuse_org/models/action_workflow_response.py
 py_gitea_opensuse_org/models/action_workflow_run.py
+py_gitea_opensuse_org/models/action_workflow_runs_response.py
+py_gitea_opensuse_org/models/action_workflow_step.py
 py_gitea_opensuse_org/models/activity.py
 py_gitea_opensuse_org/models/activity_pub.py
 py_gitea_opensuse_org/models/add_collaborator_option.py
@@ -255,6 +265,7 @@ py_gitea_opensuse_org/models/add_time_option.py
 py_gitea_opensuse_org/models/annotated_tag.py
 py_gitea_opensuse_org/models/annotated_tag_object.py
 py_gitea_opensuse_org/models/api_error.py
+py_gitea_opensuse_org/models/apply_diff_patch_file_options.py
 py_gitea_opensuse_org/models/attachment.py
 py_gitea_opensuse_org/models/badge.py
 py_gitea_opensuse_org/models/branch.py
@@ -272,6 +283,7 @@ py_gitea_opensuse_org/models/commit_stats.py
 py_gitea_opensuse_org/models/commit_status.py
 py_gitea_opensuse_org/models/commit_user.py
 py_gitea_opensuse_org/models/compare.py
+py_gitea_opensuse_org/models/contents_ext_response.py
 py_gitea_opensuse_org/models/contents_response.py
 py_gitea_opensuse_org/models/create_access_token_option.py
 py_gitea_opensuse_org/models/create_action_workflow_dispatch.py
@@ -401,6 +413,7 @@ py_gitea_opensuse_org/models/push_mirror.py
 py_gitea_opensuse_org/models/reaction.py
 py_gitea_opensuse_org/models/reference.py
 py_gitea_opensuse_org/models/release.py
+py_gitea_opensuse_org/models/rename_branch_repo_option.py
 py_gitea_opensuse_org/models/rename_org_option.py
 py_gitea_opensuse_org/models/rename_user_option.py
 py_gitea_opensuse_org/models/repo_collaborator_permission.py
@@ -425,7 +438,6 @@ py_gitea_opensuse_org/models/topic_response.py
 py_gitea_opensuse_org/models/tracked_time.py
 py_gitea_opensuse_org/models/transfer_repo_option.py
 py_gitea_opensuse_org/models/update_branch_protection_priories.py
-py_gitea_opensuse_org/models/update_branch_repo_option.py
 py_gitea_opensuse_org/models/update_file_options.py
 py_gitea_opensuse_org/models/update_repo_avatar_option.py
 py_gitea_opensuse_org/models/update_user_avatar_option.py
@@ -449,4 +461,11 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_action_workflow_job.py
+test/test_action_workflow_jobs_response.py
+test/test_action_workflow_runs_response.py
+test/test_action_workflow_step.py
+test/test_apply_diff_patch_file_options.py
+test/test_contents_ext_response.py
+test/test_rename_branch_repo_option.py
 tox.ini

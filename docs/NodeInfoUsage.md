@@ -6,8 +6,8 @@ NodeInfoUsage contains usage statistics for this server
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**local_comments** | **int** |  | [optional] 
-**local_posts** | **int** |  | [optional] 
+**local_comments** | **int** | LocalComments is the total amount of comments made by users local to this server | [optional] 
+**local_posts** | **int** | LocalPosts is the total amount of posts made by users local to this server | [optional] 
 **users** | [**NodeInfoUsageUsers**](NodeInfoUsageUsers.md) |  | [optional] 
 
 ## Example

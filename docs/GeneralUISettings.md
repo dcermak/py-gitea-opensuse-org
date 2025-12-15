@@ -6,9 +6,9 @@ GeneralUISettings contains global ui settings exposed by API
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**allowed_reactions** | **List[str]** |  | [optional] 
-**custom_emojis** | **List[str]** |  | [optional] 
-**default_theme** | **str** |  | [optional] 
+**allowed_reactions** | **List[str]** | AllowedReactions contains the list of allowed emoji reactions | [optional] 
+**custom_emojis** | **List[str]** | CustomEmojis contains the list of custom emojis | [optional] 
+**default_theme** | **str** | DefaultTheme is the default UI theme | [optional] 
 
 ## Example
 

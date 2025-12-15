@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **author** | [**CommitUser**](CommitUser.md) |  | [optional] 
 **commiter** | [**CommitUser**](CommitUser.md) |  | [optional] 
-**message** | **str** |  | [optional] 
-**sha** | **str** |  | [optional] 
+**message** | **str** | The commit message | [optional] 
+**sha** | **str** | The commit SHA hash | [optional] 
 
 ## Example
 
