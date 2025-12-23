@@ -461,11 +461,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_action_workflow_job.py
-test/test_action_workflow_jobs_response.py
-test/test_action_workflow_runs_response.py
-test/test_action_workflow_step.py
-test/test_apply_diff_patch_file_options.py
-test/test_contents_ext_response.py
-test/test_rename_branch_repo_option.py
 tox.ini
