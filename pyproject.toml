@@ -1,6 +1,6 @@
 [project]
 name = "py_gitea_opensuse_org"
-version = "1.25.2"
+version = "1.25.4"
 description = "Gitea API"
 authors = [
   {name = "OpenAPI Generator Community",email = "team@openapitools.org"},
