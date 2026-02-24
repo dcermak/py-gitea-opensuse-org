@@ -1042,7 +1042,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
     index = 56 # int | index of the issue
-    attachment = None # bytearray | attachment to upload
+    attachment = None # bytes | attachment to upload
     name = 'name_example' # str | name of the attachment (optional)
 
     try:
@@ -1064,7 +1064,7 @@ Name | Type | Description  | Notes
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
  **index** | **int**| index of the issue | 
- **attachment** | **bytearray**| attachment to upload | 
+ **attachment** | **bytes**| attachment to upload | 
  **name** | **str**| name of the attachment | [optional] 
 
 ### Return type
@@ -1301,7 +1301,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     owner = 'owner_example' # str | owner of the repo
     repo = 'repo_example' # str | name of the repo
     id = 56 # int | id of the comment
-    attachment = None # bytearray | attachment to upload
+    attachment = None # bytes | attachment to upload
     name = 'name_example' # str | name of the attachment (optional)
 
     try:
@@ -1323,7 +1323,7 @@ Name | Type | Description  | Notes
  **owner** | **str**| owner of the repo | 
  **repo** | **str**| name of the repo | 
  **id** | **int**| id of the comment | 
- **attachment** | **bytearray**| attachment to upload | 
+ **attachment** | **bytes**| attachment to upload | 
  **name** | **str**| name of the attachment | [optional] 
 
 ### Return type

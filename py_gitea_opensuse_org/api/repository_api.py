@@ -16924,7 +16924,7 @@ class RepositoryApi:
         :param name: name of the attachment
         :type name: str
         :param attachment: attachment to upload
-        :type attachment: bytearray
+        :type attachment: bytes
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -17009,7 +17009,7 @@ class RepositoryApi:
         :param name: name of the attachment
         :type name: str
         :param attachment: attachment to upload
-        :type attachment: bytearray
+        :type attachment: bytes
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -17094,7 +17094,7 @@ class RepositoryApi:
         :param name: name of the attachment
         :type name: str
         :param attachment: attachment to upload
-        :type attachment: bytearray
+        :type attachment: bytes
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -38347,7 +38347,7 @@ class RepositoryApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> bytearray:
+    ) -> bytes:
         """Get a file from a repository
 
 
@@ -38393,7 +38393,7 @@ class RepositoryApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "bytearray",
+            '200': "bytes",
             '404': None,
         }
         response_data = await self.api_client.call_api(
@@ -38426,7 +38426,7 @@ class RepositoryApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[bytearray]:
+    ) -> ApiResponse[bytes]:
         """Get a file from a repository
 
 
@@ -38472,7 +38472,7 @@ class RepositoryApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "bytearray",
+            '200': "bytes",
             '404': None,
         }
         response_data = await self.api_client.call_api(
@@ -38551,7 +38551,7 @@ class RepositoryApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "bytearray",
+            '200': "bytes",
             '404': None,
         }
         response_data = await self.api_client.call_api(
@@ -38661,7 +38661,7 @@ class RepositoryApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> bytearray:
+    ) -> bytes:
         """Get a file or it's LFS object from a repository
 
 
@@ -38707,7 +38707,7 @@ class RepositoryApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "bytearray",
+            '200': "bytes",
             '404': None,
         }
         response_data = await self.api_client.call_api(
@@ -38740,7 +38740,7 @@ class RepositoryApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[bytearray]:
+    ) -> ApiResponse[bytes]:
         """Get a file or it's LFS object from a repository
 
 
@@ -38786,7 +38786,7 @@ class RepositoryApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "bytearray",
+            '200': "bytes",
             '404': None,
         }
         response_data = await self.api_client.call_api(
@@ -38865,7 +38865,7 @@ class RepositoryApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "bytearray",
+            '200': "bytes",
             '404': None,
         }
         response_data = await self.api_client.call_api(

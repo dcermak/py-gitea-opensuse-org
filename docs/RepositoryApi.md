@@ -7069,7 +7069,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     repo = 'repo_example' # str | name of the repo
     id = 56 # int | id of the release
     name = 'name_example' # str | name of the attachment (optional)
-    attachment = None # bytearray | attachment to upload (optional)
+    attachment = None # bytes | attachment to upload (optional)
 
     try:
         # Create a release attachment
@@ -7091,7 +7091,7 @@ Name | Type | Description  | Notes
  **repo** | **str**| name of the repo | 
  **id** | **int**| id of the release | 
  **name** | **str**| name of the attachment | [optional] 
- **attachment** | **bytearray**| attachment to upload | [optional] 
+ **attachment** | **bytes**| attachment to upload | [optional] 
 
 ### Return type
 
@@ -15636,7 +15636,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **repo_get_raw_file**
-> bytearray repo_get_raw_file(owner, repo, filepath, ref=ref)
+> bytes repo_get_raw_file(owner, repo, filepath, ref=ref)
 
 Get a file from a repository
 
@@ -15740,7 +15740,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**bytearray**
+**bytes**
 
 ### Authorization
 
@@ -15761,7 +15761,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **repo_get_raw_file_or_lfs**
-> bytearray repo_get_raw_file_or_lfs(owner, repo, filepath, ref=ref)
+> bytes repo_get_raw_file_or_lfs(owner, repo, filepath, ref=ref)
 
 Get a file or it's LFS object from a repository
 
@@ -15865,7 +15865,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**bytearray**
+**bytes**
 
 ### Authorization
 
