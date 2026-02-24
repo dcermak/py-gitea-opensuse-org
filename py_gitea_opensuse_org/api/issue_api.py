@@ -2308,7 +2308,7 @@ class IssueApi:
         :param index: index of the issue (required)
         :type index: int
         :param attachment: attachment to upload (required)
-        :type attachment: bytearray
+        :type attachment: bytes
         :param name: name of the attachment
         :type name: str
         :param _request_timeout: timeout setting for this request. If one
@@ -2395,7 +2395,7 @@ class IssueApi:
         :param index: index of the issue (required)
         :type index: int
         :param attachment: attachment to upload (required)
-        :type attachment: bytearray
+        :type attachment: bytes
         :param name: name of the attachment
         :type name: str
         :param _request_timeout: timeout setting for this request. If one
@@ -2482,7 +2482,7 @@ class IssueApi:
         :param index: index of the issue (required)
         :type index: int
         :param attachment: attachment to upload (required)
-        :type attachment: bytearray
+        :type attachment: bytes
         :param name: name of the attachment
         :type name: str
         :param _request_timeout: timeout setting for this request. If one
@@ -2988,7 +2988,7 @@ class IssueApi:
         :param id: id of the comment (required)
         :type id: int
         :param attachment: attachment to upload (required)
-        :type attachment: bytearray
+        :type attachment: bytes
         :param name: name of the attachment
         :type name: str
         :param _request_timeout: timeout setting for this request. If one
@@ -3076,7 +3076,7 @@ class IssueApi:
         :param id: id of the comment (required)
         :type id: int
         :param attachment: attachment to upload (required)
-        :type attachment: bytearray
+        :type attachment: bytes
         :param name: name of the attachment
         :type name: str
         :param _request_timeout: timeout setting for this request. If one
@@ -3164,7 +3164,7 @@ class IssueApi:
         :param id: id of the comment (required)
         :type id: int
         :param attachment: attachment to upload (required)
-        :type attachment: bytearray
+        :type attachment: bytes
         :param name: name of the attachment
         :type name: str
         :param _request_timeout: timeout setting for this request. If one

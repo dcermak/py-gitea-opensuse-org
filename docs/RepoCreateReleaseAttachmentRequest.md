@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**attachment** | **bytearray** | attachment to upload | [optional] 
+**attachment** | **bytes** | attachment to upload | [optional] 
 
 ## Example
 
