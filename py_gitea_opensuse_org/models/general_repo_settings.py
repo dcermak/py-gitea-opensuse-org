@@ -35,7 +35,8 @@ class GeneralRepoSettings(BaseModel):
     __properties: ClassVar[List[str]] = ["http_git_disabled", "lfs_disabled", "migrations_disabled", "mirrors_disabled", "stars_disabled", "time_tracking_disabled"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

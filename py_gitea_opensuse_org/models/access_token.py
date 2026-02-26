@@ -37,7 +37,8 @@ class AccessToken(BaseModel):
     __properties: ClassVar[List[str]] = ["created_at", "id", "last_used_at", "name", "scopes", "sha1", "token_last_eight"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

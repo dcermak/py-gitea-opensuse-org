@@ -41,7 +41,8 @@ class CreatePullRequestOption(BaseModel):
     __properties: ClassVar[List[str]] = ["assignee", "assignees", "base", "body", "due_date", "head", "labels", "milestone", "reviewers", "team_reviewers", "title"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

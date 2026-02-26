@@ -40,7 +40,8 @@ class ActionWorkflow(BaseModel):
     __properties: ClassVar[List[str]] = ["badge_url", "created_at", "deleted_at", "html_url", "id", "name", "path", "state", "updated_at", "url"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

@@ -52,7 +52,8 @@ class User(BaseModel):
     __properties: ClassVar[List[str]] = ["active", "avatar_url", "created", "description", "email", "followers_count", "following_count", "full_name", "html_url", "id", "is_admin", "language", "last_login", "location", "login", "login_name", "prohibit_login", "restricted", "source_id", "starred_repos_count", "visibility", "website"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

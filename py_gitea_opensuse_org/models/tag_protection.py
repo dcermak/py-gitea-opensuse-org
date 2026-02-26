@@ -36,7 +36,8 @@ class TagProtection(BaseModel):
     __properties: ClassVar[List[str]] = ["created_at", "id", "name_pattern", "updated_at", "whitelist_teams", "whitelist_usernames"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

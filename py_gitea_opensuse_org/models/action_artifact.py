@@ -41,7 +41,8 @@ class ActionArtifact(BaseModel):
     __properties: ClassVar[List[str]] = ["archive_download_url", "created_at", "expired", "expires_at", "id", "name", "size_in_bytes", "updated_at", "url", "workflow_run"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

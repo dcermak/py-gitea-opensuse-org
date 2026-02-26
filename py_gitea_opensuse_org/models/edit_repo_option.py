@@ -65,7 +65,8 @@ class EditRepoOption(BaseModel):
     __properties: ClassVar[List[str]] = ["allow_fast_forward_only_merge", "allow_manual_merge", "allow_merge_commits", "allow_rebase", "allow_rebase_explicit", "allow_rebase_update", "allow_squash_merge", "archived", "autodetect_manual_merge", "default_allow_maintainer_edit", "default_branch", "default_delete_branch_after_merge", "default_merge_style", "description", "enable_prune", "external_tracker", "external_wiki", "has_actions", "has_code", "has_issues", "has_packages", "has_projects", "has_pull_requests", "has_releases", "has_wiki", "ignore_whitespace_conflicts", "internal_tracker", "mirror_interval", "name", "private", "projects_mode", "template", "website"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

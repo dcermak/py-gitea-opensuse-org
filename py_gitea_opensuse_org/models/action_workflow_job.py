@@ -49,7 +49,8 @@ class ActionWorkflowJob(BaseModel):
     __properties: ClassVar[List[str]] = ["completed_at", "conclusion", "created_at", "head_branch", "head_sha", "html_url", "id", "labels", "name", "run_attempt", "run_id", "run_url", "runner_id", "runner_name", "started_at", "status", "steps", "url"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

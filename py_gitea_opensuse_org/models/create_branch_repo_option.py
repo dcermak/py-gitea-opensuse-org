@@ -32,7 +32,8 @@ class CreateBranchRepoOption(BaseModel):
     __properties: ClassVar[List[str]] = ["new_branch_name", "old_branch_name", "old_ref_name"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

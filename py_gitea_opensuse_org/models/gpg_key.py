@@ -44,7 +44,8 @@ class GPGKey(BaseModel):
     __properties: ClassVar[List[str]] = ["can_certify", "can_encrypt_comms", "can_encrypt_storage", "can_sign", "created_at", "emails", "expires_at", "id", "key_id", "primary_key_id", "public_key", "subkeys", "verified"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

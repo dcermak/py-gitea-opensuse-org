@@ -62,7 +62,8 @@ class Issue(BaseModel):
     __properties: ClassVar[List[str]] = ["assets", "assignee", "assignees", "body", "closed_at", "comments", "created_at", "due_date", "html_url", "id", "is_locked", "labels", "milestone", "number", "original_author", "original_author_id", "pin_order", "pull_request", "ref", "repository", "state", "time_estimate", "title", "updated_at", "url", "user"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

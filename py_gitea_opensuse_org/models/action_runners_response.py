@@ -32,7 +32,8 @@ class ActionRunnersResponse(BaseModel):
     __properties: ClassVar[List[str]] = ["runners", "total_count"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )
