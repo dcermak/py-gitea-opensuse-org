@@ -34,7 +34,8 @@ class GeneralAPISettings(BaseModel):
     __properties: ClassVar[List[str]] = ["default_git_trees_per_page", "default_max_blob_size", "default_max_response_size", "default_paging_num", "max_response_items"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

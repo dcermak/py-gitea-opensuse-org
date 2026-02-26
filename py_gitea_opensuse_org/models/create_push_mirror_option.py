@@ -34,7 +34,8 @@ class CreatePushMirrorOption(BaseModel):
     __properties: ClassVar[List[str]] = ["interval", "remote_address", "remote_password", "remote_username", "sync_on_commit"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

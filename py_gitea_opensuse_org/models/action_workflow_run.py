@@ -51,7 +51,8 @@ class ActionWorkflowRun(BaseModel):
     __properties: ClassVar[List[str]] = ["actor", "completed_at", "conclusion", "display_title", "event", "head_branch", "head_repository", "head_sha", "html_url", "id", "path", "repository", "repository_id", "run_attempt", "run_number", "started_at", "status", "trigger_actor", "url"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

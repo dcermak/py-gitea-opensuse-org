@@ -38,7 +38,8 @@ class WikiPage(BaseModel):
     __properties: ClassVar[List[str]] = ["commit_count", "content_base64", "footer", "html_url", "last_commit", "sidebar", "sub_url", "title"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

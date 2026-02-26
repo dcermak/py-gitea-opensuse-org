@@ -66,7 +66,8 @@ class TimelineComment(BaseModel):
     __properties: ClassVar[List[str]] = ["assignee", "assignee_team", "body", "created_at", "dependent_issue", "html_url", "id", "issue_url", "label", "milestone", "new_ref", "new_title", "old_milestone", "old_project_id", "old_ref", "old_title", "project_id", "pull_request_url", "ref_action", "ref_comment", "ref_commit_sha", "ref_issue", "removed_assignee", "resolve_doer", "review_id", "tracked_time", "type", "updated_at", "user"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

@@ -38,7 +38,8 @@ class ChangedFile(BaseModel):
     __properties: ClassVar[List[str]] = ["additions", "changes", "contents_url", "deletions", "filename", "html_url", "previous_filename", "raw_url", "status"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

@@ -36,7 +36,8 @@ class GitBlobResponse(BaseModel):
     __properties: ClassVar[List[str]] = ["content", "encoding", "lfs_oid", "lfs_size", "sha", "size", "url"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

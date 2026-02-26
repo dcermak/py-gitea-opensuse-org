@@ -41,7 +41,8 @@ class UpdateFileOptions(BaseModel):
     __properties: ClassVar[List[str]] = ["author", "branch", "committer", "content", "dates", "from_path", "message", "new_branch", "sha", "signoff"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

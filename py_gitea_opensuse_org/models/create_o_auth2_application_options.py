@@ -33,7 +33,8 @@ class CreateOAuth2ApplicationOptions(BaseModel):
     __properties: ClassVar[List[str]] = ["confidential_client", "name", "redirect_uris", "skip_secondary_authorization"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

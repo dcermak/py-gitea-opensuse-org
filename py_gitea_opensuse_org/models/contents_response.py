@@ -51,7 +51,8 @@ class ContentsResponse(BaseModel):
     __properties: ClassVar[List[str]] = ["_links", "content", "download_url", "encoding", "git_url", "html_url", "last_author_date", "last_commit_message", "last_commit_sha", "last_committer_date", "lfs_oid", "lfs_size", "name", "path", "sha", "size", "submodule_git_url", "target", "type", "url"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

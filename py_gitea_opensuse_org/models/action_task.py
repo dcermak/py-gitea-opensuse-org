@@ -43,7 +43,8 @@ class ActionTask(BaseModel):
     __properties: ClassVar[List[str]] = ["created_at", "display_title", "event", "head_branch", "head_sha", "id", "name", "run_number", "run_started_at", "status", "updated_at", "url", "workflow_id"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

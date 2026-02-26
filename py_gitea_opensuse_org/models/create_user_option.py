@@ -41,7 +41,8 @@ class CreateUserOption(BaseModel):
     __properties: ClassVar[List[str]] = ["created_at", "email", "full_name", "login_name", "must_change_password", "password", "restricted", "send_notify", "source_id", "username", "visibility"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

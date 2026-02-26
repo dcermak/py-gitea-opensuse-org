@@ -40,7 +40,8 @@ class Organization(BaseModel):
     __properties: ClassVar[List[str]] = ["avatar_url", "description", "email", "full_name", "id", "location", "name", "repo_admin_change_team_access", "username", "visibility", "website"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

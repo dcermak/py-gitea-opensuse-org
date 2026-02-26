@@ -41,7 +41,8 @@ class GenerateRepoOption(BaseModel):
     __properties: ClassVar[List[str]] = ["avatar", "default_branch", "description", "git_content", "git_hooks", "labels", "name", "owner", "private", "protected_branch", "topics", "webhooks"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

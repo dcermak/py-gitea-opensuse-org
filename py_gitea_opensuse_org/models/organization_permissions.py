@@ -34,7 +34,8 @@ class OrganizationPermissions(BaseModel):
     __properties: ClassVar[List[str]] = ["can_create_repository", "can_read", "can_write", "is_admin", "is_owner"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

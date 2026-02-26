@@ -39,7 +39,8 @@ class Branch(BaseModel):
     __properties: ClassVar[List[str]] = ["commit", "effective_branch_protection_name", "enable_status_check", "name", "protected", "required_approvals", "status_check_contexts", "user_can_merge", "user_can_push"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

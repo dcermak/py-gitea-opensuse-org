@@ -32,7 +32,8 @@ class ContentsExtResponse(BaseModel):
     __properties: ClassVar[List[str]] = ["dir_contents", "file_contents"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

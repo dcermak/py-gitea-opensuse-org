@@ -32,7 +32,8 @@ class CreateKeyOption(BaseModel):
     __properties: ClassVar[List[str]] = ["key", "read_only", "title"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

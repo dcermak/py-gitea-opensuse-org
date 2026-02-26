@@ -46,7 +46,8 @@ class PullReviewComment(BaseModel):
     __properties: ClassVar[List[str]] = ["body", "commit_id", "created_at", "diff_hunk", "html_url", "id", "original_commit_id", "original_position", "path", "position", "pull_request_review_id", "pull_request_url", "resolver", "updated_at", "user"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

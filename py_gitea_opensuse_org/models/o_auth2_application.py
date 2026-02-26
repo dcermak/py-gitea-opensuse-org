@@ -38,7 +38,8 @@ class OAuth2Application(BaseModel):
     __properties: ClassVar[List[str]] = ["client_id", "client_secret", "confidential_client", "created", "id", "name", "redirect_uris", "skip_secondary_authorization"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

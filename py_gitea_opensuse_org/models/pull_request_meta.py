@@ -34,7 +34,8 @@ class PullRequestMeta(BaseModel):
     __properties: ClassVar[List[str]] = ["draft", "html_url", "merged", "merged_at"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

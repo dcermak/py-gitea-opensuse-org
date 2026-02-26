@@ -41,7 +41,8 @@ class EditPullRequestOption(BaseModel):
     __properties: ClassVar[List[str]] = ["allow_maintainer_edit", "assignee", "assignees", "base", "body", "due_date", "labels", "milestone", "state", "title", "unset_due_date"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

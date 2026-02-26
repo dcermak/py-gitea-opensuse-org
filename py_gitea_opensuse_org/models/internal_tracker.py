@@ -32,7 +32,8 @@ class InternalTracker(BaseModel):
     __properties: ClassVar[List[str]] = ["allow_only_contributors_to_track_time", "enable_issue_dependencies", "enable_time_tracker"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

@@ -33,7 +33,8 @@ class Secret(BaseModel):
     __properties: ClassVar[List[str]] = ["created_at", "description", "name"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

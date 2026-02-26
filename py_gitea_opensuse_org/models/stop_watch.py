@@ -37,7 +37,8 @@ class StopWatch(BaseModel):
     __properties: ClassVar[List[str]] = ["created", "duration", "issue_index", "issue_title", "repo_name", "repo_owner_name", "seconds"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

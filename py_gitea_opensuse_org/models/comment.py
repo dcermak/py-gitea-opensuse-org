@@ -43,7 +43,8 @@ class Comment(BaseModel):
     __properties: ClassVar[List[str]] = ["assets", "body", "created_at", "html_url", "id", "issue_url", "original_author", "original_author_id", "pull_request_url", "updated_at", "user"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

@@ -35,7 +35,8 @@ class TopicResponse(BaseModel):
     __properties: ClassVar[List[str]] = ["created", "id", "repo_count", "topic_name", "updated"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

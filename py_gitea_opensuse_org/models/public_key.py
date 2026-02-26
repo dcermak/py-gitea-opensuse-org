@@ -41,7 +41,8 @@ class PublicKey(BaseModel):
     __properties: ClassVar[List[str]] = ["created_at", "fingerprint", "id", "key", "key_type", "last_used_at", "read_only", "title", "url", "user"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )

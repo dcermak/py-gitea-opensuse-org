@@ -72,7 +72,8 @@ class PullRequest(BaseModel):
     __properties: ClassVar[List[str]] = ["additions", "allow_maintainer_edit", "assignee", "assignees", "base", "body", "changed_files", "closed_at", "comments", "created_at", "deletions", "diff_url", "draft", "due_date", "head", "html_url", "id", "is_locked", "labels", "merge_base", "merge_commit_sha", "mergeable", "merged", "merged_at", "merged_by", "milestone", "number", "patch_url", "pin_order", "requested_reviewers", "requested_reviewers_teams", "review_comments", "state", "title", "updated_at", "url", "user"]
 
     model_config = ConfigDict(
-        populate_by_name=True,
+        validate_by_name=True,
+        validate_by_alias=True,
         validate_assignment=True,
         protected_namespaces=(),
     )
