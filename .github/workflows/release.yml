@@ -3,6 +3,11 @@ name: release to PyPI
 
 on:
   push:
+  workflow_call:
+    inputs:
+      release_version:
+        required: true
+        type: string
 
 jobs:
   pypi-publish:
@@ -12,6 +17,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        if: github.event_name != 'workflow_call'
+
+      - uses: actions/checkout@v6
+        if: github.event_name == 'workflow_call'
+        with:
+          ref: refs/tags/${{ inputs.release_version }}
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -34,4 +46,4 @@ jobs:
 
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        if: startsWith(github.ref, 'refs/tags')
+        if: startsWith(github.ref, 'refs/tags/') || (github.event_name == 'workflow_call' && inputs.release_version != '')
