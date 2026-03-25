@@ -14,6 +14,10 @@ permissions:
 jobs:
   tag-release:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.version-check.outputs.changed }}
+      version: ${{ steps.current.outputs.version }}
+      created: ${{ steps.create-tag.outputs.created }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -56,6 +60,7 @@ jobs:
           fi
 
       - name: Create release tag
+        id: create-tag
         if: steps.version-check.outputs.changed == 'true' && steps.tag-check.outputs.exists == 'false'
         run: |
           VERSION="${{ steps.current.outputs.version }}"
@@ -63,3 +68,11 @@ jobs:
           git config user.email "github-actions@github.com"
           git tag -a "$VERSION" -m "Release version $VERSION"
           git push origin "$VERSION"
+          echo "created=true" >> $GITHUB_OUTPUT
+
+  trigger-release:
+    needs: tag-release
+    if: needs.tag-release.outputs.created == 'true'
+    uses: ./.github/workflows/release.yml
+    with:
+      release_version: ${{ needs.tag-release.outputs.version }}
