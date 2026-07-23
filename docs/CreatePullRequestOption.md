@@ -6,6 +6,7 @@ CreatePullRequestOption options when creating a pull request
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**allow_maintainer_edit** | **bool** | Whether maintainers can edit the pull request | [optional] 
 **assignee** | **str** | The primary assignee username | [optional] 
 **assignees** | **List[str]** | The list of assignee usernames | [optional] 
 **base** | **str** | The base branch for the pull request | [optional] 

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **due_on** | **datetime** |  | [optional] 
 **id** | **int** | ID is the unique identifier for the milestone | [optional] 
 **open_issues** | **int** | OpenIssues is the number of open issues in this milestone | [optional] 
-**state** | **str** | StateType issue state type | [optional] 
+**state** | **str** | State indicates if the milestone is open or closed open StateOpen  StateOpen pr is opened closed StateClosed  StateClosed pr is closed | [optional] 
 **title** | **str** | Title is the title of the milestone | [optional] 
 **updated_at** | **datetime** |  | [optional] 
 

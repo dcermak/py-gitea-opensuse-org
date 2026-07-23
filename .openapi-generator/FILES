@@ -21,8 +21,6 @@ docs/ActionWorkflowRun.md
 docs/ActionWorkflowRunsResponse.md
 docs/ActionWorkflowStep.md
 docs/Activity.md
-docs/ActivityPub.md
-docs/ActivitypubApi.md
 docs/AddCollaboratorOption.md
 docs/AddTimeOption.md
 docs/AdminApi.md
@@ -83,6 +81,7 @@ docs/DeleteEmailOption.md
 docs/DeleteFileOptions.md
 docs/DeployKey.md
 docs/DismissPullReviewOptions.md
+docs/EditActionRunnerOption.md
 docs/EditAttachmentOptions.md
 docs/EditBranchProtectionOption.md
 docs/EditDeadlineOption.md
@@ -184,6 +183,7 @@ docs/Release.md
 docs/RenameBranchRepoOption.md
 docs/RenameOrgOption.md
 docs/RenameUserOption.md
+docs/ReparentRepoOption.md
 docs/RepoCollaboratorPermission.md
 docs/RepoCommit.md
 docs/RepoCreateReleaseAttachmentRequest.md
@@ -192,6 +192,7 @@ docs/RepoTransfer.md
 docs/Repository.md
 docs/RepositoryApi.md
 docs/RepositoryMeta.md
+docs/RunDetails.md
 docs/SearchResults.md
 docs/Secret.md
 docs/ServerVersion.md
@@ -208,6 +209,7 @@ docs/TopicResponse.md
 docs/TrackedTime.md
 docs/TransferRepoOption.md
 docs/UpdateBranchProtectionPriories.md
+docs/UpdateBranchRepoOption.md
 docs/UpdateFileOptions.md
 docs/UpdateRepoAvatarOption.md
 docs/UpdateUserAvatarOption.md
@@ -227,7 +229,6 @@ docs/WikiPageMetaData.md
 git_push.sh
 py_gitea_opensuse_org/__init__.py
 py_gitea_opensuse_org/api/__init__.py
-py_gitea_opensuse_org/api/activitypub_api.py
 py_gitea_opensuse_org/api/admin_api.py
 py_gitea_opensuse_org/api/issue_api.py
 py_gitea_opensuse_org/api/miscellaneous_api.py
@@ -259,7 +260,6 @@ py_gitea_opensuse_org/models/action_workflow_run.py
 py_gitea_opensuse_org/models/action_workflow_runs_response.py
 py_gitea_opensuse_org/models/action_workflow_step.py
 py_gitea_opensuse_org/models/activity.py
-py_gitea_opensuse_org/models/activity_pub.py
 py_gitea_opensuse_org/models/add_collaborator_option.py
 py_gitea_opensuse_org/models/add_time_option.py
 py_gitea_opensuse_org/models/annotated_tag.py
@@ -320,6 +320,7 @@ py_gitea_opensuse_org/models/delete_email_option.py
 py_gitea_opensuse_org/models/delete_file_options.py
 py_gitea_opensuse_org/models/deploy_key.py
 py_gitea_opensuse_org/models/dismiss_pull_review_options.py
+py_gitea_opensuse_org/models/edit_action_runner_option.py
 py_gitea_opensuse_org/models/edit_attachment_options.py
 py_gitea_opensuse_org/models/edit_branch_protection_option.py
 py_gitea_opensuse_org/models/edit_deadline_option.py
@@ -416,6 +417,7 @@ py_gitea_opensuse_org/models/release.py
 py_gitea_opensuse_org/models/rename_branch_repo_option.py
 py_gitea_opensuse_org/models/rename_org_option.py
 py_gitea_opensuse_org/models/rename_user_option.py
+py_gitea_opensuse_org/models/reparent_repo_option.py
 py_gitea_opensuse_org/models/repo_collaborator_permission.py
 py_gitea_opensuse_org/models/repo_commit.py
 py_gitea_opensuse_org/models/repo_create_release_attachment_request.py
@@ -423,6 +425,7 @@ py_gitea_opensuse_org/models/repo_topic_options.py
 py_gitea_opensuse_org/models/repo_transfer.py
 py_gitea_opensuse_org/models/repository.py
 py_gitea_opensuse_org/models/repository_meta.py
+py_gitea_opensuse_org/models/run_details.py
 py_gitea_opensuse_org/models/search_results.py
 py_gitea_opensuse_org/models/secret.py
 py_gitea_opensuse_org/models/server_version.py
@@ -438,6 +441,7 @@ py_gitea_opensuse_org/models/topic_response.py
 py_gitea_opensuse_org/models/tracked_time.py
 py_gitea_opensuse_org/models/transfer_repo_option.py
 py_gitea_opensuse_org/models/update_branch_protection_priories.py
+py_gitea_opensuse_org/models/update_branch_repo_option.py
 py_gitea_opensuse_org/models/update_file_options.py
 py_gitea_opensuse_org/models/update_repo_avatar_option.py
 py_gitea_opensuse_org/models/update_user_avatar_option.py
@@ -461,4 +465,7 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_edit_action_runner_option.py
+test/test_reparent_repo_option.py
+test/test_run_details.py
 tox.ini

@@ -1,7 +1,6 @@
 # flake8: noqa
 
 # import apis into api package
-from py_gitea_opensuse_org.api.activitypub_api import ActivitypubApi
 from py_gitea_opensuse_org.api.admin_api import AdminApi
 from py_gitea_opensuse_org.api.issue_api import IssueApi
 from py_gitea_opensuse_org.api.miscellaneous_api import MiscellaneousApi

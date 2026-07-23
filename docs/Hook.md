@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **created_at** | **datetime** |  | [optional] 
 **events** | **List[str]** | List of events that trigger this webhook | [optional] 
 **id** | **int** | The unique identifier of the webhook | [optional] 
+**name** | **str** | Optional human-readable name for the webhook | [optional] 
 **type** | **str** | The type of the webhook (e.g., gitea, slack, discord) | [optional] 
 **updated_at** | **datetime** |  | [optional] 
 

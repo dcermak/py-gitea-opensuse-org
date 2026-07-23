@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **branch_filter** | **str** | Branch filter pattern to determine which branches trigger the webhook | [optional] 
 **config** | **Dict[str, str]** | Configuration settings for the webhook | [optional] 
 **events** | **List[str]** | List of events that trigger this webhook | [optional] 
+**name** | **str** | Optional human-readable name | [optional] 
 
 ## Example
 
