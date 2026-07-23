@@ -6,13 +6,13 @@ MergePullRequestForm form for merging Pull Request
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**delete_branch_after_merge** | **bool** |  | [optional] 
 **do** | **str** |  | 
+**force_merge** | **bool** |  | [optional] 
+**head_commit_id** | **str** |  | [optional] 
 **merge_commit_id** | **str** |  | [optional] 
 **merge_message_field** | **str** |  | [optional] 
 **merge_title_field** | **str** |  | [optional] 
-**delete_branch_after_merge** | **bool** |  | [optional] 
-**force_merge** | **bool** |  | [optional] 
-**head_commit_id** | **str** |  | [optional] 
 **merge_when_checks_succeed** | **bool** |  | [optional] 
 
 ## Example

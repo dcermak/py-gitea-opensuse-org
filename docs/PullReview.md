@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **official** | **bool** |  | [optional] 
 **pull_request_url** | **str** | HTMLPullURL is the web URL for the pull request | [optional] 
 **stale** | **bool** |  | [optional] 
-**state** | **str** | ReviewStateType review state type | [optional] 
+**state** | **str** |  | [optional] 
 **submitted_at** | **datetime** |  | [optional] 
 **team** | [**Team**](Team.md) |  | [optional] 
 **updated_at** | **datetime** |  | [optional] 

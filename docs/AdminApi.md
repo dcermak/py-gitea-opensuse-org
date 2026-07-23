@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**admin_create_org**](AdminApi.md#admin_create_org) | **POST** /admin/users/{username}/orgs | Create an organization
 [**admin_create_public_key**](AdminApi.md#admin_create_public_key) | **POST** /admin/users/{username}/keys | Add a public key on behalf of a user
 [**admin_create_repo**](AdminApi.md#admin_create_repo) | **POST** /admin/users/{username}/repos | Create a repository on behalf of a user
-[**admin_create_runner_registration_token**](AdminApi.md#admin_create_runner_registration_token) | **POST** /admin/actions/runners/registration-token | Get an global actions runner registration token
+[**admin_create_runner_registration_token**](AdminApi.md#admin_create_runner_registration_token) | **POST** /admin/actions/runners/registration-token | Get a global actions runner registration token
 [**admin_create_user**](AdminApi.md#admin_create_user) | **POST** /admin/users | Create a user
 [**admin_cron_list**](AdminApi.md#admin_cron_list) | **GET** /admin/cron | List cron tasks
 [**admin_cron_run**](AdminApi.md#admin_cron_run) | **POST** /admin/cron/{task} | Run cron task
@@ -24,18 +24,18 @@ Method | HTTP request | Description
 [**admin_get_all_emails**](AdminApi.md#admin_get_all_emails) | **GET** /admin/emails | List all emails
 [**admin_get_all_orgs**](AdminApi.md#admin_get_all_orgs) | **GET** /admin/orgs | List all organizations
 [**admin_get_hook**](AdminApi.md#admin_get_hook) | **GET** /admin/hooks/{id} | Get a hook
-[**admin_get_runner_registration_token**](AdminApi.md#admin_get_runner_registration_token) | **GET** /admin/runners/registration-token | Get an global actions runner registration token
 [**admin_list_hooks**](AdminApi.md#admin_list_hooks) | **GET** /admin/hooks | List system&#39;s webhooks
 [**admin_list_user_badges**](AdminApi.md#admin_list_user_badges) | **GET** /admin/users/{username}/badges | List a user&#39;s badges
 [**admin_rename_user**](AdminApi.md#admin_rename_user) | **POST** /admin/users/{username}/rename | Rename a user
 [**admin_search_emails**](AdminApi.md#admin_search_emails) | **GET** /admin/emails/search | Search all emails
 [**admin_search_users**](AdminApi.md#admin_search_users) | **GET** /admin/users | Search users according filter conditions
 [**admin_unadopted_list**](AdminApi.md#admin_unadopted_list) | **GET** /admin/unadopted | List unadopted repositories
-[**delete_admin_runner**](AdminApi.md#delete_admin_runner) | **DELETE** /admin/actions/runners/{runner_id} | Delete an global runner
-[**get_admin_runner**](AdminApi.md#get_admin_runner) | **GET** /admin/actions/runners/{runner_id} | Get an global runner
+[**delete_admin_runner**](AdminApi.md#delete_admin_runner) | **DELETE** /admin/actions/runners/{runner_id} | Delete a global runner
+[**get_admin_runner**](AdminApi.md#get_admin_runner) | **GET** /admin/actions/runners/{runner_id} | Get a global runner
 [**get_admin_runners**](AdminApi.md#get_admin_runners) | **GET** /admin/actions/runners | Get all runners
 [**list_admin_workflow_jobs**](AdminApi.md#list_admin_workflow_jobs) | **GET** /admin/actions/jobs | Lists all jobs
 [**list_admin_workflow_runs**](AdminApi.md#list_admin_workflow_runs) | **GET** /admin/actions/runs | Lists all runs
+[**update_admin_runner**](AdminApi.md#update_admin_runner) | **PATCH** /admin/actions/runners/{runner_id} | Update a global runner
 
 
 # **admin_add_user_badges**
@@ -776,7 +776,7 @@ Name | Type | Description  | Notes
 # **admin_create_runner_registration_token**
 > admin_create_runner_registration_token()
 
-Get an global actions runner registration token
+Get a global actions runner registration token
 
 ### Example
 
@@ -852,7 +852,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     api_instance = py_gitea_opensuse_org.AdminApi(api_client)
 
     try:
-        # Get an global actions runner registration token
+        # Get a global actions runner registration token
         await api_instance.admin_create_runner_registration_token()
     except Exception as e:
         print("Exception when calling AdminApi->admin_create_runner_registration_token: %s\n" % e)
@@ -1711,7 +1711,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/plain
+ - **Content-Type**: application/json
  - **Accept**: Not defined
 
 ### HTTP response details
@@ -2454,118 +2454,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **admin_get_runner_registration_token**
-> admin_get_runner_registration_token()
-
-Get an global actions runner registration token
-
-### Example
-
-* Api Key Authentication (TOTPHeader):
-* Api Key Authentication (AuthorizationHeaderToken):
-* Api Key Authentication (SudoHeader):
-* Basic Authentication (BasicAuth):
-* Api Key Authentication (AccessToken):
-* Api Key Authentication (SudoParam):
-* Api Key Authentication (Token):
-
-```python
-import py_gitea_opensuse_org
-from py_gitea_opensuse_org.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to /api/v1
-# See configuration.py for a list of all supported configuration parameters.
-configuration = py_gitea_opensuse_org.Configuration(
-    host = "/api/v1"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-# Configure API key authorization: TOTPHeader
-configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
-
-# Configure API key authorization: AuthorizationHeaderToken
-configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
-
-# Configure API key authorization: SudoHeader
-configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
-
-# Configure HTTP basic authorization: BasicAuth
-configuration = py_gitea_opensuse_org.Configuration(
-    username = os.environ["USERNAME"],
-    password = os.environ["PASSWORD"]
-)
-
-# Configure API key authorization: AccessToken
-configuration.api_key['AccessToken'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['AccessToken'] = 'Bearer'
-
-# Configure API key authorization: SudoParam
-configuration.api_key['SudoParam'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['SudoParam'] = 'Bearer'
-
-# Configure API key authorization: Token
-configuration.api_key['Token'] = os.environ["API_KEY"]
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Token'] = 'Bearer'
-
-# Enter a context with an instance of the API client
-async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = py_gitea_opensuse_org.AdminApi(api_client)
-
-    try:
-        # Get an global actions runner registration token
-        await api_instance.admin_get_runner_registration_token()
-    except Exception as e:
-        print("Exception when calling AdminApi->admin_get_runner_registration_token: %s\n" % e)
-```
-
-
-
-### Parameters
-
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: Not defined
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | RegistrationToken is response related to registration token |  * token -  <br>  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **admin_list_hooks**
 > List[Hook] admin_list_hooks(page=page, limit=limit, type=type)
 
@@ -2646,7 +2534,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     api_instance = py_gitea_opensuse_org.AdminApi(api_client)
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
-    type = system # str | system, default or both kinds of webhooks (optional) (default to system)
+    type = 'system' # str | system, default or both kinds of webhooks (optional) (default to 'system')
 
     try:
         # List system's webhooks
@@ -2666,7 +2554,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
- **type** | **str**| system, default or both kinds of webhooks | [optional] [default to system]
+ **type** | **str**| system, default or both kinds of webhooks | [optional] [default to &#39;system&#39;]
 
 ### Return type
 
@@ -2917,7 +2805,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/plain
+ - **Content-Type**: application/json
  - **Accept**: Not defined
 
 ### HTTP response details
@@ -3055,7 +2943,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **admin_search_users**
-> List[User] admin_search_users(source_id=source_id, login_name=login_name, page=page, limit=limit)
+> List[User] admin_search_users(source_id=source_id, login_name=login_name, page=page, limit=limit, sort=sort, order=order, q=q, visibility=visibility, is_active=is_active, is_admin=is_admin, is_restricted=is_restricted, is_2fa_enabled=is_2fa_enabled, is_prohibit_login=is_prohibit_login)
 
 Search users according filter conditions
 
@@ -3136,10 +3024,19 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     login_name = 'login_name_example' # str | identifier of the user, provided by the external authenticator (optional)
     page = 56 # int | page number of results to return (1-based) (optional)
     limit = 56 # int | page size of results (optional)
+    sort = 'sort_example' # str | sort users by attribute. Supported values are \"name\", \"created\", \"updated\" and \"id\". Default is \"name\" (optional)
+    order = 'order_example' # str | sort order, either \"asc\" (ascending) or \"desc\" (descending). Default is \"asc\", ignored if \"sort\" is not specified. (optional)
+    q = 'q_example' # str | search term (username, full name, email) (optional)
+    visibility = 'visibility_example' # str | visibility filter. Supported values are \"public\", \"limited\" and \"private\". (optional)
+    is_active = True # bool | filter active users (optional)
+    is_admin = True # bool | filter admin users (optional)
+    is_restricted = True # bool | filter restricted users (optional)
+    is_2fa_enabled = True # bool | filter 2FA enabled users (optional)
+    is_prohibit_login = True # bool | filter login prohibited users (optional)
 
     try:
         # Search users according filter conditions
-        api_response = await api_instance.admin_search_users(source_id=source_id, login_name=login_name, page=page, limit=limit)
+        api_response = await api_instance.admin_search_users(source_id=source_id, login_name=login_name, page=page, limit=limit, sort=sort, order=order, q=q, visibility=visibility, is_active=is_active, is_admin=is_admin, is_restricted=is_restricted, is_2fa_enabled=is_2fa_enabled, is_prohibit_login=is_prohibit_login)
         print("The response of AdminApi->admin_search_users:\n")
         pprint(api_response)
     except Exception as e:
@@ -3157,6 +3054,15 @@ Name | Type | Description  | Notes
  **login_name** | **str**| identifier of the user, provided by the external authenticator | [optional] 
  **page** | **int**| page number of results to return (1-based) | [optional] 
  **limit** | **int**| page size of results | [optional] 
+ **sort** | **str**| sort users by attribute. Supported values are \&quot;name\&quot;, \&quot;created\&quot;, \&quot;updated\&quot; and \&quot;id\&quot;. Default is \&quot;name\&quot; | [optional] 
+ **order** | **str**| sort order, either \&quot;asc\&quot; (ascending) or \&quot;desc\&quot; (descending). Default is \&quot;asc\&quot;, ignored if \&quot;sort\&quot; is not specified. | [optional] 
+ **q** | **str**| search term (username, full name, email) | [optional] 
+ **visibility** | **str**| visibility filter. Supported values are \&quot;public\&quot;, \&quot;limited\&quot; and \&quot;private\&quot;. | [optional] 
+ **is_active** | **bool**| filter active users | [optional] 
+ **is_admin** | **bool**| filter admin users | [optional] 
+ **is_restricted** | **bool**| filter restricted users | [optional] 
+ **is_2fa_enabled** | **bool**| filter 2FA enabled users | [optional] 
+ **is_prohibit_login** | **bool**| filter login prohibited users | [optional] 
 
 ### Return type
 
@@ -3177,6 +3083,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **200** | UserList |  -  |
 **403** | APIForbiddenError is a forbidden error response |  * message -  <br>  * url -  <br>  |
+**422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -3306,7 +3213,7 @@ Name | Type | Description  | Notes
 # **delete_admin_runner**
 > delete_admin_runner(runner_id)
 
-Delete an global runner
+Delete a global runner
 
 ### Example
 
@@ -3383,7 +3290,7 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     runner_id = 'runner_id_example' # str | id of the runner
 
     try:
-        # Delete an global runner
+        # Delete a global runner
         await api_instance.delete_admin_runner(runner_id)
     except Exception as e:
         print("Exception when calling AdminApi->delete_admin_runner: %s\n" % e)
@@ -3422,9 +3329,9 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_admin_runner**
-> get_admin_runner(runner_id)
+> ActionRunner get_admin_runner(runner_id)
 
-Get an global runner
+Get a global runner
 
 ### Example
 
@@ -3438,6 +3345,7 @@ Get an global runner
 
 ```python
 import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.action_runner import ActionRunner
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
 
@@ -3501,8 +3409,10 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     runner_id = 'runner_id_example' # str | id of the runner
 
     try:
-        # Get an global runner
-        await api_instance.get_admin_runner(runner_id)
+        # Get a global runner
+        api_response = await api_instance.get_admin_runner(runner_id)
+        print("The response of AdminApi->get_admin_runner:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling AdminApi->get_admin_runner: %s\n" % e)
 ```
@@ -3518,7 +3428,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**ActionRunner**](ActionRunner.md)
 
 ### Authorization
 
@@ -3527,20 +3437,20 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** |  |  -  |
+**200** | Runner |  -  |
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **404** | APINotFound is a not found empty response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_admin_runners**
-> get_admin_runners()
+> ActionRunnersResponse get_admin_runners(disabled=disabled)
 
 Get all runners
 
@@ -3556,6 +3466,7 @@ Get all runners
 
 ```python
 import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.action_runners_response import ActionRunnersResponse
 from py_gitea_opensuse_org.rest import ApiException
 from pprint import pprint
 
@@ -3616,10 +3527,13 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = py_gitea_opensuse_org.AdminApi(api_client)
+    disabled = True # bool | filter by disabled status (true or false) (optional)
 
     try:
         # Get all runners
-        await api_instance.get_admin_runners()
+        api_response = await api_instance.get_admin_runners(disabled=disabled)
+        print("The response of AdminApi->get_admin_runners:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling AdminApi->get_admin_runners: %s\n" % e)
 ```
@@ -3628,11 +3542,14 @@ async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **disabled** | **bool**| filter by disabled status (true or false) | [optional] 
 
 ### Return type
 
-void (empty response body)
+[**ActionRunnersResponse**](ActionRunnersResponse.md)
 
 ### Authorization
 
@@ -3641,13 +3558,13 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** |  |  -  |
+**200** | RunnerList |  -  |
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **404** | APINotFound is a not found empty response |  -  |
 
@@ -3908,6 +3825,131 @@ Name | Type | Description  | Notes
 **200** | WorkflowRunsList |  -  |
 **400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
 **404** | APINotFound is a not found empty response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **update_admin_runner**
+> ActionRunner update_admin_runner(runner_id, body=body)
+
+Update a global runner
+
+### Example
+
+* Api Key Authentication (TOTPHeader):
+* Api Key Authentication (AuthorizationHeaderToken):
+* Api Key Authentication (SudoHeader):
+* Basic Authentication (BasicAuth):
+* Api Key Authentication (AccessToken):
+* Api Key Authentication (SudoParam):
+* Api Key Authentication (Token):
+
+```python
+import py_gitea_opensuse_org
+from py_gitea_opensuse_org.models.action_runner import ActionRunner
+from py_gitea_opensuse_org.models.edit_action_runner_option import EditActionRunnerOption
+from py_gitea_opensuse_org.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to /api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = py_gitea_opensuse_org.Configuration(
+    host = "/api/v1"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: TOTPHeader
+configuration.api_key['TOTPHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['TOTPHeader'] = 'Bearer'
+
+# Configure API key authorization: AuthorizationHeaderToken
+configuration.api_key['AuthorizationHeaderToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AuthorizationHeaderToken'] = 'Bearer'
+
+# Configure API key authorization: SudoHeader
+configuration.api_key['SudoHeader'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoHeader'] = 'Bearer'
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = py_gitea_opensuse_org.Configuration(
+    username = os.environ["USERNAME"],
+    password = os.environ["PASSWORD"]
+)
+
+# Configure API key authorization: AccessToken
+configuration.api_key['AccessToken'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['AccessToken'] = 'Bearer'
+
+# Configure API key authorization: SudoParam
+configuration.api_key['SudoParam'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['SudoParam'] = 'Bearer'
+
+# Configure API key authorization: Token
+configuration.api_key['Token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+async with py_gitea_opensuse_org.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = py_gitea_opensuse_org.AdminApi(api_client)
+    runner_id = 'runner_id_example' # str | id of the runner
+    body = py_gitea_opensuse_org.EditActionRunnerOption() # EditActionRunnerOption |  (optional)
+
+    try:
+        # Update a global runner
+        api_response = await api_instance.update_admin_runner(runner_id, body=body)
+        print("The response of AdminApi->update_admin_runner:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling AdminApi->update_admin_runner: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **runner_id** | **str**| id of the runner | 
+ **body** | [**EditActionRunnerOption**](EditActionRunnerOption.md)|  | [optional] 
+
+### Return type
+
+[**ActionRunner**](ActionRunner.md)
+
+### Authorization
+
+[TOTPHeader](../README.md#TOTPHeader), [AuthorizationHeaderToken](../README.md#AuthorizationHeaderToken), [SudoHeader](../README.md#SudoHeader), [BasicAuth](../README.md#BasicAuth), [AccessToken](../README.md#AccessToken), [SudoParam](../README.md#SudoParam), [Token](../README.md#Token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Runner |  -  |
+**400** | APIError is error format response |  * message -  <br>  * url -  <br>  |
+**404** | APINotFound is a not found empty response |  -  |
+**422** | APIValidationError is error format response related to input validation |  * message -  <br>  * url -  <br>  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

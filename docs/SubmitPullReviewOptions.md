@@ -1,13 +1,13 @@
 # SubmitPullReviewOptions
 
-SubmitPullReviewOptions are options to submit a pending pull review
+SubmitPullReviewOptions are options to submit a pending pull request review
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **body** | **str** |  | [optional] 
-**event** | **str** | ReviewStateType review state type | [optional] 
+**event** | **str** |  | [optional] 
 
 ## Example
 

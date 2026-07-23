@@ -1,12 +1,14 @@
 # UpdateBranchRepoOption
 
-UpdateBranchRepoOption options when updating a branch in a repository
+UpdateBranchRepoOption options when updating a branch reference in a repository
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** | New branch name | 
+**force** | **bool** | Force update even if the change is not a fast-forward | [optional] 
+**new_commit_id** | **str** | New commit SHA (or any ref) the branch should point to | 
+**old_commit_id** | **str** | Expected old commit SHA of the branch; if provided it must match the current tip | [optional] 
 
 ## Example
 

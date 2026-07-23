@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **assignees** | **List[str]** | The new list of assignee usernames | [optional] 
 **base** | **str** | The new base branch for the pull request | [optional] 
 **body** | **str** | The new description body for the pull request | [optional] 
+**content_version** | **int** | The current version of the pull request content to detect conflicts during editing | [optional] 
 **due_date** | **datetime** |  | [optional] 
 **labels** | **List[int]** | The new list of label IDs for the pull request | [optional] 
 **milestone** | **int** | The new milestone ID for the pull request | [optional] 

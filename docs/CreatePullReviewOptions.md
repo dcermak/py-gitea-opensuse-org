@@ -1,6 +1,6 @@
 # CreatePullReviewOptions
 
-CreatePullReviewOptions are options to create a pull review
+CreatePullReviewOptions are options to create a pull request review
 
 ## Properties
 
@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **body** | **str** |  | [optional] 
 **comments** | [**List[CreatePullReviewComment]**](CreatePullReviewComment.md) |  | [optional] 
 **commit_id** | **str** |  | [optional] 
-**event** | **str** | ReviewStateType review state type | [optional] 
+**event** | **str** |  | [optional] 
 
 ## Example
 

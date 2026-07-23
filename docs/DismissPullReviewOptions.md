@@ -1,6 +1,6 @@
 # DismissPullReviewOptions
 
-DismissPullReviewOptions are options to dismiss a pull review
+DismissPullReviewOptions are options to dismiss a pull request review
 
 ## Properties
 

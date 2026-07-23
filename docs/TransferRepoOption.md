@@ -1,6 +1,6 @@
 # TransferRepoOption
 
-TransferRepoOption options when transfer a repository's ownership
+TransferRepoOption options when transferring a repository's ownership
 
 ## Properties
 
